@@ -1,0 +1,33 @@
+DIGEST 87742fd69c95353bf4927a941203f268
+FPL.hw1
+R557:574 Coq.Setoids.Setoid <> <> lib
+R592:608 Coq.ZArith.ZArith <> <> lib
+R626:644 Coq.micromega.Psatz <> <> lib
+R662:672 PL.CoqIntro <> <> lib
+prf 823:834 <> shift_up1_eq
+binder 844:844 <> f:1
+R860:862 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R849:857 PL.CoqIntro <> shift_up1 def
+R859:859 PL.hw1 <> f:1 var
+R863:871 PL.CoqIntro <> func_plus def
+R873:873 PL.hw1 <> f:1 var
+binder 880:880 <> x:2
+prf 1091:1100 <> const_mono
+R1113:1113 Coq.Numbers.BinNums <> Z ind
+binder 1110:1110 <> a:3
+R1118:1121 PL.CoqIntro <> mono def
+binder 1128:1128 <> x:4
+R1133:1133 PL.hw1 <> a:3 var
+prf 1341:1354 <> mono_func_plus
+binder 1364:1364 <> f:5
+binder 1366:1366 <> g:6
+R1377:1382 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1371:1374 PL.CoqIntro <> mono def
+R1376:1376 PL.hw1 <> f:5 var
+R1389:1394 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1383:1386 PL.CoqIntro <> mono def
+R1388:1388 PL.hw1 <> g:6 var
+R1395:1398 PL.CoqIntro <> mono def
+R1401:1409 PL.CoqIntro <> func_plus def
+R1411:1411 PL.hw1 <> f:5 var
+R1413:1413 PL.hw1 <> g:6 var
