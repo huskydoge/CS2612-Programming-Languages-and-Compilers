@@ -1,0 +1,6 @@
+  var n;
+  var m;
+  n = read_int();
+  m = - n * n;
+  m = * n - 1;
+  write_int(m + 2)
