@@ -1,0 +1,51 @@
+struct definition: S
+  Field:
+    Left type: int
+    Right type: the LHS type
+    Field name: x
+  Field:
+    Left type: char
+    Right type: the LHS type
+    Field name: y
+var definition:
+  Left type: struct S
+  Right type: the LHS type
+  Var name: p
+var definition:
+  Left type: struct S
+  Right type: pointer of the LHS type
+  Var name: p
+var definition:
+  Left type: struct S
+  Right type: pointer of the following function type
+    Return type: pointer of the LHS type
+    Argument type:
+      Left type: int
+      Right type: the LHS type
+    Argument type:
+      Left type: struct S
+      Right type: pointer of the LHS type
+  Var name: f
+var definition:
+  Left type: struct S
+  Right type: pointer of the following function type
+    Return type: pointer of the LHS type
+  Var name: g
+var definition:
+  Left type: char
+  Right type: pointer of the following function type
+    Return type: pointer of the LHS type
+    Argument type:
+      Left type: int
+      Right type: pointer of the following function type
+        Return type: pointer of the LHS type
+        Argument type:
+          Left type: int
+          Right type: the LHS type
+        Argument type:
+          Left type: int
+          Right type: the LHS type
+    Argument type:
+      Left type: struct S
+      Right type: pointer of the LHS type
+  Var name: h
