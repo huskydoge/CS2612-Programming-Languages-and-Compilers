@@ -71,6 +71,7 @@ NT_WHOLE:
         $$ = ($1);
         root = $$;
     }
+;
 
 NT_GLOB_ITEM_LIST:
     NT_GLOB_ITEM {
@@ -80,6 +81,7 @@ NT_GLOB_ITEM_LIST:
     | NT_GLOB_ITEM NT_GLOB_ITEM_LIST{
         $$ = TGCons($1, $2);
     }
+;
 
 NT_GLOB_ITEM:
   TM_STRUCT TM_IDENT TM_LEFT_BRACE NT_FIELD_LIST TM_RIGHT_BRACE TM_SEMICOL
@@ -114,6 +116,7 @@ NT_GLOB_ITEM:
   {
     $$ = TVarDef($1, $2);
   }
+;
 
 NT_ENUM_ELE_LIST:
   TM_IDENT
@@ -124,7 +127,7 @@ NT_ENUM_ELE_LIST:
   {
     $$ = TECons($1, $3);
   }
-
+;
 
 NT_LEFT_TYPE:
   TM_IDENT {
@@ -280,3 +283,4 @@ void yyerror(char* s)
     fprintf(stderr , "token type %d\n",yylex());
     fprintf(stderr , "token type %d\n",yylex());
 }
+;
