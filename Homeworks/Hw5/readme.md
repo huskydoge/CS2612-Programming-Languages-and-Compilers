@@ -16,6 +16,12 @@
   2. `IF E THEN {IF E THEN S ELSE S}`
 
 
+# Operator Binding
+
+Operator binding refers to the direction in which operators of the same priority are organised in an expression, i.e. the order in which an object is bound to an operator when the operators on both sides of the object are of the same priority, C specifies the direction in which the various operators are bound (binding).
+
+Most of the combining direction is "from left to right", i.e., left first, then right, e.g., a- b+c, there are two operators on both sides of b with the same priority, b combines with minus first, performs the operation of a- b, and then performs the operation of adding c.
+
 
 
 
