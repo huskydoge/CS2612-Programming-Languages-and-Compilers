@@ -40,7 +40,7 @@
     ```
     S -> T;S		T -> ID:=E		T -> PRINT(E)		S -> T
     
-    F -> NAT		F -> ID		E -> E + F		E -> F	F -> (E)
+    F -> NAT		F -> ID		E -> E + F		E -> F
     ```
 
 5. 
