@@ -29,7 +29,7 @@ Open Visual Studio Code.app, then open extensions market and search for `"vscoq"
 ## How to use (Hw1 for example)
 
 1. Make a new directory and create file `_CoqProject` with no name extension.
-2. Use vscode to open `_CoqProject` and write a line `-Q.PL` in _CoqProject
+2. Use vscode to open `_CoqProject` and write a line `-Q . PL` in _CoqProject
 3. Input into vscode terminal:  `coq_makefile -f _CoqProject *.v -o Makefile`
 4. Input into vscode terminal: `make`
 5. Restart vscode
