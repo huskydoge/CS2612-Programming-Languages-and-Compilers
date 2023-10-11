@@ -26,4 +26,8 @@ SJTU |   CS 2612, Programming Languages and Compilers, Fall 2023
 
 ## Coq Reference
 
-https://zhuanlan.zhihu.com/p/54164515
+* https://zhuanlan.zhihu.com/p/54164515
+
+* https://coq-zh.github.io/SF-zh/lf-current/Preface.html
+
+* https://le.qun.ch/en/blog/coq/
