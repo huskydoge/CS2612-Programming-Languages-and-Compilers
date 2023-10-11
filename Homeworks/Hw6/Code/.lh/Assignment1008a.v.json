@@ -1,0 +1,50 @@
+{
+    "sourceFile": "Assignment1008a.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1696857701367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696857714112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n   no_left_assoc c ->\n   no_left_assoc c0 ->\n   no_left_assoc (CSeq_right_assoc c c0).\n Proof.\n+  intros.\n   \n Qed.\n   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1696857850153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n   no_left_assoc c0 ->\n   no_left_assoc (CSeq_right_assoc c c0).\n Proof.\n   intros.\n+  induction c.\n   \n Qed.\n   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1696858505260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,10 +63,18 @@\n   no_left_assoc c0 ->\n   no_left_assoc (CSeq_right_assoc c c0).\n Proof.\n   intros.\n-  induction c.\n-  \n+  induction c; simpl.\n+  - tauto.\n+  - tauto.\n+  - destruct H.\n+    destruct H1.\n+    tauto.\n+  - destruct H.\n+    tauto.\n+  - simpl in H.\n+    tauto.\n Qed.\n   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n (** 下面是需要证明的最终结论。*)\n"
+                },
+                {
+                    "date": 1696859804101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,89 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import PL.SyntaxInCoq.\n+Local Open Scope Z.\n+\n+Import Lang_SimpleWhile.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 下面我们定义一项简单的程序变换：右结合变换。例如，将_[(c1;c2);c3]_变换为\n+    _[c1;(c2;c3)]_。  \n+\n+    首先，这里定义一个辅助函数，该函数假设_[c]_与_[c0]_已经是右结合的，计算\n+    _[c; c0]_转换后的结果*)\n+\n+Fixpoint CSeq_right_assoc (c c0: com): com :=\n+  match c with\n+  | CSeq c1 c2 => CSeq c1 (CSeq_right_assoc c2 c0)\n+  | _ => CSeq c c0\n+  end.\n+\n+(** 现在，可以在_[CSeq_right_assoc]_的基础上定义右结合变换_[right_assoc]_。*)\n+\n+Fixpoint right_assoc (c: com): com :=\n+  match c with\n+  | CSeq c1 c2 =>\n+      CSeq_right_assoc (right_assoc c1) (right_assoc c2)\n+  | CIf e c1 c2 =>\n+      CIf e (right_assoc c1) (right_assoc c2)\n+  | CWhile e c1 =>\n+      CWhile e (right_assoc c1)\n+  | _ =>\n+      c\n+  end.\n+\n+(** 下面证明：经过右结合变换后，确实程序语句中不再有左结合的结构了。下面分为两步\n+    定义『无左结合结构』，即_[no_left_assoc]_。*)\n+\n+Definition not_left_assoc (c: com): Prop :=\n+  match c with\n+  | CSeq (CSeq _ _) _ => False\n+  | _ => True\n+  end.\n+\n+Fixpoint no_left_assoc (c: com): Prop :=\n+  match c with\n+  | CSeq c1 c2 =>\n+      not_left_assoc c /\\\n+      no_left_assoc c1 /\\ no_left_assoc c2\n+  | CIf e c1 c2 =>\n+      no_left_assoc c1 /\\ no_left_assoc c2\n+  | CWhile e c1 =>\n+      no_left_assoc c1\n+  | _ =>\n+      True\n+  end.\n+\n+(** 证明也需要分两步进行。请先证明关于_[CSeq_right_assoc]_的引理。*)\n+\n+Lemma CSeq_right_assoc_no_left_assoc: forall c c0,\n+  no_left_assoc c ->\n+  no_left_assoc c0 ->\n+  no_left_assoc (CSeq_right_assoc c c0).\n+Proof.\n+  intros.\n+  induction c; simpl.\n+  - tauto.\n+  - tauto.\n+  - destruct H.\n+    destruct H1.\n+    tauto.\n+  - destruct H.\n+    tauto.\n+  - simpl in H.\n+    tauto.\n+Qed.\n+  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+(** 下面是需要证明的最终结论。*)\n+\n+Theorem right_assoc_no_left_assoc: forall c,\n+  no_left_assoc (right_assoc c).\n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+\n+\n+\n"
+                },
+                {
+                    "date": 1696859811417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,99 +80,13 @@\n (** 下面是需要证明的最终结论。*)\n \n Theorem right_assoc_no_left_assoc: forall c,\n   no_left_assoc (right_assoc c).\n- (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+Proof.\n \n-\n-\n-\n-\n-Require Import Coq.ZArith.ZArith.\n-Require Import PL.SyntaxInCoq.\n-Local Open Scope Z.\n-\n-Import Lang_SimpleWhile.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 下面我们定义一项简单的程序变换：右结合变换。例如，将_[(c1;c2);c3]_变换为\n-    _[c1;(c2;c3)]_。  \n-\n-    首先，这里定义一个辅助函数，该函数假设_[c]_与_[c0]_已经是右结合的，计算\n-    _[c; c0]_转换后的结果*)\n-\n-Fixpoint CSeq_right_assoc (c c0: com): com :=\n-  match c with\n-  | CSeq c1 c2 => CSeq c1 (CSeq_right_assoc c2 c0)\n-  | _ => CSeq c c0\n-  end.\n-\n-(** 现在，可以在_[CSeq_right_assoc]_的基础上定义右结合变换_[right_assoc]_。*)\n-\n-Fixpoint right_assoc (c: com): com :=\n-  match c with\n-  | CSeq c1 c2 =>\n-      CSeq_right_assoc (right_assoc c1) (right_assoc c2)\n-  | CIf e c1 c2 =>\n-      CIf e (right_assoc c1) (right_assoc c2)\n-  | CWhile e c1 =>\n-      CWhile e (right_assoc c1)\n-  | _ =>\n-      c\n-  end.\n-\n-(** 下面证明：经过右结合变换后，确实程序语句中不再有左结合的结构了。下面分为两步\n-    定义『无左结合结构』，即_[no_left_assoc]_。*)\n-\n-Definition not_left_assoc (c: com): Prop :=\n-  match c with\n-  | CSeq (CSeq _ _) _ => False\n-  | _ => True\n-  end.\n-\n-Fixpoint no_left_assoc (c: com): Prop :=\n-  match c with\n-  | CSeq c1 c2 =>\n-      not_left_assoc c /\\\n-      no_left_assoc c1 /\\ no_left_assoc c2\n-  | CIf e c1 c2 =>\n-      no_left_assoc c1 /\\ no_left_assoc c2\n-  | CWhile e c1 =>\n-      no_left_assoc c1\n-  | _ =>\n-      True\n-  end.\n-\n-(** 证明也需要分两步进行。请先证明关于_[CSeq_right_assoc]_的引理。*)\n-\n-Lemma CSeq_right_assoc_no_left_assoc: forall c c0,\n-  no_left_assoc c ->\n-  no_left_assoc c0 ->\n-  no_left_assoc (CSeq_right_assoc c c0).\n-Proof.\n-  intros.\n-  induction c; simpl.\n-  - tauto.\n-  - tauto.\n-  - destruct H.\n-    destruct H1.\n-    tauto.\n-  - destruct H.\n-    tauto.\n-  - simpl in H.\n-    tauto.\n Qed.\n-  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-(** 下面是需要证明的最终结论。*)\n \n-Theorem right_assoc_no_left_assoc: forall c,\n-  no_left_assoc (right_assoc c).\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n \n-\n-\n"
+                },
+                {
+                    "date": 1696860150299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,16 @@\n \n Theorem right_assoc_no_left_assoc: forall c,\n   no_left_assoc (right_assoc c).\n Proof.\n+  intros.\n+  induction c ;simpl.\n+  - tauto.\n+  - tauto.\n+  - pose proof CSeq_right_assoc_no_left_assoc _ _ IHc1 IHc2\n+    tauto.  \n \n+\n Qed.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                },
+                {
+                    "date": 1696860180279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,12 +85,13 @@\n   intros.\n   induction c ;simpl.\n   - tauto.\n   - tauto.\n-  - pose proof CSeq_right_assoc_no_left_assoc _ _ IHc1 IHc2\n-    tauto.  \n+  - pose proof CSeq_right_assoc_no_left_assoc _ _ IHc1 IHc2.\n+    tauto.\n+  - tauto.\n+  - tauto.    \n \n-\n Qed.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                },
+                {
+                    "date": 1696860187630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,8 @@\n   - pose proof CSeq_right_assoc_no_left_assoc _ _ IHc1 IHc2.\n     tauto.\n   - tauto.\n   - tauto.    \n-\n Qed.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                }
+            ],
+            "date": 1696857701367,
+            "name": "Commit-0",
+            "content": "Require Import Coq.ZArith.ZArith.\nRequire Import PL.SyntaxInCoq.\nLocal Open Scope Z.\n\nImport Lang_SimpleWhile.\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 下面我们定义一项简单的程序变换：右结合变换。例如，将_[(c1;c2);c3]_变换为\n    _[c1;(c2;c3)]_。  \n\n    首先，这里定义一个辅助函数，该函数假设_[c]_与_[c0]_已经是右结合的，计算\n    _[c; c0]_转换后的结果*)\n\nFixpoint CSeq_right_assoc (c c0: com): com :=\n  match c with\n  | CSeq c1 c2 => CSeq c1 (CSeq_right_assoc c2 c0)\n  | _ => CSeq c c0\n  end.\n\n(** 现在，可以在_[CSeq_right_assoc]_的基础上定义右结合变换_[right_assoc]_。*)\n\nFixpoint right_assoc (c: com): com :=\n  match c with\n  | CSeq c1 c2 =>\n      CSeq_right_assoc (right_assoc c1) (right_assoc c2)\n  | CIf e c1 c2 =>\n      CIf e (right_assoc c1) (right_assoc c2)\n  | CWhile e c1 =>\n      CWhile e (right_assoc c1)\n  | _ =>\n      c\n  end.\n\n(** 下面证明：经过右结合变换后，确实程序语句中不再有左结合的结构了。下面分为两步\n    定义『无左结合结构』，即_[no_left_assoc]_。*)\n\nDefinition not_left_assoc (c: com): Prop :=\n  match c with\n  | CSeq (CSeq _ _) _ => False\n  | _ => True\n  end.\n\nFixpoint no_left_assoc (c: com): Prop :=\n  match c with\n  | CSeq c1 c2 =>\n      not_left_assoc c /\\\n      no_left_assoc c1 /\\ no_left_assoc c2\n  | CIf e c1 c2 =>\n      no_left_assoc c1 /\\ no_left_assoc c2\n  | CWhile e c1 =>\n      no_left_assoc c1\n  | _ =>\n      True\n  end.\n\n(** 证明也需要分两步进行。请先证明关于_[CSeq_right_assoc]_的引理。*)\n\nLemma CSeq_right_assoc_no_left_assoc: forall c c0,\n  no_left_assoc c ->\n  no_left_assoc c0 ->\n  no_left_assoc (CSeq_right_assoc c c0).\nProof.\n  \nQed.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n(** 下面是需要证明的最终结论。*)\n\nTheorem right_assoc_no_left_assoc: forall c,\n  no_left_assoc (right_assoc c).\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n\n\n\n"
+        }
+    ]
+}

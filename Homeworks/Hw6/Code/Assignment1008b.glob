@@ -1,0 +1,100 @@
+DIGEST 229f07b7e3f7ddec8c8b6deff506dc1c
+FPL.Assignment1008b
+R15:31 Coq.ZArith.ZArith <> <> lib
+R49:72 Coq.Logic.Classical_Prop <> <> lib
+R90:103 PL.SyntaxInCoq <> <> lib
+prf 226:234 <> exists_or
+binder 246:246 <> X:1
+R262:265 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R261:261 PL.Assignment1008b <> X:1 var
+binder 256:256 <> P:2
+binder 258:258 <> Q:3
+R275:275 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R296:301 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R276:282 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R284:285 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 283:283 <> x:4
+R289:292 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R286:286 PL.Assignment1008b <> P:2 var
+R288:288 PL.Assignment1008b <> x:4 var
+R293:293 PL.Assignment1008b <> Q:3 var
+R295:295 PL.Assignment1008b <> x:4 var
+R302:302 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R316:321 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R335:335 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R303:309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R311:312 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 310:310 <> x:5
+R313:313 PL.Assignment1008b <> P:2 var
+R315:315 PL.Assignment1008b <> x:5 var
+R322:328 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R330:331 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 329:329 <> x:6
+R332:332 PL.Assignment1008b <> Q:3 var
+R334:334 PL.Assignment1008b <> x:6 var
+prf 530:538 <> forall_or
+binder 549:549 <> A:7
+R565:568 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R564:564 PL.Assignment1008b <> A:7 var
+binder 559:559 <> P:8
+binder 561:561 <> Q:9
+R618:624 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R648:648 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R578:578 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R595:600 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R617:617 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R589:589 PL.Assignment1008b <> A:7 var
+binder 586:586 <> a:10
+R592:592 PL.Assignment1008b <> P:8 var
+R594:594 PL.Assignment1008b <> a:10 var
+R611:611 PL.Assignment1008b <> A:7 var
+binder 608:608 <> a:11
+R614:614 PL.Assignment1008b <> Q:9 var
+R616:616 PL.Assignment1008b <> a:11 var
+R635:635 PL.Assignment1008b <> A:7 var
+binder 632:632 <> a:12
+R641:644 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R638:638 PL.Assignment1008b <> P:8 var
+R640:640 PL.Assignment1008b <> a:12 var
+R645:645 PL.Assignment1008b <> Q:9 var
+R647:647 PL.Assignment1008b <> a:12 var
+prf 843:852 <> forall_not
+binder 863:863 <> X:13
+R877:880 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R876:876 PL.Assignment1008b <> X:13 var
+binder 873:873 <> P:14
+R890:890 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R909:913 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R901:901 PL.Assignment1008b <> X:13 var
+binder 898:898 <> x:15
+R904:905 Coq.Init.Logic <> ::type_scope:'~'_x not
+R906:906 PL.Assignment1008b <> P:14 var
+R908:908 PL.Assignment1008b <> x:15 var
+R914:916 Coq.Init.Logic <> ::type_scope:'~'_x not
+R933:933 Coq.Init.Logic <> ::type_scope:'~'_x not
+R917:923 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R928:929 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R927:927 PL.Assignment1008b <> X:13 var
+binder 924:924 <> x:16
+R930:930 PL.Assignment1008b <> P:14 var
+R932:932 PL.Assignment1008b <> x:16 var
+prf 1127:1136 <> exists_not
+binder 1147:1147 <> X:17
+R1161:1164 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1160:1160 PL.Assignment1008b <> X:17 var
+binder 1157:1157 <> P:18
+R1174:1174 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1193:1197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1175:1181 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1186:1187 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1185:1185 PL.Assignment1008b <> X:17 var
+binder 1182:1182 <> x:19
+R1188:1189 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1190:1190 PL.Assignment1008b <> P:18 var
+R1192:1192 PL.Assignment1008b <> x:19 var
+R1198:1200 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1217:1217 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1211:1211 PL.Assignment1008b <> X:17 var
+binder 1208:1208 <> x:20
+R1214:1214 PL.Assignment1008b <> P:18 var
+R1216:1216 PL.Assignment1008b <> x:20 var

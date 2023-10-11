@@ -1,0 +1,26 @@
+{
+    "sourceFile": "_CoqProject",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1696819894547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1696819978289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n--Q.PL\n\\ No newline at end of file\n+- Q.PL\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1696820041999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-- Q.PL\n\\ No newline at end of file\n+-Q . PL\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1696819894547,
+            "name": "Commit-0",
+            "content": "-Q.PL"
+        }
+    ]
+}

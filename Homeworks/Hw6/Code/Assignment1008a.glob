@@ -1,0 +1,79 @@
+DIGEST c19797538533337cd5b8c7ad96e08741
+FPL.Assignment1008a
+R15:31 Coq.ZArith.ZArith <> <> lib
+R49:62 PL.SyntaxInCoq <> <> lib
+R93:108 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+def 442:457 <> CSeq_right_assoc
+R466:468 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 460:460 <> c:1
+binder 462:463 <> c0:2
+R472:474 PL.SyntaxInCoq Lang_SimpleWhile com ind
+R487:487 PL.Assignment1008a <> c:1 var
+R498:501 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R512:515 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R521:536 PL.Assignment1008a <> CSeq_right_assoc:3 def
+R541:542 PL.Assignment1008a <> c0:2 var
+R554:557 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R559:559 PL.Assignment1008a <> c:1 var
+R561:562 PL.Assignment1008a <> c0:2 var
+def 678:688 <> right_assoc
+R694:696 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 691:691 <> c:5
+R700:702 PL.SyntaxInCoq Lang_SimpleWhile com ind
+R715:715 PL.Assignment1008a <> c:5 var
+R726:729 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R746:761 PL.Assignment1008a <> CSeq_right_assoc def
+R764:774 PL.Assignment1008a <> right_assoc:6 def
+R781:791 PL.Assignment1008a <> right_assoc:6 def
+R801:803 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R822:824 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R829:839 PL.Assignment1008a <> right_assoc:6 def
+R846:856 PL.Assignment1008a <> right_assoc:6 def
+R866:871 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R887:892 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R897:907 PL.Assignment1008a <> right_assoc:6 def
+R928:928 PL.Assignment1008a <> c:5 var
+def 1132:1145 <> not_left_assoc
+R1151:1153 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 1148:1148 <> c:8
+R1173:1173 PL.Assignment1008a <> c:8 var
+R1184:1187 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R1190:1193 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R1205:1209 Coq.Init.Logic <> False ind
+R1220:1223 Coq.Init.Logic <> True ind
+def 1242:1254 <> no_left_assoc
+R1260:1262 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 1257:1257 <> c:10
+R1282:1282 PL.Assignment1008a <> c:10 var
+R1293:1296 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R1329:1338 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1313:1326 PL.Assignment1008a <> not_left_assoc def
+R1328:1328 PL.Assignment1008a <> c:10 var
+R1355:1358 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1339:1351 PL.Assignment1008a <> no_left_assoc:11 def
+R1359:1371 PL.Assignment1008a <> no_left_assoc:11 def
+R1380:1382 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R1417:1420 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1401:1413 PL.Assignment1008a <> no_left_assoc:11 def
+R1421:1433 PL.Assignment1008a <> no_left_assoc:11 def
+R1442:1447 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R1463:1475 PL.Assignment1008a <> no_left_assoc:11 def
+R1495:1498 Coq.Init.Logic <> True ind
+prf 1605:1634 <> CSeq_right_assoc_no_left_assoc
+binder 1644:1644 <> c:13
+binder 1646:1647 <> c0:14
+R1667:1672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1652:1664 PL.Assignment1008a <> no_left_assoc def
+R1666:1666 PL.Assignment1008a <> c:13 var
+R1689:1694 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1673:1685 PL.Assignment1008a <> no_left_assoc def
+R1687:1688 PL.Assignment1008a <> c0:14 var
+R1695:1707 PL.Assignment1008a <> no_left_assoc def
+R1710:1725 PL.Assignment1008a <> CSeq_right_assoc def
+R1727:1727 PL.Assignment1008a <> c:13 var
+R1729:1730 PL.Assignment1008a <> c0:14 var
+prf 1880:1904 <> right_assoc_no_left_assoc
+binder 1914:1914 <> c:15
+R1919:1931 PL.Assignment1008a <> no_left_assoc def
+R1934:1944 PL.Assignment1008a <> right_assoc def
+R1946:1946 PL.Assignment1008a <> c:15 var
