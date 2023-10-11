@@ -1,0 +1,326 @@
+DIGEST 9d80f1c691f12b92459a749b6dc1c5d0
+FPL.InductiveType
+R15:31 Coq.ZArith.ZArith <> <> lib
+R49:67 Coq.micromega.Psatz <> <> lib
+R85:95 PL.CoqIntro <> <> lib
+def 577:587 <> is_fixpoint
+R594:597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R593:593 Coq.Numbers.BinNums <> Z ind
+R598:598 Coq.Numbers.BinNums <> Z ind
+binder 590:590 <> f:1
+R605:605 Coq.Numbers.BinNums <> Z ind
+binder 602:602 <> x:2
+R622:624 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R619:619 PL.InductiveType <> f:1 var
+R621:621 PL.InductiveType <> x:2 var
+R625:625 PL.InductiveType <> x:2 var
+prf 637:654 <> fixpoint_self_comp
+binder 664:664 <> f:3
+binder 666:666 <> x:4
+R686:691 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R671:681 PL.InductiveType <> is_fixpoint def
+R683:683 PL.InductiveType <> f:3 var
+R685:685 PL.InductiveType <> x:4 var
+R692:702 PL.InductiveType <> is_fixpoint def
+R705:709 PL.CoqIntro <> Zcomp def
+R711:711 PL.InductiveType <> f:3 var
+R713:713 PL.InductiveType <> f:3 var
+R716:716 PL.InductiveType <> x:4 var
+R735:745 PL.InductiveType <> is_fixpoint def
+R748:752 PL.CoqIntro <> Zcomp def
+def 1513:1532 <> fixpoint_self_comp23
+binder 1542:1542 <> f:5
+binder 1544:1544 <> x:6
+R1574:1579 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1549:1559 PL.InductiveType <> is_fixpoint def
+R1562:1566 PL.CoqIntro <> Zcomp def
+R1568:1568 PL.InductiveType <> f:5 var
+R1570:1570 PL.InductiveType <> f:5 var
+R1573:1573 PL.InductiveType <> x:6 var
+R1615:1620 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1580:1590 PL.InductiveType <> is_fixpoint def
+R1593:1597 PL.CoqIntro <> Zcomp def
+R1599:1599 PL.InductiveType <> f:5 var
+R1602:1606 PL.CoqIntro <> Zcomp def
+R1608:1608 PL.InductiveType <> f:5 var
+R1610:1610 PL.InductiveType <> f:5 var
+R1614:1614 PL.InductiveType <> x:6 var
+R1621:1631 PL.InductiveType <> is_fixpoint def
+R1633:1633 PL.InductiveType <> f:5 var
+R1635:1635 PL.InductiveType <> x:6 var
+R1654:1664 PL.InductiveType <> is_fixpoint def
+R1667:1671 PL.CoqIntro <> Zcomp def
+ind 1793:1796 <> tree
+constr 1809:1812 <> Leaf
+constr 1822:1825 <> Node
+R1815:1818 PL.InductiveType <> tree:7 ind
+R1831:1834 PL.InductiveType <> tree:7 ind
+binder 1828:1828 <> l:9
+R1841:1841 Coq.Numbers.BinNums <> Z ind
+binder 1838:1838 <> v:10
+R1848:1851 PL.InductiveType <> tree:7 ind
+binder 1845:1845 <> r:11
+R1855:1858 PL.InductiveType <> tree:7 ind
+scheme 1793:1796 <> tree_rect
+scheme 1793:1796 <> tree_ind
+scheme 1793:1796 <> tree_rec
+scheme 1793:1796 <> tree_sind
+def 2104:2116 <> tree_example0
+R2119:2122 PL.InductiveType <> tree ind
+R2129:2132 PL.InductiveType <> Node constr
+R2134:2137 PL.InductiveType <> Leaf constr
+R2141:2144 PL.InductiveType <> Leaf constr
+def 2159:2171 <> tree_example1
+R2174:2177 PL.InductiveType <> tree ind
+R2184:2187 PL.InductiveType <> Node constr
+R2190:2193 PL.InductiveType <> Node constr
+R2195:2198 PL.InductiveType <> Leaf constr
+R2202:2205 PL.InductiveType <> Leaf constr
+R2210:2213 PL.InductiveType <> Leaf constr
+def 2228:2241 <> tree_example2a
+R2244:2247 PL.InductiveType <> tree ind
+R2254:2257 PL.InductiveType <> Node constr
+R2260:2263 PL.InductiveType <> Node constr
+R2265:2268 PL.InductiveType <> Leaf constr
+R2272:2275 PL.InductiveType <> Leaf constr
+R2283:2286 PL.InductiveType <> Node constr
+R2288:2291 PL.InductiveType <> Leaf constr
+R2295:2298 PL.InductiveType <> Leaf constr
+def 2314:2327 <> tree_example2b
+R2330:2333 PL.InductiveType <> tree ind
+R2340:2343 PL.InductiveType <> Node constr
+R2346:2349 PL.InductiveType <> Node constr
+R2351:2354 PL.InductiveType <> Leaf constr
+R2358:2361 PL.InductiveType <> Leaf constr
+R2369:2372 PL.InductiveType <> Node constr
+R2374:2377 PL.InductiveType <> Leaf constr
+R2381:2384 PL.InductiveType <> Leaf constr
+def 2400:2413 <> tree_example3a
+R2416:2419 PL.InductiveType <> tree ind
+R2426:2429 PL.InductiveType <> Node constr
+R2432:2435 PL.InductiveType <> Node constr
+R2437:2440 PL.InductiveType <> Leaf constr
+R2444:2447 PL.InductiveType <> Leaf constr
+R2452:2465 PL.InductiveType <> tree_example2a def
+def 2480:2493 <> tree_example3b
+R2496:2499 PL.InductiveType <> tree ind
+R2506:2509 PL.InductiveType <> Node constr
+R2511:2524 PL.InductiveType <> tree_example2b def
+R2529:2532 PL.InductiveType <> Node constr
+R2534:2537 PL.InductiveType <> Leaf constr
+R2541:2544 PL.InductiveType <> Leaf constr
+def 2791:2801 <> tree_height
+R2807:2810 PL.InductiveType <> tree ind
+binder 2804:2804 <> t:12
+R2814:2814 Coq.Numbers.BinNums <> Z ind
+R2827:2827 PL.InductiveType <> t:12 var
+R2838:2841 PL.InductiveType <> Leaf constr
+R2852:2855 PL.InductiveType <> Node constr
+R2903:2905 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R2866:2870 Coq.ZArith.BinInt Z max def
+R2873:2883 PL.InductiveType <> tree_height:13 def
+R2889:2899 PL.InductiveType <> tree_height:13 def
+def 2925:2933 <> tree_size
+R2939:2942 PL.InductiveType <> tree ind
+binder 2936:2936 <> t:15
+R2946:2946 Coq.Numbers.BinNums <> Z ind
+R2959:2959 PL.InductiveType <> t:15 var
+R2970:2973 PL.InductiveType <> Leaf constr
+R2984:2987 PL.InductiveType <> Node constr
+R3023:3025 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R3009:3011 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R2998:3006 PL.InductiveType <> tree_size:16 def
+R3012:3020 PL.InductiveType <> tree_size:16 def
+def 3163:3173 <> Leaf_height
+R3194:3196 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3178:3188 PL.InductiveType <> tree_height def
+R3190:3193 PL.InductiveType <> Leaf constr
+def 3234:3254 <> tree_example2a_height
+R3285:3287 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3259:3269 PL.InductiveType <> tree_height def
+R3271:3284 PL.InductiveType <> tree_example2a def
+def 3325:3342 <> treeexample3b_size
+R3371:3373 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3347:3355 PL.InductiveType <> tree_size def
+R3357:3370 PL.InductiveType <> tree_example3b def
+def 3530:3541 <> tree_reverse
+R3547:3550 PL.InductiveType <> tree ind
+binder 3544:3544 <> t:18
+R3554:3557 PL.InductiveType <> tree ind
+R3570:3570 PL.InductiveType <> t:18 var
+R3581:3584 PL.InductiveType <> Leaf constr
+R3589:3592 PL.InductiveType <> Leaf constr
+R3598:3601 PL.InductiveType <> Node constr
+R3612:3615 PL.InductiveType <> Node constr
+R3618:3629 PL.InductiveType <> tree_reverse:19 def
+R3637:3648 PL.InductiveType <> tree_reverse:19 def
+def 3725:3741 <> Leaf_tree_reverse
+R3763:3765 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3746:3757 PL.InductiveType <> tree_reverse def
+R3759:3762 PL.InductiveType <> Leaf constr
+R3766:3769 PL.InductiveType <> Leaf constr
+def 3806:3831 <> tree_example0_tree_reverse
+R3862:3864 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3836:3847 PL.InductiveType <> tree_reverse def
+R3849:3861 PL.InductiveType <> tree_example0 def
+R3865:3877 PL.InductiveType <> tree_example0 def
+def 3914:3939 <> tree_example3_tree_reverse
+R3971:3973 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3944:3955 PL.InductiveType <> tree_reverse def
+R3957:3970 PL.InductiveType <> tree_example3a def
+R3974:3987 PL.InductiveType <> tree_example3b def
+prf 4578:4590 <> Node_inj_left
+binder 4600:4601 <> l1:21
+binder 4603:4604 <> v1:22
+binder 4606:4607 <> r1:23
+binder 4609:4610 <> l2:24
+binder 4612:4613 <> v2:25
+binder 4615:4616 <> r2:26
+R4650:4655 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4634:4636 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4621:4624 PL.InductiveType <> Node constr
+R4626:4627 PL.InductiveType <> l1:21 var
+R4629:4630 PL.InductiveType <> v1:22 var
+R4632:4633 PL.InductiveType <> r1:23 var
+R4637:4640 PL.InductiveType <> Node constr
+R4642:4643 PL.InductiveType <> l2:24 var
+R4645:4646 PL.InductiveType <> v2:25 var
+R4648:4649 PL.InductiveType <> r2:26 var
+R4658:4660 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4656:4657 PL.InductiveType <> l1:21 var
+R4661:4662 PL.InductiveType <> l2:24 var
+prf 4990:5003 <> Node_inj_right
+binder 5013:5014 <> l1:27
+binder 5016:5017 <> v1:28
+binder 5019:5020 <> r1:29
+binder 5022:5023 <> l2:30
+binder 5025:5026 <> v2:31
+binder 5028:5029 <> r2:32
+R5063:5068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5047:5049 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5034:5037 PL.InductiveType <> Node constr
+R5039:5040 PL.InductiveType <> l1:27 var
+R5042:5043 PL.InductiveType <> v1:28 var
+R5045:5046 PL.InductiveType <> r1:29 var
+R5050:5053 PL.InductiveType <> Node constr
+R5055:5056 PL.InductiveType <> l2:30 var
+R5058:5059 PL.InductiveType <> v2:31 var
+R5061:5062 PL.InductiveType <> r2:32 var
+R5071:5073 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5069:5070 PL.InductiveType <> r1:29 var
+R5074:5075 PL.InductiveType <> r2:32 var
+prf 5423:5436 <> Node_inj_value
+binder 5446:5447 <> l1:33
+binder 5449:5450 <> v1:34
+binder 5452:5453 <> r1:35
+binder 5455:5456 <> l2:36
+binder 5458:5459 <> v2:37
+binder 5461:5462 <> r2:38
+R5496:5501 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5480:5482 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5467:5470 PL.InductiveType <> Node constr
+R5472:5473 PL.InductiveType <> l1:33 var
+R5475:5476 PL.InductiveType <> v1:34 var
+R5478:5479 PL.InductiveType <> r1:35 var
+R5483:5486 PL.InductiveType <> Node constr
+R5488:5489 PL.InductiveType <> l2:36 var
+R5491:5492 PL.InductiveType <> v2:37 var
+R5494:5495 PL.InductiveType <> r2:38 var
+R5504:5506 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5502:5503 PL.InductiveType <> v1:34 var
+R5507:5508 PL.InductiveType <> v2:37 var
+prf 5758:5775 <> Leaf_Node_conflict
+binder 5785:5785 <> l:39
+binder 5787:5787 <> v:40
+binder 5789:5789 <> r:41
+R5811:5814 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5798:5800 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5794:5797 PL.InductiveType <> Leaf constr
+R5801:5804 PL.InductiveType <> Node constr
+R5806:5806 PL.InductiveType <> l:39 var
+R5808:5808 PL.InductiveType <> v:40 var
+R5810:5810 PL.InductiveType <> r:41 var
+R5816:5818 Coq.Init.Logic <> ::type_scope:x_'='_x not
+prf 5927:5945 <> reverse_result_Leaf
+binder 5955:5955 <> t:42
+R5981:5986 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5974:5976 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5960:5971 PL.InductiveType <> tree_reverse def
+R5973:5973 PL.InductiveType <> t:42 var
+R5977:5980 PL.InductiveType <> Leaf constr
+R5988:5990 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5987:5987 PL.InductiveType <> t:42 var
+R5991:5994 PL.InductiveType <> Leaf constr
+prf 8059:8070 <> reverse_size
+binder 8080:8080 <> t:43
+R8111:8113 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8085:8093 PL.InductiveType <> tree_size def
+R8096:8107 PL.InductiveType <> tree_reverse def
+R8109:8109 PL.InductiveType <> t:43 var
+R8114:8122 PL.InductiveType <> tree_size def
+R8124:8124 PL.InductiveType <> t:43 var
+prf 8950:8963 <> reverse_height
+binder 8973:8973 <> t:44
+R9006:9008 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8978:8988 PL.InductiveType <> tree_height def
+R8991:9002 PL.InductiveType <> tree_reverse def
+R9004:9004 PL.InductiveType <> t:44 var
+R9009:9019 PL.InductiveType <> tree_height def
+R9021:9021 PL.InductiveType <> t:44 var
+prf 9334:9356 <> reverse_height_attempt2
+binder 9366:9366 <> t:45
+R9399:9401 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9371:9381 PL.InductiveType <> tree_height def
+R9384:9395 PL.InductiveType <> tree_reverse def
+R9397:9397 PL.InductiveType <> t:45 var
+R9402:9412 PL.InductiveType <> tree_height def
+R9414:9414 PL.InductiveType <> t:45 var
+prf 9832:9849 <> reverse_involutive
+binder 9859:9859 <> t:46
+R9893:9895 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9864:9875 PL.InductiveType <> tree_reverse def
+R9878:9889 PL.InductiveType <> tree_reverse def
+R9891:9891 PL.InductiveType <> t:46 var
+R9896:9896 PL.InductiveType <> t:46 var
+prf 10075:10090 <> tree_reverse_inj
+binder 10100:10101 <> t1:47
+binder 10103:10104 <> t2:48
+R10142:10147 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10124:10126 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10109:10120 PL.InductiveType <> tree_reverse def
+R10122:10123 PL.InductiveType <> t1:47 var
+R10127:10138 PL.InductiveType <> tree_reverse def
+R10140:10141 PL.InductiveType <> t2:48 var
+R10150:10152 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10148:10149 PL.InductiveType <> t1:47 var
+R10153:10154 PL.InductiveType <> t2:48 var
+prf 11500:11515 <> tree_reverse_inj
+binder 11525:11526 <> t1:49
+binder 11528:11529 <> t2:50
+R11567:11572 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11549:11551 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11534:11545 PL.InductiveType <> tree_reverse def
+R11547:11548 PL.InductiveType <> t1:49 var
+R11552:11563 PL.InductiveType <> tree_reverse def
+R11565:11566 PL.InductiveType <> t2:50 var
+R11575:11577 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11573:11574 PL.InductiveType <> t1:49 var
+R11578:11579 PL.InductiveType <> t2:50 var
+prf 12177:12198 <> tree_reverse_inj_again
+binder 12208:12209 <> t1:51
+binder 12211:12212 <> t2:52
+R12250:12255 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12232:12234 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12217:12228 PL.InductiveType <> tree_reverse def
+R12230:12231 PL.InductiveType <> t1:51 var
+R12235:12246 PL.InductiveType <> tree_reverse def
+R12248:12249 PL.InductiveType <> t2:52 var
+R12258:12260 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12256:12257 PL.InductiveType <> t1:51 var
+R12261:12262 PL.InductiveType <> t2:52 var
+R12296:12313 PL.InductiveType <> reverse_involutive prfax
+R12324:12341 PL.InductiveType <> reverse_involutive prfax
+R12296:12313 PL.InductiveType <> reverse_involutive prfax
+R12296:12313 PL.InductiveType <> reverse_involutive prfax
+R12324:12341 PL.InductiveType <> reverse_involutive prfax
+R12324:12341 PL.InductiveType <> reverse_involutive prfax
