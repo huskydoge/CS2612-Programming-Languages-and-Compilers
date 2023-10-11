@@ -1,0 +1,3362 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Wed Oct 11 19:17:36 2023
+
+# Variables
+
+# makefile (from `Makefile', line 123)
+CAMLDOC = "$(OCAMLFIND)" ocamldoc
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 40)
+COQCORELIB := /Users/husky/.opam/default/lib/coq/../coq-core/
+# makefile (from `Makefile', line 307)
+TIMING_ARG = 
+# environment
+OPAM_SWITCH_PREFIX = /Users/husky/.opam/default
+# environment
+OCAML_TOPLEVEL_PATH = /Users/husky/.opam/default/lib/toplevel
+# makefile (from `Makefile', line 325)
+vo_to_obj = $(addsuffix .o, $(filter-out Warning: Error:, $(shell $(COQTOP) -q -noinit -batch -quiet -print-mod-uid $(1))))
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# makefile (from `Makefile', line 292)
+CAMLDOCFLAGS := -thread -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
+# makefile (from `Makefile', line 36)
+COQLIBS := -Q . PL 
+# environment
+TESSDATA_PREFIX = /Users/husky/opt/anaconda3/share/tessdata/
+# makefile (from `Makefile', line 140)
+TIMING_SORT_BY = auto
+# environment
+COPT_LICENSE_DIR = /Applications/copt30
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 352)
+CMIFILES = $(CMOFILES:.cmo=.cmi) $(MLIFILES:.mli=.cmi)
+# makefile (from `Makefile', line 387)
+NATIVEFILES = $(wildcard $(ALLNATIVEFILES))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 33)
+ 
+COQCORE_SRC_SUBDIRS := boot config lib clib kernel library engine pretyping interp gramlib parsing proofs tactics toplevel printing ide stm vernac plugins/btauto plugins/cc plugins/derive plugins/extraction plugins/firstorder plugins/funind plugins/ltac plugins/ltac2 plugins/micromega plugins/nsatz plugins/ring plugins/rtauto plugins/ssr plugins/ssrmatching plugins/syntax
+# makefile
+CURDIR := /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw6/Code
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 113)
+COQMAKE_BOTH_TIME_FILES = "$(COQCORELIB)/tools/make-both-time-files.py"
+# makefile (from `Makefile', line 106)
+COQDOC = "$(COQBIN)coqdoc"
+# makefile (from `Makefile', line 152)
+TIME_OF_BUILD_AFTER_FILE = time-of-build-after.log
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/e7e037083ff4455cf320e344325dacb480062c3c","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile.conf', line 53)
+COQMF_COQ_NATIVE_COMPILER_DEFAULT = no
+# makefile (from `Makefile', line 341)
+BEAUTYFILES = $(addsuffix .beautified,$(VFILES))
+# makefile (from `Makefile', line 441)
+TIMING_SORT_BY_MEM_ARG := 
+# makefile (from `Makefile.conf', line 25)
+COQMF_METAFILE = 
+# makefile (from `Makefile', line 272)
+COQFLAGS = -q $(OTHERFLAGS) $(COQFILTEREDEXTRAFLAGS) $(COQNATIVEFLAG)
+# makefile (from `Makefile.conf', line 37)
+COQMF_CMDLINE_COQLIBS = 
+# makefile (from `.Makefile.d', line 1)
+MAKEFILE_LIST :=  Makefile Makefile.conf .Makefile.d
+# makefile (from `Makefile', line 273)
+COQCHKFLAGS = -silent -o $(COQCHKEXTRAFLAGS)
+# makefile (from `Makefile', line 349)
+OFILES = $(CMXFILES:.cmx=.o)
+# makefile (from `Makefile.conf', line 54)
+COQMF_WINDRIVE = 
+# makefile (from `Makefile', line 91)
+STDTIME = command time -f $(TIMEFMT)
+# makefile (from `Makefile', line 251)
+COQFILTEREDEXTRAFLAGS := 
+# makefile (from `Makefile', line 29)
+METAFILE := 
+# makefile (from `Makefile', line 351)
+CMXAFILES = $(CMAFILES:.cma=.cmxa)
+# makefile (from `Makefile', line 177)
+FINDLIBDESTDIR = -destdir "$(COQPLUGININSTALL)/"
+# makefile (from `Makefile', line 120)
+CAMLOPTC = "$(OCAMLFIND)" opt      -c
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# makefile (from `Makefile', line 44)
+HASNATDYNLINK := true
+# makefile (from `Makefile', line 153)
+TIME_OF_PRETTY_BUILD_FILE = time-of-build-pretty.log
+# makefile (from `Makefile', line 121)
+CAMLLINK = "$(OCAMLFIND)" ocamlc   -linkall
+# makefile (from `Makefile', line 350)
+CMAFILES = $(MLLIBFILES:.mllib=.cma) $(MLPACKFILES:.mlpack=.cma)
+# makefile (from `Makefile.conf', line 45)
+COQMF_COQLIB = /Users/husky/.opam/default/lib/coq/
+# makefile (from `Makefile', line 77)
+TIMECMD = 
+# makefile (from `Makefile', line 134)
+CAMLPKGS = 
+# makefile (from `Makefile', line 241)
+COQDOCEXTRAFLAGS = 
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile.conf', line 62)
+COQMF_COQPROJECTNATIVEFLAG = 
+# makefile (from `Makefile', line 266)
+COQNATIVEFLAG = "-w" "-deprecated-native-compiler-option" "-native-compiler" "no"
+# makefile (from `Makefile', line 274)
+COQDOCFLAGS = -interpolate -utf8 $(COQDOCEXTRAFLAGS)
+# makefile (from `Makefile', line 382)
+FINDLIBPACKAGE = $(patsubst .%,%,$(suffix $(METAFILE)))
+# environment
+PATH = /Users/husky/.opam/default/bin:/Users/husky/opt/anaconda3/bin:/Users/husky/opt/anaconda3/condabin:/Applications/copt30/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/husky/.cargo/bin:/Users/husky/Library/Application Support/JetBrains/Toolbox/scripts:/usr/bin/python3/scripts:/Users/husky/bin:/Users/husky/Developer/flutter/bin
+# makefile (from `Makefile', line 116)
+AFTER = 
+# makefile (from `Makefile', line 280)
+COQ_VERSION := 8.18+rc1
+# makefile (from `Makefile', line 16)
+PARENT := Makefile
+# makefile (from `Makefile.conf', line 19)
+COQMF_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile.conf', line 52)
+COQMF_COQ_SRC_SUBDIRS = boot config lib clib kernel library engine pretyping interp gramlib parsing proofs tactics toplevel printing ide stm vernac plugins/btauto plugins/cc plugins/derive plugins/extraction plugins/firstorder plugins/funind plugins/ltac plugins/ltac2 plugins/micromega plugins/nsatz plugins/ring plugins/rtauto plugins/ssr plugins/ssrmatching plugins/syntax
+# makefile (from `Makefile', line 599)
+HASFILE := 
+# makefile (from `Makefile', line 31)
+INSTALLCOQDOCROOT := PL
+# makefile (from `Makefile.conf', line 9)
+COQMKFILE = "$(COQBIN)coq_makefile"
+# makefile (from `Makefile', line 244)
+COQUSERNATIVEFLAG := 
+# makefile (from `Makefile', line 114)
+COQMAKE_BOTH_SINGLE_TIMING_FILES = "$(COQCORELIB)/tools/make-both-single-timing-files.py"
+# makefile (from `Makefile', line 328)
+strip_dotslash = $(patsubst ./%,%,$(1))
+# makefile (from `Makefile', line 115)
+BEFORE = 
+# makefile (from `Makefile', line 138)
+TIMING = 
+# makefile (from `Makefile', line 427)
+TIMING_REAL_ARG := 
+# makefile (from `Makefile', line 364)
+PACKEDFILES = $(call strip_dotslash, $(foreach lib, $(call strip_dotslash, $(MLPACKFILES:.mlpack=_MLPACK_DEPENDENCIES)),$(call with_undef,$(lib))))
+# environment
+LaunchInstanceID = 7781C852-37BC-45A1-836C-96259B1963FD
+# makefile (from `Makefile', line 221)
+HIDE := @
+# makefile (from `Makefile', line 109)
+OCAMLLIBDEP = "$(COQBIN)ocamllibdep"
+# makefile (from `Makefile.conf', line 50)
+COQMF_WARN = -warn-error +a-3
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 157)
+TGTS = 
+# makefile (from `Makefile', line 233)
+USEBYTE := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 112)
+COQMAKE_ONE_TIME_FILE = "$(COQCORELIB)/tools/make-one-time-file.py"
+# makefile (from `Makefile', line 13)
+INITIAL_VARS := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
+# makefile (from `Makefile', line 332)
+with_undef = $(if $(filter-out undefined, $(origin $(1))),$($(1)))
+# makefile (from `Makefile', line 428)
+TIMING_USER_ARG := 
+# makefile (from `Makefile', line 23)
+VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile.conf', line 24)
+COQMF_MLLIBFILES := 
+ 
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3GNFlFVQQY/Listeners
+# makefile (from `Makefile.conf', line 34)
+COQMF_SRC_SUBDIRS = 
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /Users/husky/opt/anaconda3/bin/conda
+# makefile (from `Makefile', line 107)
+COQPP = "$(COQBIN)coqpp"
+# makefile (from `Makefile', line 144)
+TIMING_REAL = 
+# makefile (from `Makefile.conf', line 23)
+COQMF_MLPACKFILES := 
+# makefile (from `Makefile', line 28)
+MLLIBFILES := 
+# makefile (from `Makefile', line 225)
+OPT = 
+# makefile (from `Makefile', line 15)
+SELF := Makefile
+# makefile (from `Makefile', line 38)
+CMDLINE_COQLIBS := 
+# makefile (from `Makefile', line 27)
+MLPACKFILES := 
+# environment
+PWD = /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw6/Code
+# makefile (from `Makefile', line 338)
+GLOBFILES = $(VFILES:.v=.glob)
+# makefile (from `Makefile', line 403)
+ALLDFILES = $(addsuffix .d,$(ALLSRCFILES)) $(VDFILE)
+# makefile (from `Makefile', line 148)
+TIMING_SORT_BY_MEM = 
+# makefile (from `Makefile', line 357)
+CMXSFILES = $(MLPACKFILES:.mlpack=.cmxs) $(CMXAFILES:.cmxa=.cmxs) $(if $(MLPACKFILES)$(CMXAFILES),, $(MLGFILES:.mlg=.cmxs) $(MLFILES:.ml=.cmxs))
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 281)
+COQMAKEFILE_VERSION := 8.18+rc1
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 151)
+TIME_OF_BUILD_BEFORE_FILE = time-of-build-before.log
+# makefile (from `Makefile', line 142)
+TIMING_FUZZ = 0
+# makefile (from `Makefile', line 435)
+TIMING_INCLUDE_MEM_ARG := 
+# makefile (from `Makefile', line 234)
+DYNOBJ := .cmxs
+# environment
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
+# makefile (from `Makefile', line 130)
+CAMLDEBUG = 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/husky
+# makefile (from `Makefile', line 103)
+COQCHK = "$(COQBIN)coqchk"
+# makefile (from `Makefile', line 343)
+GTEXFILES = $(VFILES:.v=.g.tex)
+# makefile (from `Makefile.conf', line 47)
+COQMF_DOCDIR = /Users/husky/.opam/default/share/doc/
+# makefile (from `Makefile', line 398)
+FINDLIBFILESTOINSTALL = $(CMIFILESTOINSTALL) $(CMXSFILES) $(CMXAFILES) $(CMOFILESTOINSTALL:.cmo=.cmx)
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+# makefile (from `Makefile.conf', line 49)
+COQMF_CAMLFLAGS = -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
+# environment
+LOGNAME = husky
+# makefile (from `Makefile', line 39)
+COQLIB := /Users/husky/.opam/default/lib/coq/
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# makefile (from `Makefile', line 67)
+KEEP_ERROR = 
+# makefile (from `Makefile', line 173)
+COQTOPINSTALL = $(call destination_path,$(COQLIB)/toploop) 
+# makefile (from `Makefile.conf', line 20)
+COQMF_MLIFILES := 
+# makefile (from `Makefile', line 122)
+CAMLOPTLINK = "$(OCAMLFIND)" opt      -linkall
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 601)
+MKFILESTOINSTALL = $(if $(HASFILE),$(file >.filestoinstall,$(FILESTOINSTALL)), $(shell rm -f .filestoinstall) $(foreach x,$(FILESTOINSTALL),$(shell printf '%s\n' "$x" >> .filestoinstall)))
+# makefile (from `Makefile.conf', line 4)
+COQBIN = 
+# makefile (from `Makefile', line 76)
+TIMED = 
+# environment
+COPT_HOME = /Applications/copt30
+# makefile (from `Makefile', line 397)
+DO_NATDYNLINK = yes
+# makefile (from `Makefile', line 73)
+VERBOSE = 
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := pre-all
+# makefile (from `Makefile', line 287)
+COQ_SRC_SUBDIRS = 
+# makefile (from `Makefile', line 131)
+COQDEBUG = 
+# environment
+SHLVL = 2
+# makefile (from `Makefile', line 102)
+COQTOP = "$(COQBIN)coqtop"
+# makefile (from `Makefile.conf', line 36)
+COQMF_COQLIBS_NOML = -Q . PL 
+# makefile (from `Makefile', line 135)
+FINDLIBPKGS = -package coq-core.plugins.ltac $(CAMLPKGS)
+# makefile (from `Makefile', line 37)
+COQLIBS_NOML := -Q . PL 
+# makefile (from `Makefile', line 170)
+COQLIBINSTALL = $(call destination_path,$(COQLIB)/user-contrib)
+# makefile (from `Makefile', line 124)
+CAMLDEP = "$(OCAMLFIND)" ocamldep -slash -ml-synonym .mlpack
+# makefile (from `Makefile.conf', line 33)
+COQMF_OCAMLLIBS = 
+# environment
+JAVA_HOME = /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = husky
+# environment
+CAML_LD_LIBRARY_PATH = /Users/husky/.opam/default/lib/stublibs:/Users/husky/.opam/default/lib/ocaml/stublibs:/Users/husky/.opam/default/lib/ocaml
+# makefile (from `Makefile', line 980)
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 181)
+findlib_install = $(HIDE)if [ "$(METAFILE)" ]; then $(FINDLIBPREINST) && mv "$(METAFILE)" "$(METAFILE).skip" ; "$(OCAMLFIND)" install $(2) $(FINDLIBDESTDIR) $(FINDLIBPACKAGE) $(1); rc=$$?; mv "$(METAFILE).skip" "$(METAFILE)"; exit $$rc; fi
+# makefile (from `Makefile', line 340)
+GHTMLFILES = $(VFILES:.v=.g.html)
+# environment
+HOMEBREW_BOTTLE_DOMAIN = https://mirrors.aliyun.com/homebrew/homebrew-bottles
+# makefile (from `Makefile', line 34)
+OCAMLLIBS := 
+# makefile (from `Makefile', line 288)
+COQSRCLIBS = $(foreach d,$(COQ_SRC_SUBDIRS), -I "$(COQLIB)/$(d)")
+# makefile (from `Makefile', line 171)
+COQDOCINSTALL = $(call destination_path,$(DOCDIR)/coq/user-contrib)
+# makefile (from `Makefile', line 127)
+DESTDIR = 
+# makefile (from `Makefile', line 104)
+COQNATIVE = "$(COQBIN)coqnative"
+# makefile (from `Makefile', line 79)
+TIMEFMT = "$(if $(findstring undefined, $(flavor 1)),$@,$(1)) (real: %e, user: %U, sys: %S, mem: %M ko)"
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile.conf', line 17)
+COQMF_CMDLINE_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 315)
+VDFILE := .Makefile.d
+# environment
+CONDA_SHLVL = 1
+# makefile (from `Makefile', line 146)
+TIMING_INCLUDE_MEM = 
+# makefile (from `Makefile', line 35)
+SRC_SUBDIRS := 
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 167)
+destination_path = $(if $(DESTDIR),$(DESTDIR)/$(call windrive_path,$(1)),$(1))
+# makefile (from `Makefile', line 348)
+CMXFILES = $(CMOFILES:.cmo=.cmx)
+# default
+.VARIABLES := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
+# environment
+TMPDIR = /var/folders/gv/jp8cgv_s7sdcy5__5j0p3l7r0000gn/T/
+# makefile (from `Makefile', line 41)
+DOCDIR := /Users/husky/.opam/default/share/doc/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 335)
+VOS = vos
+# environment
+ 
+VSCODE_IPC_HOOK = /Users/husky/Library/Application Support/Code/1.83-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 220)
+SHOW := @echo ""
+# makefile (from `Makefile.conf', line 21)
+COQMF_MLFILES := 
+# makefile
+MAKEFLAGS =  --no-print-directory -Rrqp
+# makefile (from `Makefile.conf', line 46)
+COQMF_COQCORELIB = /Users/husky/.opam/default/lib/coq/../coq-core/
+# makefile (from `Makefile', line 887)
+redir_if_ok = > "$@" || ( RV=$$?; rm -f "$@"; exit $$RV )
+# makefile (from `Makefile', line 344)
+CMOFILES = $(MLGFILES:.mlg=.cmo) $(MLFILES:.ml=.cmo) $(MLPACKFILES:.mlpack=.cmo)
+# environment
+MFLAGS = - --no-print-directory -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `Makefile', line 378)
+ALLNATIVEFILES = $(OBJFILES:.o=.cmi) $(OBJFILES:.o=.cmx) $(OBJFILES:.o=.cmxs)
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.164460890.164460896
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 317)
+ALLSRCFILES := $(subst ,,    )
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///Users/husky/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.83.2023101109/translations/extensions/vscode.json-language-features.i18n.json
+# makefile (from `Makefile', line 24)
+MLIFILES := 
+# makefile (from `Makefile.conf', line 35)
+COQMF_COQLIBS = -Q . PL 
+# makefile (from `Makefile.conf', line 71)
+COQMF_INSTALLCOQDOCROOT = PL
+# makefile (from `Makefile', line 45)
+OCAMLWARN := -warn-error +a-3
+# makefile (from `Makefile.conf', line 48)
+COQMF_OCAMLFIND = /Users/husky/.opam/default/bin/ocamlfind
+# makefile (from `Makefile.conf', line 70)
+COQMF_OTHERFLAGS = 
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 235)
+DYNLIB := .cmxs
+# makefile (from `Makefile', line 370)
+LIBEDFILES = $(call strip_dotslash, $(foreach lib, $(call strip_dotslash, $(MLLIBFILES:.mllib=_MLLIB_DEPENDENCIES)),$(call with_undef,$(lib))))
+# makefile (from `Makefile', line 239)
+COQEXTRAFLAGS = 
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# makefile (from `Makefile', line 42)
+OCAMLFIND := /Users/husky/.opam/default/bin/ocamlfind
+# makefile (from `Makefile', line 190)
+findlib_remove = $(HIDE)if [ ! -z "$(METAFILE)" ]; then "$(OCAMLFIND)" remove $(FINDLIBDESTDIR) $(FINDLIBPACKAGE); fi
+# makefile (from `Makefile', line 32)
+OTHERFLAGS := 
+# makefile (from `Makefile', line 293)
+CAMLFLAGS := -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70   -warn-error +a-3
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x19:0x34
+# makefile (from `Makefile', line 376)
+CMOFILESTOINSTALL = $(filter-out $(addsuffix .cmo,$(PACKEDFILES)),$(CMOFILES))
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 154)
+TIME_OF_PRETTY_BOTH_BUILD_FILE = time-of-build-both.log
+# makefile (from `Makefile', line 119)
+CAMLC = "$(OCAMLFIND)" ocamlc   -c
+# makefile (from `Makefile', line 915)
+VDFILE_FLAGS := -f _CoqProject  Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 105)
+COQDEP = "$(COQBIN)coqdep"
+# makefile (from `Makefile', line 166)
+windrive_path = $(if $(COQMF_WINDRIVE),$(subst $(COQMF_WINDRIVE),/,$(1)),$(1))
+# makefile (from `Makefile', line 342)
+TEXFILES = $(VFILES:.v=.tex)
+# makefile (from `Makefile', line 155)
+TIME_OF_PRETTY_BUILD_EXTRA_FILES = - 
+# makefile (from `Makefile', line 150)
+TIME_OF_BUILD_FILE = time-of-build.log
+# makefile (from `Makefile', line 101)
+COQC = "$(COQBIN)coqc"
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 388)
+FILESTOINSTALL = $(VOFILES) $(VFILES) $(GLOBFILES) $(NATIVEFILES) $(CMXSFILES)		
+# makefile (from `Makefile', line 377)
+OBJFILES = $(call vo_to_obj,$(VOFILES))
+# makefile (from `Makefile', line 256)
+COQACTUALNATIVEFLAG := no
+# makefile (from `Makefile.conf', line 18)
+COQMF_SOURCES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 339)
+HTMLFILES = $(VFILES:.v=.html)
+# environment
+CONDA_PYTHON_EXE = /Users/husky/opt/anaconda3/bin/python
+# makefile (from `Makefile', line 172)
+COQPLUGININSTALL = $(call destination_path,$(COQCORELIB)/..)
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 337)
+VOFILES = $(VFILES:.v=.$(VO))
+# makefile (from `Makefile.conf', line 22)
+COQMF_MLGFILES := 
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 334)
+VO = vo
+# makefile (from `Makefile', line 267)
+COQDONATIVE = "no"
+# makefile (from `Makefile', line 276)
+COQDOCLIBS = $(COQLIBS_NOML)
+# makefile (from `Makefile', line 375)
+CMIFILESTOINSTALL = $(filter-out $(addsuffix .cmi,$(PACKEDFILES)),$(CMIFILES))
+# makefile (from `Makefile.conf', line 51)
+COQMF_HASNATDYNLINK = true
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 176)
+FINDLIBPREINST = mkdir -p "$(COQPLUGININSTALL)/"
+# makefile (from `Makefile', line 26)
+MLGFILES := 
+# environment
+MAKELEVEL := 1
+# makefile (from `Makefile', line 30)
+CMDLINE_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 223)
+TIMER = $(if $(TIMED), $(STDTIME), $(TIMECMD))
+# makefile (from `Makefile', line 889)
+GENMLFILES := 
+# makefile (from `Makefile', line 240)
+COQCHKEXTRAFLAGS = 
+# environment
+CONDA_PREFIX = /Users/husky/opt/anaconda3
+# makefile (from `Makefile', line 25)
+MLFILES := 
+# environment
+VSCODE_PID = 40579
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=255/1024=25%, Rehash=0, Collisions=122/567=22%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+SyntaxInCoq.html: SyntaxInCoq.v SyntaxInCoq.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+print-pretty-timed-diff::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 453):
+	$(HIDE)$(COQMAKE_BOTH_TIME_FILES) --sort-by=$(TIMING_SORT_BY) $(TIMING_INCLUDE_MEM_ARG) $(TIMING_SORT_BY_MEM_ARG) $(TIMING_REAL_ARG) $(TIME_OF_BUILD_AFTER_FILE) $(TIME_OF_BUILD_BEFORE_FILE) $(TIME_OF_PRETTY_BOTH_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_EXTRA_FILES)
+	
+
+Assignment1008a.required_vos: Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all.ps: Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 562):
+	$(SHOW)'COQDOC -ps $(GAL)'
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -ps $(GAL) $(COQDOCLIBS) \
+	-o $@ `$(COQDEP) -sort $(VFILES)`
+	
+
+Assignment1008a.g.tex: Assignment1008a.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+SyntaxInCoq.glob: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+# Not a target:
+Assignment1008a.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bytefiles:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+ 
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 408):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" pre-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" real-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" post-all
+	
+
+vio: Assignment1008a.vio Assignment1008b.vio SyntaxInCoq.vio
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+only:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: all all.timing.diff pretty-timed make-pretty-timed make-pretty-timed-before make-pretty-timed-after print-pretty-timed print-pretty-timed-diff print-pretty-single-time-diff pre-all post-all real-all real-all.timing.diff bytefiles optfiles vio quick vio2vo quick2vo checkproofs vos vok validate only beautify install install-extra install-doc uninstall uninstall-doc clean cleanall archclean byte opt printenv merlin merlin-hook debug
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.required_vos: Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_CoqProject:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 10:54:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all.pdf: Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 568):
+	$(SHOW)'COQDOC -pdf $(GAL)'
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -pdf $(GAL) $(COQDOCLIBS) \
+	-o $@ `$(COQDEP) -sort $(VFILES)`
+	
+
+Assignment1008a.required_vo: Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+merlin-hook::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 969):
+	@# Extension point
+	
+
+Assignment1008b.g.tex: Assignment1008b.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+SyntaxInCoq.vio: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+pretty-timed:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 469):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(PARENT)" make-pretty-timed
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-timed
+	
+
+checkproofs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 525):
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) \
+	-schedule-vio-checking $(J) $(VOFILES:%.vo=%.vio)
+	
+
+install-extra::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 627):
+	@# Extension point
+	
+
+Assignment1008a.v.timing.diff: Assignment1008a.v.before-timing Assignment1008a.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+pre-all::
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := pre-all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=5/15=33%
+#  commands to execute (from `Makefile', line 475):
+	@# Extension point
+	$(HIDE)if [ "$(COQMAKEFILE_VERSION)" != "$(COQ_VERSION)" ]; then\
+	echo "W: This Makefile was generated by Coq $(COQMAKEFILE_VERSION)";\
+	echo "W: while the current Coq version is $(COQ_VERSION)";\
+	fi
+	
+
+Assignment1008b.vo: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.required_vos: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+SyntaxInCoq.g.tex: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+# Not a target:
+SyntaxInCoq.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.required_vo: Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uninstall-doc::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 675):
+	@# Extension point
+	$(SHOW)'RM $(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html'
+	$(HIDE)rm -rf "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html"
+	$(SHOW)'RM $(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml'
+	$(HIDE)rm -rf "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml"
+	$(HIDE) rmdir "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/" || true
+	
+
+uninstall::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+ 
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 656):
+	@# Extension point
+	@$(MKFILESTOINSTALL)
+	$(call findlib_remove)
+	$(HIDE)for f in $$(cat .filestoinstall); do \
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`" &&\
+	instf="$(COQLIBINSTALL)/$$df/`basename $$f`" &&\
+	rm -f "$$instf" &&\
+	echo RM "$$instf" ;\
+	done
+	$(HIDE)for f in $$(cat .filestoinstall); do \
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`" &&\
+	echo RMDIR "$(COQLIBINSTALL)/$$df/" &&\
+	(rmdir "$(COQLIBINSTALL)/$$df/" 2>/dev/null || true); \
+	done
+	@rm -f .filestoinstall
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Assignment1008a.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.v.timing.diff: Assignment1008b.v.before-timing Assignment1008b.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+Assignment1008a.tex: Assignment1008a.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+validate: Assignment1008a.vo Assignment1008b.vo SyntaxInCoq.vo
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 536):
+	$(TIMER) $(COQCHK) $(COQCHKFLAGS) $(COQLIBS_NOML) $^
+	
+
+debug:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 974):
+	$(foreach v,\
+	$(sort $(filter-out $(INITIAL_VARS) INITIAL_VARS,\
+	$(.VARIABLES))),\
+	$(info $(v) = $($(v))))
+	
+
+make-pretty-timed-before::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 444)
+# TIME_OF_BUILD_FILE = $(TIME_OF_BUILD_BEFORE_FILE)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+SyntaxInCoq.required_vo: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile.local:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+SyntaxInCoq.v.timing.diff: SyntaxInCoq.v.before-timing SyntaxInCoq.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+merlin:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+print-pretty-timed::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 451):
+	$(HIDE)$(COQMAKE_ONE_TIME_FILE) $(TIMING_INCLUDE_MEM_ARG) $(TIMING_SORT_BY_MEM_ARG) $(TIMING_REAL_ARG) $(TIME_OF_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_EXTRA_FILES)
+	
+
+Assignment1008a.v.beautified: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+optfiles:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+Assignment1008b.v.beautified: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+# Not a target:
+Assignment1008b.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gallinahtml: html
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 574)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+Assignment1008b.tex: Assignment1008b.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+print-pretty-single-time-diff::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 456):
+	@echo 'Error: Usage: $(MAKE) print-pretty-single-time-diff AFTER=path/to/file.v.after-timing BEFORE=path/to/file.v.before-timing'
+	$(HIDE)false
+	
+
+Assignment1008a.vos: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.v.beautified: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+ 
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+# Not a target:
+SyntaxInCoq.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+SyntaxInCoq.tex: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+# Not a target:
+Assignment1008b.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+quick2vo:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 513):
+	$(HIDE)make -j $(J) vio
+	$(HIDE)VIOFILES=$$(for vofile in $(VOFILES); do \
+	viofile="$$(echo "$$vofile" | sed "s/\.vo$$/.vio/")"; \
+	if [ "$$vofile" -ot "$$viofile" -o ! -e "$$vofile" ]; then printf "$$viofile "; fi; \
+	done); \
+	echo "VIO2VO: $$VIOFILES"; \
+	if [ -n "$$VIOFILES" ]; then \
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -schedule-vio2vo $(J) $$VIOFILES; \
+	fi
+	
+
+archclean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 732):
+	@# Extension point
+	$(SHOW)'CLEAN *.cmx *.o'
+	$(HIDE)rm -f $(NATIVEFILES)
+	$(HIDE)rm -f $(CMOFILES:%.cmo=%.cmx)
+	
+
+Makefile.conf: _CoqProject
+#  Implicit rule search has not been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 48):
+	coq_makefile -f _CoqProject Assignment1008a.v Assignment1008b.v SyntaxInCoq.v -o Makefile
+	
+
+Assignment1008a.vio: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vio
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+install-doc:: html mlihtml
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 639):
+	@# Extension point
+	$(HIDE)install -d "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html"
+	$(HIDE)for i in html/*; do \
+	dest="$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/$$i";\
+	install -m 0644 "$$i" "$$dest";\
+	echo INSTALL "$$i" "$$dest";\
+	done
+	$(HIDE)install -d \
+	"$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml"
+	$(HIDE)for i in mlihtml/*; do \
+	dest="$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/$$i";\
+	install -m 0644 "$$i" "$$dest";\
+	echo INSTALL "$$i" "$$dest";\
+	done
+	
+
+Assignment1008b.vos: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+make-pretty-timed-after::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 445)
+# TIME_OF_BUILD_FILE = $(TIME_OF_BUILD_AFTER_FILE)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+Assignment1008a.vok: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008a.g.html: Assignment1008a.v Assignment1008a.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+Assignment1008a.vo: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+real-all.timing.diff: Assignment1008a.v.timing.diff Assignment1008b.v.timing.diff SyntaxInCoq.v.timing.diff
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Assignment1008a.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 22:03:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+byte:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 924):
+	$(HIDE)$(MAKE) all "OPT:=-byte" -f "$(SELF)"
+	
+
+SyntaxInCoq.vos: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+vio2vo:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 507):
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) \
+	-schedule-vio2vo $(J) $(VOFILES:%.vo=%.vio)
+	
+
+install-byte:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 636):
+	$(call findlib_install, $(CMAFILES) $(CMOFILESTOINSTALL), -add)
+	
+
+ 
+Assignment1008b.vok: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008b.g.html: Assignment1008b.v Assignment1008b.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 689):
+	@# Extension point
+	$(SHOW)'CLEAN'
+	$(HIDE)rm -f $(CMOFILES)
+	$(HIDE)rm -f $(CMIFILES)
+	$(HIDE)rm -f $(CMAFILES)
+	$(HIDE)rm -f $(CMXFILES)
+	$(HIDE)rm -f $(CMXAFILES)
+	$(HIDE)rm -f $(CMXSFILES)
+	$(HIDE)rm -f $(OFILES)
+	$(HIDE)rm -f $(CMXAFILES:.cmxa=.a)
+	$(HIDE)rm -f $(MLGFILES:.mlg=.ml)
+	$(HIDE)rm -f $(CMXFILES:.cmx=.cmt)
+	$(HIDE)rm -f $(MLIFILES:.mli=.cmti)
+	$(HIDE)rm -f $(ALLDFILES)
+	$(HIDE)rm -f $(NATIVEFILES)
+	$(HIDE)find . -name .coq-native -type d -empty -delete
+	$(HIDE)rm -f $(VOFILES)
+	$(HIDE)rm -f $(VOFILES:.vo=.vio)
+	$(HIDE)rm -f $(VOFILES:.vo=.vos)
+	$(HIDE)rm -f $(VOFILES:.vo=.vok)
+	$(HIDE)rm -f $(BEAUTYFILES) $(VFILES:=.old)
+	$(HIDE)rm -f all.ps all-gal.ps all.pdf all-gal.pdf all.glob all-mli.tex
+	$(HIDE)rm -f $(VFILES:.v=.glob)
+	$(HIDE)rm -f $(VFILES:.v=.tex)
+	$(HIDE)rm -f $(VFILES:.v=.g.tex)
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)rm -f META
+	$(HIDE)rm -rf html mlihtml
+	
+
+# Not a target:
+Assignment1008b.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 22:03:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile.local-late:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all-mli.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 557):
+	$(SHOW)'CAMLDOC -latex $@'
+	$(HIDE)$(CAMLDOC) -latex \
+	-o $@ -m A $(CAMLDEBUG) $(CAMLDOCFLAGS) $(MLIFILES) $(FINDLIBPKGS)
+	
+
+META:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 631):
+	$(HIDE)if [ "$(METAFILE)" ]; then \
+	cat "$(METAFILE)" | grep -v 'directory.*=.*' > META; \
+	fi
+	
+
+all.timing.diff:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 414):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" pre-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" real-all.timing.diff TIME_OF_PRETTY_BUILD_EXTRA_FILES=""
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" post-all
+	
+
+html: Assignment1008a.glob Assignment1008b.glob SyntaxInCoq.glob Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 545):
+	$(SHOW)'COQDOC -d html $(GAL)'
+	$(HIDE)mkdir -p html
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -html $(GAL) $(COQDOCLIBS) -d html $(VFILES)
+	
+
+SyntaxInCoq.vok: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.g.html: SyntaxInCoq.v SyntaxInCoq.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+SyntaxInCoq.vo: SyntaxInCoq.v SyntaxInCoq.v | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+# Not a target:
+SyntaxInCoq.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 10:47:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+printenv::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 934):
+	$(warning printenv is deprecated)
+	$(warning write extensions in Makefile.local or include Makefile.conf)
+	@echo 'COQLIB = $(COQLIB)'
+	@echo 'COQCORELIB = $(COQCORELIB)'
+	@echo 'DOCDIR = $(DOCDIR)'
+	@echo 'OCAMLFIND = $(OCAMLFIND)'
+	@echo 'HASNATDYNLINK = $(HASNATDYNLINK)'
+	@echo 'SRC_SUBDIRS = $(SRC_SUBDIRS)'
+	@echo 'COQ_SRC_SUBDIRS = $(COQ_SRC_SUBDIRS)'
+	@echo 'COQCORE_SRC_SUBDIRS = $(COQCORE_SRC_SUBDIRS)'
+	@echo 'OCAMLFIND = $(OCAMLFIND)'
+	@echo 'PP = $(PP)'
+	@echo 'COQFLAGS = $(COQFLAGS)'
+	@echo 'COQLIB = $(COQLIBS)'
+	@echo 'COQLIBINSTALL = $(COQLIBINSTALL)'
+	@echo 'COQDOCINSTALL = $(COQDOCINSTALL)'
+	
+
+make-pretty-timed::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+beautify: Assignment1008a.v.beautified Assignment1008b.v.beautified SyntaxInCoq.v.beautified
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 585):
+	for file in $^; do mv $${file%.beautified} $${file%beautified}old && mv $${file} $${file%.beautified}; done
+	@echo 'Do not do "make clean" until you are sure that everything went well!'
+	@echo 'If there were a problem, execute "for file in $$(find . -name \*.v.old -print); do mv $${file} $${file%.old}; done" in your shell/'
+	
+
+Assignment1008a.html: Assignment1008a.v Assignment1008a.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+vok: Assignment1008a.vok Assignment1008b.vok SyntaxInCoq.vok
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.SECONDARY: .Makefile.d
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+post-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 483):
+	@# Extension point
+	
+
+all-gal.ps: all.ps
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 577)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+Assignment1008a.glob: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+.DELETE_ON_ERROR:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanall:: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 720):
+	@# Extension point
+	$(SHOW)'CLEAN *.aux *.timing'
+	$(HIDE)rm -f $(foreach f,$(VFILES:.v=),$(dir $(f)).$(notdir $(f)).aux)
+	$(HIDE)rm -f $(TIME_OF_BUILD_FILE) $(TIME_OF_BUILD_BEFORE_FILE) $(TIME_OF_BUILD_AFTER_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BOTH_BUILD_FILE)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.before-timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.after-timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.timing.diff)
+	$(HIDE)rm -f .lia.cache .nia.cache
+	
+
+.merlin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 955):
+	$(SHOW)'FILL .merlin'
+	$(HIDE)echo 'FLG $(COQMF_CAMLFLAGS)' > .merlin
+	$(HIDE)echo 'B $(COQCORELIB)' >> .merlin
+	$(HIDE)echo 'S $(COQCORELIB)' >> .merlin
+	$(HIDE)$(foreach d,$(COQCORE_SRC_SUBDIRS), \
+	echo 'B $(COQCORELIB)$(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(COQ_SRC_SUBDIRS), \
+	echo 'S $(COQLIB)$(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(SRC_SUBDIRS), echo 'B $(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(SRC_SUBDIRS), echo 'S $(d)' >> .merlin;)
+	$(HIDE)$(MAKE) merlin-hook -f "$(SELF)"
+	
+
+Assignment1008b.vio: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vio
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008b.html: Assignment1008b.v Assignment1008b.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+real-all: Assignment1008a.vo Assignment1008b.vo SyntaxInCoq.vo optfiles
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+quick: vio
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 503):
+	$(warning "'make quick' is deprecated, use 'make vio' or consider using 'vos' files")
+	
+
+all-gal.pdf: all.pdf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 580)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+opt:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 928):
+	$(HIDE)$(MAKE) all "OPT:=-opt" -f "$(SELF)"
+	
+
+Assignment1008b.glob: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+vos: Assignment1008a.vos Assignment1008b.vos SyntaxInCoq.vos
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mlihtml:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 551):
+	$(SHOW)'CAMLDOC -d $@'
+	$(HIDE)mkdir $@ || rm -rf $@/*
+	$(HIDE)$(CAMLDOC) -html \
+	-d $@ -m A $(CAMLDEBUG) $(CAMLDOCFLAGS) $(MLIFILES) $(FINDLIBPKGS)
+	
+
+install: META
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 608):
+	@$(MKFILESTOINSTALL)
+	$(HIDE)code=0; for f in $$(cat .filestoinstall); do\
+	if ! [ -f "$$f" ]; then >&2 echo $$f does not exist; code=1; fi \
+	done; exit $$code
+	$(HIDE)for f in $$(cat .filestoinstall); do\
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`";\
+	if [ "$$?" != "0" -o -z "$$df" ]; then\
+	echo SKIP "$$f" since it has no logical path;\
+	else\
+	install -d "$(COQLIBINSTALL)/$$df" &&\
+	install -m 0644 "$$f" "$(COQLIBINSTALL)/$$df" &&\
+	echo INSTALL "$$f" "$(COQLIBINSTALL)/$$df";\
+	fi;\
+	done
+	$(call findlib_remove)
+	$(call findlib_install, META $(FINDLIBFILESTOINSTALL))
+	$(HIDE)$(MAKE) install-extra -f "$(SELF)"
+	@rm -f .filestoinstall
+	
+
+.Makefile.d: _CoqProject Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has not been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 918):
+	$(SHOW)'COQDEP VFILES'
+	$(HIDE)$(COQDEP) $(if $(strip $(METAFILE)),-m "$(METAFILE)") -vos -dyndep var $(VDFILE_FLAGS) $(redir_if_ok)
+	
+
+# files hash-table stats:
+# Load=109/1024=11%, Rehash=0, Collisions=35/377=9%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 5
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4026 / max = 4026 / min = 4026 / avg = 4026
+
+# Finished Make data base on Wed Oct 11 19:17:36 2023
+
+ 
+make: *** [all] Error 1
+
+
+# Make data base, printed on Wed Oct 11 19:17:36 2023
+
+# Variables
+
+# makefile (from `Makefile', line 123)
+CAMLDOC = "$(OCAMLFIND)" ocamldoc
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 40)
+COQCORELIB := /Users/husky/.opam/default/lib/coq/../coq-core/
+# makefile (from `Makefile', line 307)
+TIMING_ARG = 
+# environment
+OPAM_SWITCH_PREFIX = /Users/husky/.opam/default
+# environment
+OCAML_TOPLEVEL_PATH = /Users/husky/.opam/default/lib/toplevel
+# makefile (from `Makefile', line 325)
+vo_to_obj = $(addsuffix .o, $(filter-out Warning: Error:, $(shell $(COQTOP) -q -noinit -batch -quiet -print-mod-uid $(1))))
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# makefile (from `Makefile', line 292)
+CAMLDOCFLAGS := -thread -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
+# makefile (from `Makefile', line 36)
+COQLIBS := -Q . PL 
+# environment
+TESSDATA_PREFIX = /Users/husky/opt/anaconda3/share/tessdata/
+# makefile (from `Makefile', line 140)
+ 
+TIMING_SORT_BY = auto
+# environment
+COPT_LICENSE_DIR = /Applications/copt30
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 352)
+CMIFILES = $(CMOFILES:.cmo=.cmi) $(MLIFILES:.mli=.cmi)
+# makefile (from `Makefile', line 387)
+NATIVEFILES = $(wildcard $(ALLNATIVEFILES))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 33)
+COQCORE_SRC_SUBDIRS := boot config lib clib kernel library engine pretyping interp gramlib parsing proofs tactics toplevel printing ide stm vernac plugins/btauto plugins/cc plugins/derive plugins/extraction plugins/firstorder plugins/funind plugins/ltac plugins/ltac2 plugins/micromega plugins/nsatz plugins/ring plugins/rtauto plugins/ssr plugins/ssrmatching plugins/syntax
+# makefile
+CURDIR := /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw6/Code
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 113)
+COQMAKE_BOTH_TIME_FILES = "$(COQCORELIB)/tools/make-both-time-files.py"
+# makefile (from `Makefile', line 106)
+COQDOC = "$(COQBIN)coqdoc"
+# makefile (from `Makefile', line 152)
+TIME_OF_BUILD_AFTER_FILE = time-of-build-after.log
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/e7e037083ff4455cf320e344325dacb480062c3c","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile.conf', line 53)
+COQMF_COQ_NATIVE_COMPILER_DEFAULT = no
+# makefile (from `Makefile', line 341)
+BEAUTYFILES = $(addsuffix .beautified,$(VFILES))
+# makefile (from `Makefile', line 441)
+TIMING_SORT_BY_MEM_ARG := 
+# makefile (from `Makefile.conf', line 25)
+COQMF_METAFILE = 
+# makefile (from `Makefile', line 272)
+COQFLAGS = -q $(OTHERFLAGS) $(COQFILTEREDEXTRAFLAGS) $(COQNATIVEFLAG)
+# makefile (from `Makefile.conf', line 37)
+COQMF_CMDLINE_COQLIBS = 
+# makefile (from `.Makefile.d', line 1)
+MAKEFILE_LIST :=  Makefile Makefile.conf .Makefile.d
+# makefile (from `Makefile', line 273)
+COQCHKFLAGS = -silent -o $(COQCHKEXTRAFLAGS)
+# makefile (from `Makefile', line 349)
+OFILES = $(CMXFILES:.cmx=.o)
+# makefile (from `Makefile.conf', line 54)
+COQMF_WINDRIVE = 
+# makefile (from `Makefile', line 91)
+STDTIME = command time -f $(TIMEFMT)
+# makefile (from `Makefile', line 251)
+COQFILTEREDEXTRAFLAGS := 
+# makefile (from `Makefile', line 29)
+METAFILE := 
+# makefile (from `Makefile', line 351)
+CMXAFILES = $(CMAFILES:.cma=.cmxa)
+# makefile (from `Makefile', line 177)
+FINDLIBDESTDIR = -destdir "$(COQPLUGININSTALL)/"
+# makefile (from `Makefile', line 120)
+CAMLOPTC = "$(OCAMLFIND)" opt      -c
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# makefile (from `Makefile', line 44)
+HASNATDYNLINK := true
+# makefile (from `Makefile', line 153)
+TIME_OF_PRETTY_BUILD_FILE = time-of-build-pretty.log
+# makefile (from `Makefile', line 121)
+CAMLLINK = "$(OCAMLFIND)" ocamlc   -linkall
+# makefile (from `Makefile', line 350)
+CMAFILES = $(MLLIBFILES:.mllib=.cma) $(MLPACKFILES:.mlpack=.cma)
+# makefile (from `Makefile.conf', line 45)
+COQMF_COQLIB = /Users/husky/.opam/default/lib/coq/
+# makefile (from `Makefile', line 77)
+TIMECMD = 
+# makefile (from `Makefile', line 134)
+CAMLPKGS = 
+# makefile (from `Makefile', line 241)
+COQDOCEXTRAFLAGS = 
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile.conf', line 62)
+COQMF_COQPROJECTNATIVEFLAG = 
+# makefile (from `Makefile', line 266)
+COQNATIVEFLAG = "-w" "-deprecated-native-compiler-option" "-native-compiler" "no"
+# makefile (from `Makefile', line 274)
+COQDOCFLAGS = -interpolate -utf8 $(COQDOCEXTRAFLAGS)
+# makefile (from `Makefile', line 382)
+FINDLIBPACKAGE = $(patsubst .%,%,$(suffix $(METAFILE)))
+# environment
+PATH = /Users/husky/.opam/default/bin:/Users/husky/opt/anaconda3/bin:/Users/husky/opt/anaconda3/condabin:/Applications/copt30/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/husky/.cargo/bin:/Users/husky/Library/Application Support/JetBrains/Toolbox/scripts:/usr/bin/python3/scripts:/Users/husky/bin:/Users/husky/Developer/flutter/bin
+# makefile (from `Makefile', line 116)
+AFTER = 
+# makefile (from `Makefile', line 280)
+COQ_VERSION := 8.18+rc1
+# makefile (from `Makefile', line 16)
+PARENT := Makefile
+# makefile (from `Makefile.conf', line 19)
+COQMF_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile.conf', line 52)
+COQMF_COQ_SRC_SUBDIRS = boot config lib clib kernel library engine pretyping interp gramlib parsing proofs tactics toplevel printing ide stm vernac plugins/btauto plugins/cc plugins/derive plugins/extraction plugins/firstorder plugins/funind plugins/ltac plugins/ltac2 plugins/micromega plugins/nsatz plugins/ring plugins/rtauto plugins/ssr plugins/ssrmatching plugins/syntax
+# makefile (from `Makefile', line 599)
+HASFILE := 
+# makefile (from `Makefile', line 31)
+INSTALLCOQDOCROOT := PL
+# makefile (from `Makefile.conf', line 9)
+COQMKFILE = "$(COQBIN)coq_makefile"
+# makefile (from `Makefile', line 244)
+COQUSERNATIVEFLAG := 
+# makefile (from `Makefile', line 114)
+COQMAKE_BOTH_SINGLE_TIMING_FILES = "$(COQCORELIB)/tools/make-both-single-timing-files.py"
+# makefile (from `Makefile', line 328)
+strip_dotslash = $(patsubst ./%,%,$(1))
+# makefile (from `Makefile', line 115)
+BEFORE = 
+# makefile (from `Makefile', line 138)
+TIMING = 
+# makefile (from `Makefile', line 427)
+TIMING_REAL_ARG := 
+# makefile (from `Makefile', line 364)
+PACKEDFILES = $(call strip_dotslash, $(foreach lib, $(call strip_dotslash, $(MLPACKFILES:.mlpack=_MLPACK_DEPENDENCIES)),$(call with_undef,$(lib))))
+# environment
+LaunchInstanceID = 7781C852-37BC-45A1-836C-96259B1963FD
+# makefile (from `Makefile', line 221)
+HIDE := @
+# makefile (from `Makefile', line 109)
+OCAMLLIBDEP = "$(COQBIN)ocamllibdep"
+# makefile (from `Makefile.conf', line 50)
+COQMF_WARN = -warn-error +a-3
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 157)
+TGTS = 
+# makefile (from `Makefile', line 233)
+USEBYTE := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 112)
+COQMAKE_ONE_TIME_FILE = "$(COQCORELIB)/tools/make-one-time-file.py"
+# makefile (from `Makefile', line 13)
+ 
+INITIAL_VARS := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
+# makefile (from `Makefile', line 332)
+with_undef = $(if $(filter-out undefined, $(origin $(1))),$($(1)))
+# makefile (from `Makefile', line 428)
+TIMING_USER_ARG := 
+# makefile (from `Makefile', line 23)
+VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile.conf', line 24)
+COQMF_MLLIBFILES := 
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3GNFlFVQQY/Listeners
+# makefile (from `Makefile.conf', line 34)
+COQMF_SRC_SUBDIRS = 
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /Users/husky/opt/anaconda3/bin/conda
+# makefile (from `Makefile', line 107)
+COQPP = "$(COQBIN)coqpp"
+# makefile (from `Makefile', line 144)
+TIMING_REAL = 
+# makefile (from `Makefile.conf', line 23)
+COQMF_MLPACKFILES := 
+# makefile (from `Makefile', line 28)
+MLLIBFILES := 
+# makefile (from `Makefile', line 225)
+OPT = 
+# makefile (from `Makefile', line 15)
+SELF := Makefile
+# makefile (from `Makefile', line 38)
+CMDLINE_COQLIBS := 
+# makefile (from `Makefile', line 27)
+MLPACKFILES := 
+# environment
+PWD = /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw6/Code
+# makefile (from `Makefile', line 338)
+GLOBFILES = $(VFILES:.v=.glob)
+# makefile (from `Makefile', line 403)
+ALLDFILES = $(addsuffix .d,$(ALLSRCFILES)) $(VDFILE)
+# makefile (from `Makefile', line 148)
+TIMING_SORT_BY_MEM = 
+# makefile (from `Makefile', line 357)
+CMXSFILES = $(MLPACKFILES:.mlpack=.cmxs) $(CMXAFILES:.cmxa=.cmxs) $(if $(MLPACKFILES)$(CMXAFILES),, $(MLGFILES:.mlg=.cmxs) $(MLFILES:.ml=.cmxs))
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 281)
+COQMAKEFILE_VERSION := 8.18+rc1
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 151)
+TIME_OF_BUILD_BEFORE_FILE = time-of-build-before.log
+# makefile (from `Makefile', line 142)
+TIMING_FUZZ = 0
+# makefile (from `Makefile', line 435)
+TIMING_INCLUDE_MEM_ARG := 
+# makefile (from `Makefile', line 234)
+DYNOBJ := .cmxs
+# environment
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
+# makefile (from `Makefile', line 130)
+CAMLDEBUG = 
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/husky
+# makefile (from `Makefile', line 103)
+COQCHK = "$(COQBIN)coqchk"
+# makefile (from `Makefile', line 343)
+GTEXFILES = $(VFILES:.v=.g.tex)
+# makefile (from `Makefile.conf', line 47)
+COQMF_DOCDIR = /Users/husky/.opam/default/share/doc/
+# makefile (from `Makefile', line 398)
+FINDLIBFILESTOINSTALL = $(CMIFILESTOINSTALL) $(CMXSFILES) $(CMXAFILES) $(CMOFILESTOINSTALL:.cmo=.cmx)
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+# makefile (from `Makefile.conf', line 49)
+COQMF_CAMLFLAGS = -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
+# environment
+LOGNAME = husky
+# makefile (from `Makefile', line 39)
+COQLIB := /Users/husky/.opam/default/lib/coq/
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# makefile (from `Makefile', line 67)
+KEEP_ERROR = 
+# makefile (from `Makefile', line 173)
+COQTOPINSTALL = $(call destination_path,$(COQLIB)/toploop) 
+# makefile (from `Makefile.conf', line 20)
+COQMF_MLIFILES := 
+# makefile (from `Makefile', line 122)
+CAMLOPTLINK = "$(OCAMLFIND)" opt      -linkall
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 601)
+MKFILESTOINSTALL = $(if $(HASFILE),$(file >.filestoinstall,$(FILESTOINSTALL)), $(shell rm -f .filestoinstall) $(foreach x,$(FILESTOINSTALL),$(shell printf '%s\n' "$x" >> .filestoinstall)))
+# makefile (from `Makefile.conf', line 4)
+COQBIN = 
+# makefile (from `Makefile', line 76)
+TIMED = 
+# environment
+COPT_HOME = /Applications/copt30
+# makefile (from `Makefile', line 397)
+DO_NATDYNLINK = yes
+# makefile (from `Makefile', line 73)
+VERBOSE = 
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 287)
+COQ_SRC_SUBDIRS = 
+# makefile (from `Makefile', line 131)
+COQDEBUG = 
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 102)
+COQTOP = "$(COQBIN)coqtop"
+# makefile (from `Makefile.conf', line 36)
+COQMF_COQLIBS_NOML = -Q . PL 
+# makefile (from `Makefile', line 135)
+FINDLIBPKGS = -package coq-core.plugins.ltac $(CAMLPKGS)
+# makefile (from `Makefile', line 37)
+COQLIBS_NOML := -Q . PL 
+# makefile (from `Makefile', line 170)
+COQLIBINSTALL = $(call destination_path,$(COQLIB)/user-contrib)
+# makefile (from `Makefile', line 124)
+CAMLDEP = "$(OCAMLFIND)" ocamldep -slash -ml-synonym .mlpack
+# makefile (from `Makefile.conf', line 33)
+COQMF_OCAMLLIBS = 
+# environment
+JAVA_HOME = /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = husky
+# environment
+CAML_LD_LIBRARY_PATH = /Users/husky/.opam/default/lib/stublibs:/Users/husky/.opam/default/lib/ocaml/stublibs:/Users/husky/.opam/default/lib/ocaml
+# makefile (from `Makefile', line 980)
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 181)
+findlib_install = $(HIDE)if [ "$(METAFILE)" ]; then $(FINDLIBPREINST) && mv "$(METAFILE)" "$(METAFILE).skip" ; "$(OCAMLFIND)" install $(2) $(FINDLIBDESTDIR) $(FINDLIBPACKAGE) $(1); rc=$$?; mv "$(METAFILE).skip" "$(METAFILE)"; exit $$rc; fi
+# makefile (from `Makefile', line 340)
+GHTMLFILES = $(VFILES:.v=.g.html)
+# environment
+HOMEBREW_BOTTLE_DOMAIN = https://mirrors.aliyun.com/homebrew/homebrew-bottles
+# makefile (from `Makefile', line 34)
+OCAMLLIBS := 
+# makefile (from `Makefile', line 288)
+COQSRCLIBS = $(foreach d,$(COQ_SRC_SUBDIRS), -I "$(COQLIB)/$(d)")
+# makefile (from `Makefile', line 171)
+COQDOCINSTALL = $(call destination_path,$(DOCDIR)/coq/user-contrib)
+# makefile (from `Makefile', line 127)
+DESTDIR = 
+# makefile (from `Makefile', line 104)
+COQNATIVE = "$(COQBIN)coqnative"
+# makefile (from `Makefile', line 79)
+TIMEFMT = "$(if $(findstring undefined, $(flavor 1)),$@,$(1)) (real: %e, user: %U, sys: %S, mem: %M ko)"
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile.conf', line 17)
+COQMF_CMDLINE_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 315)
+VDFILE := .Makefile.d
+# environment
+CONDA_SHLVL = 1
+# makefile (from `Makefile', line 146)
+TIMING_INCLUDE_MEM = 
+# makefile (from `Makefile', line 35)
+SRC_SUBDIRS := 
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 167)
+destination_path = $(if $(DESTDIR),$(DESTDIR)/$(call windrive_path,$(1)),$(1))
+ 
+# makefile (from `Makefile', line 348)
+CMXFILES = $(CMOFILES:.cmo=.cmx)
+# default
+.VARIABLES := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
+# environment
+TMPDIR = /var/folders/gv/jp8cgv_s7sdcy5__5j0p3l7r0000gn/T/
+# makefile (from `Makefile', line 41)
+DOCDIR := /Users/husky/.opam/default/share/doc/
+# automatic
+*F = $(notdir $*)
+# makefile (from `Makefile', line 335)
+VOS = vos
+# environment
+VSCODE_IPC_HOOK = /Users/husky/Library/Application Support/Code/1.83-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `Makefile', line 220)
+SHOW := @echo ""
+# makefile (from `Makefile.conf', line 21)
+COQMF_MLFILES := 
+# makefile
+MAKEFLAGS = Rrqp
+# makefile (from `Makefile.conf', line 46)
+COQMF_COQCORELIB = /Users/husky/.opam/default/lib/coq/../coq-core/
+# makefile (from `Makefile', line 887)
+redir_if_ok = > "$@" || ( RV=$$?; rm -f "$@"; exit $$RV )
+# makefile (from `Makefile', line 344)
+CMOFILES = $(MLGFILES:.mlg=.cmo) $(MLFILES:.ml=.cmo) $(MLPACKFILES:.mlpack=.cmo)
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `Makefile', line 378)
+ALLNATIVEFILES = $(OBJFILES:.o=.cmi) $(OBJFILES:.o=.cmx) $(OBJFILES:.o=.cmxs)
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.164460890.164460896
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 317)
+ALLSRCFILES := $(subst ,,    )
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///Users/husky/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.83.2023101109/translations/extensions/vscode.json-language-features.i18n.json
+# makefile (from `Makefile', line 24)
+MLIFILES := 
+# makefile (from `Makefile.conf', line 35)
+COQMF_COQLIBS = -Q . PL 
+# makefile (from `Makefile.conf', line 71)
+COQMF_INSTALLCOQDOCROOT = PL
+# makefile (from `Makefile', line 45)
+OCAMLWARN := -warn-error +a-3
+# makefile (from `Makefile.conf', line 48)
+COQMF_OCAMLFIND = /Users/husky/.opam/default/bin/ocamlfind
+# makefile (from `Makefile.conf', line 70)
+COQMF_OTHERFLAGS = 
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 235)
+DYNLIB := .cmxs
+# makefile (from `Makefile', line 370)
+LIBEDFILES = $(call strip_dotslash, $(foreach lib, $(call strip_dotslash, $(MLLIBFILES:.mllib=_MLLIB_DEPENDENCIES)),$(call with_undef,$(lib))))
+# makefile (from `Makefile', line 239)
+COQEXTRAFLAGS = 
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# makefile (from `Makefile', line 42)
+OCAMLFIND := /Users/husky/.opam/default/bin/ocamlfind
+# makefile (from `Makefile', line 190)
+findlib_remove = $(HIDE)if [ ! -z "$(METAFILE)" ]; then "$(OCAMLFIND)" remove $(FINDLIBDESTDIR) $(FINDLIBPACKAGE); fi
+# makefile (from `Makefile', line 32)
+OTHERFLAGS := 
+# makefile (from `Makefile', line 293)
+CAMLFLAGS := -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70   -warn-error +a-3
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x19:0x34
+# makefile (from `Makefile', line 376)
+CMOFILESTOINSTALL = $(filter-out $(addsuffix .cmo,$(PACKEDFILES)),$(CMOFILES))
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 154)
+TIME_OF_PRETTY_BOTH_BUILD_FILE = time-of-build-both.log
+# makefile (from `Makefile', line 119)
+CAMLC = "$(OCAMLFIND)" ocamlc   -c
+# makefile (from `Makefile', line 915)
+VDFILE_FLAGS := -f _CoqProject  Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 105)
+COQDEP = "$(COQBIN)coqdep"
+# makefile (from `Makefile', line 166)
+windrive_path = $(if $(COQMF_WINDRIVE),$(subst $(COQMF_WINDRIVE),/,$(1)),$(1))
+# makefile (from `Makefile', line 342)
+TEXFILES = $(VFILES:.v=.tex)
+# makefile (from `Makefile', line 155)
+TIME_OF_PRETTY_BUILD_EXTRA_FILES = - 
+# makefile (from `Makefile', line 150)
+TIME_OF_BUILD_FILE = time-of-build.log
+# makefile (from `Makefile', line 101)
+COQC = "$(COQBIN)coqc"
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 388)
+FILESTOINSTALL = $(VOFILES) $(VFILES) $(GLOBFILES) $(NATIVEFILES) $(CMXSFILES)		
+# makefile (from `Makefile', line 377)
+OBJFILES = $(call vo_to_obj,$(VOFILES))
+# makefile (from `Makefile', line 256)
+COQACTUALNATIVEFLAG := no
+# makefile (from `Makefile.conf', line 18)
+COQMF_SOURCES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 339)
+HTMLFILES = $(VFILES:.v=.html)
+# environment
+CONDA_PYTHON_EXE = /Users/husky/opt/anaconda3/bin/python
+# makefile (from `Makefile', line 172)
+COQPLUGININSTALL = $(call destination_path,$(COQCORELIB)/..)
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 337)
+VOFILES = $(VFILES:.v=.$(VO))
+# makefile (from `Makefile.conf', line 22)
+COQMF_MLGFILES := 
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 334)
+VO = vo
+# makefile (from `Makefile', line 267)
+COQDONATIVE = "no"
+# makefile (from `Makefile', line 276)
+COQDOCLIBS = $(COQLIBS_NOML)
+# makefile (from `Makefile', line 375)
+CMIFILESTOINSTALL = $(filter-out $(addsuffix .cmi,$(PACKEDFILES)),$(CMIFILES))
+# makefile (from `Makefile.conf', line 51)
+COQMF_HASNATDYNLINK = true
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 176)
+FINDLIBPREINST = mkdir -p "$(COQPLUGININSTALL)/"
+# makefile (from `Makefile', line 26)
+MLGFILES := 
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 30)
+CMDLINE_VFILES := Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+# makefile (from `Makefile', line 223)
+TIMER = $(if $(TIMED), $(STDTIME), $(TIMECMD))
+# makefile (from `Makefile', line 889)
+GENMLFILES := 
+# makefile (from `Makefile', line 240)
+COQCHKEXTRAFLAGS = 
+# environment
+CONDA_PREFIX = /Users/husky/opt/anaconda3
+# makefile (from `Makefile', line 25)
+MLFILES := 
+# environment
+VSCODE_PID = 40579
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=255/1024=25%, Rehash=0, Collisions=122/571=21%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 165130147): 26 files, no impossibilities.
+
+# 26 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+SyntaxInCoq.html: SyntaxInCoq.v SyntaxInCoq.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+print-pretty-timed-diff::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 453):
+	$(HIDE)$(COQMAKE_BOTH_TIME_FILES) --sort-by=$(TIMING_SORT_BY) $(TIMING_INCLUDE_MEM_ARG) $(TIMING_SORT_BY_MEM_ARG) $(TIMING_REAL_ARG) $(TIME_OF_BUILD_AFTER_FILE) $(TIME_OF_BUILD_BEFORE_FILE) $(TIME_OF_PRETTY_BOTH_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_EXTRA_FILES)
+	
+
+Assignment1008a.required_vos: Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all.ps: Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 562):
+	$(SHOW)'COQDOC -ps $(GAL)'
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -ps $(GAL) $(COQDOCLIBS) \
+	-o $@ `$(COQDEP) -sort $(VFILES)`
+	
+
+Assignment1008a.g.tex: Assignment1008a.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+SyntaxInCoq.glob: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+# Not a target:
+Assignment1008a.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bytefiles:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=4/22=18%
+#  commands to execute (from `Makefile', line 408):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" pre-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" real-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" post-all
+	
+
+vio: Assignment1008a.vio Assignment1008b.vio SyntaxInCoq.vio
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+only:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: all all.timing.diff pretty-timed make-pretty-timed make-pretty-timed-before make-pretty-timed-after print-pretty-timed print-pretty-timed-diff print-pretty-single-time-diff pre-all post-all real-all real-all.timing.diff bytefiles optfiles vio quick vio2vo quick2vo checkproofs vos vok validate only beautify install install-extra install-doc uninstall uninstall-doc clean cleanall archclean byte opt printenv merlin merlin-hook debug
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.required_vos: Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+_CoqProject:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 10:54:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all.pdf: Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 568):
+	$(SHOW)'COQDOC -pdf $(GAL)'
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -pdf $(GAL) $(COQDOCLIBS) \
+	-o $@ `$(COQDEP) -sort $(VFILES)`
+	
+
+Assignment1008a.required_vo: Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+merlin-hook::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 969):
+	@# Extension point
+	
+
+Assignment1008b.g.tex: Assignment1008b.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+SyntaxInCoq.vio: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+pretty-timed:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 469):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(PARENT)" make-pretty-timed
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-timed
+	
+
+checkproofs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 525):
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) \
+	-schedule-vio-checking $(J) $(VOFILES:%.vo=%.vio)
+	
+
+install-extra::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 627):
+	@# Extension point
+	
+
+Assignment1008a.v.timing.diff: Assignment1008a.v.before-timing Assignment1008a.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+pre-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 475):
+	@# Extension point
+	$(HIDE)if [ "$(COQMAKEFILE_VERSION)" != "$(COQ_VERSION)" ]; then\
+	echo "W: This Makefile was generated by Coq $(COQMAKEFILE_VERSION)";\
+	echo "W: while the current Coq version is $(COQ_VERSION)";\
+	fi
+	
+
+Assignment1008b.vo: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.required_vos: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+SyntaxInCoq.g.tex: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 864):
+	$(SHOW)'COQDOC -latex -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
+	
+
+# Not a target:
+SyntaxInCoq.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.required_vo: Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uninstall-doc::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 675):
+	@# Extension point
+	$(SHOW)'RM $(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html'
+	$(HIDE)rm -rf "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html"
+	$(SHOW)'RM $(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml'
+	$(HIDE)rm -rf "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml"
+	$(HIDE) rmdir "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/" || true
+	
+
+uninstall::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 656):
+	@# Extension point
+	@$(MKFILESTOINSTALL)
+	$(call findlib_remove)
+	$(HIDE)for f in $$(cat .filestoinstall); do \
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`" &&\
+	instf="$(COQLIBINSTALL)/$$df/`basename $$f`" &&\
+	rm -f "$$instf" &&\
+	echo RM "$$instf" ;\
+	done
+	$(HIDE)for f in $$(cat .filestoinstall); do \
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`" &&\
+	echo RMDIR "$(COQLIBINSTALL)/$$df/" &&\
+	(rmdir "$(COQLIBINSTALL)/$$df/" 2>/dev/null || true); \
+	done
+	@rm -f .filestoinstall
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Assignment1008a.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Assignment1008b.v.timing.diff: Assignment1008b.v.before-timing Assignment1008b.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+Assignment1008a.tex: Assignment1008a.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+validate: Assignment1008a.vo Assignment1008b.vo SyntaxInCoq.vo
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 536):
+	$(TIMER) $(COQCHK) $(COQCHKFLAGS) $(COQLIBS_NOML) $^
+	
+
+debug:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 974):
+	$(foreach v,\
+	$(sort $(filter-out $(INITIAL_VARS) INITIAL_VARS,\
+	$(.VARIABLES))),\
+	$(info $(v) = $($(v))))
+	
+
+make-pretty-timed-before::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 444)
+# TIME_OF_BUILD_FILE = $(TIME_OF_BUILD_BEFORE_FILE)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+SyntaxInCoq.required_vo: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile.local:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+SyntaxInCoq.v.timing.diff: SyntaxInCoq.v.before-timing SyntaxInCoq.v.after-timing
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq.v'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 852):
+	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
+	
+
+merlin:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+print-pretty-timed::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 451):
+	$(HIDE)$(COQMAKE_ONE_TIME_FILE) $(TIMING_INCLUDE_MEM_ARG) $(TIMING_SORT_BY_MEM_ARG) $(TIMING_REAL_ARG) $(TIME_OF_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_EXTRA_FILES)
+	
+
+Assignment1008a.v.beautified: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+optfiles:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+ 
+
+Assignment1008b.v.beautified: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+# Not a target:
+Assignment1008b.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gallinahtml: html
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 574)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+Assignment1008b.tex: Assignment1008b.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+print-pretty-single-time-diff::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 456):
+	@echo 'Error: Usage: $(MAKE) print-pretty-single-time-diff AFTER=path/to/file.v.after-timing BEFORE=path/to/file.v.before-timing'
+	$(HIDE)false
+	
+
+Assignment1008a.vos: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.v.beautified: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 856):
+	$(SHOW)'BEAUTIFY $<'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+	
+
+# Not a target:
+SyntaxInCoq.v.after-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+SyntaxInCoq.tex: SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 860):
+	$(SHOW)'COQDOC -latex $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex $< -o $@
+	
+
+# Not a target:
+Assignment1008b.v.before-timing:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+quick2vo:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 513):
+	$(HIDE)make -j $(J) vio
+	$(HIDE)VIOFILES=$$(for vofile in $(VOFILES); do \
+	viofile="$$(echo "$$vofile" | sed "s/\.vo$$/.vio/")"; \
+	if [ "$$vofile" -ot "$$viofile" -o ! -e "$$vofile" ]; then printf "$$viofile "; fi; \
+	done); \
+	echo "VIO2VO: $$VIOFILES"; \
+	if [ -n "$$VIOFILES" ]; then \
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -schedule-vio2vo $(J) $$VIOFILES; \
+	fi
+	
+
+archclean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 732):
+	@# Extension point
+	$(SHOW)'CLEAN *.cmx *.o'
+	$(HIDE)rm -f $(NATIVEFILES)
+	$(HIDE)rm -f $(CMOFILES:%.cmo=%.cmx)
+	
+
+Makefile.conf: _CoqProject
+#  Implicit rule search has not been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 48):
+	coq_makefile -f _CoqProject Assignment1008a.v Assignment1008b.v SyntaxInCoq.v -o Makefile
+	
+
+Assignment1008a.vio: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vio
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+install-doc:: html mlihtml
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 639):
+	@# Extension point
+	$(HIDE)install -d "$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/html"
+	$(HIDE)for i in html/*; do \
+	dest="$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/$$i";\
+	install -m 0644 "$$i" "$$dest";\
+	echo INSTALL "$$i" "$$dest";\
+	done
+	$(HIDE)install -d \
+	"$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/mlihtml"
+	$(HIDE)for i in mlihtml/*; do \
+	dest="$(COQDOCINSTALL)/$(INSTALLCOQDOCROOT)/$$i";\
+	install -m 0644 "$$i" "$$dest";\
+	echo INSTALL "$$i" "$$dest";\
+	done
+	
+
+Assignment1008b.vos: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+make-pretty-timed-after::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# makefile (from `Makefile', line 445)
+# TIME_OF_BUILD_FILE = $(TIME_OF_BUILD_AFTER_FILE)
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+Assignment1008a.vok: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008a.g.html: Assignment1008a.v Assignment1008a.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+ 
+Assignment1008a.vo: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+real-all.timing.diff: Assignment1008a.v.timing.diff Assignment1008b.v.timing.diff SyntaxInCoq.v.timing.diff
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Assignment1008a.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 22:03:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+byte:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 924):
+	$(HIDE)$(MAKE) all "OPT:=-byte" -f "$(SELF)"
+	
+
+SyntaxInCoq.vos: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 844):
+	$(SHOW)COQC -vos $<
+	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+vio2vo:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 507):
+	$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) \
+	-schedule-vio2vo $(J) $(VOFILES:%.vo=%.vio)
+	
+
+install-byte:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 636):
+	$(call findlib_install, $(CMAFILES) $(CMOFILESTOINSTALL), -add)
+	
+
+Assignment1008b.vok: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vos
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008b.g.html: Assignment1008b.v Assignment1008b.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 689):
+	@# Extension point
+	$(SHOW)'CLEAN'
+	$(HIDE)rm -f $(CMOFILES)
+	$(HIDE)rm -f $(CMIFILES)
+	$(HIDE)rm -f $(CMAFILES)
+	$(HIDE)rm -f $(CMXFILES)
+	$(HIDE)rm -f $(CMXAFILES)
+	$(HIDE)rm -f $(CMXSFILES)
+	$(HIDE)rm -f $(OFILES)
+	$(HIDE)rm -f $(CMXAFILES:.cmxa=.a)
+	$(HIDE)rm -f $(MLGFILES:.mlg=.ml)
+	$(HIDE)rm -f $(CMXFILES:.cmx=.cmt)
+	$(HIDE)rm -f $(MLIFILES:.mli=.cmti)
+	$(HIDE)rm -f $(ALLDFILES)
+	$(HIDE)rm -f $(NATIVEFILES)
+	$(HIDE)find . -name .coq-native -type d -empty -delete
+	$(HIDE)rm -f $(VOFILES)
+	$(HIDE)rm -f $(VOFILES:.vo=.vio)
+	$(HIDE)rm -f $(VOFILES:.vo=.vos)
+	$(HIDE)rm -f $(VOFILES:.vo=.vok)
+	$(HIDE)rm -f $(BEAUTYFILES) $(VFILES:=.old)
+	$(HIDE)rm -f all.ps all-gal.ps all.pdf all-gal.pdf all.glob all-mli.tex
+	$(HIDE)rm -f $(VFILES:.v=.glob)
+	$(HIDE)rm -f $(VFILES:.v=.tex)
+	$(HIDE)rm -f $(VFILES:.v=.g.tex)
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)rm -f META
+	$(HIDE)rm -rf html mlihtml
+	
+
+# Not a target:
+Assignment1008b.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 22:03:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile.local-late:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all-mli.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 557):
+	$(SHOW)'CAMLDOC -latex $@'
+	$(HIDE)$(CAMLDOC) -latex \
+	-o $@ -m A $(CAMLDEBUG) $(CAMLDOCFLAGS) $(MLIFILES) $(FINDLIBPKGS)
+	
+
+META:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 631):
+	$(HIDE)if [ "$(METAFILE)" ]; then \
+	cat "$(METAFILE)" | grep -v 'directory.*=.*' > META; \
+	fi
+	
+
+all.timing.diff:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 414):
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" pre-all
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" real-all.timing.diff TIME_OF_PRETTY_BUILD_EXTRA_FILES=""
+	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" post-all
+	
+
+html: Assignment1008a.glob Assignment1008b.glob SyntaxInCoq.glob Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 545):
+	$(SHOW)'COQDOC -d html $(GAL)'
+	$(HIDE)mkdir -p html
+	$(HIDE)$(COQDOC) \
+	-toc $(COQDOCFLAGS) -html $(GAL) $(COQDOCLIBS) -d html $(VFILES)
+	
+
+SyntaxInCoq.vok: SyntaxInCoq.v SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 848):
+	$(SHOW)COQC -vok $<
+	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+SyntaxInCoq.g.html: SyntaxInCoq.v SyntaxInCoq.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 872):
+	$(SHOW)'COQDOC -html -g $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
+	
+
+SyntaxInCoq.vo: SyntaxInCoq.v SyntaxInCoq.v | .Makefile.d
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `SyntaxInCoq'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 823):
+	$(SHOW)COQC $<
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(TIMING_ARG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+# Not a target:
+SyntaxInCoq.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-10-09 10:47:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+printenv::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 934):
+	$(warning printenv is deprecated)
+	$(warning write extensions in Makefile.local or include Makefile.conf)
+	@echo 'COQLIB = $(COQLIB)'
+	@echo 'COQCORELIB = $(COQCORELIB)'
+	@echo 'DOCDIR = $(DOCDIR)'
+	@echo 'OCAMLFIND = $(OCAMLFIND)'
+	@echo 'HASNATDYNLINK = $(HASNATDYNLINK)'
+	@echo 'SRC_SUBDIRS = $(SRC_SUBDIRS)'
+	@echo 'COQ_SRC_SUBDIRS = $(COQ_SRC_SUBDIRS)'
+	@echo 'COQCORE_SRC_SUBDIRS = $(COQCORE_SRC_SUBDIRS)'
+	@echo 'OCAMLFIND = $(OCAMLFIND)'
+	@echo 'PP = $(PP)'
+	@echo 'COQFLAGS = $(COQFLAGS)'
+	@echo 'COQLIB = $(COQLIBS)'
+	@echo 'COQLIBINSTALL = $(COQLIBINSTALL)'
+	@echo 'COQDOCINSTALL = $(COQDOCINSTALL)'
+	
+
+make-pretty-timed::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 447):
+	$(HIDE)rm -f pretty-timed-success.ok
+	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
+	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
+	
+
+beautify: Assignment1008a.v.beautified Assignment1008b.v.beautified SyntaxInCoq.v.beautified
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 585):
+	for file in $^; do mv $${file%.beautified} $${file%beautified}old && mv $${file} $${file%.beautified}; done
+	@echo 'Do not do "make clean" until you are sure that everything went well!'
+	@echo 'If there were a problem, execute "for file in $$(find . -name \*.v.old -print); do mv $${file} $${file%.old}; done" in your shell/'
+	
+
+Assignment1008a.html: Assignment1008a.v Assignment1008a.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+vok: Assignment1008a.vok Assignment1008b.vok SyntaxInCoq.vok
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.SECONDARY: .Makefile.d
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+post-all::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 483):
+	@# Extension point
+	
+
+all-gal.ps: all.ps
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 577)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+Assignment1008a.glob: Assignment1008a.v Assignment1008a.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008a'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+.DELETE_ON_ERROR:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanall:: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 720):
+	@# Extension point
+	$(SHOW)'CLEAN *.aux *.timing'
+	$(HIDE)rm -f $(foreach f,$(VFILES:.v=),$(dir $(f)).$(notdir $(f)).aux)
+	$(HIDE)rm -f $(TIME_OF_BUILD_FILE) $(TIME_OF_BUILD_BEFORE_FILE) $(TIME_OF_BUILD_AFTER_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BOTH_BUILD_FILE)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.before-timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.after-timing)
+	$(HIDE)rm -f $(VOFILES:.vo=.v.timing.diff)
+	$(HIDE)rm -f .lia.cache .nia.cache
+	
+
+.merlin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 955):
+	$(SHOW)'FILL .merlin'
+	$(HIDE)echo 'FLG $(COQMF_CAMLFLAGS)' > .merlin
+	$(HIDE)echo 'B $(COQCORELIB)' >> .merlin
+	$(HIDE)echo 'S $(COQCORELIB)' >> .merlin
+	$(HIDE)$(foreach d,$(COQCORE_SRC_SUBDIRS), \
+	echo 'B $(COQCORELIB)$(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(COQ_SRC_SUBDIRS), \
+	echo 'S $(COQLIB)$(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(SRC_SUBDIRS), echo 'B $(d)' >> .merlin;)
+	$(HIDE)$(foreach d,$(SRC_SUBDIRS), echo 'S $(d)' >> .merlin;)
+	$(HIDE)$(MAKE) merlin-hook -f "$(SELF)"
+	
+
+Assignment1008b.vio: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vio
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 840):
+	$(SHOW)COQC -vio $<
+	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+Assignment1008b.html: Assignment1008b.v Assignment1008b.glob
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 868):
+	$(SHOW)'COQDOC -html $<'
+	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -html $< -o $@
+	
+
+real-all: Assignment1008a.vo Assignment1008b.vo SyntaxInCoq.vo optfiles
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+quick: vio
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 503):
+	$(warning "'make quick' is deprecated, use 'make vio' or consider using 'vos' files")
+	
+
+all-gal.pdf: all.pdf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 580)
+# GAL = -g
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+opt:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 928):
+	$(HIDE)$(MAKE) all "OPT:=-opt" -f "$(SELF)"
+	
+
+Assignment1008b.glob: Assignment1008b.v Assignment1008b.v SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `Assignment1008b'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 832):
+	$(SHOW)'COQC $< (for .glob)'
+ 
+	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+	
+
+vos: Assignment1008a.vos Assignment1008b.vos SyntaxInCoq.vos
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mlihtml:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 551):
+	$(SHOW)'CAMLDOC -d $@'
+	$(HIDE)mkdir $@ || rm -rf $@/*
+	$(HIDE)$(CAMLDOC) -html \
+	-d $@ -m A $(CAMLDEBUG) $(CAMLDOCFLAGS) $(MLIFILES) $(FINDLIBPKGS)
+	
+
+install: META
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 608):
+	@$(MKFILESTOINSTALL)
+	$(HIDE)code=0; for f in $$(cat .filestoinstall); do\
+	if ! [ -f "$$f" ]; then >&2 echo $$f does not exist; code=1; fi \
+	done; exit $$code
+	$(HIDE)for f in $$(cat .filestoinstall); do\
+	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`";\
+	if [ "$$?" != "0" -o -z "$$df" ]; then\
+	echo SKIP "$$f" since it has no logical path;\
+	else\
+	install -d "$(COQLIBINSTALL)/$$df" &&\
+	install -m 0644 "$$f" "$(COQLIBINSTALL)/$$df" &&\
+	echo INSTALL "$$f" "$(COQLIBINSTALL)/$$df";\
+	fi;\
+	done
+	$(call findlib_remove)
+	$(call findlib_install, META $(FINDLIBFILESTOINSTALL))
+	$(HIDE)$(MAKE) install-extra -f "$(SELF)"
+	@rm -f .filestoinstall
+	
+
+.Makefile.d: _CoqProject Assignment1008a.v Assignment1008b.v SyntaxInCoq.v
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has not been done.
+#  Last modified 2023-10-11 19:17:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 918):
+	$(SHOW)'COQDEP VFILES'
+	$(HIDE)$(COQDEP) $(if $(strip $(METAFILE)),-m "$(METAFILE)") -vos -dyndep var $(VDFILE_FLAGS) $(redir_if_ok)
+	
+
+# files hash-table stats:
+# Load=109/1024=11%, Rehash=0, Collisions=35/378=9%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 5
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4026 / max = 4026 / min = 4026 / avg = 4026
+
+# Finished Make data base on Wed Oct 11 19:17:36 2023
+
+ 

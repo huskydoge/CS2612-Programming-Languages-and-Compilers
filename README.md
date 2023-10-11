@@ -19,4 +19,7 @@ SJTU |   CS 2612, Programming Languages and Compilers, Fall 2023
 * https://regexr.com/
 
 ## Common Problem
+
+* Project Complie: `coq_makefile -f _CoqProject *.v -o Makefile`
+
 * Incorrect display of Chinese characters (Displayed in Unicode), you could transfer it to normal Chinese Character by some common tools like: http://www.msxindl.com/tools/unicode16.asp
