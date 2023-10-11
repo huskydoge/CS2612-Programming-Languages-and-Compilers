@@ -1,0 +1,18 @@
+{
+    "sourceFile": "cs2612-aut2023/Assignment1010.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1697028791918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1697028791918,
+            "name": "Commit-0",
+            "content": "Require Import Coq.ZArith.ZArith.\nRequire Import Coq.Classes.Morphisms.\nRequire Import SetsClass.SetsClass.\nRequire Import PL.SyntaxInCoq.\nRequire Import PL.DenotationalSemantics.\nImport Lang_SimpleWhile\n       DntSem_SimpleWhile2\n       DntSem_SimpleWhile3\n       DntSem_SimpleWhile4.\nLocal Open Scope Z.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 下面我们定义一项简单的程序变换：右结合变换。例如，将_[(c1;c2);c3]_变换为\n    _[c1;(c2;c3)]_。  \n\n    首先，这里定义一个辅助函数，该函数假设_[c]_与_[c0]_已经是右结合的，计算\n    _[c; c0]_转换后的结果*)\n\nFixpoint CSeq_right_assoc (c c0: com): com :=\n  match c with\n  | CSeq c1 c2 => CSeq c1 (CSeq_right_assoc c2 c0)\n  | _ => CSeq c c0\n  end.\n\n(** 现在，可以在_[CSeq_right_assoc]_的基础上定义右结合变换_[right_assoc]_。*)\n\nFixpoint right_assoc (c: com): com :=\n  match c with\n  | CSeq c1 c2 =>\n      CSeq_right_assoc (right_assoc c1) (right_assoc c2)\n  | CIf e c1 c2 =>\n      CIf e (right_assoc c1) (right_assoc c2)\n  | CWhile e c1 =>\n      CWhile e (right_assoc c1)\n  | _ =>\n      c\n  end.\n\n(** 下面证明：经过右结合变换后，确实程序语句中不再有左结合的结构了。下面分为两步\n    定义『无左结合结构』，即_[no_left_assoc]_。*)\n\nDefinition not_left_assoc (c: com): Prop :=\n  match c with\n  | CSeq (CSeq _ _) _ => False\n  | _ => True\n  end.\n\nFixpoint no_left_assoc (c: com): Prop :=\n  match c with\n  | CSeq c1 c2 =>\n      not_left_assoc c /\\\n      no_left_assoc c1 /\\ no_left_assoc c2\n  | CIf e c1 c2 =>\n      no_left_assoc c1 /\\ no_left_assoc c2\n  | CWhile e c1 =>\n      no_left_assoc c1\n  | _ =>\n      True\n  end.\n\n(** 证明也需要分两步进行。请先证明关于_[CSeq_right_assoc]_的引理。*)\n\nLemma CSeq_right_assoc_no_left_assoc: forall c c0,\n  no_left_assoc c ->\n  no_left_assoc c0 ->\n  no_left_assoc (CSeq_right_assoc c c0).\nProof.\n  intros c c0 Hc Hc0.\n  induction c; simpl.\n  - tauto.\n  - tauto.\n  - destruct Hc.\n    tauto.\n  - destruct Hc.\n    tauto.\n  - simpl in Hc.\n    tauto.\nQed. \n(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n(** 下面是需要证明的最终结论。*)\n\nTheorem right_assoc_no_left_assoc: forall c,\n  no_left_assoc (right_assoc c).\nProof.\n  intros.\n  induction c; simpl.\n  - tauto.\n  - tauto.\n  - apply CSeq_right_assoc_no_left_assoc; tauto.\n  - tauto.\n  - tauto.\nQed.  \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 下面请分两步证明：_[right_assoc]_变换前后的程序是语义等价的。*)\n\nLemma CSeq_right_assoc_sound: forall c c0,\n  eval_com (CSeq_right_assoc c c0) ==\n  eval_com (CSeq c c0).\nProof.\n  intros. simpl.\n  induction c; simpl.\n  - reflexivity.\n  - reflexivity.\n  - unfold seq_sem.\n    rewrite IHc2.\n    unfold seq_sem.\n\n\n\nQed.\n(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\nTheorem right_assoc_sound: forall c,\n  eval_com (right_assoc c) == eval_com c.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n"
+        }
+    ]
+}

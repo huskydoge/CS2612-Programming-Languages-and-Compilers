@@ -1,22 +1,18 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/husky/Three-Year-Aut/编译原理/lecture1008/code'
+make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code'
  
 COQDEP VFILES
  
-*** Warning: in file logic.v, library PL.InductiveType is required and has not been found in the loadpath!
-
-coq_makefile -f _CoqProject CoqIntro.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
+coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
  
-make: Leaving directory `/Users/husky/Three-Year-Aut/编译原理/lecture1008/code'
+make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code'
  
-make: Entering directory `/Users/husky/Three-Year-Aut/编译原理/lecture1008/code'
+make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory -f "Makefile" pre-all
  
 COQDEP VFILES
  
-*** Warning: in file logic.v, library PL.InductiveType is required and has not been found in the loadpath!
-
-coq_makefile -f _CoqProject CoqIntro.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
+coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
  
 # Extension point
 if [ "8.18+rc1" != "8.18+rc1" ]; then\
@@ -28,12 +24,13 @@ if [ "8.18+rc1" != "8.18+rc1" ]; then\
  
 COQDEP VFILES
  
-*** Warning: in file logic.v, library PL.InductiveType is required and has not been found in the loadpath!
-
-coq_makefile -f _CoqProject CoqIntro.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
+coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
  
 echo ""COQC CoqIntro.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  CoqIntro.v
+echo ""COQC InductiveType.v
+ 
+"coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  InductiveType.v
 echo ""COQC SyntaxInCoq.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  SyntaxInCoq.v
 echo ""COQC denotationalSemantics.v
@@ -45,11 +42,8 @@ echo ""COQC logic.v
  
 COQDEP VFILES
  
-*** Warning: in file logic.v, library PL.InductiveType is required and has not been found in the loadpath!
-
-coq_makefile -f _CoqProject CoqIntro.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
+coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
  
 # Extension point
- 
-make: Leaving directory `/Users/husky/Three-Year-Aut/编译原理/lecture1008/code'
+make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code'
  
