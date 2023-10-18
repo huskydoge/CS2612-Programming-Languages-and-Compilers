@@ -1,0 +1,318 @@
+{
+    "sourceFile": "hw/Assignment1017.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 75,
+            "patches": [
+                {
+                    "date": 1697611435132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697611676100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n Theorem iter_mono:\n   forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1697611701830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,11 @@\n Theorem iter_mono:\n   forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n- (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+Proof.\n+  intros; simly.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1697611709349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n Proof.\n-  intros; simly.\n+  intros; simply.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611732211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n   forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n Proof.\n-  intros; simply.\n+  intros; simpl.\n+  destruct n.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611758630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n   destruct n.\n+  apply H\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611767745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n   destruct n.\n-  apply H\n+  \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611777983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n   destruct n.\n-  \n+  simpl.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611786366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n   destruct n.\n-  simpl.\n+  * simpl.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611795091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n+    \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611921331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  destruct n.\n+  * simpl.\n+    rewrite H\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697611927980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n-    rewrite H\n+    rewrite <- H.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n@@ -50,57 +50,4 @@\n     BW_LFix f <= BW_LFix g.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  destruct n.\n-  * simpl.\n-    \n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697611938743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n-    rewrite <- H.\n+    \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611961172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n-    \n+    tauto.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611966499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n-    tauto.\n+    \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611979797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n Proof.\n   intros; simpl.\n   destruct n.\n   * simpl.\n-    \n+    unfold mono.\n+    tauto.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697611988984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n   destruct n.\n   * simpl.\n     unfold mono.\n     tauto.\n+  * simpl.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612012245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n-  destruct n.\n+  intros n.\n   * simpl.\n     unfold mono.\n     tauto.\n   * simpl.\n"
+                },
+                {
+                    "date": 1697612037711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,14 @@\n     mono f ->\n     mono (fun a => Nat.iter n f a).\n Proof.\n   intros; simpl.\n-  intros n.\n+  induction n.\n   * simpl.\n     unfold mono.\n     tauto.\n   * simpl.\n+    unfold mono.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612052789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     unfold mono.\n     tauto.\n   * simpl.\n     unfold mono.\n+    \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612080078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     unfold mono.\n     tauto.\n   * simpl.\n     unfold mono.\n-    \n+    intros.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612088294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n+    simpl.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612095708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n-    simpl.\n+    apply H.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612105658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n-    apply H.\n+    apply Hurkens.TypeNeqSmallType.paradox\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612125738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n-    apply Hurkens.TypeNeqSmallType.paradox\n+    apply H.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612132658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n   * simpl.\n     unfold mono.\n     intros.\n     apply H.\n+    apply IHn\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612144474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n-    apply H.\n+    apply H,IHn\n     apply IHn\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                },
+                {
+                    "date": 1697612158447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n     tauto.\n   * simpl.\n     unfold mono.\n     intros.\n-    apply H,IHn\n-    apply IHn\n+    apply H,IHn,H0.\n+\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612166596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n   * simpl.\n     unfold mono.\n     intros.\n     apply H,IHn,H0.\n-\n+Qed.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1697612181018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,59 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697612192073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,66 +53,11 @@\n     mono g ->\n     continuous g ->\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n-Proof. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+Proof.\n+  intros;simpl\n+  \n \n-\n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697612249241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,10 @@\n     continuous g ->\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n-  intros;simpl\n+  intros;simpl.\n+  unfold BW_Lfix.\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697612254506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_Lfix.\n+  unfold BW_LFix.\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697613011784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   \n+  \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                },
+                {
+                    "date": 1697613018813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,10 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n+  unfold omega_lub.\n   \n-  \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n"
+                },
+                {
+                    "date": 1697613033255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,10 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix.\n-  unfold omega_lub.\n+  unfold BW_LFix,omega_lub,oLubA.\n+  unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697613038270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix,omega_lub,oLubA.\n+  unfold BW_LFix,omega_lub.\n   unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613045766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,65 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix,omega_lub,oLubA.\n+  unfold .\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613054973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,73 +55,8 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix,omega_lub,oLubA.\n-  unfold .\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n   unfold BW_LFix,omega_lub.\n   unfold .\n   \n \n"
+                },
+                {
+                    "date": 1697613060089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix,omega_lub.\n+  unfold oLubA.\n   unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613069249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,9 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix,omega_lub.\n-  unfold oLubA.\n+  unfold BW_LFix.\n   unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613144607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n+  \n   unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613168506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  \n+  apply iter_mono.\n   unfold .\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613177451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  apply iter_mono.\n-  unfold .\n+\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697613195487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix.\n+  unfold BW_LFix, continuous.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613201268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,65 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix, continuous.\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613207520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,76 +55,12 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold BW_LFix, continuous.\n+  unfold continuous.\n+  unfold BW_LFix.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix, continuous.\n-\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697613216604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,8 @@\n     (forall a, f a <= g a) ->\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n-  unfold continuous.\n   unfold BW_LFix.\n \n   \n \n"
+                },
+                {
+                    "date": 1697613224633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,66 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold omega_Lub\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613302651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,75 +56,10 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold omega_Lub\n \n-  \n \n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix.\n-\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697613310357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n+  induction n\n \n \n   \n \n"
+                },
+                {
+                    "date": 1697613315460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,8 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  induction n\n \n \n   \n \n"
+                },
+                {
+                    "date": 1697613472811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,10 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n+  unfold continuous in H0\n \n-\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697613500362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold continuous in H0\n+  unfold continuous in H0,H2.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613514437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n+  simpl.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613523768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold continuous in H0,H2.\n-  simpl.\n+  unfold continuous in H0,H2;simpl\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613532979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold continuous in H0,H2;simpl\n+  unfold continuous in H0,H2.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613566169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n+  destruc n.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613574634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n-  destruc n.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613581217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n+  apply H0.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613653231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n-  apply H0.\n+  intros.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613797819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n-  intros.\n+  apply is_omega_lub_sound.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613808456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n-  apply is_omega_lub_sound.\n+  apply is_omega_lub_tight.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1697613814240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,67 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold continuous in H0,H2.\n+  apply is_omega_lub_tight.\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613840470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,78 +57,12 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n+  unfold mono.\n   apply is_omega_lub_tight.\n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix.\n-  unfold continuous in H0,H2.\n-  apply is_omega_lub_tight.\n-\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697613855187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n-  unfold mono.\n+  unfold mono in H1, H.\n   apply is_omega_lub_tight.\n \n   \n \n"
+                },
+                {
+                    "date": 1697613894349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,68 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold continuous in H0,H2.\n+  unfold mono in H1, H.\n+\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613940870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,69 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold continuous,equiv in H0,H2.\n+  unfold mono in H1, H.\n+\n+\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697613949212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold continuous,equiv in H0,H2.\n+  unfold continuous,equiv,EA in H0,H2.\n   unfold mono in H1, H.\n \n \n \n@@ -66,140 +66,4 @@\n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix.\n-  unfold continuous in H0,H2.\n-  unfold mono in H1, H.\n-\n-\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix.\n-  unfold continuous in H0,H2.\n-  unfold mono in H1, H.\n-  apply is_omega_lub_tight.\n-\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697613955378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     BW_LFix f <= BW_LFix g.\n Proof.\n   intros;simpl.\n   unfold BW_LFix.\n-  unfold continuous,equiv,EA in H0,H2.\n+  unfold continuous in H0,H2.\n   unfold mono in H1, H.\n \n \n \n"
+                },
+                {
+                    "date": 1697613972635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n   unfold mono in H1, H.\n+  apply H3.\n \n \n \n   \n"
+                },
+                {
+                    "date": 1697614012025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n   unfold mono in H1, H.\n-  apply H3.\n+  unfold omega_lub.\n \n \n \n   \n"
+                },
+                {
+                    "date": 1697614028033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,71 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold continuous in H0,H2.\n+  unfold mono in H1, H.\n+  unfold omega_lub. \n+  apply mono\n+\n+\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1697614033905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,84 +58,14 @@\n   intros;simpl.\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n   unfold mono in H1, H.\n-  unfold omega_lub. \n-  apply mono\n+  unfold omega_lub, bot. \n+  apply mono.\n \n \n \n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import Coq.ZArith.ZArith.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics. Import SetsNotation.\n-Import Lang_SimpleWhile\n-       DntSem_SimpleWhile2\n-       DntSem_SimpleWhile3\n-       DntSem_SimpleWhile4\n-       DntSem_SimpleWhile5.\n-Local Open Scope order_scope.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n-\n-Theorem iter_mono:\n-  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n-    mono f ->\n-    mono (fun a => Nat.iter n f a).\n-Proof.\n-  intros; simpl.\n-  induction n.\n-  * simpl.\n-    unfold mono.\n-    tauto.\n-  * simpl.\n-    unfold mono.\n-    intros.\n-    apply H,IHn,H0.\n-Qed.\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请证明Bourbaki-Witt不动点具有单调性。*)\n-\n-Lemma BW_LFix_mono:\n-  forall\n-    {A: Type}\n-    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n-    {EquivA: Equivalence equiv}\n-    (f g: A -> A),\n-    mono f ->\n-    continuous f ->\n-    mono g ->\n-    continuous g ->\n-    (forall a, f a <= g a) ->\n-    BW_LFix f <= BW_LFix g.\n-Proof.\n-  intros;simpl.\n-  unfold BW_LFix.\n-  unfold continuous in H0,H2.\n-  unfold mono in H1, H.\n-  unfold omega_lub.\n-\n-\n-\n-  \n-\n-   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1697614048078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,12 +59,12 @@\n   unfold BW_LFix.\n   unfold continuous in H0,H2.\n   unfold mono in H1, H.\n   unfold omega_lub. \n-  apply mono.\n \n \n \n+\n   \n \n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n"
+                },
+                {
+                    "date": 1697614319100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,87 @@\n+Require Import Coq.ZArith.ZArith.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics. Import SetsNotation.\n+Import Lang_SimpleWhile\n+       DntSem_SimpleWhile2\n+       DntSem_SimpleWhile3\n+       DntSem_SimpleWhile4\n+       DntSem_SimpleWhile5.\n+Local Open Scope order_scope.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n+\n+Theorem iter_mono:\n+  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n+    mono f ->\n+    mono (fun a => Nat.iter n f a).\n+Proof.\n+  intros; simpl.\n+  induction n.\n+  * simpl.\n+    unfold mono.\n+    tauto.\n+  * simpl.\n+    unfold mono.\n+    intros.\n+    apply H,IHn,H0.\n+Qed.\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请证明Bourbaki-Witt不动点具有单调性。*)\n+\n+Lemma iter_bot_increasing:\n+  forall\n+    {A: Type}\n+    `{oCPOA: OmegaCompletePartialOrder_Setoid A}\n+    (f: A -> A),\n+    mono f ->\n+    increasing (fun n => Nat.iter n f bot).\n+Proof.\n+  unfold increasing.\n+  intros.\n+  induction n; simpl.\n+  + apply bot_is_least.\n+  + apply H.\n+    apply IHn.\n+Qed.\n+\n+Lemma BW_LFix_mono:\n+  forall\n+    {A: Type}\n+    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n+    {EquivA: Equivalence equiv}\n+    (f g: A -> A),\n+    mono f ->\n+    continuous f ->\n+    mono g ->\n+    continuous g ->\n+    (forall a, f a <= g a) ->\n+    BW_LFix f <= BW_LFix g.\n+Proof.\n+  intros;simpl.\n+  unfold BW_LFix.\n+  unfold continuous in H0, H2.\n+  pose proof iter_bot_increasing H.\n+\n+\n+\n+\n+\n+  \n+\n+   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                }
+            ],
+            "date": 1697611435132,
+            "name": "Commit-0",
+            "content": "Require Import Coq.ZArith.ZArith.\nRequire Import Coq.Classes.Morphisms.\nRequire Import SetsClass.SetsClass.\nRequire Import PL.SyntaxInCoq.\nRequire Import PL.DenotationalSemantics. Import SetsNotation.\nImport Lang_SimpleWhile\n       DntSem_SimpleWhile2\n       DntSem_SimpleWhile3\n       DntSem_SimpleWhile4\n       DntSem_SimpleWhile5.\nLocal Open Scope order_scope.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n\nTheorem iter_mono:\n  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n    mono f ->\n    mono (fun a => Nat.iter n f a).\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请证明Bourbaki-Witt不动点具有单调性。*)\n\nLemma BW_LFix_mono:\n  forall\n    {A: Type}\n    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n    {EquivA: Equivalence equiv}\n    (f g: A -> A),\n    mono f ->\n    continuous f ->\n    mono g ->\n    continuous g ->\n    (forall a, f a <= g a) ->\n    BW_LFix f <= BW_LFix g.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n"
+        }
+    ]
+}

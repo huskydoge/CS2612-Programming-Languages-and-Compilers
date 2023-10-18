@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Assignment1017.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1697628425257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1697628425257,
+            "name": "Commit-0",
+            "content": "Require Import Coq.ZArith.ZArith.\nRequire Import Coq.Classes.Morphisms.\nRequire Import SetsClass.SetsClass.\nRequire Import PL.SyntaxInCoq.\nRequire Import PL.DenotationalSemantics. Import SetsNotation.\nImport Lang_SimpleWhile\n       DntSem_SimpleWhile2\n       DntSem_SimpleWhile3\n       DntSem_SimpleWhile4\n       DntSem_SimpleWhile5.\nLocal Open Scope order_scope.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请证明，如果_[f]_是一个单调函数，那么将其迭代_[n]_次后得到的函数依然是单调的。*)\n\nTheorem iter_mono:\n  forall {A: Type} `{PO: PartialOrder_Setoid A} (f: A -> A) (n: nat),\n    mono f ->\n    mono (fun a => Nat.iter n f a).\nProof.\n  intros; simpl.\n  induction n.\n  * simpl.\n    unfold mono.\n    tauto.\n  * simpl.\n    unfold mono.\n    intros.\n    apply H,IHn,H0.\nQed.\n   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请证明Bourbaki-Witt不动点具有单调性。*)\n\n\nLemma BW_LFix_mono:\n  forall\n    {A: Type}\n    `{CPOA: OmegaCompletePartialOrder_Setoid A}\n    {EquivA: Equivalence equiv}\n    (f g: A -> A),\n    mono f ->\n    continuous f ->\n    mono g ->\n    continuous g ->\n    (forall a, f a <= g a) ->\n    BW_LFix f <= BW_LFix g.\nProof.\n  unfold BW_LFix.\n  intros.\n  pose proof iter_mono f. pose proof iter_mono g.\n  apply oCPO_completeness.\n  unfold increasing.\n  induction n;simpl.\n  - apply bot_is_least.\n  - apply H. apply IHn.\n  - unfold is_omega_ub.\n    induction n;simpl.\n    + apply bot_is_least.\n    + pose proof H3 (Nat.iter n f bot).\n      pose proof H1 (Nat.iter n f bot)(omega_lub (fun n : nat => Nat.iter n g bot)).\n      apply H7 in IHn.\n      pose proof BW_LFix_is_fix g H1 H2.\n      unfold BW_LFix in H8.\n      apply reflexivity_setoid in H8.\n      transitivity (g (Nat.iter n f bot)). apply H6.\n      transitivity (g (omega_lub (fun n : nat => Nat.iter n g bot))).\n      apply IHn. apply H8.\nQed.\n\n   (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n"
+        }
+    ]
+}

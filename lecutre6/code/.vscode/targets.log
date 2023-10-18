@@ -16,7 +16,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Oct 11 21:10:46 2023
+# Make data base, printed on Wed Oct 18 10:40:18 2023
 
 # Variables
 
@@ -59,6 +59,7 @@ NATIVEFILES = $(wildcard $(ALLNATIVEFILES))
 # automatic
 @F = $(notdir $@)
 # makefile (from `Makefile', line 33)
+ 
 COQCORE_SRC_SUBDIRS := boot config lib clib kernel library engine pretyping interp gramlib parsing proofs tactics toplevel printing ide stm vernac plugins/btauto plugins/cc plugins/derive plugins/extraction plugins/firstorder plugins/funind plugins/ltac plugins/ltac2 plugins/micromega plugins/nsatz plugins/ring plugins/rtauto plugins/ssr plugins/ssrmatching plugins/syntax
 # makefile
 CURDIR := /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code
@@ -70,9 +71,8 @@ COQMAKE_BOTH_TIME_FILES = "$(COQCORELIB)/tools/make-both-time-files.py"
 COQDOC = "$(COQBIN)coqdoc"
 # makefile (from `Makefile', line 152)
 TIME_OF_BUILD_AFTER_FILE = time-of-build-after.log
- 
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/e7e037083ff4455cf320e344325dacb480062c3c","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/f1b07bd25dfad64b0167beb15359ae573aecd2cc","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # makefile (from `Makefile.conf', line 53)
@@ -195,6 +195,7 @@ with_undef = $(if $(filter-out undefined, $(origin $(1))),$($(1)))
 TIMING_USER_ARG := 
 # makefile (from `Makefile', line 23)
 VFILES := CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v
+ 
 # makefile (from `Makefile.conf', line 24)
 COQMF_MLLIBFILES := 
 # environment
@@ -222,7 +223,6 @@ CMDLINE_COQLIBS :=
 # makefile (from `Makefile', line 27)
 MLPACKFILES := 
 # environment
- 
 PWD = /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code
 # makefile (from `Makefile', line 338)
 GLOBFILES = $(VFILES:.v=.glob)
@@ -265,7 +265,7 @@ FINDLIBFILESTOINSTALL = $(CMIFILESTOINSTALL) $(CMXSFILES) $(CMXAFILES) $(CMOFILE
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/f1b07bd25dfad64b0167beb15359ae573aecd2cc
 # makefile (from `Makefile.conf', line 49)
 COQMF_CAMLFLAGS = -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
 # environment
@@ -373,6 +373,7 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # makefile (from `Makefile', line 167)
 destination_path = $(if $(DESTDIR),$(DESTDIR)/$(call windrive_path,$(1)),$(1))
 # makefile (from `Makefile', line 348)
+ 
 CMXFILES = $(CMOFILES:.cmo=.cmx)
 # default
 .VARIABLES := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
@@ -404,11 +405,10 @@ CMOFILES = $(MLGFILES:.mlg=.cmo) $(MLFILES:.ml=.cmo) $(MLPACKFILES:.mlpack=.cmo)
 MFLAGS = - --no-print-directory -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
- 
 # makefile (from `Makefile', line 378)
 ALLNATIVEFILES = $(OBJFILES:.o=.cmi) $(OBJFILES:.o=.cmx) $(OBJFILES:.o=.cmxs)
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.164460890.164460896
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.166163848.166163854
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -503,6 +503,7 @@ SUFFIXES :=
 VO = vo
 # makefile (from `Makefile', line 267)
 COQDONATIVE = "no"
+ 
 # makefile (from `Makefile', line 276)
 COQDOCLIBS = $(COQLIBS_NOML)
 # makefile (from `Makefile', line 375)
@@ -530,7 +531,7 @@ CONDA_PREFIX = /Users/husky/opt/anaconda3
 # makefile (from `Makefile', line 25)
 MLFILES := 
 # environment
-VSCODE_PID = 15785
+VSCODE_PID = 73661
 # environment
 LANG = C
 # variable set hash-table stats:
@@ -633,7 +634,6 @@ logic.g.html: logic.v logic.glob
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 872):
 	$(SHOW)'COQDOC -html -g $<'
- 
 	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
 	
 
@@ -644,6 +644,7 @@ denotationalSemantics.glob: denotationalSemantics.v denotationalSemantics.v Synt
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 832):
 	$(SHOW)'COQC $< (for .glob)'
+ 
 	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
 	
 
@@ -768,6 +769,7 @@ logic.vok: logic.v logic.v CoqIntro.vos InductiveType.vos
 #  commands to execute (from `Makefile', line 848):
 	$(SHOW)COQC -vok $<
 	$(HIDE)$(TIMER) $(COQC) -vok $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
+ 
 	
 
 pretty-timed:
@@ -845,7 +847,6 @@ pre-all::
 # < := 
 # automatic
 # ^ := 
- 
 # automatic
 # ? := 
 # variable set hash-table stats:
@@ -862,6 +863,7 @@ SyntaxInCoq.required_vos: SyntaxInCoq.v
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 InductiveType.g.tex: InductiveType.v
 #  Implicit rule search has not been done.
@@ -962,13 +964,14 @@ uninstall::
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 validate: CoqIntro.vo InductiveType.vo SyntaxInCoq.vo denotationalSemantics.vo logic.vo
+ 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -1091,7 +1094,6 @@ print-pretty-timed::
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 451):
 	$(HIDE)$(COQMAKE_ONE_TIME_FILE) $(TIMING_INCLUDE_MEM_ARG) $(TIMING_SORT_BY_MEM_ARG) $(TIMING_REAL_ARG) $(TIME_OF_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BUILD_EXTRA_FILES)
 	
@@ -1199,6 +1201,7 @@ SyntaxInCoq.v.after-timing:
 #  File has not been updated.
 
 denotationalSemantics.v.beautified: denotationalSemantics.v denotationalSemantics.v SyntaxInCoq.vo
+ 
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `denotationalSemantics'
 #  Modification time never checked.
@@ -1285,7 +1288,7 @@ archclean::
 
 Makefile.conf: _CoqProject
 #  Implicit rule search has not been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 48):
@@ -1324,7 +1327,6 @@ make-pretty-timed-after::
 # variable set hash-table stats:
 # Load=1/32=3%, Rehash=0, Collisions=0/1=0%
 #  commands to execute (from `Makefile', line 447):
- 
 	$(HIDE)rm -f pretty-timed-success.ok
 	$(HIDE)($(MAKE) --no-print-directory -f "$(PARENT)" $(TGTS) TIMED=1 2>&1 && touch pretty-timed-success.ok) | tee -a $(TIME_OF_BUILD_FILE)
 	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
@@ -1373,6 +1375,7 @@ InductiveType.vos: InductiveType.v InductiveType.v CoqIntro.vos
 #  Implicit/static pattern stem: `InductiveType'
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 844):
 	$(SHOW)COQC -vos $<
 	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
@@ -1534,6 +1537,7 @@ html: CoqIntro.glob InductiveType.glob SyntaxInCoq.glob denotationalSemantics.gl
 	-toc $(COQDOCFLAGS) -html $(GAL) $(COQDOCLIBS) -d html $(VFILES)
 	
 
+ 
 InductiveType.g.html: InductiveType.v InductiveType.glob
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `InductiveType'
@@ -1570,7 +1574,6 @@ CoqIntro.vos: CoqIntro.v CoqIntro.v
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 844):
 	$(SHOW)COQC -vos $<
- 
 	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
 	
 
@@ -1707,6 +1710,7 @@ beautify: CoqIntro.v.beautified InductiveType.v.beautified SyntaxInCoq.v.beautif
 	@echo 'Do not do "make clean" until you are sure that everything went well!'
 	@echo 'If there were a problem, execute "for file in $$(find . -name \*.v.old -print); do mv $${file} $${file%.old}; done" in your shell/'
 	
+ 
 
 vok: CoqIntro.vok InductiveType.vok SyntaxInCoq.vok denotationalSemantics.vok logic.vok
 #  Phony target (prerequisite of .PHONY).
@@ -1798,7 +1802,6 @@ cleanall:: clean
 	$(HIDE)rm -f $(foreach f,$(VFILES:.v=),$(dir $(f)).$(notdir $(f)).aux)
 	$(HIDE)rm -f $(TIME_OF_BUILD_FILE) $(TIME_OF_BUILD_BEFORE_FILE) $(TIME_OF_BUILD_AFTER_FILE) $(TIME_OF_PRETTY_BUILD_FILE) $(TIME_OF_PRETTY_BOTH_BUILD_FILE)
 	$(HIDE)rm -f $(VOFILES:.vo=.v.timing)
- 
 	$(HIDE)rm -f $(VOFILES:.vo=.v.before-timing)
 	$(HIDE)rm -f $(VOFILES:.vo=.v.after-timing)
 	$(HIDE)rm -f $(VOFILES:.vo=.v.timing.diff)
@@ -1861,6 +1864,7 @@ real-all: CoqIntro.vo InductiveType.vo SyntaxInCoq.vo denotationalSemantics.vo l
 
 quick: vio
 #  Phony target (prerequisite of .PHONY).
+ 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -1942,7 +1946,7 @@ install: META
 .Makefile.d: _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v
 #  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has not been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -1965,13 +1969,13 @@ install: META
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4026 / max = 4026 / min = 4026 / avg = 4026
 
-# Finished Make data base on Wed Oct 11 21:10:46 2023
+# Finished Make data base on Wed Oct 18 10:40:18 2023
 
  
 make: *** [all] Error 1
 
 
-# Make data base, printed on Wed Oct 11 21:10:46 2023
+# Make data base, printed on Wed Oct 18 10:40:18 2023
 
 # Variables
 
@@ -1987,10 +1991,10 @@ COQCORELIB := /Users/husky/.opam/default/lib/coq/../coq-core/
 TIMING_ARG = 
 # environment
 OPAM_SWITCH_PREFIX = /Users/husky/.opam/default
+ 
 # environment
 OCAML_TOPLEVEL_PATH = /Users/husky/.opam/default/lib/toplevel
 # makefile (from `Makefile', line 325)
- 
 vo_to_obj = $(addsuffix .o, $(filter-out Warning: Error:, $(shell $(COQTOP) -q -noinit -batch -quiet -print-mod-uid $(1))))
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
@@ -2027,7 +2031,7 @@ COQDOC = "$(COQBIN)coqdoc"
 # makefile (from `Makefile', line 152)
 TIME_OF_BUILD_AFTER_FILE = time-of-build-after.log
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/e7e037083ff4455cf320e344325dacb480062c3c","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/f1b07bd25dfad64b0167beb15359ae573aecd2cc","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile.conf', line 53)
@@ -2099,6 +2103,7 @@ AFTER =
 # makefile (from `Makefile', line 280)
 COQ_VERSION := 8.18+rc1
 # makefile (from `Makefile', line 16)
+ 
 PARENT := Makefile
 # makefile (from `Makefile.conf', line 19)
 COQMF_VFILES := CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v
@@ -2143,7 +2148,6 @@ USEBYTE :=
 # makefile (from `Makefile', line 112)
 COQMAKE_ONE_TIME_FILE = "$(COQCORELIB)/tools/make-one-time-file.py"
 # makefile (from `Makefile', line 13)
- 
 INITIAL_VARS := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
 # makefile (from `Makefile', line 332)
 with_undef = $(if $(filter-out undefined, $(origin $(1))),$($(1)))
@@ -2197,6 +2201,7 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 TIME_OF_BUILD_BEFORE_FILE = time-of-build-before.log
 # makefile (from `Makefile', line 142)
 TIMING_FUZZ = 0
+ 
 # makefile (from `Makefile', line 435)
 TIMING_INCLUDE_MEM_ARG := 
 # makefile (from `Makefile', line 234)
@@ -2220,7 +2225,7 @@ FINDLIBFILESTOINSTALL = $(CMIFILESTOINSTALL) $(CMXSFILES) $(CMXAFILES) $(CMOFILE
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/f1b07bd25dfad64b0167beb15359ae573aecd2cc
 # makefile (from `Makefile.conf', line 49)
 COQMF_CAMLFLAGS = -thread -bin-annot -strict-sequence -w -a+1..3-4+5..8-9+10..26-27+28..39-40-41-42+43-44-45+46..47-48+49..57-58+59..66-67-68+69-70
 # environment
@@ -2265,7 +2270,6 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 287)
 COQ_SRC_SUBDIRS = 
- 
 # makefile (from `Makefile', line 131)
 COQDEBUG = 
 # environment
@@ -2334,6 +2338,7 @@ CMXFILES = $(CMOFILES:.cmo=.cmx)
 .VARIABLES := <D ?F OPAM_SWITCH_PREFIX OCAML_TOPLEVEL_PATH VSCODE_CRASH_REPORTER_PROCESS_TYPE TESSDATA_PREFIX COPT_LICENSE_DIR ?D @D @F CURDIR SHELL VSCODE_NLS_CONFIG _ MAKEFILE_LIST __CFBundleIdentifier INFOPATH VSCODE_CWD PATH LaunchInstanceID ELECTRON_RUN_AS_NODE .FEATURES SSH_AUTH_SOCK %F CONDA_EXE PWD HOMEBREW_CELLAR ORIGINAL_XDG_CURRENT_DESKTOP MANPATH VSCODE_AMD_ENTRYPOINT HOME MAKEFILEPATH VSCODE_CODE_CACHE_PATH LOGNAME APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL CONDA_PROMPT_MODIFIER VSCODE_HANDLES_UNCAUGHT_ERRORS ^D COPT_HOME CONDA_DEFAULT_ENV XPC_FLAGS MAKE MAKECMDGOALS SHLVL JAVA_HOME MAKE_VERSION USER CAML_LD_LIBRARY_PATH .DEFAULT_GOAL HOMEBREW_BOTTLE_DOMAIN %D CONDA_SHLVL MAKE_COMMAND .VARIABLES TMPDIR *F VSCODE_IPC_HOOK MallocNanoZone MAKEFLAGS MFLAGS *D XPC_SERVICE_NAME HOMEBREW_PREFIX +D VSCODE_L10N_BUNDLE_LOCATION +F HOMEBREW_REPOSITORY __CF_USER_TEXT_ENCODING COMMAND_MODE MAKEFILES <F LC_ALL CONDA_PYTHON_EXE ^F SUFFIXES .INCLUDE_DIRS MAKELEVEL CONDA_PREFIX VSCODE_PID LANG
 # environment
 TMPDIR = /var/folders/gv/jp8cgv_s7sdcy5__5j0p3l7r0000gn/T/
+ 
 # makefile (from `Makefile', line 41)
 DOCDIR := /Users/husky/.opam/default/share/doc/
 # automatic
@@ -2363,11 +2368,10 @@ MFLAGS = -Rrqp
 # makefile (from `Makefile', line 378)
 ALLNATIVEFILES = $(OBJFILES:.o=.cmi) $(OBJFILES:.o=.cmx) $(OBJFILES:.o=.cmxs)
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.164460890.164460896
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.166163848.166163854
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
- 
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 317)
 ALLSRCFILES := $(subst ,,    )
@@ -2442,6 +2446,7 @@ COQACTUALNATIVEFLAG := no
 # makefile (from `Makefile.conf', line 18)
 COQMF_SOURCES := CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v
 # makefile (from `Makefile', line 339)
+ 
 HTMLFILES = $(VFILES:.v=.html)
 # environment
 CONDA_PYTHON_EXE = /Users/husky/opt/anaconda3/bin/python
@@ -2478,7 +2483,6 @@ CMDLINE_VFILES := CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics
 # makefile (from `Makefile', line 223)
 TIMER = $(if $(TIMED), $(STDTIME), $(TIMECMD))
 # makefile (from `Makefile', line 889)
- 
 GENMLFILES := 
 # makefile (from `Makefile', line 240)
 COQCHKEXTRAFLAGS = 
@@ -2487,7 +2491,7 @@ CONDA_PREFIX = /Users/husky/opt/anaconda3
 # makefile (from `Makefile', line 25)
 MLFILES := 
 # environment
-VSCODE_PID = 15785
+VSCODE_PID = 73661
 # environment
 LANG = C
 # variable set hash-table stats:
@@ -2568,6 +2572,7 @@ logic.vos: logic.v logic.v CoqIntro.vos InductiveType.vos
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `logic'
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 844):
 	$(SHOW)COQC -vos $<
@@ -2593,7 +2598,6 @@ logic.g.html: logic.v logic.glob
 	$(SHOW)'COQDOC -html -g $<'
 	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
 	
- 
 
 denotationalSemantics.glob: denotationalSemantics.v denotationalSemantics.v SyntaxInCoq.vo
 #  Implicit rule search has not been done.
@@ -2692,6 +2696,7 @@ CoqIntro.html: CoqIntro.v CoqIntro.glob
 
 # Not a target:
 _CoqProject:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2023-10-09 16:24:50
 #  File has been updated.
@@ -2739,7 +2744,6 @@ SyntaxInCoq.vio: SyntaxInCoq.v SyntaxInCoq.v
 	$(HIDE)$(TIMER) $(COQC) -vio $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
 	
 
- 
 logic.vok: logic.v logic.v CoqIntro.vos InductiveType.vos
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `logic'
@@ -2830,6 +2834,7 @@ InductiveType.g.tex: InductiveType.v
 	$(SHOW)'COQDOC -latex -g $<'
 	$(HIDE)$(COQDOC) $(COQDOCFLAGS) -latex -g $< -o $@
 	
+ 
 
 denotationalSemantics.required_vos: denotationalSemantics.v SyntaxInCoq.vos
 #  Implicit rule search has not been done.
@@ -2904,7 +2909,6 @@ uninstall::
 	@$(MKFILESTOINSTALL)
 	$(call findlib_remove)
 	$(HIDE)for f in $$(cat .filestoinstall); do \
- 
 	df="`$(COQMKFILE) -destination-of "$$f" $(COQLIBS)`" &&\
 	instf="$(COQLIBINSTALL)/$$df/`basename $$f`" &&\
 	rm -f "$$instf" &&\
@@ -2921,7 +2925,7 @@ uninstall::
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -3036,7 +3040,6 @@ SyntaxInCoq.v.timing.diff: SyntaxInCoq.v.before-timing SyntaxInCoq.v.after-timin
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 852):
 	$(SHOW)PYTHON TIMING-DIFF $*.{before,after}-timing
- 
 	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
 	
 
@@ -3065,6 +3068,7 @@ denotationalSemantics.v.timing.diff: denotationalSemantics.v.before-timing denot
 	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" print-pretty-single-time-diff BEFORE=$*.before-timing AFTER=$*.after-timing TIME_OF_PRETTY_BUILD_FILE="$@"
 	
 
+ 
 denotationalSemantics.vio: denotationalSemantics.v denotationalSemantics.v SyntaxInCoq.vio
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `denotationalSemantics'
@@ -3118,6 +3122,7 @@ InductiveType.v.beautified: InductiveType.v InductiveType.v CoqIntro.vo
 #  commands to execute (from `Makefile', line 856):
 	$(SHOW)'BEAUTIFY $<'
 	$(HIDE)$(TIMER) $(COQC) $(COQDEBUG) $(COQFLAGS) $(COQLIBS) -beautify $<
+ 
 	
 
 # Not a target:
@@ -3194,7 +3199,6 @@ SyntaxInCoq.tex: SyntaxInCoq.v
 	
 
 CoqIntro.v.timing.diff: CoqIntro.v.before-timing CoqIntro.v.after-timing
- 
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `CoqIntro.v'
 #  Modification time never checked.
@@ -3245,7 +3249,7 @@ archclean::
 
 Makefile.conf: _CoqProject
 #  Implicit rule search has not been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 48):
@@ -3331,7 +3335,6 @@ InductiveType.vos: InductiveType.v InductiveType.v CoqIntro.vos
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `InductiveType'
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 844):
 	$(SHOW)COQC -vos $<
@@ -3360,6 +3363,7 @@ SyntaxInCoq.vos: SyntaxInCoq.v SyntaxInCoq.v
 denotationalSemantics.vos: denotationalSemantics.v denotationalSemantics.v SyntaxInCoq.vos
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `denotationalSemantics'
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 844):
@@ -3392,6 +3396,7 @@ vio2vo:
 	-schedule-vio2vo $(J) $(VOFILES:%.vo=%.vio)
 	
 
+ 
 install-byte:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -3423,6 +3428,7 @@ clean::
 	$(HIDE)rm -f $(OFILES)
 	$(HIDE)rm -f $(CMXAFILES:.cmxa=.a)
 	$(HIDE)rm -f $(MLGFILES:.mlg=.ml)
+ 
 	$(HIDE)rm -f $(CMXFILES:.cmx=.cmt)
 	$(HIDE)rm -f $(MLIFILES:.mli=.cmti)
 	$(HIDE)rm -f $(ALLDFILES)
@@ -3451,6 +3457,7 @@ Makefile.local-late:
 #  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+ 
 
 all-mli.tex:
 #  Implicit rule search has not been done.
@@ -3459,7 +3466,6 @@ all-mli.tex:
 #  commands to execute (from `Makefile', line 557):
 	$(SHOW)'CAMLDOC -latex $@'
 	$(HIDE)$(CAMLDOC) -latex \
- 
 	-o $@ -m A $(CAMLDEBUG) $(CAMLDOCFLAGS) $(MLIFILES) $(FINDLIBPKGS)
 	
 
@@ -3478,6 +3484,7 @@ all.timing.diff:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 414):
 	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" pre-all
 	$(HIDE)$(MAKE) --no-print-directory -f "$(SELF)" real-all.timing.diff TIME_OF_PRETTY_BUILD_EXTRA_FILES=""
@@ -3505,6 +3512,7 @@ InductiveType.g.html: InductiveType.v InductiveType.glob
 	$(HIDE)$(COQDOC) $(COQDOCFLAGS)  -html -g $< -o $@
 	
 
+ 
 InductiveType.vo: InductiveType.v InductiveType.v CoqIntro.vo | .Makefile.d
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `InductiveType'
@@ -3529,6 +3537,7 @@ CoqIntro.vos: CoqIntro.v CoqIntro.v
 #  Implicit/static pattern stem: `CoqIntro'
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 844):
 	$(SHOW)COQC -vos $<
 	$(HIDE)$(TIMER) $(COQC) -vos $(COQDEBUG) $(COQFLAGS) $(COQLIBS) $<
@@ -3555,6 +3564,7 @@ SyntaxInCoq.g.html: SyntaxInCoq.v SyntaxInCoq.glob
 	
 
 SyntaxInCoq.vo: SyntaxInCoq.v SyntaxInCoq.v | .Makefile.d
+ 
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `SyntaxInCoq'
 #  Modification time never checked.
@@ -3587,9 +3597,9 @@ denotationalSemantics.g.html: denotationalSemantics.v denotationalSemantics.glob
 # Not a target:
 SyntaxInCoq.v:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2023-10-09 10:47:08
 #  File has been updated.
- 
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -3617,6 +3627,7 @@ printenv::
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 934):
 	$(warning printenv is deprecated)
@@ -3648,6 +3659,7 @@ make-pretty-timed::
 	$(HIDE)rm pretty-timed-success.ok # must not be -f; must fail if the touch failed
 	
 
+ 
 logic.v.timing.diff: logic.v.before-timing logic.v.after-timing
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `logic.v'
@@ -3696,6 +3708,7 @@ all-gal.ps: all.ps
 # makefile (from `Makefile', line 577)
 # GAL = -g
 # variable set hash-table stats:
+ 
 # Load=1/32=3%, Rehash=0, Collisions=0/1=0%
 
 CoqIntro.vok: CoqIntro.v CoqIntro.v
@@ -3725,7 +3738,6 @@ CoqIntro.vo: CoqIntro.v CoqIntro.v | .Makefile.d
 
 # Not a target:
 CoqIntro.v:
- 
 #  Implicit rule search has been done.
 #  Last modified 2023-09-18 19:48:43
 #  File has been updated.
@@ -3903,7 +3915,7 @@ install: META
 .Makefile.d: _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v
 #  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has not been done.
-#  Last modified 2023-10-11 21:10:46
+#  Last modified 2023-10-18 10:40:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -3926,6 +3938,6 @@ install: META
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4026 / max = 4026 / min = 4026 / avg = 4026
 
-# Finished Make data base on Wed Oct 11 21:10:46 2023
+# Finished Make data base on Wed Oct 18 10:40:18 2023
 
  

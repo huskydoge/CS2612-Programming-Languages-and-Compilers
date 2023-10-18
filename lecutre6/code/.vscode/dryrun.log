@@ -29,15 +29,14 @@ coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationa
 echo ""COQC CoqIntro.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  CoqIntro.v
 echo ""COQC InductiveType.v
- 
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  InductiveType.v
 echo ""COQC SyntaxInCoq.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  SyntaxInCoq.v
+ 
 echo ""COQC denotationalSemantics.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  denotationalSemantics.v
 echo ""COQC logic.v
 "coqc"   -q   "-w" "-deprecated-native-compiler-option" "-native-compiler" "no" -Q . PL  logic.v
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory -f "Makefile" post-all
  
 COQDEP VFILES
@@ -45,5 +44,6 @@ COQDEP VFILES
 coq_makefile -f _CoqProject CoqIntro.v InductiveType.v SyntaxInCoq.v denotationalSemantics.v logic.v -o Makefile
  
 # Extension point
+ 
 make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecutre6/code'
  
