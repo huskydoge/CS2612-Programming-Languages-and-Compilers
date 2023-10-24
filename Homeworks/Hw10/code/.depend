@@ -1,0 +1,28 @@
+pl/CoqIntro.vo pl/CoqIntro.glob pl/CoqIntro.v.beautified pl/CoqIntro.required_vo: pl/CoqIntro.v 
+pl/CoqIntro.vio: pl/CoqIntro.v 
+pl/InductiveType.vo pl/InductiveType.glob pl/InductiveType.v.beautified pl/InductiveType.required_vo: pl/InductiveType.v pl/CoqIntro.vo
+pl/InductiveType.vio: pl/InductiveType.v pl/CoqIntro.vio
+pl/Logic.vo pl/Logic.glob pl/Logic.v.beautified pl/Logic.required_vo: pl/Logic.v pl/CoqIntro.vo pl/InductiveType.vo
+pl/Logic.vio: pl/Logic.v pl/CoqIntro.vio pl/InductiveType.vio
+pl/SyntaxInCoq.vo pl/SyntaxInCoq.glob pl/SyntaxInCoq.v.beautified pl/SyntaxInCoq.required_vo: pl/SyntaxInCoq.v 
+pl/SyntaxInCoq.vio: pl/SyntaxInCoq.v 
+pl/DenotationalSemantics.vo pl/DenotationalSemantics.glob pl/DenotationalSemantics.v.beautified pl/DenotationalSemantics.required_vo: pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
+pl/DenotationalSemantics.vio: pl/DenotationalSemantics.v sets/SetsClass.vio pl/SyntaxInCoq.vio
+pl/PracticalDenotations.vo pl/PracticalDenotations.glob pl/PracticalDenotations.v.beautified pl/PracticalDenotations.required_vo: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+pl/PracticalDenotations.vio: pl/PracticalDenotations.v sets/SetsClass.vio compcert_lib/Integers.vio pl/SyntaxInCoq.vio pl/DenotationalSemantics.vio
+sets/SetsClass.vo sets/SetsClass.glob sets/SetsClass.v.beautified sets/SetsClass.required_vo: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
+sets/SetsClass.vio: sets/SetsClass.v sets/SetElement.vio sets/SetsDomain.vio sets/SetProd.vio sets/RelsDomain.vio
+sets/SetsDomain.vo sets/SetsDomain.glob sets/SetsDomain.v.beautified sets/SetsDomain.required_vo: sets/SetsDomain.v sets/SetElement.vo
+sets/SetsDomain.vio: sets/SetsDomain.v sets/SetElement.vio
+sets/SetElement.vo sets/SetElement.glob sets/SetElement.v.beautified sets/SetElement.required_vo: sets/SetElement.v 
+sets/SetElement.vio: sets/SetElement.v 
+sets/SetProd.vo sets/SetProd.glob sets/SetProd.v.beautified sets/SetProd.required_vo: sets/SetProd.v sets/SetsDomain.vo
+sets/SetProd.vio: sets/SetProd.v sets/SetsDomain.vio
+sets/RelsDomain.vo sets/RelsDomain.glob sets/RelsDomain.v.beautified sets/RelsDomain.required_vo: sets/RelsDomain.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo
+sets/RelsDomain.vio: sets/RelsDomain.v sets/SetElement.vio sets/SetsDomain.vio sets/SetProd.vio
+compcert_lib/Coqlib.vo compcert_lib/Coqlib.glob compcert_lib/Coqlib.v.beautified compcert_lib/Coqlib.required_vo: compcert_lib/Coqlib.v 
+compcert_lib/Coqlib.vio: compcert_lib/Coqlib.v 
+compcert_lib/Integers.vo compcert_lib/Integers.glob compcert_lib/Integers.v.beautified compcert_lib/Integers.required_vo: compcert_lib/Integers.v compcert_lib/Coqlib.vo compcert_lib/Zbits.vo
+compcert_lib/Integers.vio: compcert_lib/Integers.v compcert_lib/Coqlib.vio compcert_lib/Zbits.vio
+compcert_lib/Zbits.vo compcert_lib/Zbits.glob compcert_lib/Zbits.v.beautified compcert_lib/Zbits.required_vo: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
+compcert_lib/Zbits.vio: compcert_lib/Zbits.v compcert_lib/Coqlib.vio

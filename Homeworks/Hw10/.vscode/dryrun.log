@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10'
+make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

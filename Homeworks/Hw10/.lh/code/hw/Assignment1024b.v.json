@@ -1,0 +1,18 @@
+{
+    "sourceFile": "code/hw/Assignment1024b.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1698146842644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1698146842644,
+            "name": "Commit-0",
+            "content": "Require Import SetsClass.SetsClass. Import SetsNotation.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n\nLemma Rels_concat22_concat21_assoc {A B C: Type}:\n  forall\n    (R1: A -> B -> Prop)\n    (R2: B -> C -> Prop)\n    (T: C -> Prop),\n  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n\nLemma Rels_concat21_mono {A B: Type}:\n  forall\n    (R R': A -> B -> Prop)\n    (T T': B -> Prop),\n  R ⊆ R' ->\n  T ⊆ T' ->\n  R ∘ T ⊆ R' ∘ T'.\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n\nLemma Rels_concat_indexed_union_distr_l {A B: Type}:\n  forall\n    (R: A -> B -> Prop)\n    (Ts: nat -> B -> Prop),\n  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n"
+        }
+    ]
+}
