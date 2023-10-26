@@ -8,6 +8,8 @@ pl/SyntaxInCoq.vo pl/SyntaxInCoq.glob pl/SyntaxInCoq.v.beautified pl/SyntaxInCoq
 pl/SyntaxInCoq.vio: pl/SyntaxInCoq.v 
 pl/DenotationalSemantics.vo pl/DenotationalSemantics.glob pl/DenotationalSemantics.v.beautified pl/DenotationalSemantics.required_vo: pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
 pl/DenotationalSemantics.vio: pl/DenotationalSemantics.v sets/SetsClass.vio pl/SyntaxInCoq.vio
+pl/PracticalDenotations.vo pl/PracticalDenotations.glob pl/PracticalDenotations.v.beautified pl/PracticalDenotations.required_vo: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+pl/PracticalDenotations.vio: pl/PracticalDenotations.v sets/SetsClass.vio compcert_lib/Integers.vio pl/SyntaxInCoq.vio pl/DenotationalSemantics.vio
 sets/SetsClass.vo sets/SetsClass.glob sets/SetsClass.v.beautified sets/SetsClass.required_vo: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
 sets/SetsClass.vio: sets/SetsClass.v sets/SetElement.vio sets/SetsDomain.vio sets/SetProd.vio sets/RelsDomain.vio
 sets/SetsDomain.vo sets/SetsDomain.glob sets/SetsDomain.v.beautified sets/SetsDomain.required_vo: sets/SetsDomain.v sets/SetElement.vo

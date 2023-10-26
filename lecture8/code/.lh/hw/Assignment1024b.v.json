@@ -1,0 +1,130 @@
+{
+    "sourceFile": "hw/Assignment1024b.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1698143660177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1698146898042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n     (T: C -> Prop),\n   R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n Proof.\n   Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+  split.\n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1698146913369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,16 @@\n   R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n Proof.\n   Sets_unfold; intros.\n   split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H1 as [c [H1 H3]].\n+    exists c.\n+    split.\n+    + exists b.\n+      split; assumption.\n+    + assumption.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698146966804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,9 @@\n   Sets_unfold; intros.\n   split.\n   - intros.\n     destruct H as [b [H1 H2]].\n-    destruct H1 as [c [H1 H3]].\n-    exists c.\n-    split.\n-    + exists b.\n-      split; assumption.\n-    + assumption.\n+    \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147021172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,14 @@\n   Sets_unfold; intros.\n   split.\n   - intros.\n     destruct H as [b [H1 H2]].\n-    \n+    destruct H1 as [c [H1 H3]].\n+    exists c.\n+    split.\n+    + exists b.\n+      split; assumption.\n+    + assumption.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147029678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   Sets_unfold; intros.\n   split.\n   - intros.\n     destruct H as [b [H1 H2]].\n-    destruct H1 as [c [H1 H3]].\n+    destruct H2 as [c [H1 H3]].\n     exists c.\n     split.\n     + exists b.\n       split; assumption.\n"
+                },
+                {
+                    "date": 1698147038372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   Sets_unfold; intros.\n   split.\n   - intros.\n     destruct H as [b [H1 H2]].\n-    destruct H2 as [c [H1 H3]].\n+    destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n       split; assumption.\n"
+                },
+                {
+                    "date": 1698147072619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,9 @@\n     destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n-      split; assumption.\n-    + assumption.\n+    + \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147079338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n     destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n-    + \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147111367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n+      apply H1, H2.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147119353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n-      apply H1, H2.\n+      apply H1, H3.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147128570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,63 @@\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n+\n+Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n+  forall\n+    (R1: A -> B -> Prop)\n+    (R2: B -> C -> Prop)\n+    (T: C -> Prop),\n+  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n+Proof.\n+  Sets_unfold; intros.\n+  split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H2 as [c [H3 H4]].\n+    exists c.\n+    split.\n+    + exists b.\n+      apply H1. apply H3.\n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n+\n+Lemma Rels_concat21_mono {A B: Type}:\n+  forall\n+    (R R': A -> B -> Prop)\n+    (T T': B -> Prop),\n+  R ⊆ R' ->\n+  T ⊆ T' ->\n+  R ∘ T ⊆ R' ∘ T'.\n+Proof.\n+  Sets_unfold; intros.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n+\n+Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n+  forall\n+    (R: A -> B -> Prop)\n+    (Ts: nat -> B -> Prop),\n+  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n+Proof.\n+  Sets_unfold; intros.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1698147141786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     destruct H2 as [c [H3 H4]].\n     exists c.\n     split.\n     + exists b.\n-      apply H1. apply H3.\n+      tauto.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n@@ -60,67 +60,4 @@\n   Sets_unfold; intros.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n-\n-Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n-  forall\n-    (R1: A -> B -> Prop)\n-    (R2: B -> C -> Prop)\n-    (T: C -> Prop),\n-  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n-Proof.\n-  Sets_unfold; intros.\n-  split.\n-  - intros.\n-    destruct H as [b [H1 H2]].\n-    destruct H2 as [c [H3 H4]].\n-    exists c.\n-    split.\n-    + exists b.\n-      apply H1, H3.\n- (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n-\n-Lemma Rels_concat21_mono {A B: Type}:\n-  forall\n-    (R R': A -> B -> Prop)\n-    (T T': B -> Prop),\n-  R ⊆ R' ->\n-  T ⊆ T' ->\n-  R ∘ T ⊆ R' ∘ T'.\n-Proof.\n-  Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n-\n-Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n-  forall\n-    (R: A -> B -> Prop)\n-    (Ts: nat -> B -> Prop),\n-  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n-Proof.\n-  Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1698147152326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     exists c.\n     split.\n     + exists b.\n       tauto.\n+    + tauto. \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147160410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n     exists c.\n     split.\n     + exists b.\n       tauto.\n-    + tauto. \n+    + tauto.\n+  - intros. \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147169568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,16 @@\n     split.\n     + exists b.\n       tauto.\n     + tauto.\n-  - intros. \n+  - intros.\n+    destruct H as [c [H1 H2]].\n+    destruct H1 as [b [H3 H4]].\n+    exists b.\n+    split.\n+    + tauto.\n+    + exists c.\n+      tauto. \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147177614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n     exists b.\n     split.\n     + tauto.\n     + exists c.\n-      tauto. \n+      tauto.\n+Qed. \n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147189710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,11 +50,14 @@\n   T ⊆ T' ->\n   R ∘ T ⊆ R' ∘ T'.\n Proof.\n   Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n+\n+(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n (************)\n (** 习题：  *)\n (************)\n \n"
+                },
+                {
+                    "date": 1698147327994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,77 @@\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n+\n+Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n+  forall\n+    (R1: A -> B -> Prop)\n+    (R2: B -> C -> Prop)\n+    (T: C -> Prop),\n+  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n+Proof.\n+  Sets_unfold; intros.\n+  split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H2 as [c [H3 H4]].\n+    exists c.\n+    split.\n+    + exists b.\n+      tauto.\n+    + tauto.\n+  - intros.\n+    destruct H as [c [H1 H2]].\n+    destruct H1 as [b [H3 H4]].\n+    exists b.\n+    split.\n+    + tauto.\n+    + exists c.\n+      tauto.\n+Qed. \n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n+\n+Lemma Rels_concat21_mono {A B: Type}:\n+  forall\n+    (R R': A -> B -> Prop)\n+    (T T': B -> Prop),\n+  R ⊆ R' ->\n+  T ⊆ T' ->\n+  R ∘ T ⊆ R' ∘ T'.\n+Proof.\n+  Sets_unfold; intros.\n+  apply H1.\n+\n+\n+\n+(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n+\n+Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n+  forall\n+    (R: A -> B -> Prop)\n+    (Ts: nat -> B -> Prop),\n+  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n+Proof.\n+  Sets_unfold; intros.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1698147350976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,10 @@\n   T ⊆ T' ->\n   R ∘ T ⊆ R' ∘ T'.\n Proof.\n   Sets_unfold; intros.\n-  apply H1.\n+  destruct H1 as [b [H1 H2]].\n+  exists b.\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n@@ -74,80 +75,4 @@\n   Sets_unfold; intros.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n-\n-Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n-  forall\n-    (R1: A -> B -> Prop)\n-    (R2: B -> C -> Prop)\n-    (T: C -> Prop),\n-  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n-Proof.\n-  Sets_unfold; intros.\n-  split.\n-  - intros.\n-    destruct H as [b [H1 H2]].\n-    destruct H2 as [c [H3 H4]].\n-    exists c.\n-    split.\n-    + exists b.\n-      tauto.\n-    + tauto.\n-  - intros.\n-    destruct H as [c [H1 H2]].\n-    destruct H1 as [b [H3 H4]].\n-    exists b.\n-    split.\n-    + tauto.\n-    + exists c.\n-      tauto.\n-Qed. \n- (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n-\n-Lemma Rels_concat21_mono {A B: Type}:\n-  forall\n-    (R R': A -> B -> Prop)\n-    (T T': B -> Prop),\n-  R ⊆ R' ->\n-  T ⊆ T' ->\n-  R ∘ T ⊆ R' ∘ T'.\n-Proof.\n-  Sets_unfold; intros.\n-\n-\n-\n-(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n-\n-Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n-  forall\n-    (R: A -> B -> Prop)\n-    (Ts: nat -> B -> Prop),\n-  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n-Proof.\n-  Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1698147364636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n Proof.\n   Sets_unfold; intros.\n   destruct H1 as [b [H1 H2]].\n   exists b.\n+  split.\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1698147370740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n   Sets_unfold; intros.\n   destruct H1 as [b [H1 H2]].\n   exists b.\n   split.\n+  - tauto.\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1698147395106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n   Sets_unfold; intros.\n   destruct H1 as [b [H1 H2]].\n   exists b.\n   split.\n-  - tauto.\n+  - specialize (H H1).\n+    tauto.\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1698147401096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n   Sets_unfold; intros.\n   destruct H1 as [b [H1 H2]].\n   exists b.\n   split.\n-  - specialize (H H1).\n+  - specialize (H a).\n     tauto.\n \n \n \n"
+                },
+                {
+                    "date": 1698147409389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,81 @@\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n+\n+Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n+  forall\n+    (R1: A -> B -> Prop)\n+    (R2: B -> C -> Prop)\n+    (T: C -> Prop),\n+  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n+Proof.\n+  Sets_unfold; intros.\n+  split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H2 as [c [H3 H4]].\n+    exists c.\n+    split.\n+    + exists b.\n+      tauto.\n+    + tauto.\n+  - intros.\n+    destruct H as [c [H1 H2]].\n+    destruct H1 as [b [H3 H4]].\n+    exists b.\n+    split.\n+    + tauto.\n+    + exists c.\n+      tauto.\n+Qed. \n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n+\n+Lemma Rels_concat21_mono {A B: Type}:\n+  forall\n+    (R R': A -> B -> Prop)\n+    (T T': B -> Prop),\n+  R ⊆ R' ->\n+  T ⊆ T' ->\n+  R ∘ T ⊆ R' ∘ T'.\n+Proof.\n+  Sets_unfold; intros.\n+  destruct H1 as [b [H1 H2]].\n+  exists b.\n+  split.\n+  - specialize (H a b).\n+    tauto.\n+\n+\n+\n+(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n+\n+Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n+  forall\n+    (R: A -> B -> Prop)\n+    (Ts: nat -> B -> Prop),\n+  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n+Proof.\n+  Sets_unfold; intros.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                },
+                {
+                    "date": 1698147418734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n   exists b.\n   split.\n   - specialize (H a b).\n     tauto.\n+  - specialize (H0 b).\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n@@ -78,85 +79,4 @@\n   Sets_unfold; intros.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n-\n-Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n-  forall\n-    (R1: A -> B -> Prop)\n-    (R2: B -> C -> Prop)\n-    (T: C -> Prop),\n-  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n-Proof.\n-  Sets_unfold; intros.\n-  split.\n-  - intros.\n-    destruct H as [b [H1 H2]].\n-    destruct H2 as [c [H3 H4]].\n-    exists c.\n-    split.\n-    + exists b.\n-      tauto.\n-    + tauto.\n-  - intros.\n-    destruct H as [c [H1 H2]].\n-    destruct H1 as [b [H3 H4]].\n-    exists b.\n-    split.\n-    + tauto.\n-    + exists c.\n-      tauto.\n-Qed. \n- (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n-\n-Lemma Rels_concat21_mono {A B: Type}:\n-  forall\n-    (R R': A -> B -> Prop)\n-    (T T': B -> Prop),\n-  R ⊆ R' ->\n-  T ⊆ T' ->\n-  R ∘ T ⊆ R' ∘ T'.\n-Proof.\n-  Sets_unfold; intros.\n-  destruct H1 as [b [H1 H2]].\n-  exists b.\n-  split.\n-  - specialize (H a).\n-    tauto.\n-\n-\n-\n-(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n-\n-Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n-  forall\n-    (R: A -> B -> Prop)\n-    (Ts: nat -> B -> Prop),\n-  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n-Proof.\n-  Sets_unfold; intros.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-\n"
+                },
+                {
+                    "date": 1698147427818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n   split.\n   - specialize (H a b).\n     tauto.\n   - specialize (H0 b).\n+    tauto.\n \n \n \n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n"
+                },
+                {
+                    "date": 1698147433825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,8 @@\n     tauto.\n Qed.\n \n \n-\n (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n \n (************)\n"
+                },
+                {
+                    "date": 1698147603536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,92 @@\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n+\n+Lemma Rels_concat22_concat21_assoc {A B C: Type}:\n+  forall\n+    (R1: A -> B -> Prop)\n+    (R2: B -> C -> Prop)\n+    (T: C -> Prop),\n+  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\n+Proof.\n+  Sets_unfold; intros.\n+  split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H2 as [c [H3 H4]].\n+    exists c.\n+    split.\n+    + exists b.\n+      tauto.\n+    + tauto.\n+  - intros.\n+    destruct H as [c [H1 H2]].\n+    destruct H1 as [b [H3 H4]].\n+    exists b.\n+    split.\n+    + tauto.\n+    + exists c.\n+      tauto.\n+Qed. \n+ (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n+\n+Lemma Rels_concat21_mono {A B: Type}:\n+  forall\n+    (R R': A -> B -> Prop)\n+    (T T': B -> Prop),\n+  R ⊆ R' ->\n+  T ⊆ T' ->\n+  R ∘ T ⊆ R' ∘ T'.\n+Proof.\n+  Sets_unfold; intros.\n+  destruct H1 as [b [H1 H2]].\n+  exists b.\n+  split.\n+  - specialize (H a b).\n+    tauto.\n+  - specialize (H0 b).\n+    tauto.\n+Qed.\n+\n+\n+(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n+\n+Lemma Rels_concat_indexed_union_distr_l {A B: Type}:\n+  forall\n+    (R: A -> B -> Prop)\n+    (Ts: nat -> B -> Prop),\n+  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\n+Proof.\n+  Sets_unfold; intros.\n+  split.\n+  - intros.\n+    destruct H as [b [H1 H2]].\n+    destruct H2 as [n H2].\n+    exists n,b.\n+    tauto.\n+  - intros.\n+    destruct H as [n [b [H1 H2]]].\n+    exists b.\n+(* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n+\n"
+                }
+            ],
+            "date": 1698143660177,
+            "name": "Commit-0",
+            "content": "Require Import SetsClass.SetsClass. Import SetsNotation.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请在Coq中根据定义证明二元关系的连接“∘”与二元-一元关系的连接“∘”之间有分配律。 *)\n\nLemma Rels_concat22_concat21_assoc {A B C: Type}:\n  forall\n    (R1: A -> B -> Prop)\n    (R2: B -> C -> Prop)\n    (T: C -> Prop),\n  R1 ∘ (R2 ∘ T) == (R1 ∘ R2) ∘ T.\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n(** 请在Coq中根据定义证明二元-一元关系的连接“∘”会保持集合包含关系。 *)\n\nLemma Rels_concat21_mono {A B: Type}:\n  forall\n    (R R': A -> B -> Prop)\n    (T T': B -> Prop),\n  R ⊆ R' ->\n  T ⊆ T' ->\n  R ∘ T ⊆ R' ∘ T'.\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请在Coq中根据定义证明二元-一元关系的连接“∘”对并集的左分配律。 *)\n\nLemma Rels_concat_indexed_union_distr_l {A B: Type}:\n  forall\n    (R: A -> B -> Prop)\n    (Ts: nat -> B -> Prop),\n  R ∘ ⋃ Ts == ⋃ (fun n => R ∘ Ts n).\nProof.\n  Sets_unfold; intros.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n\n"
+        }
+    ]
+}
