@@ -6,9 +6,9 @@ make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Language
 make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code'
 echo COQC CoqIntro.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/CoqIntro.v
- 
 echo COQC InductiveType.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/InductiveType.v
+ 
 echo COQC Logic.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/Logic.v
 echo COQC SyntaxInCoq.v

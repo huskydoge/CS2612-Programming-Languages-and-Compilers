@@ -1,0 +1,746 @@
+DIGEST a3d5fae4271bb585d2f3cd9a02d78932
+FPL.EquivAndRefine
+R15:31 Coq.ZArith.ZArith <> <> lib
+R49:67 Coq.micromega.Psatz <> <> lib
+R85:102 Coq.Strings.String <> <> lib
+R120:140 Coq.Classes.Morphisms <> <> lib
+R158:183 Coq.Classes.Morphisms_Prop <> <> lib
+R201:227 Coq.Classes.RelationClasses <> <> lib
+R245:273 Coq.Logic.Classical_Pred_Type <> <> lib
+R291:314 Coq.Logic.Classical_Prop <> <> lib
+R332:350 SetsClass.SetsClass <> <> lib
+R360:371 SetsClass.SetsClass SetsNotation <> mod
+R389:409 compcert.lib.Integers <> <> lib
+R427:440 PL.SyntaxInCoq <> <> lib
+R458:480 PL.PracticalDenotations <> <> lib
+R490:499 PL.SyntaxInCoq Lang_While <> mod
+R501:513 PL.PracticalDenotations DntSem_While1 <> mod
+R515:527 PL.PracticalDenotations DntSem_While2 <> mod
+R537:543 PL.PracticalDenotations DntSem_While1.EDenote <> mod
+R545:551 PL.PracticalDenotations DntSem_While1.CDenote <> mod
+def 660:664 <> EVar'
+R673:676 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R667:672 Coq.Strings.String <> string ind
+R677:680 PL.SyntaxInCoq Lang_While expr ind
+R685:688 PL.SyntaxInCoq Lang_While EVar constr
+R691:717 PL.SyntaxInCoq Lang_While EConst constr
+R720:751 PL.SyntaxInCoq Lang_While EVar constr
+R754:784 PL.EquivAndRefine <> EVar' def
+not 796:796 <> :::'[['_x_']]'
+not 869:869 <> :expr_entry::'('_x_')'
+not 950:950 <> :expr_entry::x
+not 1026:1026 <> :expr_entry::x_x
+R1172:1177 PL.SyntaxInCoq Lang_While EBinop constr
+R1179:1183 PL.SyntaxInCoq Lang_While OPlus constr
+not 1160:1160 <> :expr_entry::x_'+'_x
+R1269:1274 PL.SyntaxInCoq Lang_While EBinop constr
+R1276:1281 PL.SyntaxInCoq Lang_While OMinus constr
+not 1257:1257 <> :expr_entry::x_'-'_x
+R1367:1372 PL.SyntaxInCoq Lang_While EBinop constr
+R1374:1377 PL.SyntaxInCoq Lang_While OMul constr
+not 1355:1355 <> :expr_entry::x_'*'_x
+R1463:1468 PL.SyntaxInCoq Lang_While EBinop constr
+R1470:1473 PL.SyntaxInCoq Lang_While ODiv constr
+not 1451:1451 <> :expr_entry::x_'/'_x
+R1559:1564 PL.SyntaxInCoq Lang_While EBinop constr
+R1566:1569 PL.SyntaxInCoq Lang_While OMod constr
+not 1547:1547 <> :expr_entry::x_'%'_x
+R1656:1661 PL.SyntaxInCoq Lang_While EBinop constr
+R1663:1665 PL.SyntaxInCoq Lang_While OLe constr
+not 1643:1643 <> :expr_entry::x_'<='_x
+R1749:1754 PL.SyntaxInCoq Lang_While EBinop constr
+R1756:1758 PL.SyntaxInCoq Lang_While OLt constr
+not 1737:1737 <> :expr_entry::x_'<'_x
+R1843:1848 PL.SyntaxInCoq Lang_While EBinop constr
+R1850:1852 PL.SyntaxInCoq Lang_While OGe constr
+not 1830:1830 <> :expr_entry::x_'>='_x
+R1936:1941 PL.SyntaxInCoq Lang_While EBinop constr
+R1943:1945 PL.SyntaxInCoq Lang_While OGt constr
+not 1924:1924 <> :expr_entry::x_'>'_x
+R2030:2035 PL.SyntaxInCoq Lang_While EBinop constr
+R2037:2039 PL.SyntaxInCoq Lang_While OEq constr
+not 2017:2017 <> :expr_entry::x_'=='_x
+R2124:2129 PL.SyntaxInCoq Lang_While EBinop constr
+R2131:2133 PL.SyntaxInCoq Lang_While ONe constr
+not 2111:2111 <> :expr_entry::x_'!='_x
+R2218:2223 PL.SyntaxInCoq Lang_While EBinop constr
+R2225:2228 PL.SyntaxInCoq Lang_While OAnd constr
+not 2205:2205 <> :expr_entry::x_'&&'_x
+R2315:2320 PL.SyntaxInCoq Lang_While EBinop constr
+R2322:2324 PL.SyntaxInCoq Lang_While OOr constr
+not 2302:2302 <> :expr_entry::x_'||'_x
+R2408:2412 PL.SyntaxInCoq Lang_While EUnop constr
+R2414:2417 PL.SyntaxInCoq Lang_While ONot constr
+not 2398:2398 <> :expr_entry::'!'_x
+R2479:2483 PL.SyntaxInCoq Lang_While EUnop constr
+R2485:2488 PL.SyntaxInCoq Lang_While ONeg constr
+not 2469:2469 <> :expr_entry::'-'_x
+R2554:2557 PL.SyntaxInCoq Lang_While CSeq constr
+not 2540:2540 <> :expr_entry::x_';'_x
+R2647:2651 PL.SyntaxInCoq Lang_While CSkip constr
+not 2634:2634 <> :expr_entry::'skip'
+R2750:2752 PL.SyntaxInCoq Lang_While CIf constr
+not 2701:2701 <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}'
+R3017:3022 PL.SyntaxInCoq Lang_While CWhile constr
+not 2985:2985 <> :expr_entry::'while'_x_'do'_'{'_x_'}'
+R3166:3174 PL.PracticalDenotations DntSem_While1 eval_expr def
+not 3150:3150 <> :::'⟦'_x_'⟧'
+R3268:3275 PL.PracticalDenotations DntSem_While2 eval_com def
+not 3252:3252 <> :::'⟦'_x_'⟧'
+R3389:3395 PL.PracticalDenotations DntSem_While1.EDenote EDenote rec
+R3389:3395 PL.PracticalDenotations DntSem_While1.EDenote EDenote rec
+R3427:3433 PL.PracticalDenotations DntSem_While1.CDenote CDenote rec
+R3427:3433 PL.PracticalDenotations DntSem_While1.CDenote CDenote rec
+R3498:3501 PL.SyntaxInCoq Lang_While expr ind
+R3498:3501 PL.SyntaxInCoq Lang_While expr ind
+R3537:3539 PL.SyntaxInCoq Lang_While com ind
+R3537:3539 PL.SyntaxInCoq Lang_While com ind
+R3551:3558 PL.PracticalDenotations DntSem_While2 eval_com def
+R3513:3521 PL.PracticalDenotations DntSem_While1 eval_expr def
+R3445:3452 PL.PracticalDenotations DntSem_While2 eval_com def
+R3407:3415 PL.PracticalDenotations DntSem_While1 eval_expr def
+not 3593:3593 <> :::'⟦'_x_'⟧'
+R3715:3724 SetsClass.SetsDomain Sets test1 def
+R3730:3733 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+not 3701:3701 <> ::sets_scope:x_'×'_x
+rec 3830:3835 <> eequiv
+proj 3864:3873 <> nrm_eequiv
+proj 3920:3929 <> err_eequiv
+R3845:3848 PL.SyntaxInCoq Lang_While expr ind
+binder 3838:3839 <> e1:1
+binder 3841:3842 <> e2:2
+R3896:3899 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R3890:3895 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R3880:3883 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3886:3889 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3884:3885 PL.EquivAndRefine <> e1:1 var
+R3910:3915 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R3900:3903 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3906:3909 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3904:3905 PL.EquivAndRefine <> e2:2 var
+R3952:3955 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R3946:3951 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R3936:3939 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3942:3945 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3940:3941 PL.EquivAndRefine <> e1:1 var
+R3966:3971 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R3956:3959 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3962:3965 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R3960:3961 PL.EquivAndRefine <> e2:2 var
+rec 4015:4021 <> erefine
+proj 4050:4060 <> nrm_erefine
+proj 4140:4150 <> err_erefine
+R4031:4034 PL.SyntaxInCoq Lang_While expr ind
+binder 4024:4025 <> e1:6
+binder 4027:4028 <> e2:7
+R4083:4087 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R4077:4082 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4067:4070 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4073:4076 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4071:4072 PL.EquivAndRefine <> e1:6 var
+R4104:4109 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R4135:4135 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R4098:4103 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4088:4091 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4094:4097 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4092:4093 PL.EquivAndRefine <> e2:7 var
+R4126:4129 PL.EquivAndRefine <> ::sets_scope:x_'×'_x not
+R4130:4134 compcert.lib.Integers <> int64 abbrev
+R4120:4125 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4110:4113 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4116:4119 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4114:4115 PL.EquivAndRefine <> e2:7 var
+R4173:4177 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R4167:4172 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4157:4160 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4163:4166 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4161:4162 PL.EquivAndRefine <> e1:6 var
+R4188:4193 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4178:4181 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4184:4187 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4182:4183 PL.EquivAndRefine <> e2:7 var
+rec 4240:4245 <> cequiv
+proj 4273:4282 <> nrm_cequiv
+proj 4325:4334 <> err_cequiv
+proj 4377:4386 <> inf_cequiv
+R4255:4257 PL.SyntaxInCoq Lang_While com ind
+binder 4248:4249 <> c1:11
+binder 4251:4252 <> c2:12
+R4301:4304 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R4295:4300 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4285:4288 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4291:4294 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4289:4290 PL.EquivAndRefine <> c1:11 var
+R4315:4320 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4305:4308 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4311:4314 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4309:4310 PL.EquivAndRefine <> c2:12 var
+R4353:4356 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R4347:4352 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4337:4340 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4343:4346 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4341:4342 PL.EquivAndRefine <> c1:11 var
+R4367:4372 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4357:4360 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4363:4366 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4361:4362 PL.EquivAndRefine <> c2:12 var
+R4405:4408 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R4399:4404 PL.PracticalDenotations DntSem_While1 :::x_'.(inf)' not
+R4389:4392 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4395:4398 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4393:4394 PL.EquivAndRefine <> c1:11 var
+R4419:4424 PL.PracticalDenotations DntSem_While1 :::x_'.(inf)' not
+R4409:4412 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4415:4418 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4413:4414 PL.EquivAndRefine <> c2:12 var
+rec 4471:4477 <> crefine
+proj 4505:4515 <> nrm_crefine
+proj 4595:4605 <> err_crefine
+proj 4653:4663 <> inf_crefine
+R4487:4489 PL.SyntaxInCoq Lang_While com ind
+binder 4480:4481 <> c1:17
+binder 4483:4484 <> c2:18
+R4538:4542 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R4532:4537 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4522:4525 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4528:4531 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4526:4527 PL.EquivAndRefine <> c1:17 var
+R4559:4564 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R4590:4590 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R4553:4558 PL.PracticalDenotations DntSem_While1 :::x_'.(nrm)' not
+R4543:4546 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4549:4552 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4547:4548 PL.EquivAndRefine <> c2:18 var
+R4581:4584 PL.EquivAndRefine <> ::sets_scope:x_'×'_x not
+R4585:4589 PL.PracticalDenotations DntSem_While1 state def
+R4575:4580 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4565:4568 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4571:4574 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4569:4570 PL.EquivAndRefine <> c2:18 var
+R4628:4632 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R4622:4627 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4612:4615 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4618:4621 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4616:4617 PL.EquivAndRefine <> c1:17 var
+R4643:4648 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4633:4636 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4639:4642 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4637:4638 PL.EquivAndRefine <> c2:18 var
+R4686:4690 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R4680:4685 PL.PracticalDenotations DntSem_While1 :::x_'.(inf)' not
+R4670:4673 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4676:4679 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4674:4675 PL.EquivAndRefine <> c1:17 var
+R4707:4711 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R4701:4706 PL.PracticalDenotations DntSem_While1 :::x_'.(inf)' not
+R4691:4694 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4697:4700 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4695:4696 PL.EquivAndRefine <> c2:18 var
+R4722:4727 PL.PracticalDenotations DntSem_While1 :::x_'.(err)' not
+R4712:4715 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4718:4721 PL.EquivAndRefine <> :::'⟦'_x_'⟧' not
+R4716:4717 PL.EquivAndRefine <> c2:18 var
+R4761:4766 PL.EquivAndRefine <> eequiv rec
+not 4743:4743 <> :::x_'~=~'_x
+R4852:4858 PL.EquivAndRefine <> erefine rec
+not 4834:4834 <> :::x_'<<='_x
+R4944:4949 PL.EquivAndRefine <> cequiv rec
+not 4926:4926 <> :::x_'~=~'_x
+R5035:5041 PL.EquivAndRefine <> crefine rec
+not 5017:5017 <> :::x_'<<='_x
+R5150:5153 PL.SyntaxInCoq Lang_While expr ind
+R5150:5153 PL.SyntaxInCoq Lang_While expr ind
+R5181:5183 PL.SyntaxInCoq Lang_While com ind
+R5181:5183 PL.SyntaxInCoq Lang_While com ind
+R5248:5251 PL.SyntaxInCoq Lang_While expr ind
+R5248:5251 PL.SyntaxInCoq Lang_While expr ind
+R5286:5288 PL.SyntaxInCoq Lang_While com ind
+R5286:5288 PL.SyntaxInCoq Lang_While com ind
+R5300:5305 PL.EquivAndRefine <> cequiv rec
+R5263:5268 PL.EquivAndRefine <> eequiv rec
+R5195:5200 PL.EquivAndRefine <> cequiv rec
+R5165:5170 PL.EquivAndRefine <> eequiv rec
+R5383:5386 PL.SyntaxInCoq Lang_While expr ind
+R5383:5386 PL.SyntaxInCoq Lang_While expr ind
+R5415:5417 PL.SyntaxInCoq Lang_While com ind
+R5415:5417 PL.SyntaxInCoq Lang_While com ind
+R5483:5486 PL.SyntaxInCoq Lang_While expr ind
+R5483:5486 PL.SyntaxInCoq Lang_While expr ind
+R5522:5524 PL.SyntaxInCoq Lang_While com ind
+R5522:5524 PL.SyntaxInCoq Lang_While com ind
+R5536:5542 PL.EquivAndRefine <> crefine rec
+R5498:5504 PL.EquivAndRefine <> erefine rec
+R5429:5435 PL.EquivAndRefine <> crefine rec
+R5398:5404 PL.EquivAndRefine <> erefine rec
+not 5579:5579 <> :::x_'~=~'_x
+not 5675:5675 <> :::x_'<<='_x
+R5797:5806 PL.EquivAndRefine <> nrm_eequiv proj
+not 5773:5773 <> :::x_'.(nrm_eequiv)'
+R5864:5873 PL.EquivAndRefine <> err_eequiv proj
+not 5840:5840 <> :::x_'.(err_eequiv)'
+R5932:5942 PL.EquivAndRefine <> nrm_erefine proj
+not 5907:5907 <> :::x_'.(nrm_erefine)'
+R6001:6011 PL.EquivAndRefine <> err_erefine proj
+not 5976:5976 <> :::x_'.(err_erefine)'
+R6069:6078 PL.EquivAndRefine <> nrm_cequiv proj
+not 6045:6045 <> :::x_'.(nrm_cequiv)'
+R6136:6145 PL.EquivAndRefine <> err_cequiv proj
+not 6112:6112 <> :::x_'.(err_cequiv)'
+R6203:6212 PL.EquivAndRefine <> inf_cequiv proj
+not 6179:6179 <> :::x_'.(inf_cequiv)'
+R6271:6281 PL.EquivAndRefine <> nrm_crefine proj
+not 6246:6246 <> :::x_'.(nrm_crefine)'
+R6340:6350 PL.EquivAndRefine <> err_crefine proj
+not 6315:6315 <> :::x_'.(err_crefine)'
+R6409:6419 PL.EquivAndRefine <> inf_crefine proj
+not 6384:6384 <> :::x_'.(inf_crefine)'
+prf 6475:6497 <> const_plus_const_refine
+R6512:6512 Coq.Numbers.BinNums <> Z ind
+binder 6507:6507 <> n:23
+binder 6509:6509 <> m:24
+R6531:6535 PL.EquivAndRefine <> :::x_'<<='_x not
+R6517:6522 PL.SyntaxInCoq Lang_While EConst constr
+R6526:6528 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6525:6525 PL.EquivAndRefine <> n:23 var
+R6529:6529 PL.EquivAndRefine <> m:24 var
+R6536:6537 PL.EquivAndRefine <> :::'[['_x_']]' not
+R6543:6544 PL.EquivAndRefine <> :::'[['_x_']]' not
+R6539:6541 PL.EquivAndRefine <> :expr_entry::x_'+'_x not
+R6538:6538 PL.EquivAndRefine <> n:23 var
+R6542:6542 PL.EquivAndRefine <> m:24 var
+R6643:6656 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6618:6621 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6623:6626 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6602:6617 compcert.lib.Integers Int64 min_signed def
+R6627:6642 compcert.lib.Integers Int64 max_signed def
+R6677:6690 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6658:6660 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R6661:6676 compcert.lib.Integers Int64 min_signed def
+R6692:6694 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R6695:6710 compcert.lib.Integers Int64 max_signed def
+R6643:6656 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6618:6621 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6623:6626 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6602:6617 compcert.lib.Integers Int64 min_signed def
+R6627:6642 compcert.lib.Integers Int64 max_signed def
+R6677:6690 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6658:6660 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R6661:6676 compcert.lib.Integers Int64 min_signed def
+R6692:6694 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R6695:6710 compcert.lib.Integers Int64 max_signed def
+R6778:6791 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6753:6756 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6758:6761 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6737:6752 compcert.lib.Integers Int64 min_signed def
+R6762:6777 compcert.lib.Integers Int64 max_signed def
+R6812:6825 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6793:6795 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R6796:6811 compcert.lib.Integers Int64 min_signed def
+R6827:6829 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R6830:6845 compcert.lib.Integers Int64 max_signed def
+R6778:6791 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6753:6756 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6758:6761 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x_'<='_x not
+R6737:6752 compcert.lib.Integers Int64 min_signed def
+R6762:6777 compcert.lib.Integers Int64 max_signed def
+R6812:6825 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6793:6795 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R6796:6811 compcert.lib.Integers Int64 min_signed def
+R6827:6829 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R6830:6845 compcert.lib.Integers Int64 max_signed def
+R7025:7038 PL.PracticalDenotations DntSem_While1 arith_sem1_nrm def
+R7041:7058 PL.PracticalDenotations <> arith_compute1_nrm def
+R7075:7084 compcert.lib.Integers Int64 repr def
+R7091:7100 compcert.lib.Integers Int64 repr def
+R7075:7084 compcert.lib.Integers Int64 repr def
+R7091:7100 compcert.lib.Integers Int64 repr def
+R7123:7139 compcert.lib.Integers Int64 signed_repr thm
+R7123:7139 compcert.lib.Integers Int64 signed_repr thm
+R7164:7180 compcert.lib.Integers Int64 signed_repr thm
+R7164:7180 compcert.lib.Integers Int64 signed_repr thm
+R7329:7342 PL.PracticalDenotations DntSem_While1 arith_sem1_err def
+R7345:7362 PL.PracticalDenotations <> arith_compute1_err def
+R7456:7465 compcert.lib.Integers Int64 repr def
+R7472:7481 compcert.lib.Integers Int64 repr def
+R7456:7465 compcert.lib.Integers Int64 repr def
+R7472:7481 compcert.lib.Integers Int64 repr def
+R7504:7520 compcert.lib.Integers Int64 signed_repr thm
+R7504:7520 compcert.lib.Integers Int64 signed_repr thm
+R7545:7561 compcert.lib.Integers Int64 signed_repr thm
+R7545:7561 compcert.lib.Integers Int64 signed_repr thm
+prf 7701:7710 <> CSeq_assoc
+R7731:7733 PL.SyntaxInCoq Lang_While com ind
+binder 7721:7722 <> c1:25
+binder 7724:7725 <> c2:26
+binder 7727:7728 <> c3:27
+R7755:7759 PL.EquivAndRefine <> :::x_'~=~'_x not
+R7739:7740 PL.EquivAndRefine <> :::'[['_x_']]' not
+R7753:7754 PL.EquivAndRefine <> :::'[['_x_']]' not
+R7743:7744 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R7741:7742 PL.EquivAndRefine <> c1:25 var
+R7745:7745 PL.EquivAndRefine <> :expr_entry::'('_x_')' not
+R7752:7752 PL.EquivAndRefine <> :expr_entry::'('_x_')' not
+R7748:7749 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R7746:7747 PL.EquivAndRefine <> c2:26 var
+R7750:7751 PL.EquivAndRefine <> c3:27 var
+R7760:7761 PL.EquivAndRefine <> :::'[['_x_']]' not
+R7774:7775 PL.EquivAndRefine <> :::'[['_x_']]' not
+R7770:7771 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R7762:7762 PL.EquivAndRefine <> :expr_entry::'('_x_')' not
+R7769:7769 PL.EquivAndRefine <> :expr_entry::'('_x_')' not
+R7765:7766 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R7763:7764 PL.EquivAndRefine <> c1:25 var
+R7767:7768 PL.EquivAndRefine <> c2:26 var
+R7772:7773 PL.EquivAndRefine <> c3:27 var
+R7827:7843 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R7827:7843 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R7827:7843 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R7886:7910 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R7886:7910 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R7886:7910 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R7925:7940 SetsClass.SetsDomain <> Sets_union_assoc thm
+R7925:7940 SetsClass.SetsDomain <> Sets_union_assoc thm
+R7925:7940 SetsClass.SetsDomain <> Sets_union_assoc thm
+R7955:7971 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R7955:7971 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R7955:7971 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8014:8038 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8014:8038 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8014:8038 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8053:8068 SetsClass.SetsDomain <> Sets_union_assoc thm
+R8053:8068 SetsClass.SetsDomain <> Sets_union_assoc thm
+R8053:8068 SetsClass.SetsDomain <> Sets_union_assoc thm
+R8083:8099 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8083:8099 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8083:8099 SetsClass.RelsDomain <> Rels_concat_assoc meth
+prf 8134:8141 <> CIf_CSeq
+binder 8151:8151 <> e:28
+binder 8153:8154 <> c1:29
+binder 8156:8157 <> c2:30
+binder 8159:8160 <> c3:31
+R8203:8209 PL.EquivAndRefine <> :::x_'~=~'_x not
+R8165:8167 PL.EquivAndRefine <> :::'[['_x_']]' not
+R8200:8202 PL.EquivAndRefine <> :::'[['_x_']]' not
+R8196:8197 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R8168:8170 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8172:8179 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8182:8191 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8194:8195 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8171:8171 PL.EquivAndRefine <> e:28 var
+R8180:8181 PL.EquivAndRefine <> c1:29 var
+R8192:8193 PL.EquivAndRefine <> c2:30 var
+R8198:8199 PL.EquivAndRefine <> c3:31 var
+R8210:8212 PL.EquivAndRefine <> :::'[['_x_']]' not
+R8249:8251 PL.EquivAndRefine <> :::'[['_x_']]' not
+R8213:8215 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8217:8224 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8231:8240 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8247:8248 PL.EquivAndRefine <> :expr_entry::'if'_x_'then'_'{'_x_'}'_'else'_'{'_x_'}' not
+R8216:8216 PL.EquivAndRefine <> e:28 var
+R8227:8228 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R8225:8226 PL.EquivAndRefine <> c1:29 var
+R8229:8230 PL.EquivAndRefine <> c3:31 var
+R8243:8244 PL.EquivAndRefine <> :expr_entry::x_';'_x not
+R8241:8242 PL.EquivAndRefine <> c2:30 var
+R8245:8246 PL.EquivAndRefine <> c3:31 var
+R8308:8324 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8308:8324 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8308:8324 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8308:8324 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8308:8324 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8337:8361 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8337:8361 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8389:8413 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8389:8413 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8389:8413 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8389:8413 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8430:8454 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8430:8454 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8430:8454 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8430:8454 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8430:8454 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8474:8490 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8474:8490 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8474:8490 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8474:8490 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8474:8490 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8552:8576 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8552:8576 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8552:8576 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8552:8576 SetsClass.RelsDomain <> Rels_concat_union_distr_r meth
+R8593:8617 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8593:8617 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8593:8617 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8593:8617 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8593:8617 SetsClass.RelsDomain <> Rels_concat_union_distr_l meth
+R8637:8653 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8637:8653 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8637:8653 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8637:8653 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R8637:8653 SetsClass.RelsDomain <> Rels_concat_assoc meth
+inst 9220:9230 <> eequiv_refl
+R9233:9241 Coq.Classes.RelationClasses <> Reflexive class
+R9243:9248 PL.EquivAndRefine <> eequiv rec
+R9267:9275 Coq.Classes.RelationClasses <> Reflexive class
+inst 9344:9353 <> eequiv_sym
+R9356:9364 Coq.Classes.RelationClasses <> Symmetric class
+R9366:9371 PL.EquivAndRefine <> eequiv rec
+R9390:9398 Coq.Classes.RelationClasses <> Symmetric class
+R9431:9443 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9431:9443 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9431:9443 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9476:9488 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9476:9488 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9476:9488 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+inst 9523:9534 <> eequiv_trans
+R9537:9546 Coq.Classes.RelationClasses <> Transitive class
+R9548:9553 PL.EquivAndRefine <> eequiv rec
+R9572:9581 Coq.Classes.RelationClasses <> Transitive class
+R9614:9626 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9631:9643 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9614:9626 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9614:9626 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9631:9643 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9631:9643 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R9676:9688 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9693:9705 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9676:9688 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9676:9688 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9693:9705 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R9693:9705 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+inst 9740:9751 <> eequiv_equiv
+R9754:9764 Coq.Classes.RelationClasses <> Equivalence class
+R9766:9771 PL.EquivAndRefine <> eequiv rec
+R9800:9810 PL.EquivAndRefine <> eequiv_refl inst
+R9800:9810 PL.EquivAndRefine <> eequiv_refl inst
+R9823:9832 PL.EquivAndRefine <> eequiv_sym inst
+R9823:9832 PL.EquivAndRefine <> eequiv_sym inst
+R9845:9856 PL.EquivAndRefine <> eequiv_trans inst
+R9845:9856 PL.EquivAndRefine <> eequiv_trans inst
+inst 9948:9959 <> erefine_refl
+R9962:9970 Coq.Classes.RelationClasses <> Reflexive class
+R9972:9978 PL.EquivAndRefine <> erefine rec
+R9997:10005 Coq.Classes.RelationClasses <> Reflexive class
+R10035:10054 SetsClass.SetsDomain <> Sets_included_union1 meth
+R10035:10054 SetsClass.SetsDomain <> Sets_included_union1 meth
+inst 10089:10101 <> erefine_trans
+R10104:10113 Coq.Classes.RelationClasses <> Transitive class
+R10115:10121 PL.EquivAndRefine <> erefine rec
+R10140:10149 Coq.Classes.RelationClasses <> Transitive class
+R10182:10195 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10182:10195 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10182:10195 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10212:10225 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10212:10225 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10212:10225 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10242:10255 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10242:10255 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10242:10255 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10309:10322 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10309:10322 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10309:10322 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10339:10352 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10339:10352 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10339:10352 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+inst 10446:10465 <> erefine_well_defined
+R10470:10475 Coq.Classes.Morphisms <> Proper class
+R10505:10511 PL.EquivAndRefine <> erefine rec
+R10484:10488 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R10478:10483 PL.EquivAndRefine <> eequiv rec
+R10495:10499 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R10489:10494 PL.EquivAndRefine <> eequiv rec
+R10500:10502 Coq.Init.Logic <> iff def
+R10530:10535 Coq.Classes.Morphisms <> Proper class
+R10538:10547 Coq.Classes.Morphisms <> respectful def
+R10604:10616 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10604:10616 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10604:10616 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10638:10650 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10638:10650 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10638:10650 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10672:10684 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10672:10684 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10672:10684 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10701:10714 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10701:10714 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10735:10747 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10735:10747 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10735:10747 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10769:10781 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10769:10781 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10769:10781 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10798:10811 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10798:10811 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R10840:10852 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10840:10852 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10840:10852 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10871:10883 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10871:10883 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10871:10883 PL.EquivAndRefine <> :::x_'.(nrm_eequiv)' not
+R10902:10914 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10902:10914 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10902:10914 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10931:10944 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10931:10944 PL.EquivAndRefine <> :::x_'.(nrm_erefine)' not
+R10962:10974 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10962:10974 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10962:10974 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10993:11005 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10993:11005 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R10993:11005 PL.EquivAndRefine <> :::x_'.(err_eequiv)' not
+R11022:11035 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+R11022:11035 PL.EquivAndRefine <> :::x_'.(err_erefine)' not
+inst 11186:11196 <> cequiv_refl
+R11199:11207 Coq.Classes.RelationClasses <> Reflexive class
+R11209:11214 PL.EquivAndRefine <> cequiv rec
+R11233:11241 Coq.Classes.RelationClasses <> Reflexive class
+inst 11327:11336 <> cequiv_sym
+R11339:11347 Coq.Classes.RelationClasses <> Symmetric class
+R11349:11354 PL.EquivAndRefine <> cequiv rec
+R11373:11381 Coq.Classes.RelationClasses <> Symmetric class
+R11414:11426 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11414:11426 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11414:11426 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11459:11471 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11459:11471 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11459:11471 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11504:11516 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11504:11516 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11504:11516 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+inst 11551:11562 <> cequiv_trans
+R11565:11574 Coq.Classes.RelationClasses <> Transitive class
+R11576:11581 PL.EquivAndRefine <> cequiv rec
+R11600:11609 Coq.Classes.RelationClasses <> Transitive class
+R11642:11654 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11659:11671 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11642:11654 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11642:11654 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11659:11671 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11659:11671 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R11704:11716 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11721:11733 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11704:11716 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11704:11716 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11721:11733 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11721:11733 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R11766:11778 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11783:11795 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11766:11778 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11766:11778 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11783:11795 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R11783:11795 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+inst 11830:11841 <> cequiv_equiv
+R11844:11854 Coq.Classes.RelationClasses <> Equivalence class
+R11856:11861 PL.EquivAndRefine <> cequiv rec
+R11890:11900 PL.EquivAndRefine <> cequiv_refl inst
+R11890:11900 PL.EquivAndRefine <> cequiv_refl inst
+R11913:11922 PL.EquivAndRefine <> cequiv_sym inst
+R11913:11922 PL.EquivAndRefine <> cequiv_sym inst
+R11935:11946 PL.EquivAndRefine <> cequiv_trans inst
+R11935:11946 PL.EquivAndRefine <> cequiv_trans inst
+inst 11964:11975 <> crefine_refl
+R11978:11986 Coq.Classes.RelationClasses <> Reflexive class
+R11988:11994 PL.EquivAndRefine <> crefine rec
+R12013:12021 Coq.Classes.RelationClasses <> Reflexive class
+R12051:12070 SetsClass.SetsDomain <> Sets_included_union1 meth
+R12051:12070 SetsClass.SetsDomain <> Sets_included_union1 meth
+R12100:12119 SetsClass.SetsDomain <> Sets_included_union1 meth
+R12100:12119 SetsClass.SetsDomain <> Sets_included_union1 meth
+inst 12137:12149 <> crefine_trans
+R12152:12161 Coq.Classes.RelationClasses <> Transitive class
+R12163:12169 PL.EquivAndRefine <> crefine rec
+R12188:12197 Coq.Classes.RelationClasses <> Transitive class
+R12230:12243 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12230:12243 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12230:12243 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12260:12273 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12260:12273 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12260:12273 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12290:12303 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12290:12303 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12290:12303 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12357:12370 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12357:12370 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12357:12370 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12387:12400 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12387:12400 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12387:12400 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12433:12446 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12433:12446 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12433:12446 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12463:12476 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12463:12476 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12463:12476 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R12493:12506 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12493:12506 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12493:12506 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+inst 12558:12577 <> crefine_well_defined
+R12582:12587 Coq.Classes.Morphisms <> Proper class
+R12617:12623 PL.EquivAndRefine <> crefine rec
+R12596:12600 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R12590:12595 PL.EquivAndRefine <> cequiv rec
+R12607:12611 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R12601:12606 PL.EquivAndRefine <> cequiv rec
+R12612:12614 Coq.Init.Logic <> iff def
+R12642:12647 Coq.Classes.Morphisms <> Proper class
+R12650:12659 Coq.Classes.Morphisms <> respectful def
+R12716:12728 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12716:12728 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12716:12728 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12750:12762 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12750:12762 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12750:12762 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R12784:12796 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12784:12796 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12784:12796 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12813:12826 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12813:12826 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R12847:12859 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12847:12859 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12847:12859 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12881:12893 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12881:12893 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12881:12893 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R12910:12923 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12910:12923 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R12944:12956 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R12944:12956 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R12944:12956 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R12978:12990 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R12978:12990 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R12978:12990 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13012:13024 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13012:13024 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13012:13024 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13041:13054 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R13041:13054 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R13083:13095 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13083:13095 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13083:13095 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13114:13126 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13114:13126 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13114:13126 PL.EquivAndRefine <> :::x_'.(nrm_cequiv)' not
+R13145:13157 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13145:13157 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13145:13157 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13174:13187 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R13174:13187 PL.EquivAndRefine <> :::x_'.(nrm_crefine)' not
+R13205:13217 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13205:13217 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13205:13217 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13236:13248 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13236:13248 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13236:13248 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13265:13278 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R13265:13278 PL.EquivAndRefine <> :::x_'.(err_crefine)' not
+R13296:13308 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13296:13308 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13296:13308 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13327:13339 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13327:13339 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13327:13339 PL.EquivAndRefine <> :::x_'.(inf_cequiv)' not
+R13358:13370 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13358:13370 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13358:13370 PL.EquivAndRefine <> :::x_'.(err_cequiv)' not
+R13387:13400 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not
+R13387:13400 PL.EquivAndRefine <> :::x_'.(inf_crefine)' not

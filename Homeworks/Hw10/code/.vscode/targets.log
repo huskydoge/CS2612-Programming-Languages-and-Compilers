@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Oct 24 18:34:18 2023
+# Make data base, printed on Sat Nov  4 15:21:37 2023
 
 # Variables
 
@@ -24,13 +24,12 @@ OPAM_SWITCH_PREFIX = /Users/husky/.opam/default
 OCAML_TOPLEVEL_PATH = /Users/husky/.opam/default/lib/toplevel
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
-# environment
-TESSDATA_PREFIX = /Users/husky/opt/anaconda3/share/tessdata/
+# makefile (from `Makefile', line 19)
+DEP_FLAG = -R $(PL_DIR) PL -R $(SETS_DIR) SetsClass -R $(COMPCERT_DIR) compcert.lib
 # environment
 COPT_LICENSE_DIR = /Applications/copt30
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
- 
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -40,9 +39,11 @@ CURDIR := /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"9f233b0c8bdef919c90298683f3dac6b.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/f1b07bd25dfad64b0167beb15359ae573aecd2cc","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/9f233b0c8bdef919c90298683f3dac6b.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"caf9030b94658d64fdd1c0ed05543377.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/caf9030b94658d64fdd1c0ed05543377.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/caf9030b94658d64fdd1c0ed05543377.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/caf9030b94658d64fdd1c0ed05543377.zh-cn/d037ac076cee195194f93ce6fe2bdfe2969cc82d","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/caf9030b94658d64fdd1c0ed05543377.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
+# environment
+CONDA_PREFIX_1 = /Users/husky/opt/anaconda3
 # makefile (from `.depend', line 1)
 MAKEFILE_LIST :=  Makefile .depend
 # makefile (from `Makefile', line 2)
@@ -54,7 +55,7 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/husky/.gem/ruby/3.1.3/bin:/Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0/bin:/Users/husky/.rubies/ruby-3.1.3/bin:/Users/husky/.opam/default/bin:/Users/husky/opt/anaconda3/bin:/Users/husky/opt/anaconda3/condabin:/Applications/copt30/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/husky/.cargo/bin:/Users/husky/Library/Application Support/JetBrains/Toolbox/scripts:/usr/bin/python3/scripts:/Users/husky/bin:/Users/husky/Developer/flutter/bin
+PATH = /Users/husky/.pyenv/shims:/Users/husky/.pyenv/bin:/Users/husky/.gem/ruby/3.1.3/bin:/Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0/bin:/Users/husky/.rubies/ruby-3.1.3/bin:/Users/husky/.opam/default/bin:/Users/husky/miniforge3/bin:/Users/husky/opt/anaconda3/condabin:/Applications/copt30/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/husky/.cargo/bin:/Users/husky/Library/Application Support/JetBrains/Toolbox/scripts:/usr/bin/python3/scripts:/Users/husky/bin:/Users/husky/Developer/flutter/bin
 # makefile (from `Makefile', line 24)
 SETS_FILES = $(SETS_FILE_NAMES:%.v=$(SETS_DIR)/%.v)
 # makefile (from `Makefile', line 29)
@@ -62,19 +63,21 @@ COMPCERT_FILES = $(COMPCERT_FILE_NAMES:%.v=$(COMPCERT_DIR)/%.v)
 # makefile (from `Makefile', line 13)
 PL_FLAG = -R $(PL_DIR) PL -R $(SETS_DIR) SetsClass -R $(COMPCERT_DIR) compcert.lib
 # environment
-LaunchInstanceID = 7781C852-37BC-45A1-836C-96259B1963FD
+LaunchInstanceID = 5393B2B6-77E6-49A0-92A8-7EDB7FCAFD72
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/husky/.pyenv
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3GNFlFVQQY/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ryum4Juk0k/Listeners
 # makefile (from `Makefile', line 1)
 CURRENT_DIR = .
 # automatic
 %F = $(notdir $%)
 # environment
-CONDA_EXE = /Users/husky/opt/anaconda3/bin/conda
+CONDA_EXE = /Users/husky/miniforge3/bin/conda
 # environment
 PWD = /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code
 # environment
@@ -87,14 +90,14 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# makefile (from `Makefile', line 19)
-DEP_FLAG = -R $(PL_DIR) PL -R $(SETS_DIR) SetsClass -R $(COMPCERT_DIR) compcert.lib
+# environment
+PYENV_SHELL = zsh
 # environment
 HOME = /Users/husky
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/f1b07bd25dfad64b0167beb15359ae573aecd2cc
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/d037ac076cee195194f93ce6fe2bdfe2969cc82d
 # environment
 LOGNAME = husky
 # environment
@@ -144,7 +147,7 @@ HOMEBREW_BOTTLE_DOMAIN = https://mirrors.aliyun.com/homebrew/homebrew-bottles
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-CONDA_SHLVL = 1
+CONDA_SHLVL = 2
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
@@ -154,7 +157,7 @@ TMPDIR = /var/folders/gv/jp8cgv_s7sdcy5__5j0p3l7r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/husky/Library/Application Support/Code/1.83-main.sock
+VSCODE_IPC_HOOK = /Users/husky/Library/Application Support/Code/1.84-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -164,13 +167,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.166163848.166163854
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.170580291.170580297
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-VSCODE_L10N_BUNDLE_LOCATION = file:///Users/husky/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.83.2023101109/translations/extensions/vscode.json-language-features.i18n.json
+VSCODE_L10N_BUNDLE_LOCATION = file:///Users/husky/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.84.2023110109/translations/extensions/vscode.json-language-features.i18n.json
 # makefile (from `Makefile', line 17)
 COMPCERT_FLAG = -R $(COMPCERT_DIR) compcert.lib
 # automatic
@@ -197,10 +200,12 @@ PL_DIR = pl
 COQC = $(COQBIN)coqc
 # environment
 LC_ALL = C
+# environment
+XML_CATALOG_FILES = file:///Users/husky/miniforge3/etc/xml/catalog file:///etc/xml/catalog
 # makefile (from `Makefile', line 3)
 COMPCERT_DIR = compcert_lib
 # environment
-CONDA_PYTHON_EXE = /Users/husky/opt/anaconda3/bin/python
+CONDA_PYTHON_EXE = /Users/husky/miniforge3/bin/python
 # automatic
 ^F = $(notdir $^)
 # default
@@ -213,16 +218,17 @@ GEM_ROOT = /Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0
 PL_FILES = $(PL_FILE_NAMES:%.v=$(PL_DIR)/%.v)
 # environment
 MAKELEVEL := 0
+ 
 # environment
-CONDA_PREFIX = /Users/husky/opt/anaconda3
+CONDA_PREFIX = /Users/husky/miniforge3
 # environment
-VSCODE_PID = 61449
+VSCODE_PID = 85508
 # makefile (from `Makefile', line 36)
 FILES = $(PL_FILES) $(SETS_FILES) $(COMPCERT_FILES)
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=20/176=11%
+# Load=107/1024=10%, Rehash=0, Collisions=21/179=12%
 
 # Pattern-specific Variable Values
 
@@ -230,9 +236,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777232, inode 167713105): 13 files, no impossibilities.
+# . (device 16777232, inode 167713105): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -244,7 +250,6 @@ sets/SetsDomain.vo: sets/SetsDomain.v sets/SetsDomain.v sets/SetElement.vo
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: `sets/SetsDomain'
 #  Last modified 2023-10-24 18:30:11
- 
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 41):
@@ -475,10 +480,11 @@ compcert_lib/Zbits.v.beautified: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 .depend: pl/CoqIntro.v pl/InductiveType.v pl/Logic.v pl/SyntaxInCoq.v pl/DenotationalSemantics.v pl/PracticalDenotations.v sets/SetsClass.v sets/SetsDomain.v sets/SetElement.v sets/SetProd.v sets/RelsDomain.v compcert_lib/Coqlib.v compcert_lib/Integers.v compcert_lib/Zbits.v
 #  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has not been done.
-#  Last modified 2023-10-24 18:34:18
+#  Last modified 2023-11-04 15:21:37
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -491,7 +497,6 @@ compcert_lib/Zbits.v.beautified: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 sets/SetsClass.vo: sets/SetsClass.v sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
@@ -652,7 +657,6 @@ compcert_lib/Zbits.v:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 sets/SetsClass.glob: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -711,6 +715,7 @@ compcert_lib/Coqlib.vo: compcert_lib/Coqlib.v
 # + := compcert_lib/Coqlib.v compcert_lib/Coqlib.v
 # automatic
 # | := 
+ 
 # automatic
 # < := compcert_lib/Coqlib.v
 # automatic
@@ -839,7 +844,6 @@ pl/SyntaxInCoq.v.beautified: pl/SyntaxInCoq.v
 
 compcert_lib/Zbits.glob: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -926,6 +930,6 @@ sets/SetsClass.v.beautified: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4069 / max = 4069 / min = 4069 / avg = 4069
 
-# Finished Make data base on Tue Oct 24 18:34:18 2023
+# Finished Make data base on Sat Nov  4 15:21:37 2023
 
  

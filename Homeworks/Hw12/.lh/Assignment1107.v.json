@@ -1,0 +1,242 @@
+{
+    "sourceFile": "Assignment1107.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 56,
+            "patches": [
+                {
+                    "date": 1699615807969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699615832342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n (** 请证明语义等价。*)\n \n Theorem CSeq_CSkip: forall c,\n   [[ c; skip ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+Proof.\n \n (************)\n (** 习题：  *)\n (************)\n"
+                },
+                {
+                    "date": 1699615861101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699615866496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n Theorem CSeq_CSkip: forall c,\n   [[ c; skip ]] ~=~ c.\n Proof.\n-  \n+  unfold eequiv.\n \n (************)\n (** 习题：  *)\n (************)\n@@ -31,37 +31,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699615879939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n Theorem CSeq_CSkip: forall c,\n   [[ c; skip ]] ~=~ c.\n Proof.\n-  unfold eequiv.\n+  unfold cequiv.\n \n (************)\n (** 习题：  *)\n (************)\n"
+                },
+                {
+                    "date": 1699615921368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699615933058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,13 @@\n Theorem CSeq_CSkip: forall c,\n   [[ c; skip ]] ~=~ c.\n Proof.\n   intros.\n+  split.\n+  - intros.\n+    inversion H.\n+    inversion H5.\n+    assumption.\n \n (************)\n (** 习题：  *)\n (************)\n@@ -31,38 +36,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  unfold cequiv.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699615971245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699615981656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    Rels_concat_assoc.\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699615992236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    rewrite rewrite Rels_concat_assoc..\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699615997849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+  - rewrite rewrite Rels_concat_assoc.\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616003230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n Proof.\n   intros.\n   split;simpl.\n   - intros.\n-  - rewrite rewrite Rels_concat_assoc.\n+  - rewrite Rels_concat_assoc.\n     \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1699616012227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,156 +35,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    rewrite rewrite Rels_concat_assoc..\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    Rels_concat_assoc.\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split.\n-  - intros.\n-    inversion H.\n-    inversion H5.\n-    assumption.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616017970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    rewrite Rels_concat_assoc.\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616031124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n   split;simpl.\n   - intros.\n     rewrite Rels_concat_assoc.\n     \n+    \n \n (************)\n (** 习题：  *)\n (************)\n"
+                },
+                {
+                    "date": 1699616062101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,48 +21,10 @@\n Proof.\n   intros.\n   split;simpl.\n   - intros.\n-    rewrite Rels_concat_assoc.\n     \n-    \n \n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-  - rewrite Rels_concat_assoc.\n     \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1699616098914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n Proof.\n   intros.\n   split;simpl.\n   - intros.\n-    \n+    unfold Rels.id,\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616107681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n Proof.\n   intros.\n   split;simpl.\n   - intros.\n-    unfold Rels.id,\n+    unfold Rels.id.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616183648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,39 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_l.\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616196117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n Proof.\n   intros.\n   split;simpl.\n   - intros.\n-    apply Rels_concat_id_l.\n+    apply Rels_concat_id_r.\n+  - \n \n     \n \n (************)\n@@ -36,43 +37,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    unfold Rels.id.\n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616216064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - \n+  - intros.\n+    apply Rels_concat_id_r. \n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616234945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - intros.\n-    apply Rels_concat_id_r. \n+  - destruct.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616252425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - destruct.\n+  - \n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616306017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - \n+  - unfold Sets_union_empty.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616318000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - unfold Sets_union_empty.\n+  - unfold Sets_union.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616424665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   intros.\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n-  - unfold Sets_union.\n+  - sets_unfold.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616436020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n   - sets_unfold.\n+    intro,\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616444181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n   split;simpl.\n   - intros.\n     apply Rels_concat_id_r.\n   - sets_unfold.\n-    intro,\n+    intros.\n+    split.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616454903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n+    + tautu.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616474612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    + tautu.\n+    + apply r.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616482007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    + apply r.\n+    + right.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616493666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    + right.\n+    + destruct.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616500852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    + destruct.\n+    + \n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616509369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,43 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_r.\n+  - sets_unfold.\n+    intros.\n+    split.\n+    + right.\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616553510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,47 +40,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    apply Rels_concat_id_r.\n-  - sets_unfold.\n-    intros.\n-    split.\n-    + \n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616643826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    + right.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616688640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n+    destruct H.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616697444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    destruct H.\n+    * destruct H.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616704538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     apply Rels_concat_id_r.\n   - sets_unfold.\n     intros.\n     split.\n-    * destruct H.\n+    * intros.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616714101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,44 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_r.\n+  - sets_unfold.\n+    intros.\n+    split.\n+    * intros.\n+      tauto\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616720799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      tauto\n+      apply H.\n \n     \n \n (************)\n@@ -41,47 +41,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    apply Rels_concat_id_r.\n-  - sets_unfold.\n-    intros.\n-    split.\n-    * intros.\n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616730192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      apply H.\n+      destruct H as [H1 H2].\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616736350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,44 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_r.\n+  - sets_unfold.\n+    intros.\n+    split.\n+    * intros.\n+      destruct H,\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616742026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      destruct H,\n+      destruct H.\n \n     \n \n (************)\n@@ -41,48 +41,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    apply Rels_concat_id_r.\n-  - sets_unfold.\n-    intros.\n-    split.\n-    * intros.\n-      destruct H as [H1 H2].\n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616750118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n     intros.\n     split.\n     * intros.\n       destruct H.\n+      apply H.\n \n     \n \n (************)\n"
+                },
+                {
+                    "date": 1699616763654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      destruct H.\n-      apply H.\n \n+\n     \n \n (************)\n (** 习题：  *)\n"
+                },
+                {
+                    "date": 1699616815885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n+      destruct H;\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616823921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,45 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_r.\n+  - sets_unfold.\n+    intros.\n+    split.\n+    * intros.\n+      destruct H;\n+\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616831274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,49 +42,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    apply Rels_concat_id_r.\n-  - sets_unfold.\n-    intros.\n-    split.\n-    * intros.\n-      destruct H;\n-\n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616841365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      destruct H;\n+      destruct H as [H1 | H2].\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616851564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n     intros.\n     split.\n     * intros.\n       destruct H as [H1 | H2].\n+      apply H1.\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616857262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,47 @@\n+Require Import Coq.Classes.RelationClasses.\n+Require Import Coq.Classes.Morphisms.\n+Require Import SetsClass.SetsClass. Import SetsNotation.\n+Require Import PL.SyntaxInCoq.\n+Require Import PL.DenotationalSemantics.\n+Require Import PL.PracticalDenotations.\n+Require Import PL.EquivAndRefine.\n+Import Lang_While DntSem_While1 DntSem_While2.\n+Import EDenote CDenote.\n+Local Open Scope sets.\n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSeq_CSkip: forall c,\n+  [[ c; skip ]] ~=~ c.\n+Proof.\n+  intros.\n+  split;simpl.\n+  - intros.\n+    apply Rels_concat_id_r.\n+  - sets_unfold.\n+    intros.\n+    split.\n+    * intros.\n+      destruct H as [H1 | H2].\n+      apply H1.\n+    * \n+\n+\n+    \n+\n+(************)\n+(** 习题：  *)\n+(************)\n+\n+\n+(** 请证明语义等价。*)\n+\n+Theorem CSkip_CSeq: forall c,\n+  [[ skip; c ]] ~=~ c.\n+Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n+\n"
+                },
+                {
+                    "date": 1699616921469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,8 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      destruct H as [H1 | H2].\n-      apply H1.\n-    * \n \n \n     \n \n@@ -44,50 +41,4 @@\n Theorem CSkip_CSeq: forall c,\n   [[ skip; c ]] ~=~ c.\n Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n \n-Require Import Coq.Classes.RelationClasses.\n-Require Import Coq.Classes.Morphisms.\n-Require Import SetsClass.SetsClass. Import SetsNotation.\n-Require Import PL.SyntaxInCoq.\n-Require Import PL.DenotationalSemantics.\n-Require Import PL.PracticalDenotations.\n-Require Import PL.EquivAndRefine.\n-Import Lang_While DntSem_While1 DntSem_While2.\n-Import EDenote CDenote.\n-Local Open Scope sets.\n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSeq_CSkip: forall c,\n-  [[ c; skip ]] ~=~ c.\n-Proof.\n-  intros.\n-  split;simpl.\n-  - intros.\n-    apply Rels_concat_id_r.\n-  - sets_unfold.\n-    intros.\n-    split.\n-    * intros.\n-      destruct H as [H1 | H2].\n-      apply H1.\n-\n-\n-    \n-\n-(************)\n-(** 习题：  *)\n-(************)\n-\n-\n-(** 请证明语义等价。*)\n-\n-Theorem CSkip_CSeq: forall c,\n-  [[ skip; c ]] ~=~ c.\n-Admitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n-\n"
+                },
+                {
+                    "date": 1699616943392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n+      destruct H as [H1 | _],\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616954572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,10 @@\n   - sets_unfold.\n     intros.\n     split.\n     * intros.\n-      destruct H as [H1 | _],\n+      destruct H as [H1 | _].\n+      + tauto.\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616962541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,9 @@\n     split.\n     * intros.\n       destruct H as [H1 | _].\n       + tauto.\n-      + destruct H as [H2 | H3].\n-        ** tauto.\n-        ** tauto.\n+      +\n \n \n     \n \n"
+                },
+                {
+                    "date": 1699616968353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     split.\n     * intros.\n       destruct H as [H1 | _].\n       + tauto.\n-      +\n+      + \n \n \n     \n \n"
+                }
+            ],
+            "date": 1699615807969,
+            "name": "Commit-0",
+            "content": "Require Import Coq.Classes.RelationClasses.\nRequire Import Coq.Classes.Morphisms.\nRequire Import SetsClass.SetsClass. Import SetsNotation.\nRequire Import PL.SyntaxInCoq.\nRequire Import PL.DenotationalSemantics.\nRequire Import PL.PracticalDenotations.\nRequire Import PL.EquivAndRefine.\nImport Lang_While DntSem_While1 DntSem_While2.\nImport EDenote CDenote.\nLocal Open Scope sets.\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请证明语义等价。*)\n\nTheorem CSeq_CSkip: forall c,\n  [[ c; skip ]] ~=~ c.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请证明语义等价。*)\n\nTheorem CSkip_CSeq: forall c,\n  [[ skip; c ]] ~=~ c.\nAdmitted. (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n"
+        }
+    ]
+}

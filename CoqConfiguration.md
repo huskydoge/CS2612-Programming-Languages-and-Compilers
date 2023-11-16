@@ -11,7 +11,11 @@
 
 **If you think CoqIDE can suit all your needs, then you can close this page now.**
 
-## Tutorial
+## Updated on 4/11/2023
+
+Better use `Coq8.16.1`! and install the extension named `vscoq legacy`, follow the setting tips and be careful to use `coqide.opt` rather than `coqide`!
+
+## Tutorial(However, coq 8.18 may have some conflicts)
 First we should open terminal and input following commands.
 ```
 $ opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev

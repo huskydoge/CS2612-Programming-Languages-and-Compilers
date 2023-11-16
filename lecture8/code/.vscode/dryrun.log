@@ -1,13 +1,13 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code'
+make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecture8/code'
  
-make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code'
+make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecture8/code'
  
-make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code'
+make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecture8/code'
 echo COQC CoqIntro.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/CoqIntro.v
- 
 echo COQC InductiveType.v
+ 
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/InductiveType.v
 echo COQC Logic.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/Logic.v
@@ -25,6 +25,7 @@ echo COQC sets/SetsClass.v
 coqc -R sets SetsClass sets/SetsClass.v
 echo COQC DenotationalSemantics.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/DenotationalSemantics.v
+ 
 echo COQC compcert_lib/Coqlib.v
 coqc -R compcert_lib compcert.lib compcert_lib/Coqlib.v
 echo COQC compcert_lib/Zbits.v
@@ -33,5 +34,5 @@ echo COQC compcert_lib/Integers.v
 coqc -R compcert_lib compcert.lib compcert_lib/Integers.v
 echo COQC PracticalDenotations.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/PracticalDenotations.v
-make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw10/code'
+make: Leaving directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/lecture8/code'
  

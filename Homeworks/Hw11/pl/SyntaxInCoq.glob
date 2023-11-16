@@ -1,0 +1,657 @@
+DIGEST 43aa3e9922533bfada9c9a923556daff
+FPL.SyntaxInCoq
+R15:32 Coq.Strings.String <> <> lib
+R50:66 Coq.ZArith.ZArith <> <> lib
+R84:102 Coq.micromega.Psatz <> <> lib
+mod 205:220 <> Lang_SimpleWhile
+def 730:737 Lang_SimpleWhile var_name
+R748:753 Coq.Strings.String <> string ind
+ind 767:774 Lang_SimpleWhile expr_int
+constr 790:795 Lang_SimpleWhile EConst
+constr 818:821 Lang_SimpleWhile EVar
+constr 851:854 Lang_SimpleWhile EAdd
+constr 888:891 Lang_SimpleWhile ESub
+constr 925:928 Lang_SimpleWhile EMul
+R801:801 Coq.Numbers.BinNums <> Z ind
+binder 798:798 <> n:3
+R805:812 PL.SyntaxInCoq <> expr_int:1 ind
+R827:834 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+binder 824:824 <> x:4
+R838:845 PL.SyntaxInCoq <> expr_int:1 ind
+R864:871 PL.SyntaxInCoq <> expr_int:1 ind
+binder 857:858 <> e1:5
+binder 860:861 <> e2:6
+R875:882 PL.SyntaxInCoq <> expr_int:1 ind
+R901:908 PL.SyntaxInCoq <> expr_int:1 ind
+binder 894:895 <> e1:7
+binder 897:898 <> e2:8
+R912:919 PL.SyntaxInCoq <> expr_int:1 ind
+R938:945 PL.SyntaxInCoq <> expr_int:1 ind
+binder 931:932 <> e1:9
+binder 934:935 <> e2:10
+R949:956 PL.SyntaxInCoq <> expr_int:1 ind
+def 1051:1055 Lang_SimpleWhile EVar'
+R1064:1067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1058:1063 Coq.Strings.String <> string ind
+R1068:1075 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+R1080:1083 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R1119:1149 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R1152:1187 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R1190:1224 PL.SyntaxInCoq Lang_SimpleWhile EVar' def
+not 1236:1236 Lang_SimpleWhile :::'[['_x_']]'
+not 1309:1309 Lang_SimpleWhile :expr_entry::'('_x_')'
+not 1390:1390 Lang_SimpleWhile :expr_entry::x
+not 1466:1466 Lang_SimpleWhile :expr_entry::x_x
+R1612:1615 PL.SyntaxInCoq Lang_SimpleWhile EMul constr
+not 1600:1600 Lang_SimpleWhile :expr_entry::x_'*'_x
+R1701:1704 PL.SyntaxInCoq Lang_SimpleWhile EAdd constr
+not 1689:1689 Lang_SimpleWhile :expr_entry::x_'+'_x
+R1790:1793 PL.SyntaxInCoq Lang_SimpleWhile ESub constr
+not 1778:1778 Lang_SimpleWhile :expr_entry::x_'-'_x
+R1909:1910 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1918:1919 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1912:1914 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R1928:1929 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1951:1952 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1933:1935 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R1936:1936 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R1950:1950 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R1946:1948 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R1940:1942 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+ind 1966:1974 Lang_SimpleWhile expr_bool
+constr 1989:1993 Lang_SimpleWhile ETrue
+constr 2010:2015 Lang_SimpleWhile EFalse
+constr 2032:2034 Lang_SimpleWhile ELt
+constr 2069:2072 Lang_SimpleWhile EAnd
+constr 2108:2111 Lang_SimpleWhile ENot
+R1996:2004 PL.SyntaxInCoq <> expr_bool:11 ind
+R2018:2026 PL.SyntaxInCoq <> expr_bool:11 ind
+R2044:2051 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2037:2038 <> e1:13
+binder 2040:2041 <> e2:14
+R2055:2063 PL.SyntaxInCoq <> expr_bool:11 ind
+R2082:2090 PL.SyntaxInCoq <> expr_bool:11 ind
+binder 2075:2076 <> e1:15
+binder 2078:2079 <> e2:16
+R2094:2102 PL.SyntaxInCoq <> expr_bool:11 ind
+R2117:2125 PL.SyntaxInCoq <> expr_bool:11 ind
+binder 2114:2114 <> e:17
+R2129:2137 PL.SyntaxInCoq <> expr_bool:11 ind
+ind 2151:2153 Lang_SimpleWhile com
+constr 2169:2173 Lang_SimpleWhile CSkip
+constr 2184:2188 Lang_SimpleWhile CAsgn
+constr 2227:2230 Lang_SimpleWhile CSeq
+constr 2254:2256 Lang_SimpleWhile CIf
+constr 2295:2300 Lang_SimpleWhile CWhile
+R2176:2178 PL.SyntaxInCoq <> com:18 ind
+R2194:2201 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+binder 2191:2191 <> x:20
+R2208:2215 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2205:2205 <> e:21
+R2219:2221 PL.SyntaxInCoq <> com:18 ind
+R2240:2242 PL.SyntaxInCoq <> com:18 ind
+binder 2233:2234 <> c1:22
+binder 2236:2237 <> c2:23
+R2246:2248 PL.SyntaxInCoq <> com:18 ind
+R2262:2270 PL.SyntaxInCoq Lang_SimpleWhile expr_bool ind
+binder 2259:2259 <> e:24
+R2281:2283 PL.SyntaxInCoq <> com:18 ind
+binder 2274:2275 <> c1:25
+binder 2277:2278 <> c2:26
+R2287:2289 PL.SyntaxInCoq <> com:18 ind
+R2306:2314 PL.SyntaxInCoq Lang_SimpleWhile expr_bool ind
+binder 2303:2303 <> e:27
+R2321:2323 PL.SyntaxInCoq <> com:18 ind
+binder 2318:2318 <> c:28
+R2327:2329 PL.SyntaxInCoq <> com:18 ind
+R2339:2354 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+mod 2387:2396 <> Lang_While
+def 2732:2739 Lang_While var_name
+R2750:2755 Coq.Strings.String <> string ind
+ind 2822:2826 Lang_While binop
+constr 2842:2844 Lang_While OOr
+constr 2848:2851 Lang_While OAnd
+constr 2857:2859 Lang_While OLt
+constr 2863:2865 Lang_While OLe
+constr 2869:2871 Lang_While OGt
+constr 2875:2877 Lang_While OGe
+constr 2881:2883 Lang_While OEq
+constr 2887:2889 Lang_While ONe
+constr 2895:2899 Lang_While OPlus
+constr 2903:2908 Lang_While OMinus
+constr 2912:2915 Lang_While OMul
+constr 2919:2922 Lang_While ODiv
+constr 2926:2929 Lang_While OMod
+ind 2943:2946 Lang_While unop
+constr 2962:2965 Lang_While ONot
+constr 2969:2972 Lang_While ONeg
+ind 3033:3036 Lang_While expr
+constr 3052:3057 Lang_While EConst
+constr 3076:3079 Lang_While EVar
+constr 3105:3110 Lang_While EBinop
+constr 3148:3152 Lang_While EUnop
+R3063:3063 Coq.Numbers.BinNums <> Z ind
+binder 3060:3060 <> n:35
+R3067:3070 PL.SyntaxInCoq <> expr:33 ind
+R3085:3092 PL.SyntaxInCoq Lang_While var_name def
+binder 3082:3082 <> x:36
+R3096:3099 PL.SyntaxInCoq <> expr:33 ind
+R3117:3121 PL.SyntaxInCoq Lang_While binop ind
+binder 3113:3114 <> op:37
+R3132:3135 PL.SyntaxInCoq <> expr:33 ind
+binder 3125:3126 <> e1:38
+binder 3128:3129 <> e2:39
+R3139:3142 PL.SyntaxInCoq <> expr:33 ind
+R3159:3162 PL.SyntaxInCoq Lang_While unop ind
+binder 3155:3156 <> op:40
+R3169:3172 PL.SyntaxInCoq <> expr:33 ind
+binder 3166:3166 <> e:41
+R3176:3179 PL.SyntaxInCoq <> expr:33 ind
+ind 3243:3245 Lang_While com
+constr 3261:3265 Lang_While CSkip
+constr 3276:3280 Lang_While CAsgn
+constr 3315:3318 Lang_While CSeq
+constr 3342:3344 Lang_While CIf
+constr 3378:3383 Lang_While CWhile
+R3268:3270 PL.SyntaxInCoq <> com:42 ind
+R3286:3293 PL.SyntaxInCoq Lang_While var_name def
+binder 3283:3283 <> x:44
+R3300:3303 PL.SyntaxInCoq Lang_While expr ind
+binder 3297:3297 <> e:45
+R3307:3309 PL.SyntaxInCoq <> com:42 ind
+R3328:3330 PL.SyntaxInCoq <> com:42 ind
+binder 3321:3322 <> c1:46
+binder 3324:3325 <> c2:47
+R3334:3336 PL.SyntaxInCoq <> com:42 ind
+R3350:3353 PL.SyntaxInCoq Lang_While expr ind
+binder 3347:3347 <> e:48
+R3364:3366 PL.SyntaxInCoq <> com:42 ind
+binder 3357:3358 <> c1:49
+binder 3360:3361 <> c2:50
+R3370:3372 PL.SyntaxInCoq <> com:42 ind
+R3389:3392 PL.SyntaxInCoq Lang_While expr ind
+binder 3386:3386 <> e:51
+R3399:3401 PL.SyntaxInCoq <> com:42 ind
+binder 3396:3396 <> c:52
+R3405:3407 PL.SyntaxInCoq <> com:42 ind
+R3415:3424 PL.SyntaxInCoq Lang_While <> mod
+mod 3480:3494 <> Lang_WhileDeref
+R3504:3513 PL.SyntaxInCoq Lang_While <> mod
+ind 3607:3610 Lang_WhileDeref expr
+constr 3626:3631 Lang_WhileDeref EConst
+constr 3650:3653 Lang_WhileDeref EVar
+constr 3679:3684 Lang_WhileDeref EBinop
+constr 3722:3726 Lang_WhileDeref EUnop
+constr 3759:3764 Lang_WhileDeref EDeref
+R3637:3637 Coq.Numbers.BinNums <> Z ind
+binder 3634:3634 <> n:55
+R3641:3644 PL.SyntaxInCoq <> expr:53 ind
+R3659:3666 PL.SyntaxInCoq Lang_While var_name def
+binder 3656:3656 <> x:56
+R3670:3673 PL.SyntaxInCoq <> expr:53 ind
+R3691:3695 PL.SyntaxInCoq Lang_While binop ind
+binder 3687:3688 <> op:57
+R3706:3709 PL.SyntaxInCoq <> expr:53 ind
+binder 3699:3700 <> e1:58
+binder 3702:3703 <> e2:59
+R3713:3716 PL.SyntaxInCoq <> expr:53 ind
+R3733:3736 PL.SyntaxInCoq Lang_While unop ind
+binder 3729:3730 <> op:60
+R3743:3746 PL.SyntaxInCoq <> expr:53 ind
+binder 3740:3740 <> e:61
+R3750:3753 PL.SyntaxInCoq <> expr:53 ind
+R3770:3773 PL.SyntaxInCoq <> expr:53 ind
+binder 3767:3767 <> e:62
+R3777:3780 PL.SyntaxInCoq <> expr:53 ind
+ind 3856:3858 Lang_WhileDeref com
+constr 3874:3878 Lang_WhileDeref CSkip
+constr 3889:3896 Lang_WhileDeref CAsgnVar
+constr 3931:3940 Lang_WhileDeref CAsgnDeref
+constr 3965:3968 Lang_WhileDeref CSeq
+constr 3992:3994 Lang_WhileDeref CIf
+constr 4028:4033 Lang_WhileDeref CWhile
+R3881:3883 PL.SyntaxInCoq <> com:63 ind
+R3902:3909 PL.SyntaxInCoq Lang_While var_name def
+binder 3899:3899 <> x:65
+R3916:3919 PL.SyntaxInCoq Lang_WhileDeref expr ind
+binder 3913:3913 <> e:66
+R3923:3925 PL.SyntaxInCoq <> com:63 ind
+R3950:3953 PL.SyntaxInCoq Lang_WhileDeref expr ind
+binder 3943:3944 <> e1:67
+binder 3946:3947 <> e2:68
+R3957:3959 PL.SyntaxInCoq <> com:63 ind
+R3978:3980 PL.SyntaxInCoq <> com:63 ind
+binder 3971:3972 <> c1:69
+binder 3974:3975 <> c2:70
+R3984:3986 PL.SyntaxInCoq <> com:63 ind
+R4000:4003 PL.SyntaxInCoq Lang_WhileDeref expr ind
+binder 3997:3997 <> e:71
+R4014:4016 PL.SyntaxInCoq <> com:63 ind
+binder 4007:4008 <> c1:72
+binder 4010:4011 <> c2:73
+R4020:4022 PL.SyntaxInCoq <> com:63 ind
+R4039:4042 PL.SyntaxInCoq Lang_WhileDeref expr ind
+binder 4036:4036 <> e:74
+R4049:4051 PL.SyntaxInCoq <> com:63 ind
+binder 4046:4046 <> c:75
+R4055:4057 PL.SyntaxInCoq <> com:63 ind
+R4065:4079 PL.SyntaxInCoq Lang_WhileDeref <> mod
+mod 4131:4141 <> Lang_WhileD
+R4151:4160 PL.SyntaxInCoq Lang_While <> mod
+ind 4374:4377 Lang_WhileD expr
+constr 4393:4398 Lang_WhileD EConst
+constr 4417:4420 Lang_WhileD EVar
+constr 4446:4451 Lang_WhileD EBinop
+constr 4489:4493 Lang_WhileD EUnop
+constr 4526:4531 Lang_WhileD EDeref
+constr 4553:4559 Lang_WhileD EAddrOf
+R4404:4404 Coq.Numbers.BinNums <> Z ind
+binder 4401:4401 <> n:78
+R4408:4411 PL.SyntaxInCoq <> expr:76 ind
+R4426:4433 PL.SyntaxInCoq Lang_While var_name def
+binder 4423:4423 <> x:79
+R4437:4440 PL.SyntaxInCoq <> expr:76 ind
+R4458:4462 PL.SyntaxInCoq Lang_While binop ind
+binder 4454:4455 <> op:80
+R4473:4476 PL.SyntaxInCoq <> expr:76 ind
+binder 4466:4467 <> e1:81
+binder 4469:4470 <> e2:82
+R4480:4483 PL.SyntaxInCoq <> expr:76 ind
+R4500:4503 PL.SyntaxInCoq Lang_While unop ind
+binder 4496:4497 <> op:83
+R4510:4513 PL.SyntaxInCoq <> expr:76 ind
+binder 4507:4507 <> e:84
+R4517:4520 PL.SyntaxInCoq <> expr:76 ind
+R4537:4540 PL.SyntaxInCoq <> expr:76 ind
+binder 4534:4534 <> e:85
+R4544:4547 PL.SyntaxInCoq <> expr:76 ind
+R4565:4568 PL.SyntaxInCoq <> expr:76 ind
+binder 4562:4562 <> e:86
+R4572:4575 PL.SyntaxInCoq <> expr:76 ind
+ind 4630:4632 Lang_WhileD com
+constr 4648:4652 Lang_WhileD CSkip
+constr 4663:4670 Lang_WhileD CAsgnVar
+constr 4705:4714 Lang_WhileD CAsgnDeref
+constr 4739:4742 Lang_WhileD CSeq
+constr 4766:4768 Lang_WhileD CIf
+constr 4802:4807 Lang_WhileD CWhile
+R4655:4657 PL.SyntaxInCoq <> com:87 ind
+R4676:4683 PL.SyntaxInCoq Lang_While var_name def
+binder 4673:4673 <> x:89
+R4690:4693 PL.SyntaxInCoq Lang_WhileD expr ind
+binder 4687:4687 <> e:90
+R4697:4699 PL.SyntaxInCoq <> com:87 ind
+R4724:4727 PL.SyntaxInCoq Lang_WhileD expr ind
+binder 4717:4718 <> e1:91
+binder 4720:4721 <> e2:92
+R4731:4733 PL.SyntaxInCoq <> com:87 ind
+R4752:4754 PL.SyntaxInCoq <> com:87 ind
+binder 4745:4746 <> c1:93
+binder 4748:4749 <> c2:94
+R4758:4760 PL.SyntaxInCoq <> com:87 ind
+R4774:4777 PL.SyntaxInCoq Lang_WhileD expr ind
+binder 4771:4771 <> e:95
+R4788:4790 PL.SyntaxInCoq <> com:87 ind
+binder 4781:4782 <> c1:96
+binder 4784:4785 <> c2:97
+R4794:4796 PL.SyntaxInCoq <> com:87 ind
+R4813:4816 PL.SyntaxInCoq Lang_WhileD expr ind
+binder 4810:4810 <> e:98
+R4823:4825 PL.SyntaxInCoq <> com:87 ind
+binder 4820:4820 <> c:99
+R4829:4831 PL.SyntaxInCoq <> com:87 ind
+R4839:4849 PL.SyntaxInCoq Lang_WhileD <> mod
+mod 4902:4913 <> Lang_WhileDC
+R4923:4932 PL.SyntaxInCoq Lang_While <> mod
+ind 5048:5051 Lang_WhileDC expr
+constr 5067:5072 Lang_WhileDC EConst
+constr 5091:5094 Lang_WhileDC EVar
+constr 5120:5125 Lang_WhileDC EBinop
+constr 5163:5167 Lang_WhileDC EUnop
+constr 5200:5205 Lang_WhileDC EDeref
+constr 5227:5233 Lang_WhileDC EAddrOf
+R5078:5078 Coq.Numbers.BinNums <> Z ind
+binder 5075:5075 <> n:102
+R5082:5085 PL.SyntaxInCoq <> expr:100 ind
+R5100:5107 PL.SyntaxInCoq Lang_While var_name def
+binder 5097:5097 <> x:103
+R5111:5114 PL.SyntaxInCoq <> expr:100 ind
+R5132:5136 PL.SyntaxInCoq Lang_While binop ind
+binder 5128:5129 <> op:104
+R5147:5150 PL.SyntaxInCoq <> expr:100 ind
+binder 5140:5141 <> e1:105
+binder 5143:5144 <> e2:106
+R5154:5157 PL.SyntaxInCoq <> expr:100 ind
+R5174:5177 PL.SyntaxInCoq Lang_While unop ind
+binder 5170:5171 <> op:107
+R5184:5187 PL.SyntaxInCoq <> expr:100 ind
+binder 5181:5181 <> e:108
+R5191:5194 PL.SyntaxInCoq <> expr:100 ind
+R5211:5214 PL.SyntaxInCoq <> expr:100 ind
+binder 5208:5208 <> e:109
+R5218:5221 PL.SyntaxInCoq <> expr:100 ind
+R5239:5242 PL.SyntaxInCoq <> expr:100 ind
+binder 5236:5236 <> e:110
+R5246:5249 PL.SyntaxInCoq <> expr:100 ind
+ind 5263:5265 Lang_WhileDC com
+constr 5281:5285 Lang_WhileDC CSkip
+constr 5296:5303 Lang_WhileDC CAsgnVar
+constr 5338:5347 Lang_WhileDC CAsgnDeref
+constr 5372:5375 Lang_WhileDC CSeq
+constr 5399:5401 Lang_WhileDC CIf
+constr 5435:5440 Lang_WhileDC CWhile
+constr 5470:5473 Lang_WhileDC CFor
+constr 5524:5531 Lang_WhileDC CDoWhile
+constr 5561:5569 Lang_WhileDC CContinue
+constr 5580:5585 Lang_WhileDC CBreak
+R5288:5290 PL.SyntaxInCoq <> com:111 ind
+R5309:5316 PL.SyntaxInCoq Lang_While var_name def
+binder 5306:5306 <> x:113
+R5323:5326 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5320:5320 <> e:114
+R5330:5332 PL.SyntaxInCoq <> com:111 ind
+R5357:5360 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5350:5351 <> e1:115
+binder 5353:5354 <> e2:116
+R5364:5366 PL.SyntaxInCoq <> com:111 ind
+R5385:5387 PL.SyntaxInCoq <> com:111 ind
+binder 5378:5379 <> c1:117
+binder 5381:5382 <> c2:118
+R5391:5393 PL.SyntaxInCoq <> com:111 ind
+R5407:5410 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5404:5404 <> e:119
+R5421:5423 PL.SyntaxInCoq <> com:111 ind
+binder 5414:5415 <> c1:120
+binder 5417:5418 <> c2:121
+R5427:5429 PL.SyntaxInCoq <> com:111 ind
+R5446:5449 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5443:5443 <> e:122
+R5456:5458 PL.SyntaxInCoq <> com:111 ind
+binder 5453:5453 <> c:123
+R5462:5464 PL.SyntaxInCoq <> com:111 ind
+R5480:5482 PL.SyntaxInCoq <> com:111 ind
+binder 5476:5477 <> c1:124
+R5489:5492 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5486:5486 <> e:125
+R5500:5502 PL.SyntaxInCoq <> com:111 ind
+binder 5496:5497 <> c2:126
+R5510:5512 PL.SyntaxInCoq <> com:111 ind
+binder 5506:5507 <> c3:127
+R5516:5518 PL.SyntaxInCoq <> com:111 ind
+R5537:5539 PL.SyntaxInCoq <> com:111 ind
+binder 5534:5534 <> c:128
+R5546:5549 PL.SyntaxInCoq Lang_WhileDC expr ind
+binder 5543:5543 <> e:129
+R5553:5555 PL.SyntaxInCoq <> com:111 ind
+R5572:5574 PL.SyntaxInCoq <> com:111 ind
+R5588:5590 PL.SyntaxInCoq <> com:111 ind
+R5598:5609 PL.SyntaxInCoq Lang_WhileDC <> mod
+mod 5663:5675 <> Lang_WhileDCL
+R5685:5694 PL.SyntaxInCoq Lang_While <> mod
+ind 5767:5769 Lang_WhileDCL com
+constr 5785:5789 Lang_WhileDCL CSkip
+constr 5800:5808 Lang_WhileDCL CLocalVar
+constr 5843:5850 Lang_WhileDCL CAsgnVar
+constr 5885:5894 Lang_WhileDCL CAsgnDeref
+constr 5919:5922 Lang_WhileDCL CSeq
+constr 5946:5948 Lang_WhileDCL CIf
+constr 5982:5987 Lang_WhileDCL CWhile
+constr 6017:6020 Lang_WhileDCL CFor
+constr 6071:6078 Lang_WhileDCL CDoWhile
+constr 6108:6116 Lang_WhileDCL CContinue
+constr 6127:6132 Lang_WhileDCL CBreak
+R5792:5794 PL.SyntaxInCoq <> com:130 ind
+R5814:5821 PL.SyntaxInCoq Lang_While var_name def
+binder 5811:5811 <> x:132
+R5829:5831 PL.SyntaxInCoq <> com:130 ind
+binder 5825:5826 <> c1:133
+R5835:5837 PL.SyntaxInCoq <> com:130 ind
+R5856:5863 PL.SyntaxInCoq Lang_While var_name def
+binder 5853:5853 <> x:134
+R5870:5873 PL.SyntaxInCoq Lang_While expr ind
+binder 5867:5867 <> e:135
+R5877:5879 PL.SyntaxInCoq <> com:130 ind
+R5904:5907 PL.SyntaxInCoq Lang_While expr ind
+binder 5897:5898 <> e1:136
+binder 5900:5901 <> e2:137
+R5911:5913 PL.SyntaxInCoq <> com:130 ind
+R5932:5934 PL.SyntaxInCoq <> com:130 ind
+binder 5925:5926 <> c1:138
+binder 5928:5929 <> c2:139
+R5938:5940 PL.SyntaxInCoq <> com:130 ind
+R5954:5957 PL.SyntaxInCoq Lang_While expr ind
+binder 5951:5951 <> e:140
+R5968:5970 PL.SyntaxInCoq <> com:130 ind
+binder 5961:5962 <> c1:141
+binder 5964:5965 <> c2:142
+R5974:5976 PL.SyntaxInCoq <> com:130 ind
+R5993:5996 PL.SyntaxInCoq Lang_While expr ind
+binder 5990:5990 <> e:143
+R6003:6005 PL.SyntaxInCoq <> com:130 ind
+binder 6000:6000 <> c:144
+R6009:6011 PL.SyntaxInCoq <> com:130 ind
+R6027:6029 PL.SyntaxInCoq <> com:130 ind
+binder 6023:6024 <> c1:145
+R6036:6039 PL.SyntaxInCoq Lang_While expr ind
+binder 6033:6033 <> e:146
+R6047:6049 PL.SyntaxInCoq <> com:130 ind
+binder 6043:6044 <> c2:147
+R6057:6059 PL.SyntaxInCoq <> com:130 ind
+binder 6053:6054 <> c3:148
+R6063:6065 PL.SyntaxInCoq <> com:130 ind
+R6084:6086 PL.SyntaxInCoq <> com:130 ind
+binder 6081:6081 <> c:149
+R6093:6096 PL.SyntaxInCoq Lang_While expr ind
+binder 6090:6090 <> e:150
+R6100:6102 PL.SyntaxInCoq <> com:130 ind
+R6119:6121 PL.SyntaxInCoq <> com:130 ind
+R6135:6137 PL.SyntaxInCoq <> com:130 ind
+R6145:6157 PL.SyntaxInCoq Lang_WhileDCL <> mod
+mod 6209:6219 <> Lang_WhileF
+R6229:6238 PL.SyntaxInCoq Lang_While <> mod
+def 6347:6355 Lang_WhileF func_name
+R6366:6371 Coq.Strings.String <> string ind
+def 6385:6393 Lang_WhileF proc_name
+R6404:6409 Coq.Strings.String <> string ind
+ind 6497:6500 Lang_WhileF expr
+constr 6516:6521 Lang_WhileF EConst
+constr 6540:6543 Lang_WhileF EVar
+constr 6569:6574 Lang_WhileF EBinop
+constr 6612:6616 Lang_WhileF EUnop
+constr 6649:6654 Lang_WhileF EDeref
+constr 6676:6682 Lang_WhileF EAddrOf
+constr 6704:6712 Lang_WhileF EFuncCall
+R6527:6527 Coq.Numbers.BinNums <> Z ind
+binder 6524:6524 <> n:153
+R6531:6534 PL.SyntaxInCoq <> expr:151 ind
+R6549:6556 PL.SyntaxInCoq Lang_While var_name def
+binder 6546:6546 <> x:154
+R6560:6563 PL.SyntaxInCoq <> expr:151 ind
+R6581:6585 PL.SyntaxInCoq Lang_While binop ind
+binder 6577:6578 <> op:155
+R6596:6599 PL.SyntaxInCoq <> expr:151 ind
+binder 6589:6590 <> e1:156
+binder 6592:6593 <> e2:157
+R6603:6606 PL.SyntaxInCoq <> expr:151 ind
+R6623:6626 PL.SyntaxInCoq Lang_While unop ind
+binder 6619:6620 <> op:158
+R6633:6636 PL.SyntaxInCoq <> expr:151 ind
+binder 6630:6630 <> e:159
+R6640:6643 PL.SyntaxInCoq <> expr:151 ind
+R6660:6663 PL.SyntaxInCoq <> expr:151 ind
+binder 6657:6657 <> e:160
+R6667:6670 PL.SyntaxInCoq <> expr:151 ind
+R6688:6691 PL.SyntaxInCoq <> expr:151 ind
+binder 6685:6685 <> e:161
+R6695:6698 PL.SyntaxInCoq <> expr:151 ind
+R6718:6726 PL.SyntaxInCoq Lang_WhileF func_name def
+binder 6715:6715 <> f:162
+R6734:6737 Coq.Init.Datatypes <> list ind
+R6739:6742 PL.SyntaxInCoq <> expr:151 ind
+binder 6730:6731 <> es:163
+def 6950:6959 Lang_WhileF return_var
+R6962:6969 PL.SyntaxInCoq Lang_While var_name def
+ind 6997:6999 Lang_WhileF com
+constr 7015:7019 Lang_WhileF CSkip
+constr 7030:7038 Lang_WhileF CLocalVar
+constr 7073:7080 Lang_WhileF CAsgnVar
+constr 7115:7124 Lang_WhileF CAsgnDeref
+constr 7149:7157 Lang_WhileF CProcCall
+constr 7199:7202 Lang_WhileF CSeq
+constr 7226:7228 Lang_WhileF CIf
+constr 7262:7267 Lang_WhileF CWhile
+constr 7297:7300 Lang_WhileF CFor
+constr 7351:7358 Lang_WhileF CDoWhile
+constr 7388:7396 Lang_WhileF CContinue
+constr 7407:7412 Lang_WhileF CBreak
+constr 7423:7429 Lang_WhileF CReturn
+R7022:7024 PL.SyntaxInCoq <> com:164 ind
+R7044:7051 PL.SyntaxInCoq Lang_While var_name def
+binder 7041:7041 <> x:166
+R7059:7061 PL.SyntaxInCoq <> com:164 ind
+binder 7055:7056 <> c1:167
+R7065:7067 PL.SyntaxInCoq <> com:164 ind
+R7086:7093 PL.SyntaxInCoq Lang_While var_name def
+binder 7083:7083 <> x:168
+R7100:7103 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7097:7097 <> e:169
+R7107:7109 PL.SyntaxInCoq <> com:164 ind
+R7134:7137 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7127:7128 <> e1:170
+binder 7130:7131 <> e2:171
+R7141:7143 PL.SyntaxInCoq <> com:164 ind
+R7163:7171 PL.SyntaxInCoq Lang_WhileF proc_name def
+binder 7160:7160 <> p:172
+R7179:7182 Coq.Init.Datatypes <> list ind
+R7184:7187 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7175:7176 <> es:173
+R7191:7193 PL.SyntaxInCoq <> com:164 ind
+R7212:7214 PL.SyntaxInCoq <> com:164 ind
+binder 7205:7206 <> c1:174
+binder 7208:7209 <> c2:175
+R7218:7220 PL.SyntaxInCoq <> com:164 ind
+R7234:7237 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7231:7231 <> e:176
+R7248:7250 PL.SyntaxInCoq <> com:164 ind
+binder 7241:7242 <> c1:177
+binder 7244:7245 <> c2:178
+R7254:7256 PL.SyntaxInCoq <> com:164 ind
+R7273:7276 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7270:7270 <> e:179
+R7283:7285 PL.SyntaxInCoq <> com:164 ind
+binder 7280:7280 <> c:180
+R7289:7291 PL.SyntaxInCoq <> com:164 ind
+R7307:7309 PL.SyntaxInCoq <> com:164 ind
+binder 7303:7304 <> c1:181
+R7316:7319 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7313:7313 <> e:182
+R7327:7329 PL.SyntaxInCoq <> com:164 ind
+binder 7323:7324 <> c2:183
+R7337:7339 PL.SyntaxInCoq <> com:164 ind
+binder 7333:7334 <> c3:184
+R7343:7345 PL.SyntaxInCoq <> com:164 ind
+R7364:7366 PL.SyntaxInCoq <> com:164 ind
+binder 7361:7361 <> c:185
+R7373:7376 PL.SyntaxInCoq Lang_WhileF expr ind
+binder 7370:7370 <> e:186
+R7380:7382 PL.SyntaxInCoq <> com:164 ind
+R7399:7401 PL.SyntaxInCoq <> com:164 ind
+R7415:7417 PL.SyntaxInCoq <> com:164 ind
+R7432:7434 PL.SyntaxInCoq <> com:164 ind
+rec 7495:7498 Lang_WhileF func
+proj 7513:7524 Lang_WhileF name_of_func
+proj 7540:7551 Lang_WhileF body_of_func
+proj 7561:7572 Lang_WhileF args_of_func
+R7527:7535 PL.SyntaxInCoq Lang_WhileF func_name def
+R7554:7556 PL.SyntaxInCoq Lang_WhileF com ind
+R7575:7578 Coq.Init.Datatypes <> list ind
+R7580:7587 PL.SyntaxInCoq Lang_While var_name def
+rec 7601:7604 Lang_WhileF proc
+proj 7619:7630 Lang_WhileF name_of_proc
+proj 7646:7657 Lang_WhileF body_of_proc
+proj 7667:7678 Lang_WhileF args_of_proc
+R7633:7641 PL.SyntaxInCoq Lang_WhileF proc_name def
+R7660:7662 PL.SyntaxInCoq Lang_WhileF com ind
+R7681:7684 Coq.Init.Datatypes <> list ind
+R7686:7693 PL.SyntaxInCoq Lang_While var_name def
+rec 7820:7823 Lang_WhileF prog
+proj 7838:7842 Lang_WhileF gvars
+proj 7862:7866 Lang_WhileF funcs
+proj 7882:7886 Lang_WhileF procs
+proj 7902:7906 Lang_WhileF entry
+R7845:7848 Coq.Init.Datatypes <> list ind
+R7850:7857 PL.SyntaxInCoq Lang_While var_name def
+R7869:7872 Coq.Init.Datatypes <> list ind
+R7874:7877 PL.SyntaxInCoq Lang_WhileF func rec
+R7889:7892 Coq.Init.Datatypes <> list ind
+R7894:7897 PL.SyntaxInCoq Lang_WhileF proc rec
+R7909:7917 PL.SyntaxInCoq Lang_WhileF func_name def
+R7928:7938 PL.SyntaxInCoq Lang_WhileF <> mod
+mod 7987:7995 <> LangTrans
+R8005:8020 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+def 8187:8197 LangTrans remove_skip
+R8203:8205 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 8200:8200 <> c:200
+R8209:8211 PL.SyntaxInCoq Lang_SimpleWhile com ind
+R8224:8224 PL.SyntaxInCoq <> c:200 var
+R8235:8238 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R8277:8287 PL.SyntaxInCoq <> remove_skip:201 def
+R8261:8271 PL.SyntaxInCoq <> remove_skip:201 def
+R8305:8309 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R8317:8327 PL.SyntaxInCoq <> remove_skip:201 def
+R8343:8347 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R8352:8362 PL.SyntaxInCoq <> remove_skip:201 def
+R8383:8386 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R8389:8399 PL.SyntaxInCoq <> remove_skip:201 def
+R8406:8416 PL.SyntaxInCoq <> remove_skip:201 def
+R8436:8438 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R8457:8459 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R8464:8474 PL.SyntaxInCoq <> remove_skip:201 def
+R8481:8491 PL.SyntaxInCoq <> remove_skip:201 def
+R8501:8506 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R8522:8527 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R8532:8542 PL.SyntaxInCoq <> remove_skip:201 def
+R8563:8563 PL.SyntaxInCoq <> c:200 var
+def 8816:8834 LangTrans not_sequencing_skip
+R8840:8842 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 8837:8837 <> c:203
+R8862:8862 PL.SyntaxInCoq <> c:203 var
+R8873:8876 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R8878:8882 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R8889:8893 Coq.Init.Logic <> False ind
+R8899:8902 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R8906:8910 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R8915:8919 Coq.Init.Logic <> False ind
+R8930:8933 Coq.Init.Logic <> True ind
+def 9032:9048 LangTrans no_sequenced_skip
+R9054:9056 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 9051:9051 <> c:205
+R9076:9076 PL.SyntaxInCoq <> c:205 var
+R9087:9090 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R9128:9137 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9107:9125 PL.SyntaxInCoq LangTrans not_sequencing_skip def
+R9127:9127 PL.SyntaxInCoq <> c:205 var
+R9158:9161 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9138:9154 PL.SyntaxInCoq <> no_sequenced_skip:206 def
+R9162:9178 PL.SyntaxInCoq <> no_sequenced_skip:206 def
+R9187:9189 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R9228:9231 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9208:9224 PL.SyntaxInCoq <> no_sequenced_skip:206 def
+R9232:9248 PL.SyntaxInCoq <> no_sequenced_skip:206 def
+R9257:9262 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R9278:9294 PL.SyntaxInCoq <> no_sequenced_skip:206 def
+R9314:9317 Coq.Init.Logic <> True ind
+prf 9376:9404 LangTrans remove_skip_no_sequenced_skip
+binder 9414:9414 <> c:208
+R9419:9435 PL.SyntaxInCoq LangTrans no_sequenced_skip def
+R9438:9448 PL.SyntaxInCoq LangTrans remove_skip def
+R9450:9450 PL.SyntaxInCoq <> c:208 var
+R9588:9598 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9588:9598 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9606:9616 PL.SyntaxInCoq LangTrans remove_skip def
+R9706:9714 PL.SyntaxInCoq LangTrans <> mod

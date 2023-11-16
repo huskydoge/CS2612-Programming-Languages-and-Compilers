@@ -1,0 +1,2504 @@
+DIGEST ebde079d6bb74aab1880dbfc4b9054f5
+FPL.DenotationalSemantics
+R15:38 Coq.Logic.Classical_Prop <> <> lib
+R56:73 Coq.Strings.String <> <> lib
+R91:107 Coq.ZArith.ZArith <> <> lib
+R125:143 Coq.micromega.Psatz <> <> lib
+R161:181 Coq.Classes.Morphisms <> <> lib
+R199:217 SetsClass.SetsClass <> <> lib
+R227:238 SetsClass.SetsClass SetsNotation <> mod
+R256:269 PL.SyntaxInCoq <> <> lib
+mod 389:407 <> DntSem_SimpleWhile1
+R417:432 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+def 869:873 DntSem_SimpleWhile1 state
+R892:895 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R884:891 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+R896:896 Coq.Numbers.BinNums <> Z ind
+def 983:995 DntSem_SimpleWhile1 eval_expr_int
+R1001:1008 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 998:998 <> e:1
+R1015:1019 PL.DenotationalSemantics DntSem_SimpleWhile1 state def
+binder 1012:1012 <> s:2
+R1024:1024 Coq.Numbers.BinNums <> Z ind
+R1037:1037 PL.DenotationalSemantics <> e:1 var
+R1048:1053 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R1066:1069 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R1076:1076 PL.DenotationalSemantics <> s:2 var
+R1084:1087 PL.SyntaxInCoq Lang_SimpleWhile EAdd constr
+R1116:1118 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R1098:1110 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1115:1115 PL.DenotationalSemantics <> s:2 var
+R1119:1131 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1136:1136 PL.DenotationalSemantics <> s:2 var
+R1142:1145 PL.SyntaxInCoq Lang_SimpleWhile ESub constr
+R1174:1176 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R1156:1168 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1173:1173 PL.DenotationalSemantics <> s:2 var
+R1177:1189 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1194:1194 PL.DenotationalSemantics <> s:2 var
+R1200:1203 PL.SyntaxInCoq Lang_SimpleWhile EMul constr
+R1232:1234 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R1214:1226 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1231:1231 PL.DenotationalSemantics <> s:2 var
+R1235:1247 PL.DenotationalSemantics <> eval_expr_int:3 def
+R1252:1252 PL.DenotationalSemantics <> s:2 var
+def 1311:1323 DntSem_SimpleWhile1 eval_example1
+R1337:1341 PL.DenotationalSemantics DntSem_SimpleWhile1 state def
+binder 1334:1334 <> s:5
+R1356:1361 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1352:1354 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1347:1347 PL.DenotationalSemantics <> s:5 var
+R1371:1376 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1367:1369 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1362:1362 PL.DenotationalSemantics <> s:5 var
+R1406:1408 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1377:1389 PL.DenotationalSemantics DntSem_SimpleWhile1 eval_expr_int def
+R1391:1392 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1402:1403 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1396:1398 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R1405:1405 PL.DenotationalSemantics <> s:5 var
+def 1476:1488 DntSem_SimpleWhile1 eval_example2
+R1502:1506 PL.DenotationalSemantics DntSem_SimpleWhile1 state def
+binder 1499:1499 <> s:6
+R1521:1526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1517:1519 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1512:1512 PL.DenotationalSemantics <> s:6 var
+R1536:1541 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1532:1534 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1527:1527 PL.DenotationalSemantics <> s:6 var
+R1575:1577 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1542:1554 PL.DenotationalSemantics DntSem_SimpleWhile1 eval_expr_int def
+R1556:1557 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1571:1572 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R1567:1569 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R1561:1563 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R1574:1574 PL.DenotationalSemantics <> s:6 var
+def 1954:1967 DntSem_SimpleWhile1 expr_int_equiv
+R1977:1984 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 1970:1971 <> e1:7
+binder 1973:1974 <> e2:8
+binder 2005:2006 <> st:9
+R2028:2030 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2009:2021 PL.DenotationalSemantics DntSem_SimpleWhile1 eval_expr_int def
+R2023:2024 PL.DenotationalSemantics <> e1:7 var
+R2026:2027 PL.DenotationalSemantics <> st:9 var
+R2031:2043 PL.DenotationalSemantics DntSem_SimpleWhile1 eval_expr_int def
+R2045:2046 PL.DenotationalSemantics <> e2:8 var
+R2048:2049 PL.DenotationalSemantics <> st:9 var
+R2080:2093 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+not 2062:2062 DntSem_SimpleWhile1 :::x_'~=~'_x
+def 2203:2223 DntSem_SimpleWhile1 expr_int_equiv_sample
+R2241:2245 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R2228:2229 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2239:2240 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2233:2235 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R2246:2247 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2255:2256 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2251:2253 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R2285:2298 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 2433:2447 DntSem_SimpleWhile1 zero_plus_equiv
+R2461:2468 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2458:2458 <> a:10
+R2483:2487 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R2474:2475 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2481:2482 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2477:2479 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R2480:2480 PL.DenotationalSemantics <> a:10 var
+R2488:2488 PL.DenotationalSemantics <> a:10 var
+R2517:2530 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 2571:2585 DntSem_SimpleWhile1 plus_zero_equiv
+R2599:2606 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2596:2596 <> a:11
+R2621:2625 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R2612:2613 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2619:2620 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2615:2617 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R2614:2614 PL.DenotationalSemantics <> a:11 var
+R2626:2626 PL.DenotationalSemantics <> a:11 var
+R2655:2668 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 2709:2724 DntSem_SimpleWhile1 minus_zero_equiv
+R2738:2745 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2735:2735 <> a:12
+R2760:2764 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R2751:2752 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2758:2759 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2754:2756 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'-'_x not
+R2753:2753 PL.DenotationalSemantics <> a:12 var
+R2765:2765 PL.DenotationalSemantics <> a:12 var
+R2794:2807 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 2848:2862 DntSem_SimpleWhile1 zero_mult_equiv
+R2876:2883 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 2873:2873 <> a:13
+R2898:2902 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R2889:2890 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2896:2897 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R2892:2894 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R2895:2895 PL.DenotationalSemantics <> a:13 var
+R2932:2945 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 2986:3000 DntSem_SimpleWhile1 mult_zero_equiv
+R3014:3021 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 3011:3011 <> a:14
+R3036:3040 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R3027:3028 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3034:3035 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3030:3032 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R3029:3029 PL.DenotationalSemantics <> a:14 var
+R3070:3083 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 3124:3139 DntSem_SimpleWhile1 const_plus_const
+R3154:3154 Coq.Numbers.BinNums <> Z ind
+binder 3149:3149 <> n:15
+binder 3151:3151 <> m:16
+R3182:3186 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R3159:3160 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3180:3181 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3169:3171 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R3167:3167 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3168:3168 PL.DenotationalSemantics <> n:15 var
+R3161:3166 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3178:3178 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3179:3179 PL.DenotationalSemantics <> m:16 var
+R3172:3177 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3187:3192 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3196:3198 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R3195:3195 PL.DenotationalSemantics <> n:15 var
+R3199:3199 PL.DenotationalSemantics <> m:16 var
+R3229:3242 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 3291:3307 DntSem_SimpleWhile1 const_minus_const
+R3322:3322 Coq.Numbers.BinNums <> Z ind
+binder 3317:3317 <> n:17
+binder 3319:3319 <> m:18
+R3350:3354 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R3327:3328 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3348:3349 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3337:3339 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'-'_x not
+R3335:3335 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3336:3336 PL.DenotationalSemantics <> n:17 var
+R3329:3334 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3346:3346 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3347:3347 PL.DenotationalSemantics <> m:18 var
+R3340:3345 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3355:3360 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3364:3366 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R3363:3363 PL.DenotationalSemantics <> n:17 var
+R3367:3367 PL.DenotationalSemantics <> m:18 var
+R3397:3410 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+prf 3459:3474 DntSem_SimpleWhile1 const_mult_const
+R3489:3489 Coq.Numbers.BinNums <> Z ind
+binder 3484:3484 <> n:19
+binder 3486:3486 <> m:20
+R3517:3521 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R3494:3495 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3515:3516 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R3504:3506 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R3502:3502 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3503:3503 PL.DenotationalSemantics <> n:19 var
+R3496:3501 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3513:3513 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_x not
+R3514:3514 PL.DenotationalSemantics <> m:20 var
+R3507:3512 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3522:3527 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3531:3533 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R3530:3530 PL.DenotationalSemantics <> n:19 var
+R3534:3534 PL.DenotationalSemantics <> m:20 var
+R3564:3577 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+def 3846:3859 DntSem_SimpleWhile1 fold_constants
+R3866:3873 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 3862:3862 <> e:21
+R3878:3885 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+R3898:3898 PL.DenotationalSemantics <> e:21 var
+R3909:3914 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3924:3929 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R3937:3940 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R3952:3955 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R3963:3966 PL.SyntaxInCoq Lang_SimpleWhile EAdd constr
+R4009:4022 PL.DenotationalSemantics <> fold_constants:22 def
+R3990:4003 PL.DenotationalSemantics <> fold_constants:22 def
+R4040:4045 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4051:4056 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4064:4069 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4074:4076 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R4097:4100 PL.SyntaxInCoq Lang_SimpleWhile EAdd constr
+R4103:4116 PL.DenotationalSemantics <> fold_constants:22 def
+R4123:4136 PL.DenotationalSemantics <> fold_constants:22 def
+R4156:4159 PL.SyntaxInCoq Lang_SimpleWhile ESub constr
+R4201:4214 PL.DenotationalSemantics <> fold_constants:22 def
+R4182:4195 PL.DenotationalSemantics <> fold_constants:22 def
+R4232:4237 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4243:4248 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4256:4261 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4266:4268 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R4289:4292 PL.SyntaxInCoq Lang_SimpleWhile ESub constr
+R4295:4308 PL.DenotationalSemantics <> fold_constants:22 def
+R4315:4328 PL.DenotationalSemantics <> fold_constants:22 def
+R4346:4349 PL.SyntaxInCoq Lang_SimpleWhile EMul constr
+R4391:4404 PL.DenotationalSemantics <> fold_constants:22 def
+R4372:4385 PL.DenotationalSemantics <> fold_constants:22 def
+R4422:4427 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4433:4438 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4446:4451 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R4456:4458 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R4479:4482 PL.SyntaxInCoq Lang_SimpleWhile EMul constr
+R4485:4498 PL.DenotationalSemantics <> fold_constants:22 def
+R4505:4518 PL.DenotationalSemantics <> fold_constants:22 def
+def 4904:4921 DntSem_SimpleWhile1 fold_constants_ex1
+R4960:4962 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4928:4941 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R4943:4944 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R4958:4959 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R4952:4954 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R4945:4945 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R4951:4951 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R4947:4949 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R4963:4964 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R4972:4973 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R4966:4968 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+def 5120:5136 DntSem_SimpleWhile1 fold_expr_int_ex2
+R5182:5184 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5142:5155 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5157:5158 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R5180:5181 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R5162:5164 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'-'_x not
+R5165:5165 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5179:5179 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5173:5175 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R5166:5166 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5172:5172 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5168:5170 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'*'_x not
+R5185:5186 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R5202:5203 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R5190:5192 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'-'_x not
+R5193:5193 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5201:5201 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::'('_x_')' not
+R5195:5197 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+prf 5335:5354 DntSem_SimpleWhile1 fold_constants_sound
+binder 5365:5365 <> a:24
+R5386:5390 PL.DenotationalSemantics DntSem_SimpleWhile1 :::x_'~=~'_x not
+R5370:5383 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5385:5385 PL.DenotationalSemantics <> a:24 var
+R5391:5391 PL.DenotationalSemantics <> a:24 var
+R5410:5423 PL.DenotationalSemantics DntSem_SimpleWhile1 expr_int_equiv def
+R5605:5618 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5605:5618 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5626:5639 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5743:5756 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5743:5756 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5764:5777 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5881:5894 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5881:5894 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5902:5915 PL.DenotationalSemantics DntSem_SimpleWhile1 fold_constants def
+R5979:5997 PL.DenotationalSemantics DntSem_SimpleWhile1 <> mod
+mod 6055:6073 <> DntSem_SimpleWhile2
+R6083:6098 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+def 6113:6117 DntSem_SimpleWhile2 state
+R6136:6139 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6128:6135 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+R6140:6140 Coq.Numbers.BinNums <> Z ind
+def 6155:6161 DntSem_SimpleWhile2 add_sem
+R6176:6179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6171:6175 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R6180:6180 Coq.Numbers.BinNums <> Z ind
+binder 6164:6165 <> D1:25
+binder 6167:6168 <> D2:26
+R6187:6191 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 6184:6184 <> s:27
+R6195:6195 Coq.Numbers.BinNums <> Z ind
+R6206:6208 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R6202:6203 PL.DenotationalSemantics <> D1:25 var
+R6205:6205 PL.DenotationalSemantics <> s:27 var
+R6209:6210 PL.DenotationalSemantics <> D2:26 var
+R6212:6212 PL.DenotationalSemantics <> s:27 var
+def 6227:6233 DntSem_SimpleWhile2 sub_sem
+R6248:6251 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6243:6247 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R6252:6252 Coq.Numbers.BinNums <> Z ind
+binder 6236:6237 <> D1:28
+binder 6239:6240 <> D2:29
+R6259:6263 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 6256:6256 <> s:30
+R6267:6267 Coq.Numbers.BinNums <> Z ind
+R6278:6280 Coq.ZArith.BinInt <> ::Z_scope:x_'-'_x not
+R6274:6275 PL.DenotationalSemantics <> D1:28 var
+R6277:6277 PL.DenotationalSemantics <> s:30 var
+R6281:6282 PL.DenotationalSemantics <> D2:29 var
+R6284:6284 PL.DenotationalSemantics <> s:30 var
+def 6299:6305 DntSem_SimpleWhile2 mul_sem
+R6320:6323 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6315:6319 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R6324:6324 Coq.Numbers.BinNums <> Z ind
+binder 6308:6309 <> D1:31
+binder 6311:6312 <> D2:32
+R6331:6335 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 6328:6328 <> s:33
+R6339:6339 Coq.Numbers.BinNums <> Z ind
+R6350:6352 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R6346:6347 PL.DenotationalSemantics <> D1:31 var
+R6349:6349 PL.DenotationalSemantics <> s:33 var
+R6353:6354 PL.DenotationalSemantics <> D2:32 var
+R6356:6356 PL.DenotationalSemantics <> s:33 var
+R6422:6428 PL.DenotationalSemantics DntSem_SimpleWhile2 add_sem def
+def 6734:6742 DntSem_SimpleWhile2 const_sem
+R6748:6748 Coq.Numbers.BinNums <> Z ind
+binder 6745:6745 <> n:34
+R6755:6759 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 6752:6752 <> s:35
+R6763:6763 Coq.Numbers.BinNums <> Z ind
+R6768:6768 PL.DenotationalSemantics <> n:34 var
+def 6782:6788 DntSem_SimpleWhile2 var_sem
+R6794:6801 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+binder 6791:6791 <> X:36
+R6808:6812 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 6805:6805 <> s:37
+R6816:6816 Coq.Numbers.BinNums <> Z ind
+R6821:6821 PL.DenotationalSemantics <> s:37 var
+R6823:6823 PL.DenotationalSemantics <> X:36 var
+def 6836:6848 DntSem_SimpleWhile2 eval_expr_int
+R6854:6861 PL.SyntaxInCoq Lang_SimpleWhile expr_int ind
+binder 6851:6851 <> e:38
+R6870:6873 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6865:6869 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R6874:6874 Coq.Numbers.BinNums <> Z ind
+R6887:6887 PL.DenotationalSemantics <> e:38 var
+R6898:6903 PL.SyntaxInCoq Lang_SimpleWhile EConst constr
+R6916:6924 PL.DenotationalSemantics DntSem_SimpleWhile2 const_sem def
+R6932:6935 PL.SyntaxInCoq Lang_SimpleWhile EVar constr
+R6948:6954 PL.DenotationalSemantics DntSem_SimpleWhile2 var_sem def
+R6962:6965 PL.SyntaxInCoq Lang_SimpleWhile EAdd constr
+R6982:6988 PL.DenotationalSemantics DntSem_SimpleWhile2 add_sem def
+R6991:7003 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7010:7022 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7032:7035 PL.SyntaxInCoq Lang_SimpleWhile ESub constr
+R7052:7058 PL.DenotationalSemantics DntSem_SimpleWhile2 sub_sem def
+R7061:7073 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7080:7092 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7102:7105 PL.SyntaxInCoq Lang_SimpleWhile EMul constr
+R7122:7128 PL.DenotationalSemantics DntSem_SimpleWhile2 mul_sem def
+R7131:7143 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7150:7162 PL.DenotationalSemantics <> eval_expr_int:39 def
+R7180:7198 PL.DenotationalSemantics DntSem_SimpleWhile2 <> mod
+mod 7241:7259 <> DntSem_SimpleWhile3
+R7269:7284 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+R7286:7304 PL.DenotationalSemantics DntSem_SimpleWhile2 <> mod
+def 7357:7364 DntSem_SimpleWhile3 true_sem
+R7370:7374 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 7367:7367 <> s:41
+R7378:7381 Coq.Init.Datatypes <> bool ind
+R7386:7389 Coq.Init.Datatypes <> true constr
+def 7404:7412 DntSem_SimpleWhile3 false_sem
+R7418:7422 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 7415:7415 <> s:42
+R7426:7429 Coq.Init.Datatypes <> bool ind
+R7434:7438 Coq.Init.Datatypes <> false constr
+def 7453:7458 DntSem_SimpleWhile3 lt_sem
+R7473:7476 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7468:7472 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R7477:7477 Coq.Numbers.BinNums <> Z ind
+binder 7461:7462 <> D1:43
+binder 7464:7465 <> D2:44
+binder 7480:7480 <> s:45
+R7483:7486 Coq.Init.Datatypes <> bool ind
+R7493:7497 Coq.ZArith.BinInt Z ltb def
+R7500:7501 PL.DenotationalSemantics <> D1:43 var
+R7503:7503 PL.DenotationalSemantics <> s:45 var
+R7507:7508 PL.DenotationalSemantics <> D2:44 var
+R7510:7510 PL.DenotationalSemantics <> s:45 var
+def 7526:7532 DntSem_SimpleWhile3 and_sem
+R7547:7550 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7542:7546 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R7551:7554 Coq.Init.Datatypes <> bool ind
+binder 7535:7536 <> D1:46
+binder 7538:7539 <> D2:47
+binder 7557:7557 <> s:48
+R7560:7563 Coq.Init.Datatypes <> bool ind
+R7570:7573 Coq.Init.Datatypes <> andb def
+R7583:7584 PL.DenotationalSemantics <> D2:47 var
+R7586:7586 PL.DenotationalSemantics <> s:48 var
+R7576:7577 PL.DenotationalSemantics <> D1:46 var
+R7579:7579 PL.DenotationalSemantics <> s:48 var
+def 7602:7608 DntSem_SimpleWhile3 not_sem
+R7619:7622 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7614:7618 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R7623:7626 Coq.Init.Datatypes <> bool ind
+binder 7611:7611 <> D:49
+binder 7629:7629 <> s:50
+R7632:7635 Coq.Init.Datatypes <> bool ind
+R7642:7645 Coq.Init.Datatypes <> negb def
+R7648:7648 PL.DenotationalSemantics <> D:49 var
+R7650:7650 PL.DenotationalSemantics <> s:50 var
+def 7664:7677 DntSem_SimpleWhile3 eval_expr_bool
+R7683:7691 PL.SyntaxInCoq Lang_SimpleWhile expr_bool ind
+binder 7680:7680 <> e:51
+R7700:7703 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7695:7699 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R7704:7707 Coq.Init.Datatypes <> bool ind
+R7720:7720 PL.DenotationalSemantics <> e:51 var
+R7731:7735 PL.SyntaxInCoq Lang_SimpleWhile ETrue constr
+R7746:7753 PL.DenotationalSemantics DntSem_SimpleWhile3 true_sem def
+R7759:7764 PL.SyntaxInCoq Lang_SimpleWhile EFalse constr
+R7775:7783 PL.DenotationalSemantics DntSem_SimpleWhile3 false_sem def
+R7789:7791 PL.SyntaxInCoq Lang_SimpleWhile ELt constr
+R7808:7813 PL.DenotationalSemantics DntSem_SimpleWhile3 lt_sem def
+R7816:7828 PL.DenotationalSemantics DntSem_SimpleWhile2 eval_expr_int def
+R7835:7847 PL.DenotationalSemantics DntSem_SimpleWhile2 eval_expr_int def
+R7857:7860 PL.SyntaxInCoq Lang_SimpleWhile EAnd constr
+R7877:7883 PL.DenotationalSemantics DntSem_SimpleWhile3 and_sem def
+R7886:7899 PL.DenotationalSemantics <> eval_expr_bool:52 def
+R7906:7919 PL.DenotationalSemantics <> eval_expr_bool:52 def
+R7929:7932 PL.SyntaxInCoq Lang_SimpleWhile ENot constr
+R7946:7952 PL.DenotationalSemantics DntSem_SimpleWhile3 not_sem def
+R7955:7968 PL.DenotationalSemantics <> eval_expr_bool:52 def
+R7986:8004 PL.DenotationalSemantics DntSem_SimpleWhile3 <> mod
+binder 9458:9458 <> A:54
+R9465:9468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9464:9464 PL.DenotationalSemantics <> A:54 var
+binder 9461:9461 <> X:55
+R9485:9488 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R9477:9481 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R9476:9476 PL.DenotationalSemantics <> X:55 var
+R9482:9484 SetsClass.SetsClass SetsNotation ::sets_scope:'∅' not
+R9489:9489 PL.DenotationalSemantics <> X:55 var
+binder 9506:9506 <> A:56
+binder 9508:9508 <> B:57
+R9517:9520 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9516:9516 PL.DenotationalSemantics <> A:56 var
+R9522:9525 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9521:9521 PL.DenotationalSemantics <> B:57 var
+binder 9511:9511 <> X:58
+binder 9513:9513 <> Y:59
+R9540:9544 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R9534:9538 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R9533:9533 PL.DenotationalSemantics <> X:58 var
+R9539:9539 PL.DenotationalSemantics <> Y:59 var
+R9545:9545 PL.DenotationalSemantics <> X:58 var
+mod 9556:9568 <> SetsProofDemo
+prf 9807:9825 SetsProofDemo Sets_intersect_comm
+binder 9835:9835 <> A:60
+R9844:9847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9843:9843 PL.DenotationalSemantics <> A:60 var
+binder 9838:9838 <> X:61
+binder 9840:9840 <> Y:62
+R9864:9867 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R9858:9862 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∩'_x not
+R9857:9857 PL.DenotationalSemantics <> X:61 var
+R9863:9863 PL.DenotationalSemantics <> Y:62 var
+R9869:9873 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∩'_x not
+R9868:9868 PL.DenotationalSemantics <> Y:62 var
+R9874:9874 PL.DenotationalSemantics <> X:61 var
+prf 10357:10376 SetsProofDemo Sets_included_union1
+binder 10386:10386 <> A:63
+R10395:10398 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10394:10394 PL.DenotationalSemantics <> A:63 var
+binder 10389:10389 <> X:64
+binder 10391:10391 <> Y:65
+R10409:10413 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R10408:10408 PL.DenotationalSemantics <> X:64 var
+R10415:10419 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R10414:10414 PL.DenotationalSemantics <> X:64 var
+R10420:10420 PL.DenotationalSemantics <> Y:65 var
+prf 10788:10804 SetsProofDemo Rels_concat_assoc
+binder 10814:10814 <> A:66
+R10825:10828 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10824:10824 PL.DenotationalSemantics <> A:66 var
+R10830:10833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10829:10829 PL.DenotationalSemantics <> A:66 var
+binder 10817:10817 <> X:67
+binder 10819:10819 <> Y:68
+binder 10821:10821 <> Z:69
+R10858:10861 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R10843:10843 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10851:10856 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10845:10849 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10844:10844 PL.DenotationalSemantics <> X:67 var
+R10850:10850 PL.DenotationalSemantics <> Y:68 var
+R10857:10857 PL.DenotationalSemantics <> Z:69 var
+R10863:10868 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10876:10876 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10862:10862 PL.DenotationalSemantics <> X:67 var
+R10870:10874 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R10869:10869 PL.DenotationalSemantics <> Y:68 var
+R10875:10875 PL.DenotationalSemantics <> Z:69 var
+R11006:11018 PL.DenotationalSemantics SetsProofDemo <> mod
+prf 13016:13023 <> sets_ex1
+binder 13036:13036 <> A:70
+R13060:13063 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13059:13059 PL.DenotationalSemantics <> A:70 var
+R13065:13068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13064:13064 PL.DenotationalSemantics <> A:70 var
+binder 13046:13047 <> R1:71
+binder 13049:13050 <> R2:72
+binder 13052:13053 <> R3:73
+binder 13055:13056 <> R4:74
+R13107:13110 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R13082:13087 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13106:13106 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13080:13081 PL.DenotationalSemantics <> R1:71 var
+R13090:13095 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13105:13105 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13088:13089 PL.DenotationalSemantics <> R2:72 var
+R13098:13102 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13096:13097 PL.DenotationalSemantics <> R3:73 var
+R13103:13104 PL.DenotationalSemantics <> R4:74 var
+R13111:13111 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13130:13135 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13112:13112 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13122:13127 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13115:13119 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13113:13114 PL.DenotationalSemantics <> R1:71 var
+R13120:13121 PL.DenotationalSemantics <> R2:72 var
+R13128:13129 PL.DenotationalSemantics <> R3:73 var
+R13136:13137 PL.DenotationalSemantics <> R4:74 var
+R13167:13183 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R13167:13183 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R13167:13183 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R13196:13212 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R13196:13212 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R13196:13212 SetsClass.RelsDomain <> Rels_concat_assoc meth
+prf 13241:13248 <> sets_ex2
+binder 13261:13261 <> A:75
+R13285:13288 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13284:13284 PL.DenotationalSemantics <> A:75 var
+R13290:13293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13289:13289 PL.DenotationalSemantics <> A:75 var
+binder 13271:13272 <> R1:76
+binder 13274:13275 <> R2:77
+binder 13277:13278 <> R3:78
+binder 13280:13281 <> R4:79
+R13314:13321 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13307:13311 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R13305:13306 PL.DenotationalSemantics <> R1:76 var
+R13312:13313 PL.DenotationalSemantics <> R2:77 var
+R13338:13342 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R13331:13335 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R13324:13328 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13322:13323 PL.DenotationalSemantics <> R1:76 var
+R13329:13330 PL.DenotationalSemantics <> R3:78 var
+R13336:13337 PL.DenotationalSemantics <> R4:79 var
+R13352:13356 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R13345:13349 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13343:13344 PL.DenotationalSemantics <> R2:77 var
+R13350:13351 PL.DenotationalSemantics <> R3:78 var
+R13357:13358 PL.DenotationalSemantics <> R4:79 var
+mod 13466:13484 <> DntSem_SimpleWhile4
+R13494:13509 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+R13518:13526 PL.SyntaxInCoq LangTrans <> mod
+R13535:13553 PL.DenotationalSemantics DntSem_SimpleWhile2 <> mod
+R13562:13580 PL.DenotationalSemantics DntSem_SimpleWhile3 <> mod
+def 13654:13661 DntSem_SimpleWhile4 skip_sem
+R13669:13672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13664:13668 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13678:13681 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13673:13677 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13692:13698 SetsClass.RelsDomain Rels id meth
+def 13713:13720 DntSem_SimpleWhile4 asgn_sem
+R13739:13746 PL.SyntaxInCoq Lang_SimpleWhile var_name def
+binder 13736:13736 <> X:80
+R13771:13774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13766:13770 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13775:13775 Coq.Numbers.BinNums <> Z ind
+binder 13763:13763 <> D:81
+R13801:13805 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 13792:13794 <> st1:82
+binder 13796:13798 <> st2:83
+R13832:13837 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13824:13826 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13819:13821 PL.DenotationalSemantics <> st2:83 var
+R13823:13823 PL.DenotationalSemantics <> X:80 var
+R13827:13827 PL.DenotationalSemantics <> D:81 var
+R13829:13831 PL.DenotationalSemantics <> st1:82 var
+binder 13845:13845 <> Y:84
+R13854:13857 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13849:13852 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R13848:13848 PL.DenotationalSemantics <> X:80 var
+R13853:13853 PL.DenotationalSemantics <> Y:84 var
+R13863:13865 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13858:13860 PL.DenotationalSemantics <> st2:83 var
+R13862:13862 PL.DenotationalSemantics <> Y:84 var
+R13866:13868 PL.DenotationalSemantics <> st1:82 var
+R13870:13870 PL.DenotationalSemantics <> Y:84 var
+def 13885:13891 DntSem_SimpleWhile4 seq_sem
+R13919:13922 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13914:13918 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13928:13931 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13923:13927 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 13907:13908 <> D1:85
+binder 13910:13911 <> D2:86
+R13946:13949 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13941:13945 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13955:13958 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13950:13954 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R13971:13975 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R13969:13970 PL.DenotationalSemantics <> D1:85 var
+R13976:13977 PL.DenotationalSemantics <> D2:86 var
+def 13992:14000 DntSem_SimpleWhile4 test_true
+R14024:14027 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14019:14023 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14028:14031 Coq.Init.Datatypes <> bool ind
+binder 14016:14016 <> D:87
+R14042:14045 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14037:14041 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14051:14054 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14046:14050 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14065:14073 SetsClass.RelsDomain Rels test meth
+binder 14080:14081 <> st:88
+R14090:14092 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14086:14086 PL.DenotationalSemantics <> D:87 var
+R14088:14089 PL.DenotationalSemantics <> st:88 var
+R14093:14096 Coq.Init.Datatypes <> true constr
+def 14112:14121 DntSem_SimpleWhile4 test_false
+R14145:14148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14140:14144 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14149:14152 Coq.Init.Datatypes <> bool ind
+binder 14137:14137 <> D:89
+R14163:14166 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14158:14162 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14172:14175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14167:14171 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14186:14194 SetsClass.RelsDomain Rels test meth
+binder 14201:14202 <> st:90
+R14211:14213 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14207:14207 PL.DenotationalSemantics <> D:89 var
+R14209:14210 PL.DenotationalSemantics <> st:90 var
+R14214:14218 Coq.Init.Datatypes <> false constr
+def 14234:14239 DntSem_SimpleWhile4 if_sem
+R14264:14267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14259:14263 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14268:14271 Coq.Init.Datatypes <> bool ind
+binder 14255:14256 <> D0:91
+R14300:14303 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14295:14299 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14309:14312 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14304:14308 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 14288:14289 <> D1:92
+binder 14291:14292 <> D2:93
+R14327:14330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14322:14326 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14336:14339 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14331:14335 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14350:14350 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R14370:14376 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R14397:14397 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R14363:14367 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R14351:14359 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R14361:14362 PL.DenotationalSemantics <> D0:91 var
+R14368:14369 PL.DenotationalSemantics <> D1:92 var
+R14390:14394 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R14377:14386 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R14388:14389 PL.DenotationalSemantics <> D0:91 var
+R14395:14396 PL.DenotationalSemantics <> D2:93 var
+def 14410:14415 DntSem_SimpleWhile4 iterLB
+R14438:14441 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14433:14437 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14442:14445 Coq.Init.Datatypes <> bool ind
+binder 14429:14430 <> D0:94
+R14469:14472 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14464:14468 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14478:14481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14473:14477 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 14460:14461 <> D1:95
+R14503:14505 Coq.Init.Datatypes <> nat ind
+binder 14500:14500 <> n:96
+R14516:14519 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14511:14515 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14525:14528 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14520:14524 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14545:14545 PL.DenotationalSemantics <> n:96 var
+R14556:14556 Coq.Init.Datatypes <> O constr
+R14561:14570 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R14572:14573 PL.DenotationalSemantics <> D0:94 var
+R14579:14579 Coq.Init.Datatypes <> S constr
+R14599:14603 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R14587:14595 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R14597:14598 PL.DenotationalSemantics <> D0:94 var
+R14606:14610 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R14604:14605 PL.DenotationalSemantics <> D1:95 var
+R14611:14616 PL.DenotationalSemantics <> iterLB:97 def
+R14621:14622 PL.DenotationalSemantics <> D1:95 var
+R14618:14619 PL.DenotationalSemantics <> D0:94 var
+mod 14642:14650 <> DntSem_SimpleWhile4.WhileSem1
+def 14665:14673 DntSem_SimpleWhile4.WhileSem1 while_sem
+R14698:14701 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14693:14697 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14702:14705 Coq.Init.Datatypes <> bool ind
+binder 14689:14690 <> D0:99
+R14731:14734 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14726:14730 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14740:14743 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14735:14739 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 14722:14723 <> D1:100
+R14758:14761 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14753:14757 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14767:14770 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14762:14766 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14781:14785 SetsClass.SetsClass SetsNotation ::sets_scope:'⋃'_x not
+R14798:14798 SetsClass.SetsClass SetsNotation ::sets_scope:'⋃'_x not
+R14786:14791 PL.DenotationalSemantics DntSem_SimpleWhile4 iterLB def
+R14793:14794 PL.DenotationalSemantics <> D0:99 var
+R14796:14797 PL.DenotationalSemantics <> D1:100 var
+R14806:14814 PL.DenotationalSemantics DntSem_SimpleWhile4.WhileSem1 <> mod
+def 14827:14835 DntSem_SimpleWhile4 boundedLB
+R14858:14861 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14853:14857 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14862:14865 Coq.Init.Datatypes <> bool ind
+binder 14849:14850 <> D0:101
+R14889:14892 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14884:14888 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14898:14901 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14893:14897 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 14880:14881 <> D1:102
+R14923:14925 Coq.Init.Datatypes <> nat ind
+binder 14920:14920 <> n:103
+R14936:14939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14931:14935 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14945:14948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14940:14944 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R14965:14965 PL.DenotationalSemantics <> n:103 var
+R14976:14976 Coq.Init.Datatypes <> O constr
+R14981:14983 SetsClass.SetsClass SetsNotation ::sets_scope:'∅' not
+R14989:14989 Coq.Init.Datatypes <> S constr
+R15003:15003 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R15046:15058 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R15072:15072 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R15016:15020 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R15004:15012 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R15014:15015 PL.DenotationalSemantics <> D0:101 var
+R15023:15027 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R15021:15022 PL.DenotationalSemantics <> D1:102 var
+R15028:15036 PL.DenotationalSemantics <> boundedLB:104 def
+R15041:15042 PL.DenotationalSemantics <> D1:102 var
+R15038:15039 PL.DenotationalSemantics <> D0:101 var
+R15059:15068 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R15070:15071 PL.DenotationalSemantics <> D0:101 var
+mod 15089:15097 <> DntSem_SimpleWhile4.WhileSem2
+def 15112:15120 DntSem_SimpleWhile4.WhileSem2 while_sem
+R15145:15148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15140:15144 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15149:15152 Coq.Init.Datatypes <> bool ind
+binder 15136:15137 <> D0:106
+R15178:15181 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15173:15177 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15187:15190 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15182:15186 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 15169:15170 <> D1:107
+R15205:15208 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15200:15204 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15214:15217 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15209:15213 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15228:15232 SetsClass.SetsClass SetsNotation ::sets_scope:'⋃'_x not
+R15248:15248 SetsClass.SetsClass SetsNotation ::sets_scope:'⋃'_x not
+R15233:15241 PL.DenotationalSemantics DntSem_SimpleWhile4 boundedLB def
+R15243:15244 PL.DenotationalSemantics <> D0:106 var
+R15246:15247 PL.DenotationalSemantics <> D1:107 var
+R15256:15264 PL.DenotationalSemantics DntSem_SimpleWhile4.WhileSem2 <> mod
+R15313:15321 PL.DenotationalSemantics DntSem_SimpleWhile4.WhileSem2 <> mod
+def 15393:15400 DntSem_SimpleWhile4 eval_com
+R15406:15408 PL.SyntaxInCoq Lang_SimpleWhile com ind
+binder 15403:15403 <> c:108
+R15417:15420 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15412:15416 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15426:15429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15421:15425 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R15446:15446 PL.DenotationalSemantics <> c:108 var
+R15457:15461 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R15472:15479 PL.DenotationalSemantics DntSem_SimpleWhile4 skip_sem def
+R15485:15489 PL.SyntaxInCoq Lang_SimpleWhile CAsgn constr
+R15504:15511 PL.DenotationalSemantics DntSem_SimpleWhile4 asgn_sem def
+R15516:15528 PL.DenotationalSemantics DntSem_SimpleWhile2 eval_expr_int def
+R15537:15540 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R15557:15563 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R15566:15573 PL.DenotationalSemantics <> eval_com:109 def
+R15580:15587 PL.DenotationalSemantics <> eval_com:109 def
+R15597:15599 PL.SyntaxInCoq Lang_SimpleWhile CIf constr
+R15618:15623 PL.DenotationalSemantics DntSem_SimpleWhile4 if_sem def
+R15626:15639 PL.DenotationalSemantics DntSem_SimpleWhile3 eval_expr_bool def
+R15645:15652 PL.DenotationalSemantics <> eval_com:109 def
+R15659:15666 PL.DenotationalSemantics <> eval_com:109 def
+R15676:15681 PL.SyntaxInCoq Lang_SimpleWhile CWhile constr
+R15697:15705 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R15708:15721 PL.DenotationalSemantics DntSem_SimpleWhile3 eval_expr_bool def
+R15727:15734 PL.DenotationalSemantics <> eval_com:109 def
+def 15827:15836 DntSem_SimpleWhile4 inc_x_fact
+binder 15846:15847 <> s1:111
+binder 15849:15850 <> s2:112
+binder 15852:15852 <> n:113
+R15902:15907 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15865:15869 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∈'_x not
+R15857:15857 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R15860:15861 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R15864:15864 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R15858:15859 PL.DenotationalSemantics <> s1:111 var
+R15862:15863 PL.DenotationalSemantics <> s2:112 var
+R15870:15877 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R15880:15884 PL.SyntaxInCoq Lang_SimpleWhile CAsgn constr
+R15890:15891 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R15899:15900 PL.SyntaxInCoq Lang_SimpleWhile :::'[['_x_']]' not
+R15895:15897 PL.SyntaxInCoq Lang_SimpleWhile :expr_entry::x_'+'_x not
+R15918:15923 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15914:15916 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15908:15909 PL.DenotationalSemantics <> s1:111 var
+R15917:15917 PL.DenotationalSemantics <> n:113 var
+R15930:15932 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15924:15925 PL.DenotationalSemantics <> s2:112 var
+R15934:15936 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R15933:15933 PL.DenotationalSemantics <> n:113 var
+R15980:15987 PL.DenotationalSemantics DntSem_SimpleWhile4 asgn_sem def
+R15990:15996 PL.DenotationalSemantics DntSem_SimpleWhile2 add_sem def
+R15999:16005 PL.DenotationalSemantics DntSem_SimpleWhile2 var_sem def
+R16008:16016 PL.DenotationalSemantics DntSem_SimpleWhile2 const_sem def
+prf 16251:16258 DntSem_SimpleWhile4 seq_skip
+binder 16268:16268 <> c:114
+R16296:16299 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R16273:16280 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16283:16286 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16288:16288 PL.DenotationalSemantics <> c:114 var
+R16290:16294 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R16300:16307 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16309:16309 PL.DenotationalSemantics <> c:114 var
+R16347:16353 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R16356:16363 PL.DenotationalSemantics DntSem_SimpleWhile4 skip_sem def
+R16374:16389 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R16374:16389 SetsClass.RelsDomain <> Rels_concat_id_r meth
+prf 16404:16411 DntSem_SimpleWhile4 skip_seq
+binder 16421:16421 <> c:115
+R16449:16452 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R16426:16433 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16436:16439 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16441:16445 PL.SyntaxInCoq Lang_SimpleWhile CSkip constr
+R16447:16447 PL.DenotationalSemantics <> c:115 var
+R16453:16460 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16462:16462 PL.DenotationalSemantics <> c:115 var
+R16500:16506 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R16509:16516 PL.DenotationalSemantics DntSem_SimpleWhile4 skip_sem def
+R16527:16542 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R16527:16542 SetsClass.RelsDomain <> Rels_concat_id_l meth
+prf 16772:16780 DntSem_SimpleWhile4 seq_assoc
+binder 16790:16791 <> c1:116
+binder 16793:16794 <> c2:117
+binder 16796:16797 <> c3:118
+R16833:16838 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R16802:16809 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16812:16815 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16818:16821 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16823:16824 PL.DenotationalSemantics <> c1:116 var
+R16826:16827 PL.DenotationalSemantics <> c2:117 var
+R16830:16831 PL.DenotationalSemantics <> c3:118 var
+R16839:16846 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R16849:16852 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16854:16855 PL.DenotationalSemantics <> c1:116 var
+R16858:16861 PL.SyntaxInCoq Lang_SimpleWhile CSeq constr
+R16863:16864 PL.DenotationalSemantics <> c2:117 var
+R16866:16867 PL.DenotationalSemantics <> c3:118 var
+R16907:16913 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R16924:16940 SetsClass.RelsDomain <> Rels_concat_assoc meth
+R16924:16940 SetsClass.RelsDomain <> Rels_concat_assoc meth
+prf 17093:17108 DntSem_SimpleWhile4 while_sem_congr2
+binder 17118:17119 <> D1:119
+binder 17121:17122 <> D2:120
+binder 17124:17126 <> D2':121
+R17140:17145 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17133:17136 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R17131:17132 PL.DenotationalSemantics <> D2:120 var
+R17137:17139 PL.DenotationalSemantics <> D2':121 var
+R17161:17164 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R17146:17154 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R17156:17157 PL.DenotationalSemantics <> D1:119 var
+R17159:17160 PL.DenotationalSemantics <> D2:120 var
+R17165:17173 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R17175:17176 PL.DenotationalSemantics <> D1:119 var
+R17178:17180 PL.DenotationalSemantics <> D2':121 var
+R17209:17217 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R17228:17251 SetsClass.SetsDomain <> Sets_indexed_union_congr inst
+R17228:17251 SetsClass.SetsDomain <> Sets_indexed_union_congr inst
+inst 17435:17447 DntSem_SimpleWhile4 seq_sem_congr
+R17452:17457 Coq.Classes.Morphisms <> Proper class
+R17502:17508 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R17470:17474 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R17460:17469 SetsClass.SetsDomain Sets equiv meth
+R17485:17489 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R17475:17484 SetsClass.SetsDomain Sets equiv meth
+R17490:17499 SetsClass.SetsDomain Sets equiv meth
+R17527:17532 Coq.Classes.Morphisms <> Proper class
+R17535:17544 Coq.Classes.Morphisms <> respectful def
+R17564:17570 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+inst 17618:17629 DntSem_SimpleWhile4 if_sem_congr
+binder 17639:17640 <> D0:122
+R17645:17650 Coq.Classes.Morphisms <> Proper class
+R17696:17701 PL.DenotationalSemantics DntSem_SimpleWhile4 if_sem def
+R17703:17704 PL.DenotationalSemantics <> D0:122 var
+R17663:17667 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R17653:17662 SetsClass.SetsDomain Sets equiv meth
+R17678:17682 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R17668:17677 SetsClass.SetsDomain Sets equiv meth
+R17683:17692 SetsClass.SetsDomain Sets equiv meth
+R17724:17729 Coq.Classes.Morphisms <> Proper class
+R17732:17741 Coq.Classes.Morphisms <> respectful def
+R17761:17766 PL.DenotationalSemantics DntSem_SimpleWhile4 if_sem def
+inst 17814:17828 DntSem_SimpleWhile4 while_sem_congr
+binder 17838:17839 <> D0:123
+R17844:17849 Coq.Classes.Morphisms <> Proper class
+R17880:17888 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R17890:17891 PL.DenotationalSemantics <> D0:123 var
+R17862:17866 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R17852:17861 SetsClass.SetsDomain Sets equiv meth
+R17867:17876 SetsClass.SetsDomain Sets equiv meth
+R17911:17916 Coq.Classes.Morphisms <> Proper class
+R17919:17928 Coq.Classes.Morphisms <> respectful def
+R17947:17962 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem_congr2 thm
+R17947:17962 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem_congr2 thm
+prf 18080:18096 DntSem_SimpleWhile4 remove_skip_sound
+binder 18106:18106 <> c:124
+R18135:18138 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R18111:18118 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R18121:18131 PL.SyntaxInCoq LangTrans remove_skip def
+R18133:18133 PL.DenotationalSemantics <> c:124 var
+R18139:18146 PL.DenotationalSemantics DntSem_SimpleWhile4 eval_com def
+R18148:18148 PL.DenotationalSemantics <> c:124 var
+R18268:18278 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18323:18330 PL.DenotationalSemantics DntSem_SimpleWhile4 skip_sem def
+R18333:18339 PL.DenotationalSemantics DntSem_SimpleWhile4 seq_sem def
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18268:18278 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18286:18296 PL.SyntaxInCoq LangTrans remove_skip def
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18358:18373 SetsClass.RelsDomain <> Rels_concat_id_l meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18378:18393 SetsClass.RelsDomain <> Rels_concat_id_r meth
+R18466:18481 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem_congr2 thm
+R18466:18481 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem_congr2 thm
+prf 18735:18751 DntSem_SimpleWhile4 while_sem_unroll1
+binder 18761:18762 <> D0:125
+binder 18764:18765 <> D1:126
+R18785:18790 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R18770:18778 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R18780:18781 PL.DenotationalSemantics <> D0:125 var
+R18783:18784 PL.DenotationalSemantics <> D1:126 var
+R18830:18834 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R18803:18807 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R18791:18799 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R18801:18802 PL.DenotationalSemantics <> D0:125 var
+R18810:18814 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R18808:18809 PL.DenotationalSemantics <> D1:126 var
+R18815:18823 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R18825:18826 PL.DenotationalSemantics <> D0:125 var
+R18828:18829 PL.DenotationalSemantics <> D1:126 var
+R18835:18844 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R18846:18847 PL.DenotationalSemantics <> D0:125 var
+R18885:18893 PL.DenotationalSemantics DntSem_SimpleWhile4 while_sem def
+R18904:18927 SetsClass.SetsDomain <> Sets_equiv_Sets_included meth
+R18904:18927 SetsClass.SetsDomain <> Sets_equiv_Sets_included meth
+R18947:18973 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R18947:18973 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R19043:19061 SetsClass.SetsDomain <> Sets_empty_included meth
+R19043:19061 SetsClass.SetsDomain <> Sets_empty_included meth
+R19082:19108 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19082:19108 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19082:19108 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19148:19166 SetsClass.SetsDomain <> Sets_union_included thm
+R19148:19166 SetsClass.SetsDomain <> Sets_union_included thm
+R19183:19215 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19183:19215 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19183:19215 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19232:19264 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19232:19264 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19232:19264 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R19279:19305 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R19279:19305 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R19334:19360 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19367:19367 Coq.Init.Datatypes <> S constr
+R19334:19360 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19367:19367 Coq.Init.Datatypes <> S constr
+R19334:19360 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19367:19367 Coq.Init.Datatypes <> S constr
+R19399:19418 SetsClass.SetsDomain <> Sets_included_union1 meth
+R19399:19418 SetsClass.SetsDomain <> Sets_included_union1 meth
+R19439:19465 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19472:19472 Coq.Init.Datatypes <> S constr
+R19474:19474 Coq.Init.Datatypes <> O constr
+R19439:19465 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19472:19472 Coq.Init.Datatypes <> S constr
+R19474:19474 Coq.Init.Datatypes <> O constr
+R19439:19465 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R19472:19472 Coq.Init.Datatypes <> S constr
+R19474:19474 Coq.Init.Datatypes <> O constr
+R19514:19533 SetsClass.SetsDomain <> Sets_included_union2 meth
+R19514:19533 SetsClass.SetsDomain <> Sets_included_union2 meth
+R19549:19567 PL.DenotationalSemantics DntSem_SimpleWhile4 <> mod
+mod 19639:19643 <> BWFix
+ind 20458:20462 BWFix Order
+constr 20485:20493 BWFix order_rel
+rec 20458:20462 BWFix Order
+proj 20485:20493 BWFix order_rel
+binder 20465:20465 <> A:127
+R20497:20500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20496:20496 PL.DenotationalSemantics <> A:127 var
+R20502:20505 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20501:20501 PL.DenotationalSemantics <> A:127 var
+binder 21167:21167 <> A:130
+R21181:21185 PL.DenotationalSemantics BWFix Order class
+R21187:21187 PL.DenotationalSemantics <> A:130 var
+binder 21177:21178 <> RA:131
+R21194:21194 PL.DenotationalSemantics <> A:130 var
+binder 21191:21191 <> x:132
+R21206:21213 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21218:21220 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21217:21217 PL.DenotationalSemantics <> A:130 var
+binder 21214:21214 <> y:133
+R21221:21229 PL.DenotationalSemantics BWFix order_rel def
+R21233:21233 PL.DenotationalSemantics <> y:133 var
+R21231:21231 PL.DenotationalSemantics <> x:132 var
+R21357:21365 PL.DenotationalSemantics BWFix order_rel def
+not 21344:21344 BWFix ::order_scope:x_'<='_x
+binder 21431:21431 <> A:134
+R21445:21449 PL.DenotationalSemantics BWFix Order class
+R21451:21451 PL.DenotationalSemantics <> A:134 var
+binder 21441:21442 <> RA:135
+R21460:21460 PL.DenotationalSemantics <> A:134 var
+binder 21455:21455 <> x:136
+binder 21457:21457 <> y:137
+R21478:21481 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R21473:21476 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R21472:21472 PL.DenotationalSemantics <> x:136 var
+R21477:21477 PL.DenotationalSemantics <> y:137 var
+R21483:21486 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R21482:21482 PL.DenotationalSemantics <> y:137 var
+R21487:21487 PL.DenotationalSemantics <> x:136 var
+def 21767:21771 BWFix is_lb
+binder 21787:21787 <> A:138
+R21801:21805 PL.DenotationalSemantics BWFix Order class
+R21807:21807 PL.DenotationalSemantics <> A:138 var
+binder 21797:21798 <> RA:139
+R21828:21831 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21827:21827 PL.DenotationalSemantics <> A:138 var
+binder 21824:21824 <> X:140
+R21842:21842 PL.DenotationalSemantics <> A:138 var
+binder 21839:21839 <> a:141
+binder 21863:21864 <> a':142
+R21871:21874 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21867:21867 PL.DenotationalSemantics <> X:140 var
+R21869:21870 PL.DenotationalSemantics <> a':142 var
+R21876:21879 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R21875:21875 PL.DenotationalSemantics <> a:141 var
+R21880:21881 PL.DenotationalSemantics <> a':142 var
+def 21896:21900 BWFix is_ub
+binder 21916:21916 <> A:143
+R21930:21934 PL.DenotationalSemantics BWFix Order class
+R21936:21936 PL.DenotationalSemantics <> A:143 var
+binder 21926:21927 <> RA:144
+R21957:21960 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21956:21956 PL.DenotationalSemantics <> A:143 var
+binder 21953:21953 <> X:145
+R21971:21971 PL.DenotationalSemantics <> A:143 var
+binder 21968:21968 <> a:146
+binder 21992:21993 <> a':147
+R22000:22003 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21996:21996 PL.DenotationalSemantics <> X:145 var
+R21998:21999 PL.DenotationalSemantics <> a':147 var
+R22006:22009 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R22004:22005 PL.DenotationalSemantics <> a':147 var
+R22010:22010 PL.DenotationalSemantics <> a:146 var
+def 22025:22035 BWFix is_omega_lb
+binder 22051:22051 <> A:148
+R22065:22069 PL.DenotationalSemantics BWFix Order class
+R22071:22071 PL.DenotationalSemantics <> A:148 var
+binder 22061:22062 <> RA:149
+R22094:22097 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22091:22093 Coq.Init.Datatypes <> nat ind
+R22098:22098 PL.DenotationalSemantics <> A:148 var
+binder 22088:22088 <> l:150
+R22105:22105 PL.DenotationalSemantics <> A:148 var
+binder 22102:22102 <> a:151
+binder 22126:22126 <> n:152
+R22130:22133 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R22129:22129 PL.DenotationalSemantics <> a:151 var
+R22134:22134 PL.DenotationalSemantics <> l:150 var
+R22136:22136 PL.DenotationalSemantics <> n:152 var
+def 22151:22161 BWFix is_omega_ub
+binder 22177:22177 <> A:153
+R22191:22195 PL.DenotationalSemantics BWFix Order class
+R22197:22197 PL.DenotationalSemantics <> A:153 var
+binder 22187:22188 <> RA:154
+R22220:22223 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22217:22219 Coq.Init.Datatypes <> nat ind
+R22224:22224 PL.DenotationalSemantics <> A:153 var
+binder 22214:22214 <> l:155
+R22231:22231 PL.DenotationalSemantics <> A:153 var
+binder 22228:22228 <> a:156
+binder 22252:22252 <> n:157
+R22258:22261 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R22255:22255 PL.DenotationalSemantics <> l:155 var
+R22257:22257 PL.DenotationalSemantics <> n:157 var
+R22262:22262 PL.DenotationalSemantics <> a:156 var
+def 22948:22959 BWFix is_omega_lub
+binder 22975:22975 <> A:158
+R22989:22993 PL.DenotationalSemantics BWFix Order class
+R22995:22995 PL.DenotationalSemantics <> A:158 var
+binder 22985:22986 <> RA:159
+R23018:23021 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23015:23017 Coq.Init.Datatypes <> nat ind
+R23022:23022 PL.DenotationalSemantics <> A:158 var
+binder 23012:23012 <> l:160
+R23029:23029 PL.DenotationalSemantics <> A:158 var
+binder 23026:23026 <> a:161
+R23058:23061 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R23043:23053 PL.DenotationalSemantics BWFix is_omega_ub def
+R23057:23057 PL.DenotationalSemantics <> a:161 var
+R23055:23055 PL.DenotationalSemantics <> l:160 var
+R23062:23066 PL.DenotationalSemantics BWFix is_lb def
+R23084:23084 PL.DenotationalSemantics <> a:161 var
+R23069:23079 PL.DenotationalSemantics BWFix is_omega_ub def
+R23081:23081 PL.DenotationalSemantics <> l:160 var
+prf 23094:23111 BWFix is_omega_lub_sound
+binder 23124:23124 <> A:162
+R23138:23142 PL.DenotationalSemantics BWFix Order class
+R23144:23144 PL.DenotationalSemantics <> A:162 var
+binder 23134:23135 <> RA:163
+R23154:23157 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23151:23153 Coq.Init.Datatypes <> nat ind
+R23158:23158 PL.DenotationalSemantics <> A:162 var
+binder 23148:23148 <> l:164
+R23165:23165 PL.DenotationalSemantics <> A:162 var
+binder 23162:23162 <> a:165
+R23189:23192 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23173:23184 PL.DenotationalSemantics BWFix is_omega_lub def
+R23188:23188 PL.DenotationalSemantics <> a:165 var
+R23186:23186 PL.DenotationalSemantics <> l:164 var
+R23193:23203 PL.DenotationalSemantics BWFix is_omega_ub def
+R23207:23207 PL.DenotationalSemantics <> a:165 var
+R23205:23205 PL.DenotationalSemantics <> l:164 var
+R23224:23235 PL.DenotationalSemantics BWFix is_omega_lub def
+prf 23265:23282 BWFix is_omega_lub_tight
+binder 23295:23295 <> A:166
+R23309:23313 PL.DenotationalSemantics BWFix Order class
+R23315:23315 PL.DenotationalSemantics <> A:166 var
+binder 23305:23306 <> RA:167
+R23325:23328 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23322:23324 Coq.Init.Datatypes <> nat ind
+R23329:23329 PL.DenotationalSemantics <> A:166 var
+binder 23319:23319 <> l:168
+R23336:23336 PL.DenotationalSemantics <> A:166 var
+binder 23333:23333 <> a:169
+R23360:23363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23344:23355 PL.DenotationalSemantics BWFix is_omega_lub def
+R23359:23359 PL.DenotationalSemantics <> a:169 var
+R23357:23357 PL.DenotationalSemantics <> l:168 var
+R23364:23368 PL.DenotationalSemantics BWFix is_lb def
+R23386:23386 PL.DenotationalSemantics <> a:169 var
+R23371:23381 PL.DenotationalSemantics BWFix is_omega_ub def
+R23383:23383 PL.DenotationalSemantics <> l:168 var
+R23403:23414 PL.DenotationalSemantics BWFix is_omega_lub def
+ind 23864:23868 BWFix Equiv
+constr 23891:23895 BWFix equiv
+rec 23864:23868 BWFix Equiv
+proj 23891:23895 BWFix equiv
+binder 23871:23871 <> A:170
+R23899:23902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23898:23898 PL.DenotationalSemantics <> A:170 var
+R23904:23907 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23903:23903 PL.DenotationalSemantics <> A:170 var
+R23937:23941 PL.DenotationalSemantics BWFix equiv def
+not 23924:23924 BWFix ::order_scope:x_'=='_x
+ind 24598:24613 BWFix Reflexive_Setoid
+constr 24672:24689 BWFix reflexivity_setoid
+rec 24598:24613 BWFix Reflexive_Setoid
+proj 24672:24689 BWFix reflexivity_setoid
+binder 24624:24624 <> A:173
+R24638:24642 PL.DenotationalSemantics BWFix Order class
+R24644:24644 PL.DenotationalSemantics <> A:173 var
+binder 24634:24635 <> RA:174
+R24652:24656 PL.DenotationalSemantics BWFix Equiv class
+R24658:24658 PL.DenotationalSemantics <> A:173 var
+binder 24648:24649 <> EA:175
+binder 24703:24703 <> a:177
+binder 24705:24705 <> b:178
+R24714:24717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24709:24712 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R24708:24708 PL.DenotationalSemantics <> a:177 var
+R24713:24713 PL.DenotationalSemantics <> b:178 var
+R24719:24722 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R24718:24718 PL.DenotationalSemantics <> a:177 var
+R24723:24723 PL.DenotationalSemantics <> b:178 var
+ind 24756:24775 BWFix AntiSymmetric_Setoid
+constr 24834:24856 BWFix antisymmetricity_setoid
+rec 24756:24775 BWFix AntiSymmetric_Setoid
+proj 24834:24856 BWFix antisymmetricity_setoid
+binder 24786:24786 <> A:180
+R24800:24804 PL.DenotationalSemantics BWFix Order class
+R24806:24806 PL.DenotationalSemantics <> A:180 var
+binder 24796:24797 <> RA:181
+R24814:24818 PL.DenotationalSemantics BWFix Equiv class
+R24820:24820 PL.DenotationalSemantics <> A:180 var
+binder 24810:24811 <> EA:182
+binder 24870:24870 <> a:184
+binder 24872:24872 <> b:185
+R24881:24884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24876:24879 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R24875:24875 PL.DenotationalSemantics <> a:184 var
+R24880:24880 PL.DenotationalSemantics <> b:185 var
+R24891:24894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24886:24889 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R24885:24885 PL.DenotationalSemantics <> b:185 var
+R24890:24890 PL.DenotationalSemantics <> a:184 var
+R24896:24899 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R24895:24895 PL.DenotationalSemantics <> a:184 var
+R24900:24900 PL.DenotationalSemantics <> b:185 var
+rec 24969:24987 BWFix PartialOrder_Setoid
+proj 25048:25066 BWFix PO_Reflexive_Setoid
+proj 25092:25104 BWFix PO_Transitive
+proj 25132:25154 BWFix PO_AntiSymmetric_Setoid
+binder 24998:24998 <> A:187
+R25012:25016 PL.DenotationalSemantics BWFix Order class
+R25018:25018 PL.DenotationalSemantics <> A:187 var
+binder 25008:25009 <> RA:188
+R25026:25030 PL.DenotationalSemantics BWFix Equiv class
+R25032:25032 PL.DenotationalSemantics <> A:187 var
+binder 25022:25023 <> EA:189
+R25070:25085 PL.DenotationalSemantics BWFix Reflexive_Setoid class
+R25087:25087 PL.DenotationalSemantics <> A:187 var
+R25108:25117 Coq.Classes.RelationClasses <> Transitive class
+R25119:25127 PL.DenotationalSemantics BWFix order_rel def
+R25158:25177 PL.DenotationalSemantics BWFix AntiSymmetric_Setoid class
+R25179:25179 PL.DenotationalSemantics <> A:187 var
+inst 25507:25532 BWFix PartialOrder_Setoid_Proper
+binder 25546:25546 <> A:194
+R25562:25580 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R25582:25582 PL.DenotationalSemantics <> A:194 var
+binder 25557:25559 <> POA:197
+R25594:25604 Coq.Classes.RelationClasses <> Equivalence class
+R25606:25610 PL.DenotationalSemantics BWFix equiv def
+binder 25586:25591 <> EquivA:198
+R25616:25621 Coq.Classes.Morphisms <> Proper class
+R25649:25657 PL.DenotationalSemantics BWFix order_rel def
+R25629:25633 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R25624:25628 PL.DenotationalSemantics BWFix equiv def
+R25639:25643 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R25634:25638 PL.DenotationalSemantics BWFix equiv def
+R25644:25646 Coq.Init.Logic <> iff def
+R25676:25681 Coq.Classes.Morphisms <> Proper class
+R25684:25693 Coq.Classes.Morphisms <> respectful def
+R25753:25770 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25753:25770 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25808:25825 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25808:25825 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25889:25906 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25889:25906 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25954:25971 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R25954:25971 PL.DenotationalSemantics BWFix reflexivity_setoid def
+prf 26117:26144 BWFix same_omega_ub_same_omega_lub
+binder 26161:26161 <> A:199
+R26181:26199 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R26201:26201 PL.DenotationalSemantics <> A:199 var
+binder 26176:26178 <> POA:202
+R26219:26222 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26216:26218 Coq.Init.Datatypes <> nat ind
+R26223:26223 PL.DenotationalSemantics <> A:199 var
+binder 26209:26210 <> l1:203
+binder 26212:26213 <> l2:204
+R26238:26238 PL.DenotationalSemantics <> A:199 var
+binder 26231:26232 <> a1:205
+binder 26234:26235 <> a2:206
+R26244:26244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26292:26298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 26252:26252 <> a:207
+R26271:26275 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R26255:26265 PL.DenotationalSemantics BWFix is_omega_ub def
+R26270:26270 PL.DenotationalSemantics <> a:207 var
+R26267:26268 PL.DenotationalSemantics <> l1:203 var
+R26276:26286 PL.DenotationalSemantics BWFix is_omega_ub def
+R26291:26291 PL.DenotationalSemantics <> a:207 var
+R26288:26289 PL.DenotationalSemantics <> l2:204 var
+R26317:26322 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26299:26310 PL.DenotationalSemantics BWFix is_omega_lub def
+R26315:26316 PL.DenotationalSemantics <> a1:205 var
+R26312:26313 PL.DenotationalSemantics <> l1:203 var
+R26341:26346 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26323:26334 PL.DenotationalSemantics BWFix is_omega_lub def
+R26339:26340 PL.DenotationalSemantics <> a2:206 var
+R26336:26337 PL.DenotationalSemantics <> l2:204 var
+R26349:26352 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R26347:26348 PL.DenotationalSemantics <> a1:205 var
+R26353:26354 PL.DenotationalSemantics <> a2:206 var
+R26402:26424 PL.DenotationalSemantics BWFix antisymmetricity_setoid def
+R26402:26424 PL.DenotationalSemantics BWFix antisymmetricity_setoid def
+R26438:26455 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R26438:26455 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R26486:26503 PL.DenotationalSemantics BWFix is_omega_lub_sound thm
+R26486:26503 PL.DenotationalSemantics BWFix is_omega_lub_sound thm
+R26521:26538 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R26521:26538 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R26569:26586 PL.DenotationalSemantics BWFix is_omega_lub_sound thm
+R26569:26586 PL.DenotationalSemantics BWFix is_omega_lub_sound thm
+ind 27277:27284 BWFix OmegaLub
+constr 27307:27315 BWFix omega_lub
+rec 27277:27284 BWFix OmegaLub
+proj 27307:27315 BWFix omega_lub
+binder 27287:27287 <> A:208
+R27318:27318 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27327:27331 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27322:27325 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27319:27321 Coq.Init.Datatypes <> nat ind
+R27326:27326 PL.DenotationalSemantics <> A:208 var
+R27332:27332 PL.DenotationalSemantics <> A:208 var
+ind 27342:27344 BWFix Bot
+constr 27367:27369 BWFix bot
+rec 27342:27344 BWFix Bot
+proj 27367:27369 BWFix bot
+binder 27347:27347 <> A:211
+R27372:27372 PL.DenotationalSemantics <> A:211 var
+def 27387:27396 BWFix increasing
+binder 27412:27412 <> A:214
+R27426:27430 PL.DenotationalSemantics BWFix Order class
+R27432:27432 PL.DenotationalSemantics <> A:214 var
+binder 27422:27423 <> RA:215
+R27442:27445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27439:27441 Coq.Init.Datatypes <> nat ind
+R27446:27446 PL.DenotationalSemantics <> A:214 var
+binder 27436:27436 <> l:216
+binder 27467:27467 <> n:217
+R27473:27476 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R27470:27470 PL.DenotationalSemantics <> l:216 var
+R27472:27472 PL.DenotationalSemantics <> n:217 var
+R27477:27477 PL.DenotationalSemantics <> l:216 var
+R27480:27480 Coq.Init.Datatypes <> S constr
+R27482:27482 PL.DenotationalSemantics <> n:217 var
+def 27498:27505 BWFix is_least
+binder 27508:27508 <> A:218
+R27522:27526 PL.DenotationalSemantics BWFix Order class
+R27528:27528 PL.DenotationalSemantics <> A:218 var
+binder 27518:27519 <> RA:219
+R27535:27535 PL.DenotationalSemantics <> A:218 var
+binder 27532:27532 <> a:220
+binder 27556:27557 <> a':221
+R27561:27564 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R27560:27560 PL.DenotationalSemantics <> a:220 var
+R27565:27566 PL.DenotationalSemantics <> a':221 var
+rec 27576:27607 BWFix OmegaCompletePartialOrder_Setoid
+proj 27718:27734 BWFix oCPO_PartialOrder
+proj 27763:27779 BWFix oCPO_completeness
+proj 27844:27855 BWFix bot_is_least
+binder 27618:27618 <> A:222
+R27640:27644 PL.DenotationalSemantics BWFix Order class
+R27646:27646 PL.DenotationalSemantics <> A:222 var
+binder 27636:27637 <> RA:223
+R27654:27658 PL.DenotationalSemantics BWFix Equiv class
+R27660:27660 PL.DenotationalSemantics <> A:222 var
+binder 27650:27651 <> EA:224
+R27679:27686 PL.DenotationalSemantics BWFix OmegaLub class
+R27688:27688 PL.DenotationalSemantics <> A:222 var
+binder 27672:27676 <> oLubA:225
+R27698:27700 PL.DenotationalSemantics BWFix Bot class
+R27702:27702 PL.DenotationalSemantics <> A:222 var
+binder 27692:27695 <> BotA:226
+R27738:27756 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R27758:27758 PL.DenotationalSemantics <> A:222 var
+binder 27789:27789 <> T:229
+R27808:27811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R27796:27805 PL.DenotationalSemantics BWFix increasing def
+R27807:27807 PL.DenotationalSemantics <> T:229 var
+R27812:27823 PL.DenotationalSemantics BWFix is_omega_lub def
+R27828:27836 PL.DenotationalSemantics BWFix omega_lub def
+R27838:27838 PL.DenotationalSemantics <> T:229 var
+R27825:27825 PL.DenotationalSemantics <> T:229 var
+R27858:27865 PL.DenotationalSemantics BWFix is_least def
+R27867:27869 PL.DenotationalSemantics BWFix bot def
+prf 28078:28106 BWFix same_omega_ub_same_omega_lub'
+binder 28123:28123 <> A:232
+R28145:28176 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R28178:28178 PL.DenotationalSemantics <> A:232 var
+binder 28138:28142 <> oCPOA:237
+R28196:28199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28193:28195 Coq.Init.Datatypes <> nat ind
+R28200:28200 PL.DenotationalSemantics <> A:232 var
+binder 28186:28187 <> l1:238
+binder 28189:28190 <> l2:239
+R28206:28206 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28254:28260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 28214:28214 <> a:240
+R28233:28237 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R28217:28227 PL.DenotationalSemantics BWFix is_omega_ub def
+R28232:28232 PL.DenotationalSemantics <> a:240 var
+R28229:28230 PL.DenotationalSemantics <> l1:238 var
+R28238:28248 PL.DenotationalSemantics BWFix is_omega_ub def
+R28253:28253 PL.DenotationalSemantics <> a:240 var
+R28250:28251 PL.DenotationalSemantics <> l2:239 var
+R28274:28279 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28261:28270 PL.DenotationalSemantics BWFix increasing def
+R28272:28273 PL.DenotationalSemantics <> l1:238 var
+R28293:28298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28280:28289 PL.DenotationalSemantics BWFix increasing def
+R28291:28292 PL.DenotationalSemantics <> l2:239 var
+R28311:28314 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R28299:28307 PL.DenotationalSemantics BWFix omega_lub def
+R28309:28310 PL.DenotationalSemantics <> l1:238 var
+R28315:28323 PL.DenotationalSemantics BWFix omega_lub def
+R28325:28326 PL.DenotationalSemantics <> l2:239 var
+R28355:28382 PL.DenotationalSemantics BWFix same_omega_ub_same_omega_lub thm
+R28355:28382 PL.DenotationalSemantics BWFix same_omega_ub_same_omega_lub thm
+R28406:28422 PL.DenotationalSemantics BWFix oCPO_completeness meth
+R28406:28422 PL.DenotationalSemantics BWFix oCPO_completeness meth
+R28449:28465 PL.DenotationalSemantics BWFix oCPO_completeness meth
+R28449:28465 PL.DenotationalSemantics BWFix oCPO_completeness meth
+def 28540:28543 BWFix mono
+binder 28559:28559 <> A:241
+binder 28561:28561 <> B:242
+R28590:28608 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R28610:28610 PL.DenotationalSemantics <> A:241 var
+binder 28585:28587 <> POA:245
+R28633:28651 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R28653:28653 PL.DenotationalSemantics <> B:242 var
+binder 28628:28630 <> POB:248
+R28674:28677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28673:28673 PL.DenotationalSemantics <> A:241 var
+R28678:28678 PL.DenotationalSemantics <> B:242 var
+binder 28670:28670 <> f:249
+binder 28699:28700 <> a1:250
+binder 28702:28703 <> a2:251
+R28714:28717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28708:28711 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R28706:28707 PL.DenotationalSemantics <> a1:250 var
+R28712:28713 PL.DenotationalSemantics <> a2:251 var
+R28722:28725 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R28718:28718 PL.DenotationalSemantics <> f:249 var
+R28720:28721 PL.DenotationalSemantics <> a1:250 var
+R28726:28726 PL.DenotationalSemantics <> f:249 var
+R28728:28729 PL.DenotationalSemantics <> a2:251 var
+def 28744:28753 BWFix continuous
+binder 28769:28769 <> A:252
+binder 28771:28771 <> B:253
+R28802:28833 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R28835:28835 PL.DenotationalSemantics <> A:252 var
+binder 28795:28799 <> oCPOA:258
+R28860:28891 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R28893:28893 PL.DenotationalSemantics <> B:253 var
+binder 28853:28857 <> oCPOB:263
+R28914:28917 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28913:28913 PL.DenotationalSemantics <> A:252 var
+R28918:28918 PL.DenotationalSemantics <> B:253 var
+binder 28910:28910 <> f:264
+R28945:28948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28942:28944 Coq.Init.Datatypes <> nat ind
+R28949:28949 PL.DenotationalSemantics <> A:252 var
+binder 28939:28939 <> l:265
+R28968:28975 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28956:28965 PL.DenotationalSemantics BWFix increasing def
+R28967:28967 PL.DenotationalSemantics <> l:265 var
+R28991:28994 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R28976:28976 PL.DenotationalSemantics <> f:264 var
+R28979:28987 PL.DenotationalSemantics BWFix omega_lub def
+R28989:28989 PL.DenotationalSemantics <> l:265 var
+R28995:29003 PL.DenotationalSemantics BWFix omega_lub def
+binder 29010:29010 <> n:266
+R29015:29015 PL.DenotationalSemantics <> f:264 var
+R29018:29018 PL.DenotationalSemantics <> l:265 var
+R29020:29020 PL.DenotationalSemantics <> n:266 var
+prf 29173:29179 BWFix id_mono
+binder 29192:29192 <> A:267
+R29217:29235 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R29237:29237 PL.DenotationalSemantics <> A:267 var
+binder 29212:29214 <> POA:270
+R29243:29246 PL.DenotationalSemantics BWFix mono def
+binder 29253:29253 <> x:271
+R29258:29258 PL.DenotationalSemantics <> x:271 var
+R29278:29281 PL.DenotationalSemantics BWFix mono def
+prf 29352:29363 BWFix compose_mono
+binder 29376:29376 <> A:272
+binder 29378:29378 <> B:273
+binder 29380:29380 <> C:274
+R29405:29423 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R29425:29425 PL.DenotationalSemantics <> A:272 var
+binder 29400:29402 <> POA:277
+R29444:29462 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R29464:29464 PL.DenotationalSemantics <> B:273 var
+binder 29439:29441 <> POB:280
+R29483:29501 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R29503:29503 PL.DenotationalSemantics <> C:274 var
+binder 29478:29480 <> POC:283
+R29520:29523 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29519:29519 PL.DenotationalSemantics <> A:272 var
+R29524:29524 PL.DenotationalSemantics <> B:273 var
+binder 29516:29516 <> f:284
+R29541:29544 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29540:29540 PL.DenotationalSemantics <> B:273 var
+R29545:29545 PL.DenotationalSemantics <> C:274 var
+binder 29537:29537 <> g:285
+R29557:29560 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29551:29554 PL.DenotationalSemantics BWFix mono def
+R29556:29556 PL.DenotationalSemantics <> f:284 var
+R29567:29570 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R29561:29564 PL.DenotationalSemantics BWFix mono def
+R29566:29566 PL.DenotationalSemantics <> g:285 var
+R29571:29574 PL.DenotationalSemantics BWFix mono def
+binder 29581:29581 <> x:286
+R29586:29586 PL.DenotationalSemantics <> g:285 var
+R29589:29589 PL.DenotationalSemantics <> f:284 var
+R29591:29591 PL.DenotationalSemantics <> x:286 var
+R29612:29615 PL.DenotationalSemantics BWFix mono def
+prf 29691:29703 BWFix id_continuous
+binder 29716:29716 <> A:287
+R29743:29774 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R29776:29776 PL.DenotationalSemantics <> A:287 var
+binder 29736:29740 <> oCPOA:292
+R29797:29807 Coq.Classes.RelationClasses <> Equivalence class
+R29809:29813 PL.DenotationalSemantics BWFix equiv def
+binder 29789:29794 <> EquivA:293
+R29819:29828 PL.DenotationalSemantics BWFix continuous def
+binder 29835:29835 <> x:294
+R29840:29840 PL.DenotationalSemantics <> x:294 var
+R29860:29869 PL.DenotationalSemantics BWFix continuous def
+prf 30212:30237 BWFix increasing_mono_increasing
+binder 30250:30250 <> A:295
+binder 30252:30252 <> B:296
+R30277:30295 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R30297:30297 PL.DenotationalSemantics <> A:295 var
+binder 30272:30274 <> POA:299
+R30316:30334 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R30336:30336 PL.DenotationalSemantics <> B:296 var
+binder 30311:30313 <> POB:302
+R30353:30356 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30352:30352 PL.DenotationalSemantics <> A:295 var
+R30357:30357 PL.DenotationalSemantics <> B:296 var
+binder 30349:30349 <> f:303
+R30376:30379 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30373:30375 Coq.Init.Datatypes <> nat ind
+R30380:30380 PL.DenotationalSemantics <> A:295 var
+binder 30370:30370 <> l:304
+R30398:30401 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30386:30395 PL.DenotationalSemantics BWFix increasing def
+R30397:30397 PL.DenotationalSemantics <> l:304 var
+R30408:30411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30402:30405 PL.DenotationalSemantics BWFix mono def
+R30407:30407 PL.DenotationalSemantics <> f:303 var
+R30412:30421 PL.DenotationalSemantics BWFix increasing def
+binder 30428:30428 <> n:305
+R30433:30433 PL.DenotationalSemantics <> f:303 var
+R30436:30436 PL.DenotationalSemantics <> l:304 var
+R30438:30438 PL.DenotationalSemantics <> n:305 var
+R30459:30468 PL.DenotationalSemantics BWFix increasing def
+prf 30939:30954 BWFix mono_equiv_congr
+binder 30967:30967 <> A:306
+binder 30969:30969 <> B:307
+R30994:31012 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R31014:31014 PL.DenotationalSemantics <> A:306 var
+binder 30989:30991 <> POA:310
+R31033:31051 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R31053:31053 PL.DenotationalSemantics <> B:307 var
+binder 31028:31030 <> POB:313
+R31075:31085 Coq.Classes.RelationClasses <> Equivalence class
+R31096:31099 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31095:31095 PL.DenotationalSemantics <> A:306 var
+R31101:31104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31100:31100 PL.DenotationalSemantics <> A:306 var
+R31088:31092 PL.DenotationalSemantics BWFix equiv def
+binder 31067:31072 <> EquivA:314
+R31126:31129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31125:31125 PL.DenotationalSemantics <> A:306 var
+R31130:31130 PL.DenotationalSemantics <> B:307 var
+binder 31122:31122 <> f:315
+R31142:31145 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31136:31139 PL.DenotationalSemantics BWFix mono def
+R31141:31141 PL.DenotationalSemantics <> f:315 var
+R31146:31151 Coq.Classes.Morphisms <> Proper class
+R31171:31171 PL.DenotationalSemantics <> f:315 var
+R31159:31163 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R31154:31158 PL.DenotationalSemantics BWFix equiv def
+R31164:31168 PL.DenotationalSemantics BWFix equiv def
+R31190:31193 PL.DenotationalSemantics BWFix mono def
+R31196:31201 Coq.Classes.Morphisms <> Proper class
+R31204:31213 Coq.Classes.Morphisms <> respectful def
+R31234:31256 PL.DenotationalSemantics BWFix antisymmetricity_setoid def
+R31234:31256 PL.DenotationalSemantics BWFix antisymmetricity_setoid def
+R31278:31295 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R31278:31295 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R31322:31339 PL.DenotationalSemantics BWFix reflexivity_setoid def
+R31322:31339 PL.DenotationalSemantics BWFix reflexivity_setoid def
+prf 31469:31486 BWFix compose_continuous
+binder 31499:31499 <> A:316
+binder 31501:31501 <> B:317
+binder 31503:31503 <> C:318
+R31530:31561 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R31563:31563 PL.DenotationalSemantics <> A:316 var
+binder 31523:31527 <> oCPOA:323
+R31584:31615 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R31617:31617 PL.DenotationalSemantics <> B:317 var
+binder 31577:31581 <> oCPOB:328
+R31638:31669 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R31671:31671 PL.DenotationalSemantics <> C:318 var
+binder 31631:31635 <> oCPOC:333
+R31693:31703 Coq.Classes.RelationClasses <> Equivalence class
+R31714:31717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31713:31713 PL.DenotationalSemantics <> B:317 var
+R31719:31722 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31718:31718 PL.DenotationalSemantics <> B:317 var
+R31706:31710 PL.DenotationalSemantics BWFix equiv def
+binder 31685:31690 <> EquivB:334
+R31749:31759 Coq.Classes.RelationClasses <> Equivalence class
+R31770:31773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31769:31769 PL.DenotationalSemantics <> C:318 var
+R31775:31778 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31774:31774 PL.DenotationalSemantics <> C:318 var
+R31762:31766 PL.DenotationalSemantics BWFix equiv def
+binder 31741:31746 <> EquivC:335
+R31800:31803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31799:31799 PL.DenotationalSemantics <> A:316 var
+R31804:31804 PL.DenotationalSemantics <> B:317 var
+binder 31796:31796 <> f:336
+R31821:31824 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31820:31820 PL.DenotationalSemantics <> B:317 var
+R31825:31825 PL.DenotationalSemantics <> C:318 var
+binder 31817:31817 <> g:337
+R31837:31842 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31831:31834 PL.DenotationalSemantics BWFix mono def
+R31836:31836 PL.DenotationalSemantics <> f:336 var
+R31849:31854 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31843:31846 PL.DenotationalSemantics BWFix mono def
+R31848:31848 PL.DenotationalSemantics <> g:337 var
+R31867:31872 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31855:31864 PL.DenotationalSemantics BWFix continuous def
+R31866:31866 PL.DenotationalSemantics <> f:336 var
+R31885:31890 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31873:31882 PL.DenotationalSemantics BWFix continuous def
+R31884:31884 PL.DenotationalSemantics <> g:337 var
+R31891:31900 PL.DenotationalSemantics BWFix continuous def
+binder 31907:31907 <> x:338
+R31912:31912 PL.DenotationalSemantics <> g:337 var
+R31915:31915 PL.DenotationalSemantics <> f:336 var
+R31917:31917 PL.DenotationalSemantics <> x:338 var
+R31938:31947 PL.DenotationalSemantics BWFix continuous def
+R31973:31998 PL.DenotationalSemantics BWFix increasing_mono_increasing thm
+R31973:31998 PL.DenotationalSemantics BWFix increasing_mono_increasing thm
+R32098:32113 PL.DenotationalSemantics BWFix mono_equiv_congr thm
+R32098:32113 PL.DenotationalSemantics BWFix mono_equiv_congr thm
+prf 32604:32622 BWFix iter_bot_increasing
+binder 32639:32639 <> A:339
+R32661:32692 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R32694:32694 PL.DenotationalSemantics <> A:339 var
+binder 32654:32658 <> oCPOA:344
+R32706:32709 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32705:32705 PL.DenotationalSemantics <> A:339 var
+R32710:32710 PL.DenotationalSemantics <> A:339 var
+binder 32702:32702 <> f:345
+R32724:32731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32718:32721 PL.DenotationalSemantics BWFix mono def
+R32723:32723 PL.DenotationalSemantics <> f:345 var
+R32732:32741 PL.DenotationalSemantics BWFix increasing def
+binder 32748:32748 <> n:346
+R32753:32760 Coq.Arith.PeanoNat Nat iter def
+R32766:32768 PL.DenotationalSemantics BWFix bot def
+R32764:32764 PL.DenotationalSemantics <> f:345 var
+R32762:32762 PL.DenotationalSemantics <> n:346 var
+R32788:32797 PL.DenotationalSemantics BWFix increasing def
+R32842:32853 PL.DenotationalSemantics BWFix bot_is_least meth
+R32842:32853 PL.DenotationalSemantics BWFix bot_is_least meth
+prf 32994:33014 BWFix iter_S_bot_increasing
+binder 33031:33031 <> A:347
+R33053:33084 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R33086:33086 PL.DenotationalSemantics <> A:347 var
+binder 33046:33050 <> oCPOA:352
+R33098:33101 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33097:33097 PL.DenotationalSemantics <> A:347 var
+R33102:33102 PL.DenotationalSemantics <> A:347 var
+binder 33094:33094 <> f:353
+R33116:33123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33110:33113 PL.DenotationalSemantics BWFix mono def
+R33115:33115 PL.DenotationalSemantics <> f:353 var
+R33124:33133 PL.DenotationalSemantics BWFix increasing def
+binder 33140:33140 <> n:354
+R33145:33145 PL.DenotationalSemantics <> f:353 var
+R33148:33155 Coq.Arith.PeanoNat Nat iter def
+R33161:33163 PL.DenotationalSemantics BWFix bot def
+R33159:33159 PL.DenotationalSemantics <> f:353 var
+R33157:33157 PL.DenotationalSemantics <> n:354 var
+R33184:33193 PL.DenotationalSemantics BWFix increasing def
+R33225:33243 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R33225:33243 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+def 33332:33338 BWFix BW_LFix
+binder 33354:33354 <> A:355
+R33384:33415 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R33417:33417 PL.DenotationalSemantics <> A:355 var
+binder 33378:33381 <> CPOA:360
+R33438:33441 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33437:33437 PL.DenotationalSemantics <> A:355 var
+R33442:33442 PL.DenotationalSemantics <> A:355 var
+binder 33434:33434 <> f:361
+R33446:33446 PL.DenotationalSemantics <> A:355 var
+R33453:33461 PL.DenotationalSemantics BWFix omega_lub def
+binder 33468:33468 <> n:362
+R33473:33480 Coq.Arith.PeanoNat Nat iter def
+R33486:33488 PL.DenotationalSemantics BWFix bot def
+R33484:33484 PL.DenotationalSemantics <> f:361 var
+R33482:33482 PL.DenotationalSemantics <> n:362 var
+prf 33571:33584 BWFix BW_LFix_is_fix
+binder 33601:33601 <> A:363
+R33622:33653 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R33655:33655 PL.DenotationalSemantics <> A:363 var
+binder 33616:33619 <> CPOA:368
+R33671:33681 Coq.Classes.RelationClasses <> Equivalence class
+R33683:33687 PL.DenotationalSemantics BWFix equiv def
+binder 33663:33668 <> EquivA:369
+R33699:33702 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33698:33698 PL.DenotationalSemantics <> A:363 var
+R33703:33703 PL.DenotationalSemantics <> A:363 var
+binder 33695:33695 <> f:370
+R33717:33724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33711:33714 PL.DenotationalSemantics BWFix mono def
+R33716:33716 PL.DenotationalSemantics <> f:370 var
+R33737:33744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33725:33734 PL.DenotationalSemantics BWFix continuous def
+R33736:33736 PL.DenotationalSemantics <> f:370 var
+R33758:33761 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R33745:33745 PL.DenotationalSemantics <> f:370 var
+R33748:33754 PL.DenotationalSemantics BWFix BW_LFix def
+R33756:33756 PL.DenotationalSemantics <> f:370 var
+R33762:33768 PL.DenotationalSemantics BWFix BW_LFix def
+R33770:33770 PL.DenotationalSemantics <> f:370 var
+R33789:33795 PL.DenotationalSemantics BWFix BW_LFix def
+R33829:33847 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R33829:33847 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R33866:33894 PL.DenotationalSemantics BWFix same_omega_ub_same_omega_lub' thm
+R33866:33894 PL.DenotationalSemantics BWFix same_omega_ub_same_omega_lub' thm
+R33916:33926 PL.DenotationalSemantics BWFix is_omega_ub def
+R33980:33991 PL.DenotationalSemantics BWFix bot_is_least meth
+R33980:33991 PL.DenotationalSemantics BWFix bot_is_least meth
+R34034:34034 Coq.Init.Datatypes <> S constr
+R34034:34034 Coq.Init.Datatypes <> S constr
+R34067:34087 PL.DenotationalSemantics BWFix iter_S_bot_increasing thm
+R34067:34087 PL.DenotationalSemantics BWFix iter_S_bot_increasing thm
+R34113:34131 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R34113:34131 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+prf 34225:34244 BWFix BW_LFix_is_least_fix
+binder 34261:34261 <> A:371
+R34282:34313 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R34315:34315 PL.DenotationalSemantics <> A:371 var
+binder 34276:34279 <> CPOA:376
+R34331:34341 Coq.Classes.RelationClasses <> Equivalence class
+R34343:34347 PL.DenotationalSemantics BWFix equiv def
+binder 34323:34328 <> EquivA:377
+R34359:34362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34358:34358 PL.DenotationalSemantics <> A:371 var
+R34363:34363 PL.DenotationalSemantics <> A:371 var
+binder 34355:34355 <> f:378
+R34374:34374 PL.DenotationalSemantics <> A:371 var
+binder 34371:34371 <> a:379
+R34388:34395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34382:34385 PL.DenotationalSemantics BWFix mono def
+R34387:34387 PL.DenotationalSemantics <> f:378 var
+R34408:34415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34396:34405 PL.DenotationalSemantics BWFix continuous def
+R34407:34407 PL.DenotationalSemantics <> f:378 var
+R34424:34431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34419:34422 PL.DenotationalSemantics BWFix ::order_scope:x_'=='_x not
+R34416:34416 PL.DenotationalSemantics <> f:378 var
+R34418:34418 PL.DenotationalSemantics <> a:379 var
+R34423:34423 PL.DenotationalSemantics <> a:379 var
+R34441:34444 PL.DenotationalSemantics BWFix ::order_scope:x_'<='_x not
+R34432:34438 PL.DenotationalSemantics BWFix BW_LFix def
+R34440:34440 PL.DenotationalSemantics <> f:378 var
+R34445:34445 PL.DenotationalSemantics <> a:379 var
+R34464:34470 PL.DenotationalSemantics BWFix BW_LFix def
+R34494:34512 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R34494:34512 PL.DenotationalSemantics BWFix iter_bot_increasing thm
+R34532:34548 PL.DenotationalSemantics BWFix oCPO_completeness meth
+binder 34555:34555 <> n:380
+R34560:34567 Coq.Arith.PeanoNat Nat iter def
+R34573:34575 PL.DenotationalSemantics BWFix bot def
+R34569:34569 PL.DenotationalSemantics <> n:380 var
+R34532:34548 PL.DenotationalSemantics BWFix oCPO_completeness meth
+binder 34555:34555 <> n:381
+R34560:34567 Coq.Arith.PeanoNat Nat iter def
+R34573:34575 PL.DenotationalSemantics BWFix bot def
+R34569:34569 PL.DenotationalSemantics <> n:381 var
+R34591:34608 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R34591:34608 PL.DenotationalSemantics BWFix is_omega_lub_tight thm
+R34624:34634 PL.DenotationalSemantics BWFix is_omega_ub def
+R34669:34680 PL.DenotationalSemantics BWFix bot_is_least meth
+R34669:34680 PL.DenotationalSemantics BWFix bot_is_least meth
+R34772:34776 PL.DenotationalSemantics BWFix <> mod
+mod 34787:34799 <> StateRels_CPO
+R34809:34813 PL.DenotationalSemantics BWFix <> mod
+inst 35326:35336 StateRels_CPO R_while_fin
+binder 35339:35339 <> A:382
+binder 35341:35341 <> B:383
+R35351:35355 PL.DenotationalSemantics BWFix Order class
+R35359:35362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35358:35358 PL.DenotationalSemantics <> A:382 var
+R35364:35367 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35363:35363 PL.DenotationalSemantics <> B:383 var
+R35379:35391 SetsClass.SetsDomain Sets included meth
+inst 35404:35418 StateRels_CPO Equiv_while_fin
+binder 35421:35421 <> A:384
+binder 35423:35423 <> B:385
+R35433:35437 PL.DenotationalSemantics BWFix Equiv class
+R35441:35444 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35440:35440 PL.DenotationalSemantics <> A:384 var
+R35446:35449 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35445:35445 PL.DenotationalSemantics <> B:385 var
+R35461:35470 SetsClass.SetsDomain Sets equiv meth
+inst 35926:35937 StateRels_CPO PO_while_fin
+binder 35940:35940 <> A:386
+binder 35942:35942 <> B:387
+R35952:35970 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R35974:35977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35973:35973 PL.DenotationalSemantics <> A:386 var
+R35979:35982 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35978:35978 PL.DenotationalSemantics <> B:387 var
+R36017:36032 PL.DenotationalSemantics BWFix Reflexive_Setoid class
+R36046:36050 PL.DenotationalSemantics BWFix equiv def
+R36053:36061 PL.DenotationalSemantics BWFix order_rel def
+R36064:36074 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R36077:36091 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+R36182:36191 Coq.Classes.RelationClasses <> Transitive class
+R36205:36209 PL.DenotationalSemantics BWFix equiv def
+R36212:36220 PL.DenotationalSemantics BWFix order_rel def
+R36223:36233 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R36236:36250 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+R36371:36390 PL.DenotationalSemantics BWFix AntiSymmetric_Setoid class
+R36404:36408 PL.DenotationalSemantics BWFix equiv def
+R36411:36419 PL.DenotationalSemantics BWFix order_rel def
+R36422:36432 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R36435:36449 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+inst 36651:36664 StateRels_CPO oLub_while_fin
+binder 36667:36667 <> A:388
+binder 36669:36669 <> B:389
+R36679:36686 PL.DenotationalSemantics BWFix OmegaLub class
+R36690:36693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36689:36689 PL.DenotationalSemantics <> A:388 var
+R36695:36698 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36694:36694 PL.DenotationalSemantics <> B:389 var
+R36710:36727 SetsClass.SetsDomain Sets indexed_union meth
+inst 36740:36752 StateRels_CPO Bot_while_fin
+binder 36755:36755 <> A:390
+binder 36757:36757 <> B:391
+R36767:36769 PL.DenotationalSemantics BWFix Bot class
+R36773:36776 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36772:36772 PL.DenotationalSemantics <> A:390 var
+R36778:36781 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36777:36777 PL.DenotationalSemantics <> B:391 var
+R36799:36802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36804:36807 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36793:36795 SetsClass.SetsClass SetsNotation ::sets_scope:'∅' not
+inst 36881:36894 StateRels_CPO oCPO_while_fin
+binder 36897:36897 <> A:392
+binder 36899:36899 <> B:393
+R36911:36942 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R36946:36949 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36945:36945 PL.DenotationalSemantics <> A:392 var
+R36951:36954 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36950:36950 PL.DenotationalSemantics <> B:393 var
+R36988:36999 PL.DenotationalSemantics StateRels_CPO PO_while_fin inst
+R36988:36999 PL.DenotationalSemantics StateRels_CPO PO_while_fin inst
+R37013:37022 PL.DenotationalSemantics BWFix increasing def
+R37025:37036 PL.DenotationalSemantics BWFix is_omega_lub def
+R37039:37049 PL.DenotationalSemantics BWFix is_omega_ub def
+R37052:37056 PL.DenotationalSemantics BWFix is_lb def
+R37070:37078 PL.DenotationalSemantics BWFix omega_lub def
+R37081:37089 PL.DenotationalSemantics BWFix order_rel def
+R37092:37102 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R37105:37118 PL.DenotationalSemantics StateRels_CPO oLub_while_fin inst
+R37332:37339 PL.DenotationalSemantics BWFix is_least def
+R37353:37355 PL.DenotationalSemantics BWFix bot def
+R37358:37366 PL.DenotationalSemantics BWFix order_rel def
+R37369:37379 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R37382:37394 PL.DenotationalSemantics StateRels_CPO Bot_while_fin inst
+inst 37615:37635 StateRels_CPO Equiv_equiv_while_fin
+binder 37638:37638 <> A:394
+binder 37640:37640 <> B:395
+R37652:37662 Coq.Classes.RelationClasses <> Equivalence class
+R37666:37670 PL.DenotationalSemantics BWFix equiv def
+R37674:37677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37673:37673 PL.DenotationalSemantics <> A:394 var
+R37679:37682 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37678:37678 PL.DenotationalSemantics <> B:395 var
+R37708:37723 SetsClass.SetsDomain <> Sets_equiv_equiv inst
+R37708:37723 SetsClass.SetsDomain <> Sets_equiv_equiv inst
+R37866:37874 PL.DenotationalSemantics BWFix order_rel def
+R37877:37881 PL.DenotationalSemantics BWFix equiv def
+R37884:37892 PL.DenotationalSemantics BWFix omega_lub def
+R37895:37897 PL.DenotationalSemantics BWFix bot def
+R37909:37919 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R37922:37936 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+R37939:37952 PL.DenotationalSemantics StateRels_CPO oCPO_while_fin inst
+R37955:37967 PL.DenotationalSemantics StateRels_CPO Bot_while_fin inst
+R37975:37987 PL.DenotationalSemantics StateRels_CPO <> mod
+mod 38123:38130 <> Sets_CPO
+R38140:38144 PL.DenotationalSemantics BWFix <> mod
+inst 38158:38163 Sets_CPO R_sets
+binder 38177:38177 <> T:396
+R38205:38213 SetsClass.SetsDomain Sets SETS class
+R38215:38215 PL.DenotationalSemantics <> T:396 var
+binder 38198:38202 <> _SETS:397
+R38219:38223 PL.DenotationalSemantics BWFix Order class
+R38225:38225 PL.DenotationalSemantics <> T:396 var
+R38232:38244 SetsClass.SetsDomain Sets included meth
+inst 38257:38266 Sets_CPO Equiv_sets
+binder 38280:38280 <> T:398
+R38308:38316 SetsClass.SetsDomain Sets SETS class
+R38318:38318 PL.DenotationalSemantics <> T:398 var
+binder 38301:38305 <> _SETS:399
+R38322:38326 PL.DenotationalSemantics BWFix Equiv class
+R38328:38328 PL.DenotationalSemantics <> T:398 var
+R38335:38344 SetsClass.SetsDomain Sets equiv meth
+inst 38357:38363 Sets_CPO PO_sets
+binder 38377:38377 <> T:400
+R38405:38413 SetsClass.SetsDomain Sets SETS class
+R38415:38415 PL.DenotationalSemantics <> T:400 var
+binder 38398:38402 <> _SETS:401
+R38448:38462 SetsClass.SetsDomain <> SETS_Properties class
+R38464:38464 PL.DenotationalSemantics <> T:400 var
+binder 38430:38445 <> _SETS_Properties:402
+R38468:38486 PL.DenotationalSemantics BWFix PartialOrder_Setoid class
+R38488:38488 PL.DenotationalSemantics <> T:400 var
+R38518:38533 PL.DenotationalSemantics BWFix Reflexive_Setoid class
+R38547:38551 PL.DenotationalSemantics BWFix equiv def
+R38554:38562 PL.DenotationalSemantics BWFix order_rel def
+R38565:38570 PL.DenotationalSemantics Sets_CPO R_sets inst
+R38573:38582 PL.DenotationalSemantics Sets_CPO Equiv_sets inst
+R38643:38652 Coq.Classes.RelationClasses <> Transitive class
+R38666:38670 PL.DenotationalSemantics BWFix equiv def
+R38673:38681 PL.DenotationalSemantics BWFix order_rel def
+R38684:38689 PL.DenotationalSemantics Sets_CPO R_sets inst
+R38692:38701 PL.DenotationalSemantics Sets_CPO Equiv_sets inst
+R38770:38789 PL.DenotationalSemantics BWFix AntiSymmetric_Setoid class
+R38803:38807 PL.DenotationalSemantics BWFix equiv def
+R38810:38818 PL.DenotationalSemantics BWFix order_rel def
+R38821:38826 PL.DenotationalSemantics Sets_CPO R_sets inst
+R38829:38838 PL.DenotationalSemantics Sets_CPO Equiv_sets inst
+R38870:38893 SetsClass.SetsDomain <> Sets_equiv_Sets_included meth
+R38870:38893 SetsClass.SetsDomain <> Sets_equiv_Sets_included meth
+inst 38918:38926 Sets_CPO oLub_sets
+binder 38940:38940 <> T:403
+R38968:38976 SetsClass.SetsDomain Sets SETS class
+R38978:38978 PL.DenotationalSemantics <> T:403 var
+binder 38961:38965 <> _SETS:404
+R38982:38989 PL.DenotationalSemantics BWFix OmegaLub class
+R38991:38991 PL.DenotationalSemantics <> T:403 var
+R38998:39015 SetsClass.SetsDomain Sets indexed_union meth
+inst 39028:39035 Sets_CPO Bot_sets
+binder 39049:39049 <> T:405
+R39077:39085 SetsClass.SetsDomain Sets SETS class
+R39087:39087 PL.DenotationalSemantics <> T:405 var
+binder 39070:39074 <> _SETS:406
+R39091:39093 PL.DenotationalSemantics BWFix Bot class
+R39095:39095 PL.DenotationalSemantics <> T:405 var
+R39102:39104 SetsClass.SetsClass SetsNotation ::sets_scope:'∅' not
+inst 39120:39128 Sets_CPO oCPO_sets
+binder 39142:39142 <> T:407
+R39170:39178 SetsClass.SetsDomain Sets SETS class
+R39180:39180 PL.DenotationalSemantics <> T:407 var
+binder 39163:39167 <> _SETS:408
+R39213:39227 SetsClass.SetsDomain <> SETS_Properties class
+R39229:39229 PL.DenotationalSemantics <> T:407 var
+binder 39195:39210 <> _SETS_Properties:409
+R39235:39266 PL.DenotationalSemantics BWFix OmegaCompletePartialOrder_Setoid class
+R39268:39268 PL.DenotationalSemantics <> T:407 var
+R39297:39303 PL.DenotationalSemantics Sets_CPO PO_sets inst
+R39297:39303 PL.DenotationalSemantics Sets_CPO PO_sets inst
+R39317:39326 PL.DenotationalSemantics BWFix increasing def
+R39329:39340 PL.DenotationalSemantics BWFix is_omega_lub def
+R39343:39353 PL.DenotationalSemantics BWFix is_omega_ub def
+R39356:39360 PL.DenotationalSemantics BWFix is_lb def
+R39374:39382 PL.DenotationalSemantics BWFix omega_lub def
+R39385:39393 PL.DenotationalSemantics BWFix order_rel def
+R39396:39401 PL.DenotationalSemantics Sets_CPO R_sets inst
+R39404:39412 PL.DenotationalSemantics Sets_CPO oLub_sets inst
+R39475:39501 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R39475:39501 SetsClass.SetsDomain <> Sets_included_indexed_union meth
+R39530:39556 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R39530:39556 SetsClass.SetsDomain <> Sets_indexed_union_included meth
+R39583:39590 PL.DenotationalSemantics BWFix is_least def
+R39604:39606 PL.DenotationalSemantics BWFix bot def
+R39609:39617 PL.DenotationalSemantics BWFix order_rel def
+R39620:39625 PL.DenotationalSemantics Sets_CPO R_sets inst
+R39628:39635 PL.DenotationalSemantics Sets_CPO Bot_sets inst
+R39667:39685 SetsClass.SetsDomain <> Sets_empty_included meth
+R39667:39685 SetsClass.SetsDomain <> Sets_empty_included meth
+inst 39703:39718 Sets_CPO Equiv_equiv_sets
+binder 39732:39732 <> T:410
+R39760:39768 SetsClass.SetsDomain Sets SETS class
+R39770:39770 PL.DenotationalSemantics <> T:410 var
+binder 39753:39757 <> _SETS:411
+R39803:39817 SetsClass.SetsDomain <> SETS_Properties class
+R39819:39819 PL.DenotationalSemantics <> T:410 var
+binder 39785:39800 <> _SETS_Properties:412
+R39825:39835 Coq.Classes.RelationClasses <> Equivalence class
+R39839:39843 PL.DenotationalSemantics BWFix equiv def
+R39845:39845 PL.DenotationalSemantics <> T:410 var
+R39866:39881 SetsClass.SetsDomain <> Sets_equiv_equiv inst
+R39866:39881 SetsClass.SetsDomain <> Sets_equiv_equiv inst
+R39923:39931 PL.DenotationalSemantics BWFix order_rel def
+R39934:39938 PL.DenotationalSemantics BWFix equiv def
+R39941:39949 PL.DenotationalSemantics BWFix omega_lub def
+R39952:39954 PL.DenotationalSemantics BWFix bot def
+R39966:39971 PL.DenotationalSemantics Sets_CPO R_sets inst
+R39974:39983 PL.DenotationalSemantics Sets_CPO Equiv_sets inst
+R39986:39994 PL.DenotationalSemantics Sets_CPO oLub_sets inst
+R39997:40004 PL.DenotationalSemantics Sets_CPO Bot_sets inst
+R40012:40019 PL.DenotationalSemantics Sets_CPO <> mod
+mod 40030:40044 <> StateRels_Funcs
+R40054:40058 PL.DenotationalSemantics BWFix <> mod
+R40060:40072 PL.DenotationalSemantics StateRels_CPO <> mod
+prf 40789:40811 StateRels_Funcs BinRel_concat_left_mono
+binder 40824:40824 <> A:413
+binder 40826:40826 <> B:414
+binder 40828:40828 <> C:415
+R40842:40845 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40841:40841 PL.DenotationalSemantics <> A:413 var
+R40847:40850 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40846:40846 PL.DenotationalSemantics <> B:414 var
+binder 40838:40838 <> Y:416
+R40862:40865 PL.DenotationalSemantics BWFix mono def
+R40876:40879 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40875:40875 PL.DenotationalSemantics <> B:414 var
+R40881:40884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40880:40880 PL.DenotationalSemantics <> C:415 var
+binder 40872:40872 <> X:417
+R40894:40898 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R40893:40893 PL.DenotationalSemantics <> Y:416 var
+R40899:40899 PL.DenotationalSemantics <> X:417 var
+R40929:40932 PL.DenotationalSemantics BWFix mono def
+R40944:40952 PL.DenotationalSemantics BWFix order_rel def
+R40955:40965 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+prf 41016:41044 StateRels_Funcs BinRel_concat_left_continuous
+binder 41057:41057 <> A:418
+binder 41059:41059 <> B:419
+binder 41061:41061 <> C:420
+R41075:41078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41074:41074 PL.DenotationalSemantics <> A:418 var
+R41080:41083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41079:41079 PL.DenotationalSemantics <> B:419 var
+binder 41071:41071 <> Y:421
+R41095:41104 PL.DenotationalSemantics BWFix continuous def
+R41115:41118 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41114:41114 PL.DenotationalSemantics <> B:419 var
+R41120:41123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41119:41119 PL.DenotationalSemantics <> C:420 var
+binder 41111:41111 <> X:422
+R41133:41137 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R41132:41132 PL.DenotationalSemantics <> Y:421 var
+R41138:41138 PL.DenotationalSemantics <> X:422 var
+R41168:41177 PL.DenotationalSemantics BWFix continuous def
+R41189:41198 PL.DenotationalSemantics BWFix increasing def
+R41201:41209 PL.DenotationalSemantics BWFix omega_lub def
+R41212:41220 PL.DenotationalSemantics BWFix order_rel def
+R41223:41227 PL.DenotationalSemantics BWFix equiv def
+R41239:41252 PL.DenotationalSemantics StateRels_CPO oLub_while_fin inst
+R41255:41265 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R41268:41282 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+R41303:41335 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+R41303:41335 SetsClass.RelsDomain <> Rels_concat_indexed_union_distr_l meth
+prf 41350:41387 StateRels_Funcs BinRel_concat_left_mono_and_continuous
+binder 41404:41404 <> A:423
+binder 41406:41406 <> B:424
+binder 41408:41408 <> C:425
+R41426:41429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41425:41425 PL.DenotationalSemantics <> A:423 var
+R41431:41434 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41430:41430 PL.DenotationalSemantics <> B:424 var
+binder 41422:41422 <> Y:426
+R41449:41449 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41464:41469 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41484:41484 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41451:41454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41450:41450 PL.DenotationalSemantics <> B:424 var
+R41456:41459 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41455:41455 PL.DenotationalSemantics <> C:425 var
+R41471:41474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41470:41470 PL.DenotationalSemantics <> B:424 var
+R41476:41479 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41475:41475 PL.DenotationalSemantics <> C:425 var
+binder 41446:41446 <> f:427
+R41512:41517 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41496:41499 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R41490:41493 PL.DenotationalSemantics BWFix mono def
+R41495:41495 PL.DenotationalSemantics <> f:427 var
+R41500:41509 PL.DenotationalSemantics BWFix continuous def
+R41511:41511 PL.DenotationalSemantics <> f:427 var
+R41543:41546 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R41518:41521 PL.DenotationalSemantics BWFix mono def
+binder 41528:41528 <> X:428
+R41534:41538 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R41533:41533 PL.DenotationalSemantics <> Y:426 var
+R41539:41539 PL.DenotationalSemantics <> f:427 var
+R41541:41541 PL.DenotationalSemantics <> X:428 var
+R41547:41556 PL.DenotationalSemantics BWFix continuous def
+binder 41563:41563 <> X:429
+R41569:41573 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R41568:41568 PL.DenotationalSemantics <> Y:426 var
+R41574:41574 PL.DenotationalSemantics <> f:427 var
+R41576:41576 PL.DenotationalSemantics <> X:429 var
+R41624:41646 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono thm
+R41624:41646 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono thm
+R41670:41698 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_continuous thm
+R41670:41698 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_continuous thm
+R41729:41740 PL.DenotationalSemantics BWFix compose_mono thm
+R41729:41740 PL.DenotationalSemantics BWFix compose_mono thm
+R41764:41781 PL.DenotationalSemantics BWFix compose_continuous thm
+R41764:41781 PL.DenotationalSemantics BWFix compose_continuous thm
+prf 42102:42118 StateRels_Funcs union_right2_mono
+binder 42131:42131 <> A:430
+binder 42133:42133 <> B:431
+R42147:42150 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42146:42146 PL.DenotationalSemantics <> A:430 var
+R42152:42155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42151:42151 PL.DenotationalSemantics <> B:431 var
+binder 42143:42143 <> Y:432
+R42167:42170 PL.DenotationalSemantics BWFix mono def
+binder 42177:42177 <> X:433
+R42183:42187 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R42182:42182 PL.DenotationalSemantics <> X:433 var
+R42188:42188 PL.DenotationalSemantics <> Y:432 var
+R42218:42221 PL.DenotationalSemantics BWFix mono def
+R42233:42241 PL.DenotationalSemantics BWFix order_rel def
+R42244:42254 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+prf 42344:42366 StateRels_Funcs union_right2_continuous
+binder 42379:42379 <> A:434
+binder 42381:42381 <> B:435
+R42395:42398 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42394:42394 PL.DenotationalSemantics <> A:434 var
+R42400:42403 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42399:42399 PL.DenotationalSemantics <> B:435 var
+binder 42391:42391 <> Y:436
+R42415:42424 PL.DenotationalSemantics BWFix continuous def
+binder 42431:42431 <> X:437
+R42437:42441 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R42436:42436 PL.DenotationalSemantics <> X:437 var
+R42442:42442 PL.DenotationalSemantics <> Y:436 var
+R42472:42481 PL.DenotationalSemantics BWFix continuous def
+R42493:42502 PL.DenotationalSemantics BWFix increasing def
+R42505:42513 PL.DenotationalSemantics BWFix omega_lub def
+R42516:42524 PL.DenotationalSemantics BWFix order_rel def
+R42527:42531 PL.DenotationalSemantics BWFix equiv def
+R42543:42556 PL.DenotationalSemantics StateRels_CPO oLub_while_fin inst
+R42559:42569 PL.DenotationalSemantics StateRels_CPO R_while_fin inst
+R42572:42586 PL.DenotationalSemantics StateRels_CPO Equiv_while_fin inst
+R42714:42714 Coq.Init.Datatypes <> O constr
+R42714:42714 Coq.Init.Datatypes <> O constr
+prf 42818:42849 StateRels_Funcs union_right2_mono_and_continuous
+binder 42866:42866 <> A:438
+binder 42868:42868 <> B:439
+R42886:42889 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42885:42885 PL.DenotationalSemantics <> A:438 var
+R42891:42894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42890:42890 PL.DenotationalSemantics <> B:439 var
+binder 42882:42882 <> Y:440
+R42909:42909 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42924:42929 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42944:42944 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42911:42914 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42910:42910 PL.DenotationalSemantics <> A:438 var
+R42916:42919 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42915:42915 PL.DenotationalSemantics <> B:439 var
+R42931:42934 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42930:42930 PL.DenotationalSemantics <> A:438 var
+R42936:42939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42935:42935 PL.DenotationalSemantics <> B:439 var
+binder 42906:42906 <> f:441
+R42972:42977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42956:42959 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R42950:42953 PL.DenotationalSemantics BWFix mono def
+R42955:42955 PL.DenotationalSemantics <> f:441 var
+R42960:42969 PL.DenotationalSemantics BWFix continuous def
+R42971:42971 PL.DenotationalSemantics <> f:441 var
+R43003:43006 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R42978:42981 PL.DenotationalSemantics BWFix mono def
+binder 42988:42988 <> X:442
+R42996:43000 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R42993:42993 PL.DenotationalSemantics <> f:441 var
+R42995:42995 PL.DenotationalSemantics <> X:442 var
+R43001:43001 PL.DenotationalSemantics <> Y:440 var
+R43007:43016 PL.DenotationalSemantics BWFix continuous def
+binder 43023:43023 <> X:443
+R43031:43035 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R43028:43028 PL.DenotationalSemantics <> f:441 var
+R43030:43030 PL.DenotationalSemantics <> X:443 var
+R43036:43036 PL.DenotationalSemantics <> Y:440 var
+R43084:43100 PL.DenotationalSemantics StateRels_Funcs union_right2_mono thm
+R43084:43100 PL.DenotationalSemantics StateRels_Funcs union_right2_mono thm
+R43122:43144 PL.DenotationalSemantics StateRels_Funcs union_right2_continuous thm
+R43122:43144 PL.DenotationalSemantics StateRels_Funcs union_right2_continuous thm
+R43173:43184 PL.DenotationalSemantics BWFix compose_mono thm
+R43173:43184 PL.DenotationalSemantics BWFix compose_mono thm
+R43208:43225 PL.DenotationalSemantics BWFix compose_continuous thm
+R43208:43225 PL.DenotationalSemantics BWFix compose_continuous thm
+R43254:43268 PL.DenotationalSemantics StateRels_Funcs <> mod
+mod 43279:43297 <> DntSem_SimpleWhile5
+R43307:43322 PL.SyntaxInCoq Lang_SimpleWhile <> mod
+R43331:43349 PL.DenotationalSemantics DntSem_SimpleWhile2 <> mod
+R43358:43376 PL.DenotationalSemantics DntSem_SimpleWhile3 <> mod
+R43385:43403 PL.DenotationalSemantics DntSem_SimpleWhile4 <> mod
+R43412:43416 PL.DenotationalSemantics BWFix <> mod
+R43418:43430 PL.DenotationalSemantics StateRels_CPO <> mod
+R43432:43446 PL.DenotationalSemantics StateRels_Funcs <> mod
+def 43588:43596 DntSem_SimpleWhile5 while_sem
+R43621:43624 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43616:43620 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R43625:43628 Coq.Init.Datatypes <> bool ind
+binder 43612:43613 <> D0:444
+R43653:43656 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43648:43652 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R43662:43665 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43657:43661 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+binder 43645:43645 <> D:445
+R43680:43683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43675:43679 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R43689:43692 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43684:43688 PL.DenotationalSemantics DntSem_SimpleWhile2 state def
+R43703:43709 PL.DenotationalSemantics BWFix BW_LFix def
+binder 43716:43716 <> X:446
+R43721:43721 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R43747:43752 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R43735:43739 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R43722:43730 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R43732:43733 PL.DenotationalSemantics <> D0:444 var
+R43741:43745 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R43740:43740 PL.DenotationalSemantics <> D:445 var
+R43746:43746 PL.DenotationalSemantics <> X:446 var
+R43753:43762 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R43764:43765 PL.DenotationalSemantics <> D0:444 var
+prf 43892:43913 DntSem_SimpleWhile5 while_sem_is_least_fix
+binder 43923:43924 <> D0:447
+binder 43926:43926 <> D:448
+R44008:44014 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R44104:44104 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R43990:43993 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R43931:43931 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R43970:43975 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R43945:43949 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R43932:43940 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R43942:43943 PL.DenotationalSemantics <> D0:447 var
+R43951:43955 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R43950:43950 PL.DenotationalSemantics <> D:448 var
+R43956:43964 PL.DenotationalSemantics DntSem_SimpleWhile5 while_sem def
+R43966:43967 PL.DenotationalSemantics <> D0:447 var
+R43969:43969 PL.DenotationalSemantics <> D:448 var
+R43976:43985 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R43987:43988 PL.DenotationalSemantics <> D0:447 var
+R43994:44002 PL.DenotationalSemantics DntSem_SimpleWhile5 while_sem def
+R44004:44005 PL.DenotationalSemantics <> D0:447 var
+R44007:44007 PL.DenotationalSemantics <> D:448 var
+binder 44022:44022 <> X:449
+R44080:44083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R44075:44078 SetsClass.SetsClass SetsNotation ::sets_scope:x_'=='_x not
+R44029:44029 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44055:44060 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44043:44047 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44030:44038 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44040:44041 PL.DenotationalSemantics <> D0:447 var
+R44049:44053 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44048:44048 PL.DenotationalSemantics <> D:448 var
+R44054:44054 PL.DenotationalSemantics <> X:449 var
+R44061:44070 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44072:44073 PL.DenotationalSemantics <> D0:447 var
+R44079:44079 PL.DenotationalSemantics <> X:449 var
+R44098:44102 SetsClass.SetsClass SetsNotation ::sets_scope:x_'⊆'_x not
+R44084:44092 PL.DenotationalSemantics DntSem_SimpleWhile5 while_sem def
+R44094:44095 PL.DenotationalSemantics <> D0:447 var
+R44097:44097 PL.DenotationalSemantics <> D:448 var
+R44103:44103 PL.DenotationalSemantics <> X:449 var
+R44196:44209 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R44134:44137 PL.DenotationalSemantics BWFix mono def
+binder 44144:44144 <> X:450
+R44149:44149 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44175:44180 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44163:44167 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44150:44158 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44169:44173 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44174:44174 PL.DenotationalSemantics <> X:450 var
+R44181:44190 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44210:44219 PL.DenotationalSemantics BWFix continuous def
+binder 44226:44226 <> X:451
+R44231:44231 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44257:44262 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44245:44249 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44232:44240 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44251:44255 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44256:44256 PL.DenotationalSemantics <> X:451 var
+R44263:44272 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44196:44209 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R44134:44137 PL.DenotationalSemantics BWFix mono def
+binder 44144:44144 <> X:452
+R44149:44149 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44175:44180 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44163:44167 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44150:44158 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44169:44173 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44174:44174 PL.DenotationalSemantics <> X:452 var
+R44181:44190 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44210:44219 PL.DenotationalSemantics BWFix continuous def
+binder 44226:44226 <> X:453
+R44231:44231 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44257:44262 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44245:44249 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44232:44240 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44251:44255 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44256:44256 PL.DenotationalSemantics <> X:453 var
+R44263:44272 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44295:44326 PL.DenotationalSemantics StateRels_Funcs union_right2_mono_and_continuous thm
+R44295:44326 PL.DenotationalSemantics StateRels_Funcs union_right2_mono_and_continuous thm
+R44339:44376 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono_and_continuous thm
+R44339:44376 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono_and_continuous thm
+R44389:44426 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono_and_continuous thm
+R44389:44426 PL.DenotationalSemantics StateRels_Funcs BinRel_concat_left_mono_and_continuous thm
+R44452:44458 PL.DenotationalSemantics BWFix id_mono thm
+R44452:44458 PL.DenotationalSemantics BWFix id_mono thm
+R44473:44485 PL.DenotationalSemantics BWFix id_continuous thm
+R44473:44485 PL.DenotationalSemantics BWFix id_continuous thm
+R44526:44539 PL.DenotationalSemantics BWFix BW_LFix_is_fix thm
+binder 44546:44546 <> X:454
+R44551:44551 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44577:44582 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44565:44569 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44552:44560 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44571:44575 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44576:44576 PL.DenotationalSemantics <> X:454 var
+R44583:44592 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44526:44539 PL.DenotationalSemantics BWFix BW_LFix_is_fix thm
+binder 44546:44546 <> X:455
+R44551:44551 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44577:44582 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44565:44569 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44552:44560 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44571:44575 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44576:44576 PL.DenotationalSemantics <> X:455 var
+R44583:44592 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44639:44658 PL.DenotationalSemantics BWFix BW_LFix_is_least_fix thm
+binder 44665:44665 <> X:456
+R44670:44670 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44696:44701 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44684:44688 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44671:44679 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44690:44694 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44695:44695 PL.DenotationalSemantics <> X:456 var
+R44702:44711 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44639:44658 PL.DenotationalSemantics BWFix BW_LFix_is_least_fix thm
+binder 44665:44665 <> X:457
+R44670:44670 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44696:44701 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∪'_x not
+R44684:44688 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44671:44679 PL.DenotationalSemantics DntSem_SimpleWhile4 test_true def
+R44690:44694 SetsClass.SetsClass SetsNotation ::sets_scope:x_'∘'_x not
+R44695:44695 PL.DenotationalSemantics <> X:457 var
+R44702:44711 PL.DenotationalSemantics DntSem_SimpleWhile4 test_false def
+R44744:44762 PL.DenotationalSemantics DntSem_SimpleWhile5 <> mod

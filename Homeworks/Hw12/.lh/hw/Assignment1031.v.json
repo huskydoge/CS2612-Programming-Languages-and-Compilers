@@ -1,0 +1,18 @@
+{
+    "sourceFile": "hw/Assignment1031.v",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1699277755285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1699277755285,
+            "name": "Commit-0",
+            "content": "Require Import Coq.Classes.RelationClasses.\nRequire Import PL.DenotationalSemantics.\nRequire Import PL.PracticalDenotations.\nImport BWFix KTFix.\nLocal Open Scope order_scope.\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 请证明下面关于Knaster-Tarski最大不动点的性质。 *)\nPrint lub_sound.\nLemma KT_GFix_mono:\n  forall\n    {A: Type}\n    `{CLA: CompleteLattice_Setoid A}\n    {EquivA: Equivalence equiv}\n    (f g: A -> A),\n    mono f ->\n    mono g ->\n    (forall a, f a <= g a) ->\n    KT_GFix f <= KT_GFix g.\nProof.\n  intros.\n  unfold KT_GFix.\n  apply lub_tight.\n  unfold is_ub.\n  intros.\n  assert (a' <= g a').\n  specialize (H1 a').\n  transitivity (f a'); auto.\n  apply lub_sound.\n  tauto.\nQed.\n\n\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 很显然，任意完备格上都有最小元，它可以被定义为空集的上确界。*)\n\nDefinition bot\n             {A: Type}\n             `{CLA: CompleteLattice_Setoid A}: A :=\n  lub (fun _ => False).\n\n(** 下面请你证明，空集的上确界确实是最小元。*)\nLemma bot_is_least\n        {A: Type}\n        `{CLA: CompleteLattice_Setoid A}:\n  forall a: A, bot <= a.\nProof.\n  intros.\n  unfold bot.\n  apply lub_tight.\n  unfold is_ub.\n  tauto.\nQed.\n  (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n(************)\n(** 习题：  *)\n(************)\n\n\n(** 我们已经学过，在完备偏序集上，单调连续函数_[f]_的最小不动点可以定义为   \n\n        _[bot]_, _[f bot]_, _[f (f bot)]_, ...   \n\n    的上确界。那么在完备格上，如果_[f]_是一个单调函数，上面这个计算结果是不动点吗？下面\n    是这一计算结果的Coq定义*)\n\nDefinition BW\n             {A: Type}\n             `{CLA: CompleteLattice_Setoid A}\n             (f: A -> A) :=\n  lub (fun a => exists n: nat, a = Nat.iter n f bot).\n\n(** 请你证明以下结论。*)\n\nLemma CL_mono_KT:\n  forall\n    {A: Type}\n    `{CLA: CompleteLattice_Setoid A}\n    {EquivA: Equivalence equiv}\n    (f: A -> A),\n    mono f ->\n    BW f <= KT_GFix f.\nProof.\n  intros.\n  unfold BW, KT_GFix.\n  apply lub_tight. unfold is_ub.\n  intros.\n  destruct H0;rewrite H0.\n  apply lub_sound.\n  assert (forall n, Nat.iter n f bot <= f (Nat.iter n f bot)).\n  induction n;simpl.\n  - apply bot_is_least.\n  - apply H;apply IHn.\n  - apply H1.\nQed.\n\n    (* 请删除这一行_[Admitted]_并填入你的证明，以_[Qed]_结束。 *)\n\n"
+        }
+    ]
+}
