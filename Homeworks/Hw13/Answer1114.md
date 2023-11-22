@@ -6,8 +6,9 @@
 n = 10;
 i = 0;
 LABEL_1:
-	if(! i < n)
-	then {#1 = i < n}
+	#0 = i < n
+	if(! #0)
+	then {#1 = #0}
 	else {
 		#2 = i * 8
 		#3 = p + #2

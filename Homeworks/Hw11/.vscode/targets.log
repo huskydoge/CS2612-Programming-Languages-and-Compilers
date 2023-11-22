@@ -1,0 +1,971 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Sat Nov 18 14:19:09 2023
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = 3.1.3
+# automatic
+?F = $(notdir $?)
+# environment
+OPAM_SWITCH_PREFIX = /Users/husky/.opam/4.12.0
+# environment
+OCAML_TOPLEVEL_PATH = /Users/husky/.opam/4.12.0/lib/toplevel
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# makefile (from `Makefile', line 19)
+DEP_FLAG = -R $(PL_DIR) PL -R $(SETS_DIR) SetsClass -R $(COMPCERT_DIR) compcert.lib
+# environment
+COPT_LICENSE_DIR = /Applications/copt30
+# automatic
+ 
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw11
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","osLocale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"7b3b4bbe44b5870ce6cf5ac70d2b1a12.zh-cn","_translationsConfigFile":"/Users/husky/Library/Application Support/Code/clp/7b3b4bbe44b5870ce6cf5ac70d2b1a12.zh-cn/tcf.json","_cacheRoot":"/Users/husky/Library/Application Support/Code/clp/7b3b4bbe44b5870ce6cf5ac70d2b1a12.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/husky/Library/Application Support/Code/clp/7b3b4bbe44b5870ce6cf5ac70d2b1a12.zh-cn/2b35e1e6d88f1ce073683991d1eff5284a32690f","_corruptedFile":"/Users/husky/Library/Application Support/Code/clp/7b3b4bbe44b5870ce6cf5ac70d2b1a12.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+CONDA_PREFIX_1 = /Users/husky/opt/anaconda3
+# makefile (from `.depend', line 1)
+MAKEFILE_LIST :=  Makefile .depend
+# makefile (from `Makefile', line 2)
+SETS_DIR = sets
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/husky/.pyenv/shims:/Users/husky/.pyenv/bin:/Users/husky/.gem/ruby/3.1.3/bin:/Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0/bin:/Users/husky/.rubies/ruby-3.1.3/bin:/Users/husky/.opam/4.12.0/bin:/Users/husky/miniforge3/bin:/Users/husky/opt/anaconda3/condabin:/Applications/copt30/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/bin:/bin:/usr/local/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/Users/husky/.cargo/bin:/Users/husky/Library/Application Support/JetBrains/Toolbox/scripts:/usr/bin/python3/scripts:/Users/husky/bin:/Users/husky/Developer/flutter/bin
+# makefile (from `Makefile', line 24)
+SETS_FILES = $(SETS_FILE_NAMES:%.v=$(SETS_DIR)/%.v)
+# makefile (from `Makefile', line 29)
+COMPCERT_FILES = $(COMPCERT_FILE_NAMES:%.v=$(COMPCERT_DIR)/%.v)
+# makefile (from `Makefile', line 13)
+PL_FLAG = -R $(PL_DIR) PL -R $(SETS_DIR) SetsClass -R $(COMPCERT_DIR) compcert.lib
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/husky/.pyenv
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.i9WM4K3gCM/Listeners
+# makefile (from `Makefile', line 1)
+CURRENT_DIR = .
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /Users/husky/miniforge3/bin/conda
+# environment
+PWD = /Users/husky/Three-Year-Aut/CS2612-Programming-Languages-and-Compilers/Homeworks/Hw11
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+GEM_HOME = /Users/husky/.gem/ruby/3.1.3
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /Users/husky
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/husky/Library/Application Support/Code/CachedData/2b35e1e6d88f1ce073683991d1eff5284a32690f
+# environment
+LOGNAME = husky
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 6)
+COQBIN = 
+# environment
+COPT_HOME = /Applications/copt30
+# environment
+GEM_PATH = /Users/husky/.gem/ruby/3.1.3:/Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+RUBY_ROOT = /Users/husky/.rubies/ruby-3.1.3
+# environment
+JAVA_HOME = /Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home
+# makefile (from `Makefile', line 31)
+PL_FILE_NAMES = CoqIntro.v InductiveType.v Logic.v SyntaxInCoq.v DenotationalSemantics.v PracticalDenotations.v EquivAndRefine.v
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = husky
+# makefile (from `Makefile', line 15)
+SETS_FLAG = -R $(SETS_DIR) SetsClass
+# environment
+CAML_LD_LIBRARY_PATH = /Users/husky/.opam/4.12.0/lib/stublibs:/Users/husky/.opam/4.12.0/lib/ocaml/stublibs:/Users/husky/.opam/4.12.0/lib/ocaml
+# makefile (from `Makefile', line 72)
+.DEFAULT_GOAL := all
+# environment
+RUBY_ENGINE = ruby
+# environment
+HOMEBREW_BOTTLE_DOMAIN = https://mirrors.aliyun.com/homebrew/homebrew-bottles
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 2
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/gv/jp8cgv_s7sdcy5__5j0p3l7r0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/husky/Library/Application Support/Code/1.84-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.174096848.174096854
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///Users/husky/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.84.2023111509/translations/extensions/vscode.json-language-features.i18n.json
+# makefile (from `Makefile', line 17)
+COMPCERT_FLAG = -R $(COMPCERT_DIR) compcert.lib
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 21)
+SETS_FILE_NAMES = SetsClass.v SetsDomain.v SetElement.v SetProd.v RelsDomain.v
+# makefile (from `Makefile', line 11)
+COQDEP = $(COQBIN)coqdep
+# makefile (from `Makefile', line 26)
+COMPCERT_FILE_NAMES = Coqlib.v Integers.v Zbits.v
+# makefile (from `Makefile', line 4)
+PL_DIR = pl
+# makefile (from `Makefile', line 10)
+COQC = $(COQBIN)coqc
+# environment
+LC_ALL = C
+# environment
+XML_CATALOG_FILES = file:///Users/husky/miniforge3/etc/xml/catalog file:///etc/xml/catalog
+# makefile (from `Makefile', line 3)
+COMPCERT_DIR = compcert_lib
+# environment
+CONDA_PYTHON_EXE = /Users/husky/miniforge3/bin/python
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+GEM_ROOT = /Users/husky/.rubies/ruby-3.1.3/lib/ruby/gems/3.1.0
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 34)
+PL_FILES = $(PL_FILE_NAMES:%.v=$(PL_DIR)/%.v)
+# environment
+ 
+MAKELEVEL := 0
+# environment
+CONDA_PREFIX = /Users/husky/miniforge3
+# environment
+VSCODE_PID = 89671
+# makefile (from `Makefile', line 36)
+FILES = $(PL_FILES) $(SETS_FILES) $(COMPCERT_FILES)
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=106/1024=10%, Rehash=0, Collisions=19/181=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 175435161): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+pl/EquivAndRefine.v.beautified: pl/EquivAndRefine.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/PracticalDenotations.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsDomain.vo: sets/SetsDomain.v sets/SetsDomain.v sets/SetElement.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sets/SetsDomain'
+#  Last modified 2023-11-04 17:44:59
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 41):
+	@echo COQC $<
+	@$(COQC) $(SETS_FLAG) $<
+	
+
+sets/SetElement.glob: sets/SetElement.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sets/SetsDomain.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pl/PracticalDenotations.vo: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/PracticalDenotations'
+#  Last modified 2023-11-04 17:45:05
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := pl/PracticalDenotations.vo
+# automatic
+# % := 
+# automatic
+# * := pl/PracticalDenotations
+# automatic
+# + := pl/PracticalDenotations.v pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+# automatic
+# | := 
+# automatic
+# < := pl/PracticalDenotations.v
+# automatic
+# ^ := pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+# automatic
+# ? := pl/PracticalDenotations.v
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/19=16%
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+# Not a target:
+pl/PracticalDenotations.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 18:35:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+sets/SetProd.glob: sets/SetProd.v sets/SetsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/DenotationalSemantics.required_vo: pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/Logic.vio: pl/Logic.v pl/CoqIntro.vio pl/InductiveType.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/DenotationalSemantics.vio: pl/DenotationalSemantics.v sets/SetsClass.vio pl/SyntaxInCoq.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: pl/CoqIntro.vo pl/InductiveType.vo pl/Logic.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo pl/PracticalDenotations.vo pl/EquivAndRefine.vo sets/SetsClass.vo sets/SetsDomain.vo sets/SetElement.vo sets/SetProd.vo sets/RelsDomain.vo compcert_lib/Coqlib.vo compcert_lib/Integers.vo compcert_lib/Zbits.vo
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+
+pl/SyntaxInCoq.vo: pl/SyntaxInCoq.v pl/SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/SyntaxInCoq'
+#  Last modified 2023-11-04 17:44:58
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+compcert_lib/Zbits.required_vo: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/EquivAndRefine.glob: pl/EquivAndRefine.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/PracticalDenotations.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean depend
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/EquivAndRefine.vio: pl/EquivAndRefine.v sets/SetsClass.vio compcert_lib/Integers.vio pl/SyntaxInCoq.vio pl/PracticalDenotations.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+_CoqProject:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 55):
+	@echo $(DEP_FLAG) > _CoqProject
+	
+
+pl/SyntaxInCoq.vio: pl/SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/RelsDomain.vo: sets/RelsDomain.v sets/RelsDomain.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sets/RelsDomain'
+#  Last modified 2023-11-04 17:45:00
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 41):
+	@echo COQC $<
+	@$(COQC) $(SETS_FLAG) $<
+	
+
+# Not a target:
+sets/RelsDomain.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pl/Logic.vo: pl/Logic.v pl/Logic.v pl/CoqIntro.vo pl/InductiveType.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/Logic'
+#  Last modified 2023-11-04 17:44:58
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+# Not a target:
+CONFIGURE:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+pl/Logic.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+compcert_lib/Integers.required_vo: compcert_lib/Integers.v compcert_lib/Coqlib.vo compcert_lib/Zbits.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/DenotationalSemantics.v.beautified: pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Integers.vio: compcert_lib/Integers.v compcert_lib/Coqlib.vio compcert_lib/Zbits.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Coqlib.required_vo: compcert_lib/Coqlib.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/InductiveType.vo: pl/InductiveType.v pl/InductiveType.v pl/CoqIntro.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/InductiveType'
+#  Last modified 2023-11-04 17:44:57
+#  File has been updated.
+#  Successfully updated.
+ 
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+pl/CoqIntro.vo: pl/CoqIntro.v pl/CoqIntro.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/CoqIntro'
+#  Last modified 2023-11-04 17:44:57
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+# Not a target:
+pl/InductiveType.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+pl/CoqIntro.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+compcert_lib/Zbits.v.beautified: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.depend: pl/CoqIntro.v pl/InductiveType.v pl/Logic.v pl/SyntaxInCoq.v pl/DenotationalSemantics.v pl/PracticalDenotations.v pl/EquivAndRefine.v sets/SetsClass.v sets/SetsDomain.v sets/SetElement.v sets/SetProd.v sets/RelsDomain.v compcert_lib/Coqlib.v compcert_lib/Integers.v compcert_lib/Zbits.v
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has not been done.
+#  Last modified 2023-11-18 14:19:09
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 61):
+	@$(COQDEP) $(DEP_FLAG) $(FILES) > .depend
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsClass.vo: sets/SetsClass.v sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sets/SetsClass'
+#  Last modified 2023-11-04 17:45:00
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 41):
+	@echo COQC $<
+	@$(COQC) $(SETS_FLAG) $<
+	
+
+# Not a target:
+sets/SetsClass.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+sets/RelsDomain.vio: sets/RelsDomain.v sets/SetElement.vio sets/SetsDomain.vio sets/SetProd.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Zbits.vio: compcert_lib/Zbits.v compcert_lib/Coqlib.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetElement.required_vo: sets/SetElement.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsDomain.glob: sets/SetsDomain.v sets/SetElement.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/PracticalDenotations.glob: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetProd.required_vo: sets/SetProd.v sets/SetsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Coqlib.v.beautified: compcert_lib/Coqlib.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Coqlib.vio: compcert_lib/Coqlib.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/EquivAndRefine.required_vo: pl/EquivAndRefine.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/PracticalDenotations.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/SyntaxInCoq.glob: pl/SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetElement.v.beautified: sets/SetElement.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/RelsDomain.glob: sets/RelsDomain.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetProd.v.beautified: sets/SetProd.v sets/SetsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/Logic.glob: pl/Logic.v pl/CoqIntro.vo pl/InductiveType.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/DenotationalSemantics.vo: pl/DenotationalSemantics.v pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/DenotationalSemantics'
+#  Last modified 2023-11-04 17:45:01
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+# Not a target:
+pl/DenotationalSemantics.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+sets/SetsClass.vio: sets/SetsClass.v sets/SetElement.vio sets/SetsDomain.vio sets/SetProd.vio sets/RelsDomain.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/InductiveType.glob: pl/InductiveType.v pl/CoqIntro.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/CoqIntro.glob: pl/CoqIntro.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+depend: pl/CoqIntro.v pl/InductiveType.v pl/Logic.v pl/SyntaxInCoq.v pl/DenotationalSemantics.v pl/PracticalDenotations.v pl/EquivAndRefine.v sets/SetsClass.v sets/SetsDomain.v sets/SetElement.v sets/SetProd.v sets/RelsDomain.v compcert_lib/Coqlib.v compcert_lib/Integers.v compcert_lib/Zbits.v
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 58):
+	$(COQDEP) $(DEP_FLAG) $(FILES) > .depend
+	
+
+compcert_lib/Zbits.vo: compcert_lib/Zbits.v compcert_lib/Zbits.v compcert_lib/Coqlib.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `compcert_lib/Zbits'
+#  Last modified 2023-11-04 17:45:02
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 45):
+	@echo COQC $<
+	@$(COQC) $(COMPCERT_FLAG) $<
+	
+
+# Not a target:
+compcert_lib/Zbits.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+sets/SetsClass.glob: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsDomain.required_vo: sets/SetsDomain.v sets/SetElement.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+pl/PracticalDenotations.required_vo: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Integers.vo: compcert_lib/Integers.v compcert_lib/Integers.v compcert_lib/Coqlib.vo compcert_lib/Zbits.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `compcert_lib/Integers'
+#  Last modified 2023-11-04 17:45:05
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 45):
+	@echo COQC $<
+	@$(COQC) $(COMPCERT_FLAG) $<
+	
+
+# Not a target:
+compcert_lib/Integers.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+compcert_lib/Coqlib.vo: compcert_lib/Coqlib.v compcert_lib/Coqlib.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `compcert_lib/Coqlib'
+#  Last modified 2023-11-04 17:45:02
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 45):
+	@echo COQC $<
+	@$(COQC) $(COMPCERT_FLAG) $<
+	
+
+# Not a target:
+compcert_lib/Coqlib.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 64):
+	@rm -f *.glob */*.glob
+	@rm -f *.vo */*.vo
+	@rm -f *.vok */*.vok
+	@rm -f *.vos */*.vos 
+	@rm -f .*.aux */.*.aux
+	@rm -f .depend
+	
+
+pl/SyntaxInCoq.required_vo: pl/SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetElement.vo: sets/SetElement.v sets/SetElement.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sets/SetElement'
+#  Last modified 2023-11-04 17:44:58
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 41):
+	@echo COQC $<
+	@$(COQC) $(SETS_FLAG) $<
+	
+
+sets/SetsDomain.v.beautified: sets/SetsDomain.v sets/SetElement.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sets/SetElement.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pl/PracticalDenotations.v.beautified: pl/PracticalDenotations.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/DenotationalSemantics.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/RelsDomain.required_vo: sets/RelsDomain.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetProd.vio: sets/SetProd.v sets/SetsDomain.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetProd.vo: sets/SetProd.v sets/SetProd.v sets/SetsDomain.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `sets/SetProd'
+#  Last modified 2023-11-04 17:44:59
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 41):
+	@echo COQC $<
+	@$(COQC) $(SETS_FLAG) $<
+	
+
+pl/Logic.required_vo: pl/Logic.v pl/CoqIntro.vo pl/InductiveType.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sets/SetProd.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:44:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pl/DenotationalSemantics.glob: pl/DenotationalSemantics.v sets/SetsClass.vo pl/SyntaxInCoq.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pl/SyntaxInCoq.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+pl/InductiveType.required_vo: pl/InductiveType.v pl/CoqIntro.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/CoqIntro.required_vo: pl/CoqIntro.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/SyntaxInCoq.v.beautified: pl/SyntaxInCoq.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/EquivAndRefine.vo: pl/EquivAndRefine.v pl/EquivAndRefine.v sets/SetsClass.vo compcert_lib/Integers.vo pl/SyntaxInCoq.vo pl/PracticalDenotations.vo
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `pl/EquivAndRefine'
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 49):
+	@echo COQC $(<F)
+	@$(COQC) $(PL_FLAG) $<
+	
+
+compcert_lib/Zbits.glob: compcert_lib/Zbits.v compcert_lib/Coqlib.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pl/EquivAndRefine.v:
+#  Implicit rule search has been done.
+#  Last modified 2023-11-04 17:43:52
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+compcert_lib/Integers.v.beautified: compcert_lib/Integers.v compcert_lib/Coqlib.vo compcert_lib/Zbits.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsClass.required_vo: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsDomain.vio: sets/SetsDomain.v sets/SetElement.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/RelsDomain.v.beautified: sets/RelsDomain.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/Logic.v.beautified: pl/Logic.v pl/CoqIntro.vo pl/InductiveType.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Integers.glob: compcert_lib/Integers.v compcert_lib/Coqlib.vo compcert_lib/Zbits.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/CoqIntro.vio: pl/CoqIntro.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/InductiveType.vio: pl/InductiveType.v pl/CoqIntro.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compcert_lib/Coqlib.glob: compcert_lib/Coqlib.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/InductiveType.v.beautified: pl/InductiveType.v pl/CoqIntro.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/CoqIntro.v.beautified: pl/CoqIntro.v
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pl/PracticalDenotations.vio: pl/PracticalDenotations.v sets/SetsClass.vio compcert_lib/Integers.vio pl/SyntaxInCoq.vio pl/DenotationalSemantics.vio
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetElement.vio: sets/SetElement.v
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sets/SetsClass.v.beautified: sets/SetsClass.v sets/SetElement.vo sets/SetsDomain.vo sets/SetProd.vo sets/RelsDomain.vo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=100/1024=10%, Rehash=0, Collisions=55/392=14%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 3
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4069 / max = 4069 / min = 4069 / avg = 4069
+
+# Finished Make data base on Sat Nov 18 14:19:09 2023
+
+ 

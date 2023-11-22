@@ -1,7 +1,0 @@
-DIGEST 5f1f4c568d1715d0ffafe31fe066d8fc
-FPL.denotationalSemantics
-R15:38 Coq.Logic.Classical_Prop <> <> lib
-R56:73 Coq.Strings.String <> <> lib
-R91:107 Coq.ZArith.ZArith <> <> lib
-R125:143 Coq.micromega.Psatz <> <> lib
-R224:237 PL.SyntaxInCoq <> <> lib
