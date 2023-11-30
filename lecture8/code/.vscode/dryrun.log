@@ -7,7 +7,6 @@ make: Entering directory `/Users/husky/Three-Year-Aut/CS2612-Programming-Languag
 echo COQC CoqIntro.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/CoqIntro.v
 echo COQC InductiveType.v
- 
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/InductiveType.v
 echo COQC Logic.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/Logic.v
@@ -16,6 +15,7 @@ coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/SyntaxInCoq.v
 echo COQC sets/SetElement.v
 coqc -R sets SetsClass sets/SetElement.v
 echo COQC sets/SetsDomain.v
+ 
 coqc -R sets SetsClass sets/SetsDomain.v
 echo COQC sets/SetProd.v
 coqc -R sets SetsClass sets/SetProd.v
@@ -25,7 +25,6 @@ echo COQC sets/SetsClass.v
 coqc -R sets SetsClass sets/SetsClass.v
 echo COQC DenotationalSemantics.v
 coqc -R pl PL -R sets SetsClass -R compcert_lib compcert.lib pl/DenotationalSemantics.v
- 
 echo COQC compcert_lib/Coqlib.v
 coqc -R compcert_lib compcert.lib compcert_lib/Coqlib.v
 echo COQC compcert_lib/Zbits.v
