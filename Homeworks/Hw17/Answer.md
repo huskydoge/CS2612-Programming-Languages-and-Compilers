@@ -64,8 +64,6 @@ x = n && l = 0 && r = n + 1 && true ｜-- l * l <= n < r * r && l + 1 <= r && x 
 exists r', l * l <= n < r' * r' && l + 1 <= r' && x == n && l + 1 < r' && mid = (l + r') / 2 && x < mid * mid && r = mid 
 \/
 exists l',  l' * l' <= n < r * r && l' + 1 <= r && x == n && l' + 1 < r && mid = (l' + r) / 2 && x >= mid * mid  && l = mid ｜-- l * l <= n < r * r && l + 1 <= r && x == n
-
-｜-- l * l <= n < r * r && l + 1 <= r && x == n
 ```
 
 ```
@@ -87,9 +85,9 @@ t = x;
 //@inv sllseg(x,t) * sll(t)
 while (t != 0) do {
 //@generate t!=0 && sllseg(x,t) * sll(t)
-//@aux  sllseg(x,t) * store(t, u) * store(t + 8, q) * sll(q)
+//@derived  sllseg(x,t) * store(t, u) * store(t + 8, q) * sll(q)
 t = * (t + 8)
-//@generate t'!=0 && sllseg(x,t') * store(t', u) * store(t' + 8, q) * sll(q) && q = t
+//@generate sllseg(x,t') * store(t', u) * store(t' + 8, q) * sll(q) && q = t
 //@target sllseg(x,t) * sll(t)
 }
 //@generated sllseg(x,t) * sll(t) && t = 0
@@ -102,7 +100,7 @@ sll(x) && t = x |-- sllseg(x,t) * sll(t)
 ```
 
 ```
-t'!=0 && sllseg(x,t') * store(t', u) * store(t' + 8, q) * sll(q) && q = t |-- sllseg(x,t) * sll(t)
+sllseg(x,t') * store(t', u) * store(t' + 8, q) * sll(q) && q = t |-- sllseg(x,t) * sll(t)
 ```
 
 ```
